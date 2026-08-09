@@ -1,4 +1,4 @@
-# Design audit — aiimi.com, read for Bromely Code
+# Design audit — aiimi.com, read for Bromley Code
 
 **Audited** 9 August 2026 · **Method** headless Chromium (Playwright), real page runtime, `getComputedStyle` on live elements plus stylesheet introspection — not static HTML, not inference from screenshots.
 **Coverage** 18 pages × 4 viewports (1440 / 1024 / 768 / 390) = 72 full-page captures, plus 5 nav-state captures, 6 case-study captures, 33 viewport slices, 9 hero-video frame captures. Raw measurements in `reference/data/*.json`; captures in `reference/screenshots/`.
@@ -291,7 +291,7 @@ Nothing. No poster on a slow connection (blank black box until the first frame d
 
 We are swapping anyway, for positioning rather than legal reasons: Geist is Vercel's house face and reads as "shipped from a Next.js template" to exactly the technically literate buyer we are addressing. Adopting it would make the two sites look related.
 
-**Proposed for Bromely Code** (all free for commercial use, all self-hosted, no CDN dependency):
+**Proposed for Bromley Code** (all free for commercial use, all self-hosted, no CDN dependency):
 
 | Role | Face | Source / licence | Reason |
 |---|---|---|---|
@@ -331,25 +331,25 @@ Two placement facts worth copying exactly:
 - **Metrics live inside the Results prose, not in a stats band.** There is no big-numeral component on any case-study page. A number arrives attached to the sentence that explains what it measures. That is far more credible than three 160px numerals, and it is the opposite of what the homepage does.
 - **The quote comes after the argument, not before it.** It confirms a case already made rather than substituting for one.
 
-And one that validates our own constraint: the professional-services study — *"AI-driven data management saves £1m in storage costs for leading professional services firm"* — **names no client at all**, referring only to sector and scale. The reference itself ships unnamed case studies. Bromely Code's illustrative studies will therefore sit inside an established convention rather than looking like an evasion.
+And one that validates our own constraint: the professional-services study — *"AI-driven data management saves £1m in storage costs for leading professional services firm"* — **names no client at all**, referring only to sector and scale. The reference itself ships unnamed case studies. Bromley Code's illustrative studies will therefore sit inside an established convention rather than looking like an evasion.
 
 ---
 
-## 8. Deltas — where the reference works against Bromely Code
+## 8. Deltas — where the reference works against Bromley Code
 
 ### 8.1 The three named in the brief
 
 **D1 · Platform-led IA → services-and-method-led IA.**
 Confirmed by capture, and it is worse than described. The desktop header contains **no navigation links at all** — a wordmark, a "Book a demo" pill, and a hamburger, at every breakpoint including 1632px. All navigation lives in a full-screen overlay whose order is **Platform → Services → Industries → Resources**. The first entry, the header's only CTA ("Book a demo" → `/platform#demo`), and the top of the overlay all point at a product.
 
-Bromely Code has no product. Copying this yields a site whose primary CTA is undeliverable and whose first nav item 404s in spirit.
+Bromley Code has no product. Copying this yields a site whose primary CTA is undeliverable and whose first nav item 404s in spirit.
 *Decision:* keep the fixed nav's scroll behaviour and the overlay's typographic drama; keep the single-CTA discipline. Replace the contents: **Services → How we work → Industries → Case studies → Insights → About**, primary CTA "Start a conversation" → `/contact`. Add persistent desktop nav links — hiding navigation behind a hamburger on a 1440px screen costs a consultancy discovery it cannot afford, and the reference can only afford it because visitors already know the brand.
 
 **D2 · Client-logo wall → technology-stack band.**
 Measured: two `react-fast-marquee` tracks on a full-bleed black band, 45px white logo SVGs, 33.7s and 37.5s linear loops in opposite directions, **no greyscale filter** (white artwork is supplied directly), with "Trusted by the trusted." and a "View all Case Studies" link between the rows. Twenty-plus recognisable enterprise and government marks.
 
 A new consultancy cannot fill this slot honestly, and filling it dishonestly is both a trademark problem and an instant credibility failure with a buyer who will recognise the names.
-*Decision:* keep the band's geometry, black surface, 45px lockup height, marquee timing and full-bleed treatment. Change the payload to **platforms Bromely Code builds on** — Databricks, Azure, Snowflake, Postgres/pgvector, orchestration and evaluation tooling — using each vendor's official brand assets under their published brand guidelines. True on day one, and to a Head of Data a stack disclosure carries comparable signal to a client list.
+*Decision:* keep the band's geometry, black surface, 45px lockup height, marquee timing and full-bleed treatment. Change the payload to **platforms Bromley Code builds on** — Databricks, Azure, Snowflake, Postgres/pgvector, orchestration and evaluation tooling — using each vendor's official brand assets under their published brand guidelines. True on day one, and to a Head of Data a stack disclosure carries comparable signal to a client list.
 
 **D3 · Accreditation apparatus.**
 Measured in the footer: four badges at ~50px height — Cyber Essentials, Cyber Essentials Plus, CO₂-neutral organisation, ISO 27001 (UKAS/British Assessment Bureau) — plus, on `/services`, a full "Accreditations and frameworks" section. This is doing real conversion work for an enterprise data buyer; procurement looks for it.
@@ -374,7 +374,7 @@ Measured in the footer: four badges at ~50px height — Cyber Essentials, Cyber 
 **D7 · Stats band populated with live counts.** "1361+ Projects, 141+ Customers, 189+ Experts" — earned numbers a new firm does not have.
 *Decision:* keep the component and its count-up; populate with `[NEEDS FIGURE]`. A firm quoting invented project counts is precisely what this audience screens for, and an empty slot reads as honest where a fabricated one reads as terminal.
 
-**D8 · No mechanism content anywhere.** The reference sells outcomes and platform capability; it never shows how anything works. It can afford that because the logos do the arguing. Bromely Code cannot.
+**D8 · No mechanism content anywhere.** The reference sells outcomes and platform capability; it never shows how anything works. It can afford that because the logos do the arguing. Bromley Code cannot.
 *Decision:* add two components with no analogue in the reference — a **pipeline/methodology diagram** (SVG, drawn as code) and a **reference-architecture block** — and make `/how-we-work` a first-class nav item. This is the compensating trust apparatus for D2.
 
 **D9 · Prose density on marketing pages.** Eight propositions across 7,383px, most sections carrying 30–60 words. Fine for a known brand; too thin for a firm that has to prove competence in the first scroll.
@@ -404,7 +404,7 @@ Stated explicitly so the build does not accidentally redesign things that alread
 
 ---
 
-## 10. Proposed token set for Bromely Code
+## 10. Proposed token set for Bromley Code
 
 Not the reference's palette — comparable contrast discipline, different hue story. Full values land in `globals.css` as custom properties in phase 2; recorded here so the audit can be corrected before it propagates.
 

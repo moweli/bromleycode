@@ -12,7 +12,7 @@ export function Wordmark({ className = "" }: { className?: string }) {
         <circle cx="16.5" cy="15.5" r="2" fill="var(--color-accent)" />
       </svg>
       <span className="text-[1.5rem] font-bold tracking-[-0.045em]">
-        Bromely Code
+        Bromley Code
       </span>
     </span>
   );

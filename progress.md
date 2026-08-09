@@ -1,6 +1,6 @@
 # Progress
 
-**Project:** Bromely Code marketing site
+**Project:** Bromley Code marketing site
 **Reference audited:** aiimi.com, 9 August 2026 (`design-audit.md`)
 **Last updated:** 9 August 2026 (Round 3)
 
@@ -285,7 +285,7 @@ pass.
 **Company details**
 
 Searched 9 August 2026: no Companies House record, no domain and no listing
-exists for Bromely Code. There was nothing to retrieve, so the site says what is
+exists for Bromley Code. There was nothing to retrieve, so the site says what is
 true today rather than inventing identifiers.
 
 - [ ] **Incorporate**, then set `site.registration.status` to `"registered"` and
@@ -500,28 +500,28 @@ Taken from the Companies House register on 9 August 2026, record
 JSON-LD all print the real registration line and address in place of
 "registration in progress".
 
-### The registered name does not match the brand name
+### Name spelling — resolved
 
-The register says **BROMLEY**CODE. Every piece of brand copy on this site says
-**BROMELY** Code. One of the two is a typo and I cannot tell which from here.
+The register says **BROMLEY**CODE. The brief and the original build said
+**BROMELY** Code throughout. Confirmed on 9 August 2026 that the brand is
+**Bromley Code**, so the site copy was the typo, not the registration.
 
-Handled for now by keeping them in separate fields:
+Corrected across 20 files and 51 occurrences: display name, wordmark, page copy,
+legal documents, email addresses, canonical URL and the documentation.
 
-- `site.legalName` = `"BromleyCode Ltd"`, the registered spelling, used in the
-  footer registration line, the legal pages and the JSON-LD `legalName`. A
-  registration line must match the register exactly.
-- `site.name` = `"Bromely Code"`, the trading name, used everywhere else.
+Two fields remain, deliberately:
 
-**This needs a decision.** If the brand is meant to be BromleyCode, it is a
-one-line change in `site.ts` plus the domain, the email addresses and the
-wordmark. If the registered name is the typo, it is a Companies House change of
-name. Leaving the two different is defensible for a trading name but will look
-like an error to anyone who checks.
+- `site.legalName` = `"BromleyCode Ltd"`, one word, the registered form. Used
+  wherever a statutory disclosure has to match the register exactly.
+- `site.name` = `"Bromley Code"`, two words, the trading name, everywhere else.
 
-Still outstanding: **VAT and ICO numbers.** Neither is on the public register and
-neither is invented. An ICO registration number is checkable in seconds, and ICO
-registration itself is inexpensive and near-immediate, so this is a short job.
-The footer prints those lines only once the values exist.
+**Follow-on, outside this repository:** the domain `bromleycode.com` and the
+`enquiries@`, `privacy@` and `accessibility@` mailboxes on it are now referenced
+throughout the site and the legal pages. They need to exist and resolve before
+launch.
+
+Still outstanding: **VAT number.** Not on the public register and not invented.
+The footer prints that line only once the value exists.
 
 ### Accreditation row now carries artwork
 

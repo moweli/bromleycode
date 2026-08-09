@@ -2,7 +2,7 @@ export const story = {
   eyebrow: "About",
   heading: "A consultancy built around the parts that usually go wrong.",
   body: [
-    "Bromely Code exists because the hard parts of enterprise GenAI are not the parts most engagements are staffed for. The model is rarely the problem. The corpus is the problem: its scanning quality, its revision sprawl, its three overlapping permission models, and the absence of any agreed definition of a correct answer.",
+    "Bromley Code exists because the hard parts of enterprise GenAI are not the parts most engagements are staffed for. The model is rarely the problem. The corpus is the problem: its scanning quality, its revision sprawl, its three overlapping permission models, and the absence of any agreed definition of a correct answer.",
     "We are a data intelligence consultancy. The work is retrieval, extraction, enrichment and evaluation, delivered as engagements, on your platforms, inside your boundary. There is no product, no licence and no reason for us to recommend one.",
     "Engagements are staffed with three to five people, all of whom write code or evaluate output. There is no account layer between you and the people building the thing, and no bench being kept warm at your expense.",
     "We take a narrow set of work and finish it. An engagement ends with a running pipeline, an evaluation harness your team owns, a rollback path that has been executed at least once against real data, and engineers who have already changed something in the pipeline without us in the room.",

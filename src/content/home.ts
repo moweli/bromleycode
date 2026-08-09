@@ -11,7 +11,7 @@ import { services } from "./services";
  * No dashes anywhere in visible copy, by request.
  *
  * Homepage headline candidates, drafted against the positioning line:
- * "Bromely Code builds production-grade GenAI pipelines that turn unstructured
+ * "Bromley Code builds production-grade GenAI pipelines that turn unstructured
  * enterprise data into evidence leaders can act on."
  *
  * Implemented: A.
@@ -58,7 +58,7 @@ export const capabilities = services.map((s) => ({
 
 export const stats = {
   eyebrow: "By the numbers",
-  heading: "Bromely Code at a glance.",
+  heading: "Bromley Code at a glance.",
   body: "Pipelines in production, documents made retrievable, and the answer-supported rate we hold ourselves to on every engagement.",
   items: [
     {

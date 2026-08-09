@@ -39,7 +39,7 @@ attribution is not required but provenance is, and a licence can change.
   licence does not extend to a depicted brand, so any frame containing one was
   rejected at selection.
 - No identifiable individuals. Nothing here depicts a person in a way that could
-  imply they endorse Bromely Code — the free licences explicitly prohibit implied
+  imply they endorse Bromley Code — the free licences explicitly prohibit implied
   endorsement by depicted individuals, which is also why the team grid uses
   monograms rather than stock portraits.
 - Re-encoded to WebP at quality 72, capped at 2000px wide. Next.js generates the
@@ -122,7 +122,7 @@ it was swapped for positioning rather than licensing reasons. See
 
 The CC0 licence covers the drawn icons. **Trademarks remain the property of
 their respective owners.** The band states in copy that the marks indicate
-platforms Bromely Code builds on, not partnership or endorsement.
+platforms Bromley Code builds on, not partnership or endorsement.
 
 **Microsoft Azure and AWS are named in prose and deliberately not shown as
 marks.** Both companies require their brand assets to be sourced and approved

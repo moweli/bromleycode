@@ -4,7 +4,7 @@ import { privacyPolicy } from "@/content/legal";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: "What personal data Bromely Code collects, why, and the rights you have over it.",
+  description: "What personal data Bromley Code collects, why, and the rights you have over it.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };

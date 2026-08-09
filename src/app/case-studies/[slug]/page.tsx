@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: study.summary,
     alternates: { canonical: `/case-studies/${study.slug}` },
     openGraph: {
-      title: `${study.title}. Bromely Code`,
+      title: `${study.title}. Bromley Code`,
       description: study.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: study.title }],
     },

@@ -36,8 +36,8 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
         <h3 className="mt-3 text-[length:var(--text-h4)]">{state.message}</h3>
         <p className={`mt-3 text-body-sm ${dark ? "text-mist-bright" : "text-ink-muted"}`}>
           If it is urgent, email us directly at{" "}
-          <a href="mailto:enquiries@bromelycode.com" className="underline underline-offset-4">
-            enquiries@bromelycode.com
+          <a href="mailto:enquiries@bromleycode.com" className="underline underline-offset-4">
+            enquiries@bromleycode.com
           </a>
           .
         </p>
@@ -173,7 +173,7 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
             className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
           />
           <span>
-            I agree that Bromely Code may store this enquiry in order to respond to it, as described in
+            I agree that Bromley Code may store this enquiry in order to respond to it, as described in
             the{" "}
             <Link href="/privacy" className={dark ? "text-accent underline underline-offset-4" : "text-accent-ink underline underline-offset-4"}>
               privacy policy

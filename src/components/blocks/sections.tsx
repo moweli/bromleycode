@@ -29,10 +29,10 @@ export function CtaBand({
               <dt className="eyebrow text-mist">Prefer email</dt>
               <dd className="mt-1">
                 <a
-                  href="mailto:enquiries@bromelycode.com"
+                  href="mailto:enquiries@bromleycode.com"
                   className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
                 >
-                  enquiries@bromelycode.com
+                  enquiries@bromleycode.com
                 </a>
               </dd>
             </div>

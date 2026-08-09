@@ -31,7 +31,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
       heading: "1. Who we are",
       paragraphs: [
         `${COMPANY} is a data intelligence consultancy registered in England and Wales, company number ${NUMBER}, with its registered office at ${OFFICE}. For personal data collected through this website we are the data controller.`,
-        "For anything in this notice, or to exercise any of the rights described in section 8, contact privacy@bromelycode.com.",
+        "For anything in this notice, or to exercise any of the rights described in section 8, contact privacy@bromleycode.com.",
         "We have not appointed a Data Protection Officer. On the processing described here we are not a public authority, we do not monitor individuals on a large scale, and we do not process special category data at scale, so the conditions in Article 37 are not met. We keep that assessment under review as the business grows.",
       ],
     },
@@ -94,7 +94,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
       heading: "8. Your rights",
       paragraphs: [
         "Under the UK GDPR you have the right to be informed about how we use your data, to request a copy of it, to have inaccurate data corrected, to have data erased, to restrict how we use it, to object to processing based on legitimate interests, and to data portability. Where we rely on consent, you can withdraw it at any time and as easily as you gave it.",
-        "To exercise any of these, email privacy@bromelycode.com. We will respond within one month. We will not charge you, and we will not ask you to justify the request.",
+        "To exercise any of these, email privacy@bromleycode.com. We will respond within one month. We will not charge you, and we will not ask you to justify the request.",
         "If you object to us processing your enquiry under legitimate interests, we will stop unless we have compelling grounds not to. In practice that means we will delete it and not reply further.",
       ],
     },
@@ -114,7 +114,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
     {
       heading: "11. Complaints",
       paragraphs: [
-        "If you are unhappy with how we have handled your data, please tell us first at privacy@bromelycode.com so we can put it right.",
+        "If you are unhappy with how we have handled your data, please tell us first at privacy@bromleycode.com so we can put it right.",
         "You also have the right to complain to the Information Commissioner's Office at ico.org.uk, by calling 0303 123 1113, or by writing to Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF.",
       ],
     },
@@ -179,7 +179,7 @@ export const cookiePolicy: { updated: string; intro: string[]; sections: LegalSe
 export const termsOfUse: { updated: string; intro: string[]; sections: LegalSection[] } = {
   updated: LEGAL_UPDATED,
   intro: [
-    "These terms govern your use of bromelycode.com. By using the site you accept them.",
+    "These terms govern your use of bromleycode.com. By using the site you accept them.",
     "They do not govern any engagement. Work we do for a client is governed entirely by that engagement's signed contract, which takes precedence over anything on this page.",
   ],
   sections: [
@@ -187,7 +187,7 @@ export const termsOfUse: { updated: string; intro: string[]; sections: LegalSect
       heading: "1. Who we are",
       paragraphs: [
         `This site is operated by ${COMPANY}, a data intelligence consultancy registered in England and Wales, company number ${NUMBER}, with its registered office at ${OFFICE}.`,
-        "You can contact us at enquiries@bromelycode.com.",
+        "You can contact us at enquiries@bromleycode.com.",
       ],
     },
     {
@@ -303,14 +303,14 @@ export const accessibilityStatement: { updated: string; intro: string[]; section
     {
       heading: "Feedback",
       paragraphs: [
-        "If you find something we have missed, or you need content in a different format, email accessibility@bromelycode.com. Tell us the page and what happened, and we will reply within five working days.",
+        "If you find something we have missed, or you need content in a different format, email accessibility@bromleycode.com. Tell us the page and what happened, and we will reply within five working days.",
         "If you are not satisfied with our response, you can contact the Equality Advisory and Support Service at equalityadvisoryservice.com.",
       ],
     },
     {
       heading: "Scope of this statement",
       paragraphs: [
-        "This statement applies to bromelycode.com and was prepared on 9 August 2026.",
+        "This statement applies to bromleycode.com and was prepared on 9 August 2026.",
         "It covers our own website. Accessibility of anything we build for a client is specified in that engagement's contract, and where a client is a public sector body we work to the standard its own obligations require.",
       ],
     },

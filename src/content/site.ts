@@ -5,14 +5,14 @@
  */
 
 export const site = {
-  name: "Bromely Code",
+  name: "Bromley Code",
   /** As registered at Companies House. Must match the register exactly. */
   legalName: "BromleyCode Ltd",
   tagline: "Decision-grade intelligence from unstructured data.",
   description:
-    "Bromely Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
-  url: "https://bromelycode.com",
-  email: "enquiries@bromelycode.com",
+    "Bromley Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
+  url: "https://bromleycode.com",
+  email: "enquiries@bromleycode.com",
   hours: "Monday to Friday, 09:00 to 17:30 UK time",
   locale: "en_GB",
   /**
@@ -23,11 +23,13 @@ export const site = {
    * Active, SIC 62020 (information technology consultancy activities),
    * registered office 262 Bancroft Road, London, England, E1 4BS.
    *
-   * NOTE the spelling. The register says BROMLEYCODE (Bromley), the brand copy
-   * throughout this site says "Bromely Code". `legalName` below therefore
-   * carries the registered spelling, because a registration line must match the
-   * register exactly; `name` carries the trading name. Confirm which spelling is
-   * the intended brand and the two can be reconciled.
+   * Spelling resolved 9 August 2026: the brand is BROMLEY Code, matching the
+   * register. An earlier misspelling ("Bromely") was corrected across the site,
+   * the domain and the email addresses.
+   *
+   * `legalName` is the registered form, one word, used wherever a statutory
+   * disclosure has to match the register exactly. `name` is the trading name,
+   * two words, used everywhere else.
    *
    * VAT is still blank. It is not on the public register and is not invented.
    */
@@ -103,8 +105,8 @@ export const legalNav: NavItem[] = [
 ];
 
 export const socials: { label: string; href: string; icon: "linkedin" | "github" }[] = [
-  { label: "Bromely Code on LinkedIn", href: "https://www.linkedin.com/", icon: "linkedin" },
-  { label: "Bromely Code on GitHub", href: "https://github.com/", icon: "github" },
+  { label: "Bromley Code on LinkedIn", href: "https://www.linkedin.com/", icon: "linkedin" },
+  { label: "Bromley Code on GitHub", href: "https://github.com/", icon: "github" },
 ];
 
 /**

@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: { canonical: `/insights/${insight.slug}` },
     openGraph: {
       type: "article",
-      title: `${insight.title}. Bromely Code`,
+      title: `${insight.title}. Bromley Code`,
       description: insight.standfirst,
       publishedTime: insight.published,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: insight.title }],
@@ -46,8 +46,8 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
     headline: insight.title,
     description: insight.standfirst,
     datePublished: insight.published,
-    author: { "@type": "Organization", name: "Bromely Code Ltd" },
-    publisher: { "@type": "Organization", name: "Bromely Code Ltd" },
+    author: { "@type": "Organization", name: "Bromley Code Ltd" },
+    publisher: { "@type": "Organization", name: "Bromley Code Ltd" },
   };
 
   return (

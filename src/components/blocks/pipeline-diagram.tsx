@@ -45,7 +45,7 @@ export function PipelineDiagram() {
           role="img"
           aria-labelledby="pipeline-title pipeline-desc"
         >
-          <title id="pipeline-title">The Bromely Code pipeline, in ten stages</title>
+          <title id="pipeline-title">The Bromley Code pipeline, in ten stages</title>
           <desc id="pipeline-desc">
             {pipelineStages.map((stage) => stage.name).join(", ")}, in sequence. Access control
             resolves from the index into retrieval on every query. Evaluation feeds back into

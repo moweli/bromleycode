@@ -27,7 +27,7 @@ export async function generateMetadata({
     // Overriding openGraph replaces the parent's entry wholesale, so the image
     // has to be restated or these routes ship without one.
     openGraph: {
-      title: `${service.title}. Bromely Code`,
+      title: `${service.title}. Bromley Code`,
       description: service.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: service.title }],
     },
@@ -49,7 +49,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
     "@type": "Service",
     name: service.title,
     description: service.summary,
-    provider: { "@type": "ProfessionalService", name: "Bromely Code Ltd" },
+    provider: { "@type": "ProfessionalService", name: "Bromley Code Ltd" },
     areaServed: "GB",
     serviceType: service.title,
   };

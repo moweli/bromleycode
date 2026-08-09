@@ -84,7 +84,7 @@ export async function submitContact(_previous: ContactState, data: FormData): Pr
     return {
       status: "error",
       message:
-        "Something went wrong sending this. Please email enquiries@bromelycode.com directly and we will pick it up from there.",
+        "Something went wrong sending this. Please email enquiries@bromleycode.com directly and we will pick it up from there.",
       values,
     };
   }

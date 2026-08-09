@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ---------------------------------------------------------------------------
-   Bromely Code design tokens.
+   Bromley Code design tokens.
 
    Every value a component can reach for lives here as a CSS custom property and
    is surfaced to Tailwind through @theme. A rebrand is an edit to this file, not

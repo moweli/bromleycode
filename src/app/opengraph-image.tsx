@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Bromely Code, the pipeline between your documents and the decision";
+export const alt = "Bromley Code, the pipeline between your documents and the decision";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,7 +37,7 @@ export default function OpenGraphImage() {
               display: "flex",
             }}
           />
-          <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: -1 }}>Bromely Code</div>
+          <div style={{ fontSize: 30, fontWeight: 700, letterSpacing: -1 }}>Bromley Code</div>
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
@@ -61,7 +61,7 @@ export default function OpenGraphImage() {
         >
           <div>Data intelligence consultancy</div>
           <div style={{ color: "#5A5A5A" }}>·</div>
-          <div style={{ color: "#9B9B9B" }}>bromelycode.com</div>
+          <div style={{ color: "#9B9B9B" }}>bromleycode.com</div>
         </div>
       </div>
     ),
