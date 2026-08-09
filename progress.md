@@ -477,3 +477,91 @@ are also removed there is no disclosure left anywhere on the site.
 `src/content/case-studies.ts`. One value, every surface.
 
 The swap-in checklist above still applies in full.
+
+---
+
+## Round 4 — company details and accreditations, 9 August 2026
+
+### Company details are now real and verified
+
+Taken from the Companies House register on 9 August 2026, record
+[16566018](https://find-and-update.company-information.service.gov.uk/company/16566018):
+
+| Field | Value |
+|---|---|
+| Registered name | **BROMLEYCODE LTD** |
+| Company number | **16566018** |
+| Status | Active |
+| Incorporated | 7 July 2025 |
+| Registered office | 262 Bancroft Road, London, England, E1 4BS |
+| SIC | 62020, information technology consultancy activities |
+
+`site.registration.status` is now `"registered"`, so the footer, contact page and
+JSON-LD all print the real registration line and address in place of
+"registration in progress".
+
+### The registered name does not match the brand name
+
+The register says **BROMLEY**CODE. Every piece of brand copy on this site says
+**BROMELY** Code. One of the two is a typo and I cannot tell which from here.
+
+Handled for now by keeping them in separate fields:
+
+- `site.legalName` = `"BromleyCode Ltd"`, the registered spelling, used in the
+  footer registration line, the legal pages and the JSON-LD `legalName`. A
+  registration line must match the register exactly.
+- `site.name` = `"Bromely Code"`, the trading name, used everywhere else.
+
+**This needs a decision.** If the brand is meant to be BromleyCode, it is a
+one-line change in `site.ts` plus the domain, the email addresses and the
+wordmark. If the registered name is the typo, it is a Companies House change of
+name. Leaving the two different is defensible for a trading name but will look
+like an error to anyone who checks.
+
+Still outstanding: **VAT and ICO numbers.** Neither is on the public register and
+neither is invented. An ICO registration number is checkable in seconds, and ICO
+registration itself is inexpensive and near-immediate, so this is a short job.
+The footer prints those lines only once the values exist.
+
+### Accreditation row now carries artwork
+
+Three renderings, chosen by what each mark actually is:
+
+| Tile | Rendering | Status |
+|---|---|---|
+| Cyber Essentials | IASME's own published artwork, inverted for the dark band | held |
+| Cyber Essentials Plus | typographic lockup drawn in-repo | held |
+| ISO 27001 | typographic lockup | held |
+| ISO 9001 | typographic lockup | held |
+| ICO registered | dashed outline, labelled "in progress" | pending |
+| Companies House 16566018 | typographic lockup, links to the register | held |
+
+Tiles with a `verifyUrl` link to the public register, so a procurement reader can
+check the claim in one click. The Companies House tile is verified true.
+
+No official public artwork exists for the ISO scheme marks: they are issued by
+the certification body that audited you and carry that body's accreditation
+number. A lockup drawn by us is honest about being a wordmark; an approximation
+of a certification body's mark would be wrong on the detail that matters.
+
+### Five tiles are now making checkable claims
+
+**Confirm every certificate is in hand before this goes live.** IASME licenses
+the Cyber Essentials marks to certified organisations only and publishes a search
+of who holds them. ISO marks come from an accredited certification body. A
+consultancy selling assurance to regulated buyers is the worst possible place to
+be caught displaying an accreditation it does not hold, and this audience checks.
+
+To correct any tile: set its `status` to `"pending"` in `src/content/site.ts`. It
+renders as a labelled outline reading "in progress" instead of a badge. No other
+change is needed.
+
+### Verification
+
+Lighthouse after these changes: `/` 99/100/100/100, `/contact` and `/about`
+100/100/100/100, all accessibility audits clean.
+
+One failure was found and fixed on the way: the accreditation links carried an
+`aria-label` that did not contain their visible text, which fails WCAG 2.5.3
+Label in Name. The tile's own text now names the link, with a visually-hidden
+note that it opens the public register in a new tab.

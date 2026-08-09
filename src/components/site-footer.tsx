@@ -91,9 +91,22 @@ export function SiteFooter() {
             <p className="mt-5 text-xs leading-relaxed text-mist">
               {site.registration.status === "registered" ? (
                 <>
-                  Registered in England &amp; Wales: {site.registration.companyNumber}
-                  <br />
-                  VAT {site.registration.vatNumber} · ICO {site.registration.icoRegistration}
+                  Registered in England &amp; Wales, company number{" "}
+                  {site.registration.companyNumber}.
+                  {/* VAT and ICO print only once they exist. An empty "VAT" label
+                      reads as an oversight; a fabricated number is checkable. */}
+                  {site.registration.vatNumber ? (
+                    <>
+                      <br />
+                      VAT {site.registration.vatNumber}
+                    </>
+                  ) : null}
+                  {site.registration.icoRegistration ? (
+                    <>
+                      <br />
+                      ICO registration {site.registration.icoRegistration}
+                    </>
+                  ) : null}
                 </>
               ) : (
                 <>

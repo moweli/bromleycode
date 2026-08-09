@@ -136,6 +136,30 @@ thing a client's legal team asks about.
 
 ---
 
+## Accreditation marks
+
+| Shipped file | Mark | Rights holder | Source | Downloaded |
+|---|---|---|---|---|
+| `public/media/accreditations/cyber-essentials.webp` | Cyber Essentials | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09 |
+| `reference/media-raw/badges/iasme.png` | IASME Consortium | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/) | 2026-08-09, held in reserve |
+| `reference/media-raw/badges/ncsc-chevron.png` | NCSC chevron | National Cyber Security Centre, Crown copyright | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09, held in reserve |
+
+The Cyber Essentials Plus, ISO 27001, ISO 9001, ICO and Companies House tiles are
+typographic lockups drawn in this repository. No official public artwork exists
+for the ISO scheme marks: they are issued by the certification body that audited
+you and carry that body's accreditation number, so an approximation drawn by us
+would be wrong on the detail that matters. Replace each lockup with the body's
+issued artwork on award.
+
+**These are certification marks, not decoration.** IASME licenses the Cyber
+Essentials marks to certified organisations only and publishes a public search of
+who holds them. Every tile with `status: held` in `src/content/site.ts` is a
+claim a procurement reviewer can check in under a minute. Confirm each
+certificate is in hand before launch; set a tile to `pending` and it renders
+as a labelled outline instead of a badge.
+
+---
+
 ## Nothing else is third-party
 
 - The wordmark, pipeline diagram, reference-architecture block, favicon and

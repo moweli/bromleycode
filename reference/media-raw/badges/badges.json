@@ -1,0 +1,29 @@
+[
+  {
+    "key": "cyber-essentials",
+    "url": "https://iasme.co.uk/wp-content/plugins/iasme/img/logos/cyber-essentials-blue.png",
+    "owner": "IASME Consortium",
+    "note": "Cyber Essentials certification mark. Licensed by IASME to certified organisations only.",
+    "srcBytes": 27034,
+    "outBytes": 6208,
+    "file": "public/media/accreditations/cyber-essentials.webp"
+  },
+  {
+    "key": "iasme",
+    "url": "https://iasme.co.uk/wp-content/plugins/iasme/img/logos/logo.png",
+    "owner": "IASME Consortium",
+    "note": "IASME Consortium mark, the Cyber Essentials scheme operator.",
+    "srcBytes": 10876,
+    "outBytes": 6528,
+    "file": "public/media/accreditations/iasme.webp"
+  },
+  {
+    "key": "ncsc-chevron",
+    "url": "https://iasme.co.uk/cyber-essentials/wp-content/uploads/sites/2/2024/05/NCSC-Chevron.png",
+    "owner": "National Cyber Security Centre",
+    "note": "NCSC chevron. Crown copyright.",
+    "srcBytes": 778,
+    "outBytes": 2136,
+    "file": "public/media/accreditations/ncsc-chevron.webp"
+  }
+]
