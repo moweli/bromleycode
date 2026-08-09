@@ -10,3 +10,7 @@ next-env.d.ts
 .vercel
 lighthouse-*.json
 lighthouse-*.html
+
+# Raw media downloads. Build input, not source: the shipped encodes live in
+# public/media and every original is re-fetchable from the URLs in media-credits.md.
+reference/media-raw/
