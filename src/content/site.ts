@@ -29,16 +29,13 @@ export const site = {
    * register exactly; `name` carries the trading name. Confirm which spelling is
    * the intended brand and the two can be reconciled.
    *
-   * VAT and ICO are still blank. Neither is on the public register, and neither
-   * should be invented: an ICO registration number is checkable in seconds by
-   * anyone in procurement.
+   * VAT is still blank. It is not on the public register and is not invented.
    */
   registration: {
     status: "registered" as "pending" | "registered",
     companyNumber: "16566018",
     incorporatedOn: "7 July 2025",
     vatNumber: "",
-    icoRegistration: "",
     registeredOffice: {
       /** One line. Four stacked lines for a London postcode is padding. */
       oneLine: "262 Bancroft Road, London E1 4BS",

@@ -80,25 +80,19 @@ export function SiteFooter() {
                 <>
                   Registered in England &amp; Wales, company number{" "}
                   {site.registration.companyNumber}.
-                  {/* VAT and ICO print only once they exist. An empty "VAT" label
-                      reads as an oversight; a fabricated number is checkable. */}
+                  {/* VAT prints only once it exists. An empty label reads as an
+                      oversight; a fabricated number is checkable. */}
                   {site.registration.vatNumber ? (
                     <>
                       <br />
                       VAT {site.registration.vatNumber}
                     </>
                   ) : null}
-                  {site.registration.icoRegistration ? (
-                    <>
-                      <br />
-                      ICO registration {site.registration.icoRegistration}
-                    </>
-                  ) : null}
                 </>
               ) : (
                 <>
-                  Company registration in progress. Registered office, company number, VAT and ICO
-                  registration will be published here on incorporation.
+                  Company registration in progress. Registered office and company number will be
+                  published here on incorporation.
                 </>
               )}
             </p>
