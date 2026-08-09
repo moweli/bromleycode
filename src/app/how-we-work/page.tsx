@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/blocks/page-hero";
 import { PipelineDiagram, PipelineStages } from "@/components/blocks/pipeline-diagram";
+import { MediaBand } from "@/components/blocks/media-band";
 import { ArchitectureBlock, CtaBand } from "@/components/blocks/sections";
 import { Reveal } from "@/components/reveal";
 import { Section, SectionHeading } from "@/components/ui";
+import { bandImages } from "@/content/media";
 import { engagementShape, firstNinetyDays, principles } from "@/content/methodology";
 
 export const metadata: Metadata = {
@@ -52,6 +54,12 @@ export default function HowWeWorkPage() {
               body="Sized to your estate rather than to a template, and deployed inside your boundary. The assurance layer is the half most projects under-resource and the half that decides whether the system can be switched on."
             />
           </Reveal>
+          {/* The photograph carries the layer idea; the block below does the
+              actual work of naming them. */}
+          <MediaBand
+            {...bandImages.howWeWorkLayers}
+            className="mt-14"
+          />
           <Reveal delay={80} className="mt-14">
             <ArchitectureBlock />
           </Reveal>
@@ -72,6 +80,10 @@ export default function HowWeWorkPage() {
               </Reveal>
             ))}
           </ol>
+          <MediaBand
+            {...bandImages.howWeWorkEngagement}
+            className="mt-14"
+          />
         </div>
       </Section>
 
@@ -100,6 +112,10 @@ export default function HowWeWorkPage() {
               </Reveal>
             ))}
           </ol>
+          <MediaBand
+            {...bandImages.howWeWorkNinetyDays}
+            className="mt-14"
+          />
         </div>
       </Section>
 

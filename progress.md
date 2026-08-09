@@ -677,3 +677,58 @@ works".
   shallowly for builds, so this costs a one-time clone rather than every deploy.
   If a slim repo is wanted later, that is a `git filter-repo` pass and a
   force-push, and it is a separate job.
+
+---
+
+## Round 7 — photography on the inner pages, 9 August 2026
+
+### The gap, measured before choosing anything
+
+Page height against image count, taken from the built site rather than by eye:
+
+| Route | Height | Images before |
+|---|---|---|
+| `/how-we-work` | 7,823px | 0 |
+| `/services/[slug]` ×4 | ~6,200px | 1, a card at the foot |
+| `/about` | 4,795px | 1 |
+| `/services` | 4,610px | 0 |
+| `/contact` | 2,049px | 0 |
+
+`/`, `/insights`, `/industries` and `/case-studies` already carried three to
+seven each and were left alone.
+
+### What was added
+
+Ten photographs, all Pexels under the Pexels Licence, the same source and the
+same register as the existing twelve: architectural and industrial abstraction,
+no people, no meeting rooms. Three on `/how-we-work`, one per service page keyed
+to that service, one each on `/services`, `/about` and `/contact`.
+
+One new component, `MediaBand`, carries all of them: 21:9 on desktop and 16:10
+below `sm`, because a 21:9 crop at 390px is about 170px tall and reads as a
+strip rather than an image. No captions and no links — the bands are atmosphere,
+so nothing load-bearing sits in them.
+
+Assignments live in `src/content/media.ts` alongside the existing insight and
+about images, except the service ones, which sit on the service record because
+there they vary with the content.
+
+### Two images were downloaded and thrown away
+
+Both failed the trademark check that `media-credits.md` has recorded since round
+one, and both would have passed a glance:
+
+- Industrial pressure gauges whose dial faces read **Rexroth**. The stock licence
+  covers the photograph, not a brand inside it.
+- A glass entrance carrying the business name **KUPKA**. On a contact page that
+  is a misrepresentation before it is a trademark problem.
+
+Replacements: laboratory measuring cylinders marked only with volume and
+tolerance, which suits an assurance page better than the gauges did, and an
+abstract facade with no signage. Both rejections are recorded in
+`media-credits.md` with the reason.
+
+### Verification
+
+`tsc` clean, build clean. All twelve routes checked at 1280px and 390px: every
+image loads, every one has alt text, no horizontal overflow anywhere.

@@ -31,6 +31,27 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/insights/permissions.webp | Pexels | Pexels Licence | [4864249](https://www.pexels.com/photo/optical-switch-connector-with-similar-cables-in-building-4864249/) | 2026-08-09 | 375 KB → 124 KB | Insight — “What permission inheritance actually requires” |
 | public/media/insights/chunking.webp | Pexels | Pexels Licence | [11831530](https://www.pexels.com/photo/concrete-geometric-building-11831530/) | 2026-08-09 | 975 KB → 269 KB | Insight — “Chunking is a decision, not a default” |
 | public/media/insights/evaluation.webp | Pexels | Pexels Licence | [34368893](https://www.pexels.com/photo/geometric-steel-frame-with-crossed-shadows-34368893/) | 2026-08-09 | 310 KB → 51 KB | Insight — “Your evaluation set is too big, and too small” |
+| public/media/services/intelligence-extraction.webp | Pexels | Pexels Licence | [6549926](https://www.pexels.com/photo/6549926/) | 2026-08-09 | 503 KB → 122 KB | Service — intelligence extraction (section band) |
+| public/media/services/data-pipeline-engineering.webp | Pexels | Pexels Licence | [14845870](https://www.pexels.com/photo/14845870/) | 2026-08-09 | 467 KB → 115 KB | Service — data & pipeline engineering (section band) |
+| public/media/services/ai-strategy-roadmap.webp | Pexels | Pexels Licence | [4458205](https://www.pexels.com/photo/4458205/) | 2026-08-09 | 217 KB → 64 KB | Service — AI strategy & roadmap (section band) |
+| public/media/services/evaluation-assurance.webp | Pexels | Pexels Licence | [8325758](https://www.pexels.com/photo/8325758/) | 2026-08-09 | 165 KB → 36 KB | Service — evaluation & assurance (section band) |
+| public/media/services/index.webp | Pexels | Pexels Licence | [4508751](https://www.pexels.com/photo/4508751/) | 2026-08-09 | 1131 KB → 373 KB | Services index (section band) |
+| public/media/how-we-work/layers.webp | Pexels | Pexels Licence | [7409778](https://www.pexels.com/photo/7409778/) | 2026-08-09 | 339 KB → 76 KB | How we work — reference architecture (section band) |
+| public/media/how-we-work/engagement.webp | Pexels | Pexels Licence | [31389461](https://www.pexels.com/photo/31389461/) | 2026-08-09 | 416 KB → 90 KB | How we work — engagement shape (section band) |
+| public/media/how-we-work/ninety-days.webp | Pexels | Pexels Licence | [19563057](https://www.pexels.com/photo/19563057/) | 2026-08-09 | 685 KB → 209 KB | How we work — first 90 days (section band) |
+| public/media/about/london.webp | Pexels | Pexels Licence | [10334728](https://www.pexels.com/photo/10334728/) | 2026-08-09 | 385 KB → 98 KB | About — before the FAQ (section band) |
+| public/media/contact/facade.webp | Pexels | Pexels Licence | [28733236](https://www.pexels.com/photo/28733236/) | 2026-08-09 | 548 KB → 146 KB | Contact — below the enquiry form (section band) |
+
+**Rejected at selection, and why**
+
+Two frames were downloaded, inspected at full resolution and discarded before
+shipping. Both failed the trademark check below, which is the check most easily
+passed by not looking closely:
+
+| Rejected | Why |
+|---|---|
+| [38166366](https://www.pexels.com/photo/38166366/) — industrial pressure gauges | Every dial face reads **Rexroth**, legible at display size. The Pexels licence covers the photograph, not a brand depicted inside it. Replaced with laboratory measuring cylinders, whose only markings are volume and tolerance. |
+| [10586223](https://www.pexels.com/photo/10586223/) — glass building entrance | The facade carries the business name **KUPKA**. On a contact page it would read as our own office under someone else's name, which is a misrepresentation as much as a trademark problem. Replaced with an abstract facade carrying no signage. |
 
 **Checks applied to every image**
 

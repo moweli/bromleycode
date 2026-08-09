@@ -12,6 +12,8 @@ export type Service = {
   summary: string;
   /** Hero standfirst, one or two sentences. */
   standfirst: string;
+  /** Section-break photograph. Atmosphere, not evidence — see MediaBand. */
+  image: { src: string; alt: string };
   problem: ServiceSection;
   approach: {
     heading: string;
@@ -35,6 +37,10 @@ export const services: Service[] = [
       "Retrieval, extraction and enrichment over the documents, tickets, contracts and transcripts that never reached the warehouse.",
     standfirst:
       "Most of what an organisation knows is written down somewhere no query can reach. We build the pipelines that make it retrievable, attributable and safe to act on.",
+    image: {
+      src: "/media/services/intelligence-extraction.webp",
+      alt: "A long archive aisle lined floor to ceiling with wooden index drawers.",
+    },
     problem: {
       heading: "The problem this solves",
       body: [
@@ -141,6 +147,10 @@ export const services: Service[] = [
       "The unglamorous infrastructure underneath: ingestion, orchestration, storage, indexing and the operational discipline that keeps them running.",
     standfirst:
       "A retrieval system is a data pipeline with a language model at the end of it. Most of the failure modes are pipeline failure modes, and they are the ones a demo never shows.",
+    image: {
+      src: "/media/services/data-pipeline-engineering.webp",
+      alt: "Painted steel pipes turning through right angles across a plant wall.",
+    },
     problem: {
       heading: "The problem this solves",
       body: [
@@ -237,6 +247,10 @@ export const services: Service[] = [
       "A sequenced plan grounded in what your data can actually support, with the disqualifying constraints found before the budget is committed.",
     standfirst:
       "Most AI roadmaps fail on a data constraint that was discoverable in week one. We go looking for those constraints first, then sequence the work around what survives.",
+    image: {
+      src: "/media/services/ai-strategy-roadmap.webp",
+      alt: "A detailed architectural floor plan with dimensions marked throughout.",
+    },
     problem: {
       heading: "The problem this solves",
       body: [
@@ -325,6 +339,10 @@ export const services: Service[] = [
       "Measurement that survives scrutiny: labelled sets, regression suites, hallucination and permission testing, and the evidence trail an auditor will ask for.",
     standfirst:
       "If you cannot say how often the system is wrong, you cannot deploy it anywhere consequential. This is the service that makes that number exist.",
+    image: {
+      src: "/media/services/evaluation-assurance.webp",
+      alt: "Five graduated measuring cylinders in ascending size, each marked with its volume and tolerance.",
+    },
     problem: {
       heading: "The problem this solves",
       body: [

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/blocks/page-hero";
 import { ContactForm } from "@/components/blocks/contact-form";
+import { MediaBand } from "@/components/blocks/media-band";
+import { bandImages } from "@/content/media";
 import { Reveal } from "@/components/reveal";
 import { Section } from "@/components/ui";
 import { site } from "@/content/site";
@@ -96,6 +98,14 @@ export default function ContactPage() {
               </div>
             </div>
           </Reveal>
+        </div>
+      </Section>
+
+      {/* Below the form rather than above it: nothing should push the form
+          further down the page on a route whose only job is to be used. */}
+      <Section size="sm" className="pt-0">
+        <div className="container-bc">
+          <MediaBand {...bandImages.contactFacade} />
         </div>
       </Section>
     </>

@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/blocks/page-hero";
+import { MediaBand } from "@/components/blocks/media-band";
 import { CtaBand, Faq } from "@/components/blocks/sections";
 import { Reveal } from "@/components/reveal";
 import { Section, SectionHeading } from "@/components/ui";
 import { faqs, story } from "@/content/about";
 import { principles } from "@/content/methodology";
-import { aboutImage } from "@/content/media";
+import { aboutImage, bandImages } from "@/content/media";
 
 export const metadata: Metadata = {
   title: "About",
@@ -75,6 +76,9 @@ export default function AboutPage() {
 
       <Section size="lg" className="bg-paper-alt">
         <div className="container-bc">
+          {/* Where the company is registered, before the questions people ask
+              about it. */}
+          <MediaBand {...bandImages.aboutLondon} className="mb-20" />
           <Reveal>
             <SectionHeading eyebrow="Questions" title="The ones we are actually asked." />
           </Reveal>

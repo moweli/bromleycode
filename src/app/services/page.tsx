@@ -3,9 +3,11 @@ import { PageHero } from "@/components/blocks/page-hero";
 import { CapabilityCard } from "@/components/blocks/cards";
 import { CtaBand } from "@/components/blocks/sections";
 import { PipelineDiagram } from "@/components/blocks/pipeline-diagram";
+import { MediaBand } from "@/components/blocks/media-band";
 import { Reveal } from "@/components/reveal";
 import { ArrowLink, Section, SectionHeading } from "@/components/ui";
 import { services } from "@/content/services";
+import { bandImages } from "@/content/media";
 import { engagementShape } from "@/content/methodology";
 
 export const metadata: Metadata = {
@@ -41,6 +43,10 @@ export default function ServicesPage() {
               </Reveal>
             ))}
           </ul>
+          <MediaBand
+            {...bandImages.servicesIndex}
+            className="mt-16"
+          />
         </div>
       </Section>
 

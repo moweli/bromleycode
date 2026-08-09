@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PageHero } from "@/components/blocks/page-hero";
 import { CaseStudyCard } from "@/components/blocks/cards";
+import { MediaBand } from "@/components/blocks/media-band";
 import { CtaBand, Faq, RelatedLinks } from "@/components/blocks/sections";
 import { Reveal } from "@/components/reveal";
 import { Section, SectionHeading } from "@/components/ui";
@@ -101,6 +102,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
 
       <Section size="lg">
         <div className="container-bc">
+          {/* Breaks the run between the method steps above and the deliverables
+              below, which is the longest stretch of unbroken text on the page. */}
+          <MediaBand src={service.image.src} alt={service.image.alt} className="mb-20" />
           <Reveal>
             <SectionHeading eyebrow="Deliverables" title="What you are left holding." />
           </Reveal>
