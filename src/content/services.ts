@@ -341,7 +341,7 @@ export const services: Service[] = [
       "If you cannot say how often the system is wrong, you cannot deploy it anywhere consequential. This is the service that makes that number exist.",
     image: {
       src: "/media/services/evaluation-assurance.webp",
-      alt: "Five graduated measuring cylinders in ascending size, each marked with its volume and tolerance.",
+      alt: "A repeating grid of windows across a building facade, a few panes picked out in black against the rest.",
     },
     problem: {
       heading: "The problem this solves",

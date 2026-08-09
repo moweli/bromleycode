@@ -34,7 +34,7 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/services/intelligence-extraction.webp | Pexels | Pexels Licence | [6549926](https://www.pexels.com/photo/6549926/) | 2026-08-09 | 503 KB → 122 KB | Service — intelligence extraction (section band) |
 | public/media/services/data-pipeline-engineering.webp | Pexels | Pexels Licence | [14845870](https://www.pexels.com/photo/14845870/) | 2026-08-09 | 467 KB → 115 KB | Service — data & pipeline engineering (section band) |
 | public/media/services/ai-strategy-roadmap.webp | Pexels | Pexels Licence | [4458205](https://www.pexels.com/photo/4458205/) | 2026-08-09 | 217 KB → 64 KB | Service — AI strategy & roadmap (section band) |
-| public/media/services/evaluation-assurance.webp | Pexels | Pexels Licence | [8325758](https://www.pexels.com/photo/8325758/) | 2026-08-09 | 165 KB → 36 KB | Service — evaluation & assurance (section band) |
+| public/media/services/evaluation-assurance.webp | Pexels | Pexels Licence | [12602405](https://www.pexels.com/photo/12602405/) | 2026-08-09 | 399 KB → 53 KB | Service — evaluation & assurance (section band) |
 | public/media/services/index.webp | Pexels | Pexels Licence | [4508751](https://www.pexels.com/photo/4508751/) | 2026-08-09 | 1131 KB → 373 KB | Services index (section band) |
 | public/media/how-we-work/layers.webp | Pexels | Pexels Licence | [7409778](https://www.pexels.com/photo/7409778/) | 2026-08-09 | 339 KB → 76 KB | How we work — reference architecture (section band) |
 | public/media/how-we-work/engagement.webp | Pexels | Pexels Licence | [31389461](https://www.pexels.com/photo/31389461/) | 2026-08-09 | 416 KB → 90 KB | How we work — engagement shape (section band) |
@@ -50,7 +50,8 @@ passed by not looking closely:
 
 | Rejected | Why |
 |---|---|
-| [38166366](https://www.pexels.com/photo/38166366/) — industrial pressure gauges | Every dial face reads **Rexroth**, legible at display size. The Pexels licence covers the photograph, not a brand depicted inside it. Replaced with laboratory measuring cylinders, whose only markings are volume and tolerance. |
+| [38166366](https://www.pexels.com/photo/38166366/) — industrial pressure gauges | Every dial face reads **Rexroth**, legible at display size. The Pexels licence covers the photograph, not a brand depicted inside it. |
+| [8325758](https://www.pexels.com/photo/8325758/) — laboratory measuring cylinders | Licence-clean and briefly shipped, then replaced at the client's request. A window grid with individual panes picked out carries the same idea, sampling across a uniform set, without putting a chemistry lab on the page of a data consultancy. |
 | [10586223](https://www.pexels.com/photo/10586223/) — glass building entrance | The facade carries the business name **KUPKA**. On a contact page it would read as our own office under someone else's name, which is a misrepresentation as much as a trademark problem. Replaced with an abstract facade carrying no signage. |
 
 **Checks applied to every image**
