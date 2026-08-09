@@ -132,16 +132,21 @@ export type Accreditation = {
   verifyUrl?: string;
 };
 
+/**
+ * Artwork supplied by the client, downloaded and self-hosted rather than
+ * hotlinked. Alternative IASME-sourced horizontal lockups are also in
+ * public/media/accreditations if the badge format is ever swapped for a lockup.
+ */
 export const accreditations: Accreditation[] = [
   {
     name: "Cyber Essentials",
     detail: "IASME certified",
     status: "held",
     logo: {
-      src: "/media/accreditations/cyber-essentials.webp",
+      src: "/media/accreditations/ce-badge.svg",
       alt: "Cyber Essentials certified",
-      width: 250,
-      height: 100,
+      width: 42,
+      height: 50,
     },
     verifyUrl: "https://iasme.co.uk/cyber-essentials/",
   },
@@ -150,30 +155,22 @@ export const accreditations: Accreditation[] = [
     detail: "IASME certified",
     status: "held",
     logo: {
-      src: "/media/accreditations/cyber-essentials-plus.webp",
+      src: "/media/accreditations/ce-plus-badge.webp",
       alt: "Cyber Essentials Plus certified",
-      width: 250,
-      height: 100,
+      width: 100,
+      height: 120,
     },
     verifyUrl: "https://iasme.co.uk/cyber-essentials/cyber-essentials-plus/",
   },
-  /**
-   * ISO tiles stay as drawn lockups, and there is no artwork to fetch for them.
-   * ISO does not license its own logo to certified organisations at all: a
-   * certified company uses the mark of the certification body that audited it,
-   * which carries that body's UKAS accreditation number. Once a certifier is
-   * appointed, swap `lockup` for their issued artwork in `logo`.
-   */
   {
     name: "ISO 27001",
     detail: "Information security management",
     status: "held",
-    lockup: { line1: "ISO 27001", line2: "Information security" },
-  },
-  {
-    name: "ISO 9001",
-    detail: "Quality management",
-    status: "held",
-    lockup: { line1: "ISO 9001", line2: "Quality management" },
+    logo: {
+      src: "/media/accreditations/iso-27001.webp",
+      alt: "ISO 27001 information security management certified",
+      width: 120,
+      height: 120,
+    },
   },
 ];

@@ -75,11 +75,11 @@ export function SiteFooter() {
                 </a>
               </p>
             </address>
+            {/* The registration line lives in the accreditation band below, so
+                only VAT appears here and only once it exists. */}
             <p className="mt-5 text-xs leading-relaxed text-mist">
               {site.registration.status === "registered" ? (
                 <>
-                  Registered in England &amp; Wales, company number{" "}
-                  {site.registration.companyNumber}.
                   {/* VAT prints only once it exists. An empty label reads as an
                       oversight; a fabricated number is checkable. */}
                   {site.registration.vatNumber ? (

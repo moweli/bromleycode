@@ -138,39 +138,47 @@ thing a client's legal team asks about.
 
 ## Accreditation marks
 
-| Shipped file | Mark | Rights holder | Source | Downloaded |
-|---|---|---|---|---|
-| `public/media/accreditations/cyber-essentials.webp` | Cyber Essentials (white) | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09 |
-| `public/media/accreditations/cyber-essentials-plus.webp` | Cyber Essentials Plus (white) | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/cyber-essentials-plus/) | 2026-08-09 |
-| `public/media/accreditations/cyber-essentials-blue.webp` | Cyber Essentials (blue) | IASME Consortium | as above | 2026-08-09, held for light surfaces |
-| `public/media/accreditations/cyber-essentials-plus-blue.webp` | Cyber Essentials Plus (blue) | IASME Consortium | as above | 2026-08-09, held for light surfaces |
+Three badges, supplied by the client and **downloaded and self-hosted rather
+than hotlinked**, so the origin serves none of this site's traffic and cannot
+change the file underneath us.
 
-Taken from IASME's own asset directory. IASME operates the Cyber Essentials
-scheme and issues these marks, so this is the primary source. The white variants
-sit on the black footer band; the blue variants are held for light surfaces.
+| Shipped file | Mark | Supplied as | Weight |
+|---|---|---|---|
+| `public/media/accreditations/ce-badge.svg` | Cyber Essentials certified | `a.storyblok.com/f/321130/42x50/…/cyber-essentials.svg` | 11 KB, vector |
+| `public/media/accreditations/ce-plus-badge.webp` | Cyber Essentials Plus certified | `a.storyblok.com/f/321130/500x599/…/ce-plus.webp` | 3 KB |
+| `public/media/accreditations/iso-27001.webp` | ISO 27001, UKAS accredited certification | `a.storyblok.com/f/321130/200x200/…/27001monowhite.webp` | 5 KB |
 
-The ISO 27001 and ISO 9001 tiles are typographic lockups drawn in this
-repository, and **there is no artwork to fetch for them.** ISO does not license
-its own logo to certified organisations at all. A certified company displays the
-mark of the certification body that audited it, which carries that body's UKAS
-accreditation number and is issued against a specific certificate. Once a
-certifier is appointed, replace `lockup` with their issued artwork in `logo`.
+All three are already white or mono artwork and are rendered untinted. Applying
+an invert to artwork that is already light turns it black.
 
-### Not used, deliberately
+### Also held, not currently displayed
 
-The accreditation images hosted on the reference site's own CDN were offered and
-not taken. Two of the three are the same IASME marks, which we now hold from
-source. The third is an ISO 27001 badge issued to that company by its
-certification body: copying it would put somebody else's certificate on this
-site. Hotlinking their CDN would also place our bandwidth on their bill and hand
-them our referrer traffic.
+Sourced directly from IASME, the body that operates the Cyber Essentials scheme
+and issues its marks. Horizontal lockups rather than badges, kept in case the
+row is ever restyled.
+
+| File | Mark |
+|---|---|
+| `cyber-essentials.webp` / `cyber-essentials-blue.webp` | Cyber Essentials lockup, white and blue |
+| `cyber-essentials-plus.webp` / `cyber-essentials-plus-blue.webp` | Cyber Essentials Plus lockup, white and blue |
+| `iasme.webp`, `ncsc-chevron.webp` | IASME and NCSC marks |
 
 ### These are certification marks, not decoration
 
-IASME licenses them to certified organisations only and publishes a public
-search of who holds them. Every tile with `status: "held"` in
-`src/content/site.ts` is a claim a procurement reviewer can check in under a
-minute. Set a tile to `"pending"` and it renders as a labelled outline instead.
+Two points a procurement reviewer can check in under a minute, so they are worth
+settling before launch:
+
+- IASME licenses the Cyber Essentials marks to certified organisations only, and
+  publishes a public search of who holds them.
+- The ISO 27001 badge carries a UKAS-accredited certification body's mark. ISO
+  does not license its own logo to certified companies at all; the badge a
+  certified company displays is issued by the body that audited it, against a
+  specific certificate number. The artwork in use here was supplied rather than
+  issued to this company.
+
+Every tile with `status: "held"` in `src/content/site.ts` is a live claim. Set a
+tile to `"pending"` and it renders as a labelled outline instead of a badge. No
+other change is needed.
 
 ---
 

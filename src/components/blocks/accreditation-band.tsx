@@ -1,38 +1,34 @@
 import Image from "next/image";
-import { accreditations } from "@/content/site";
+import { accreditations, site } from "@/content/site";
 
 /**
- * The reference carries four certification badges in its footer, and they do
- * genuine conversion work for an enterprise data buyer (design-audit.md §8.1
- * D3). Same slot, same 50px lockup height, same greyscale-on-dark treatment.
+ * The reference carries certification badges in its footer, and they do genuine
+ * conversion work for an enterprise data buyer (design-audit.md §8.1 D3). Same
+ * slot, same 50px lockup height.
  *
- * Three renderings, by what each mark actually is:
- *   held + logo    the certifying body's own published artwork
- *   held + lockup  a tile drawn here, where no official artwork is published
- *   pending        a labelled outline, so the status is never ambiguous
+ * The left-hand column carries the statutory registration line, which UK
+ * companies must disclose on their website under the Companies (Trading
+ * Disclosures) Regulations, so it sits beside the marks rather than duplicating
+ * them in the contact column.
  *
- * A tile linking to `verifyUrl` lets a procurement reader check the claim in one
- * click, which is the point of putting these on a page at all.
+ * Badges are supplied as white or mono artwork and are NOT tinted here. Applying
+ * an invert to artwork that is already light turns it black.
  */
 export function AccreditationBand({ tone = "dark" }: { tone?: "dark" | "light" }) {
   const dark = tone === "dark";
-  const held = accreditations.filter((a) => a.status === "held");
-  const pending = accreditations.filter((a) => a.status === "pending");
+  const registered = site.registration.status === "registered";
 
   return (
     <div className={`border-t ${dark ? "border-line-dark" : "border-line-light"}`}>
       <div className="container-bc py-10">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-          <div className="lg:max-w-xs">
-            <h2 className={`eyebrow ${dark ? "text-mist" : "text-ink-muted"}`}>Accreditations</h2>
-            <p className={`mt-2 text-xs ${dark ? "text-mist" : "text-ink-muted"}`}>
-              {pending.length > 0
-                ? `${held.length} held, ${pending.length} in progress. Anything shown as in progress is not yet awarded.`
-                : "Certificates are available on request, and the registers below are public."}
-            </p>
-          </div>
+          <p className={`max-w-xs text-body-sm ${dark ? "text-mist" : "text-ink-muted"}`}>
+            {registered
+              ? `Registered in England & Wales, company number ${site.registration.companyNumber}.`
+              : "Company registration in progress."}
+          </p>
 
-          <ul className="flex flex-wrap items-center gap-3">
+          <ul className="flex flex-wrap items-center gap-5">
             {accreditations.map((item) => {
               const tile =
                 item.status === "held" && item.logo ? (
@@ -41,7 +37,7 @@ export function AccreditationBand({ tone = "dark" }: { tone?: "dark" | "light" }
                     alt={item.logo.alt}
                     width={item.logo.width}
                     height={item.logo.height}
-                    className={`h-[50px] w-auto ${dark ? "brightness-0 invert" : ""}`}
+                    className="h-[50px] w-auto"
                   />
                 ) : (
                   <span
@@ -67,9 +63,8 @@ export function AccreditationBand({ tone = "dark" }: { tone?: "dark" | "light" }
               return (
                 <li key={item.name}>
                   {item.verifyUrl ? (
-                    // No aria-label here: an accessible name that does not
-                    // contain the visible text fails WCAG 2.5.3 Label in Name.
-                    // The tile's own text (or the image alt) names the link.
+                    // No aria-label: an accessible name that does not contain the
+                    // visible text fails WCAG 2.5.3 Label in Name.
                     <a
                       href={item.verifyUrl}
                       target="_blank"

@@ -1,0 +1,26 @@
+[
+  {
+    "key": "ce-badge",
+    "url": "https://a.storyblok.com/f/321130/42x50/ee8f4f480a/cyber-essentials.svg",
+    "ext": "svg",
+    "srcBytes": 11327,
+    "outBytes": 11327,
+    "shipped": "public/media/accreditations/ce-badge.svg"
+  },
+  {
+    "key": "ce-plus-badge",
+    "url": "https://a.storyblok.com/f/321130/500x599/ab213c7394/ce-plus.webp",
+    "ext": "webp",
+    "srcBytes": 12082,
+    "outBytes": 3322,
+    "shipped": "public/media/accreditations/ce-plus-badge.webp"
+  },
+  {
+    "key": "iso-27001",
+    "url": "https://a.storyblok.com/f/321130/200x200/d8f4118eae/27001monowhite.webp",
+    "ext": "webp",
+    "srcBytes": 8590,
+    "outBytes": 4776,
+    "shipped": "public/media/accreditations/iso-27001.webp"
+  }
+]
