@@ -1,0 +1,7 @@
+# Audit evidence and verification captures. Deliverables in the repo, but the
+# build does not read them, so they should not be uploaded on every deploy.
+reference/
+
+# Local tooling output
+.playwright-mcp/
+lighthouse-*.json
