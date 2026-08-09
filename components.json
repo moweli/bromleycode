@@ -1,8 +1,13 @@
 {
-  "$comment": "Component inventory reverse-engineered from aiimi.com, 9 Aug 2026. All 'measured' values are getComputedStyle readings from the live page at 1440px unless a breakpoint is stated. 'status' tracks the Bromely Code build: pending | in_progress | built | verified.",
+  "$comment": "Component inventory reverse-engineered from aiimi.com, 9 Aug 2026. All 'measured' values are getComputedStyle readings from the live page at 1440px unless a breakpoint is stated. 'status' tracks the Bromely Code build: see build.status_legend at the end of this file.",
   "reference": "https://aiimi.com/",
   "audited": "2026-08-09",
-  "viewports": [1440, 1024, 768, 390],
+  "viewports": [
+    1440,
+    1024,
+    768,
+    390
+  ],
   "components": [
     {
       "component": "announcement_bar",
@@ -13,7 +18,8 @@
       "responsive": "copy truncates to a single line below 1024; retained on mobile",
       "motion": "collapses with the header's 300ms colour transition; no separate animation",
       "decision": "adopt structure, ship disabled behind a single content flag. A new site with nothing to announce should not render an empty campaign slot, but retrofitting the slot later means re-tuning every hero's top offset.",
-      "status": "pending"
+      "status": "deferred",
+      "build_note": "Not built. The slot is real but a new site with nothing to announce should not render an empty campaign bar. Build it when there is a campaign; the hero pads from a token, so the top offset will not need re-tuning."
     },
     {
       "component": "primary_nav",
@@ -24,7 +30,9 @@
       "responsive": "identical at every breakpoint - hamburger-only navigation from 390 to 1632",
       "motion": "background-color/color/border-color 300ms cubic-bezier(0.4,0,0.2,1); deliberately slower than the 150ms interaction tier so the flip reads as a state change",
       "decision": "adopt the fixed-with-surface-flip behaviour and the single-CTA discipline; REPLACE the contents. (a) Reference leads its overlay with a proprietary platform Bromely Code has no equivalent for - lead with Services and How we work. (b) Add persistent desktop links at >=1024; hiding all navigation behind a hamburger on a 1440px screen costs an unknown consultancy discovery it cannot afford, which is a cost the reference's brand recognition absorbs and ours does not. (c) CTA becomes 'Start a conversation' -> /contact, since 'Book a demo' has no referent.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/site-header.tsx",
+      "build_note": "Transparent over dark heroes, solid past them. Persistent links at ≥1024. Keyboard traversal and focus visibility verified."
     },
     {
       "component": "overlay_menu",
@@ -35,7 +43,9 @@
       "responsive": "same treatment at every breakpoint",
       "motion": "links reveal with a staggered horizontal wipe - a mid-animation capture shows 'Resources' rendered as 'sources', i.e. a clip/translate mask travelling left to right, roughly 60-80ms apart",
       "decision": "adopt the typographic drama and the stagger; fix the defects - lock body scroll, trap focus, close on Escape, restore focus to the trigger. Reorder to Services / How we work / Industries / Case studies / Insights / About.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/site-header.tsx",
+      "build_note": "Native <dialog>: focus containment, Escape and background inerting verified by keyboard test."
     },
     {
       "component": "hero_video",
@@ -46,7 +56,9 @@
       "responsive": "h1 30px @390 -> 40px @768 -> 60px @1024+; text column 342 -> 720 -> 473px; hero height 1014 -> ~600",
       "motion": "no load animation; the video simply begins when buffered; no prefers-reduced-motion handling",
       "decision": "adopt the structure and the narrow-left-column composition; rebuild the engineering. Measured contrast across all 9 sampled frames is 13.2-15.8:1 mean, so it passes - but there is NO scrim at all, so that is a property of the chosen footage, not of the construction. Ours gets: a directional gradient anchored behind the text block (not a full-frame wash), a poster exported from the clip and painted first, video swapped in on canplaythrough, <=3 MB H.264 + WebM, a still image below 768px, poster held under prefers-reduced-motion, and contrast verified across every second of the loop with the same sampler that produced the audit table.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/hero-video.tsx",
+      "build_note": "Poster-first, WebM+MP4, no video below 768px, poster held under reduced motion. Contrast measured across the full loop at ~19:1."
     },
     {
       "component": "hero_interior_dark",
@@ -57,7 +69,8 @@
       "responsive": "h1 30/40/60 across 390/768/1024+",
       "motion": "none",
       "decision": "adopt. Three hero variants applied consistently is exactly why the reference does not read as eight competing front doors; keep that discipline and the three fixed text-column widths (473 / 852 / 1136).",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/page-hero.tsx"
     },
     {
       "component": "hero_interior_light",
@@ -68,7 +81,8 @@
       "responsive": "as hero_interior_dark",
       "motion": "none",
       "decision": "adopt. Gives content pages a lighter entry than marketing pages without inventing a fourth pattern.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/page-hero.tsx"
     },
     {
       "component": "capability_triplet",
@@ -79,7 +93,9 @@
       "responsive": "3-up -> stacked below 1024",
       "motion": "inherits the 20px/500ms scroll reveal",
       "decision": "adopt verbatim. The rule-under-icon is the cheapest structure on the site and does the most work; it is what makes three unrelated propositions read as one system.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/app/page.tsx (differentiators block)",
+      "build_note": "Built as the rule + title + body grid on the homepage and the deliverables grid on service pages."
     },
     {
       "component": "capability_card",
@@ -90,7 +106,9 @@
       "responsive": "3-up @1024+, 2-up @768, 1-up @390",
       "motion": "scroll reveal only",
       "decision": "adopt, add a card-level hover (border colour to accent, 150ms) - the reference's dead card surface wastes an affordance on a component that is entirely clickable in intent. Keep radius 0: square content against rounded media is the reference's clearest signature.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/cards.tsx",
+      "build_note": "Border-colour hover added; the reference has no card-level hover."
     },
     {
       "component": "card_carousel",
@@ -101,7 +119,8 @@
       "responsive": "peeking cards below 1024",
       "motion": "slick's own transform transition",
       "decision": "REPLACE with a CSS scroll-snap row. A whole carousel library plus an icon webfont for two rows of cards is weight we would be paying for nothing; scroll-snap plus native overflow gives the same behaviour, keyboard support for free, and drops two dependencies.",
-      "status": "pending"
+      "status": "replaced",
+      "build_note": "Replaced by a plain responsive grid. A carousel library plus an icon webfont for two rows of cards is weight paid for nothing."
     },
     {
       "component": "video_embed",
@@ -112,7 +131,8 @@
       "responsive": "full content width at every breakpoint",
       "motion": "play button scales on hover (150ms transform)",
       "decision": "adopt the framing and duotone treatment, drop the third-party player. A self-hosted <video> with a poster and native controls avoids loading a player SDK and a tracking script for one embed.",
-      "status": "pending"
+      "status": "deferred",
+      "build_note": "No video asset to embed yet. Build with a self-hosted <video> and poster when there is one; do not add a third-party player."
     },
     {
       "component": "stats_band",
@@ -123,7 +143,9 @@
       "responsive": "3-up -> stacked below 1024; numeral scales down but overflows its column rule at 4 digits even at 1440 (observed, uncorrected)",
       "motion": "measured frame-by-frame: ~250-320ms delay after intersection, then ~1,800ms strongly ease-out (68% of distance in the first third). Fires once.",
       "decision": "adopt the pattern and the timing; populate with [NEEDS FIGURE] rather than inventing counts - a new consultancy quoting fabricated project numbers is the exact failure mode this audience screens for. Fix the 4-digit overflow. Hold the end state under prefers-reduced-motion instead of animating.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/stats-band.tsx",
+      "build_note": "Count-up implemented at the reference timing (280ms delay, 1800ms ease-out, once). All three values are null by design and render as reserved slots."
     },
     {
       "component": "split_feature",
@@ -134,7 +156,8 @@
       "responsive": "stacks with image above text below 1024",
       "motion": "scroll reveal",
       "decision": "adopt. The image running to the border with zero padding is what stops these reading as generic cards.",
-      "status": "pending"
+      "status": "deferred",
+      "build_note": "Not required by the current page set. The pattern is available in Card if a page needs it."
     },
     {
       "component": "client_logo_wall",
@@ -145,7 +168,9 @@
       "responsive": "full-bleed at all widths; lockup height constant",
       "motion": "as measured above - the two opposing directions are what make the band read as movement rather than as a slider",
       "decision": "REPLACE with a technology_stack_band. Bromely Code has no client logos and inventing them is not an option, but the visual slot and its trust function are both real. Showing the platforms actually built on carries comparable weight with a technical buyer and is true on day one. Reuse the grid spacing, 45px lockup height, full-bleed black surface, opposing-direction marquee and timing so it sits natively in the system. Add pause-on-hover and a reduced-motion static grid, neither of which the reference has.",
-      "status": "pending"
+      "status": "replaced",
+      "implementation": "src/components/blocks/stack-band.tsx",
+      "build_note": "Replaced by technology_stack_band."
     },
     {
       "component": "technology_stack_band",
@@ -156,7 +181,9 @@
       "responsive": "full-bleed at all widths",
       "motion": "as client_logo_wall, plus the two states above",
       "decision": "build. This is the compensating trust apparatus for the absent client list, alongside pipeline_diagram and architecture_block. Each mark used per its vendor's published brand guidelines; no mark implies partnership or endorsement.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/stack-band.tsx",
+      "build_note": "Opposing marquees at 34s/38s, pause on hover and focus-within, static under reduced motion."
     },
     {
       "component": "pipeline_diagram",
@@ -167,7 +194,9 @@
       "responsive": "horizontal at >=1024, vertical stack below",
       "motion": "stages reveal on scroll with the standard 20px/500ms, staggered ~80ms; static under reduced motion",
       "decision": "build, drawn as code rather than sourced. The reference sells outcomes and never shows mechanism - it can afford that because the logo wall argues for it. This component carries the proposition that the logo wall would otherwise carry, and stock diagrams always describe something slightly different from what the words claim.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/pipeline-diagram.tsx",
+      "build_note": "SVG drawn in code, scrolls inside its own container below 900px, described in <title>/<desc> and duplicated as prose in PipelineStages."
     },
     {
       "component": "architecture_block",
@@ -178,7 +207,8 @@
       "responsive": "scrolls horizontally inside its own overflow container below 768 rather than shrinking to illegibility",
       "motion": "scroll reveal only",
       "decision": "build. Pairs with pipeline_diagram; used on /how-we-work and on the two engineering service pages.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/sections.tsx"
     },
     {
       "component": "industries_grid",
@@ -189,7 +219,8 @@
       "responsive": "3-up -> 2-up -> 1-up",
       "motion": "scroll reveal; image scale on hover 150ms",
       "decision": "adopt. Reduce from the reference's sector count to the three that match Bromely Code's audience, and make each tile link to a sector page that actually has case studies behind it.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/cards.tsx"
     },
     {
       "component": "case_study_card",
@@ -200,7 +231,9 @@
       "responsive": "3-up -> 2-up -> 1-up",
       "motion": "scroll reveal",
       "decision": "adopt, plus ADD the illustrative-content banner. Every case-study surface renders a visible band reading that these are illustrative engagement examples pending real client work, driven by a single exported CONTENT_STATUS constant so flipping one value removes every banner at once.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/cards.tsx",
+      "build_note": "Illustrative banner verified present on every rendering surface."
     },
     {
       "component": "featured_case_study",
@@ -211,7 +244,8 @@
       "responsive": "image stacks above text below 1024",
       "motion": "scroll reveal",
       "decision": "adopt; same illustrative banner obligation as case_study_card.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/cards.tsx"
     },
     {
       "component": "case_study_detail",
@@ -222,7 +256,9 @@
       "responsive": "single column throughout; hero image full-bleed at all widths",
       "motion": "scroll reveal on the photograph and the quote only",
       "decision": "adopt the section order and proportions exactly - they are the template for our four illustrative studies. Two placement decisions carry over verbatim: metrics live inside the Results prose rather than in a stats band, and the quote comes after the argument rather than in place of one. Deviations: no named clients (sector and scale only - which the reference itself does on its professional-services study), quotes attributed to role and sector rather than an invented individual, metrics as [NEEDS FIGURE] or an explicitly bracketed illustrative range, and the CONTENT_STATUS banner above the hero.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/app/case-studies/[slug]/page.tsx",
+      "build_note": "Section order and 15/45/30/10 proportions follow the measured reference anatomy. Metrics sit inside the outcome prose; the quote follows the argument."
     },
     {
       "component": "pull_quote",
@@ -233,7 +269,9 @@
       "responsive": "full body column width",
       "motion": "scroll reveal",
       "decision": "adopt the typography and placement; attribution becomes role + sector only ('Head of Asset Information, UK water utility'). Attributing an illustrative quote to an invented named individual is the same category of problem as an invented client.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/app/case-studies/[slug]/page.tsx",
+      "build_note": "Attributed to role and sector, with a visible note that no individual said it."
     },
     {
       "component": "rich_text_article",
@@ -244,7 +282,8 @@
       "responsive": "gutters 24px below 1024",
       "motion": "none",
       "decision": "adopt. Note the density shift from marketing pages - content pages drop cards, colour bands and reveals entirely and read as documents. Keep that contrast; it is what makes the reading pages credible.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/app/globals.css (.prose-bc)"
     },
     {
       "component": "article_card",
@@ -255,7 +294,8 @@
       "responsive": "4-up -> 2-up -> 1-up",
       "motion": "scroll reveal",
       "decision": "adopt. Author avatars use initials/monogram treatment, not stock photographs of people - a stock portrait presented as a named author implies an endorsement the licence does not grant.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/cards.tsx"
     },
     {
       "component": "team_grid",
@@ -266,7 +306,9 @@
       "responsive": "collapses to 2-up then 1-up",
       "motion": "scroll reveal",
       "decision": "adopt the grid; populate with a neutral initial/monogram treatment plus real role titles, ready for real headshots. Free stock licences explicitly prohibit implied endorsement by depicted individuals, so a stock portrait captioned as a named team member is not an option.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/sections.tsx",
+      "build_note": "Monogram tiles and real role titles. Takes a photo the day one exists."
     },
     {
       "component": "accordion_faq",
@@ -277,7 +319,9 @@
       "responsive": "full content width",
       "motion": "height transition on toggle",
       "decision": "adopt; build on <details>/<summary> so it is keyboard- and screen-reader-correct by default rather than by added ARIA.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/sections.tsx",
+      "build_note": "Built on <details>/<summary>."
     },
     {
       "component": "accreditation_band",
@@ -288,7 +332,9 @@
       "responsive": "wraps",
       "motion": "none",
       "decision": "build now, populate with explicitly-marked placeholders rendered as labelled outlines rather than fake badges, so the slot exists the day certifications land instead of needing a retrofit. This apparatus does real conversion work for an enterprise data buyer - procurement looks for it - which is exactly why it must not be faked.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/accreditation-band.tsx",
+      "build_note": "All four entries pending; rendered as labelled dashed outlines, never badge-shaped."
     },
     {
       "component": "cta_band",
@@ -299,7 +345,8 @@
       "responsive": "columns stack below 1024",
       "motion": "scroll reveal",
       "decision": "adopt. A form rather than a link at the terminal position is the right call for a consultancy - it removes a click from the only conversion that matters.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/sections.tsx"
     },
     {
       "component": "contact_form",
@@ -310,7 +357,9 @@
       "responsive": "two-up row stacks below 768",
       "motion": "border-colour 150ms",
       "decision": "adopt the underline-field aesthetic and the consent pattern; fix the focus states - visible focus ring on the accent colour at 2px offset, never `outline: none`. Typed server action with a stubbed handler, client and server validation, visible success and error states, no third-party form service assumed.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/contact-form.tsx + src/app/actions/contact.ts",
+      "build_note": "Typed server action, client and server validation, honeypot, visible success and error states. deliver() is a stub that throws in production."
     },
     {
       "component": "footer",
@@ -321,7 +370,9 @@
       "responsive": "columns stack below 1024",
       "motion": "none",
       "decision": "adopt wholesale, including the UK conventions enterprise procurement expects - registered office, 'Registered in England & Wales: {number}', and separate Privacy / Cookie / Modern Slavery / Carbon links. The accent top border is the only place the brand colour appears in the footer and it is doing more work than its 1px suggests.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/site-footer.tsx",
+      "build_note": "Registered office, company number, VAT and ICO lines present as placeholders."
     },
     {
       "component": "text_link_underline",
@@ -332,7 +383,9 @@
       "responsive": "unchanged",
       "motion": "150ms cubic-bezier(0.4,0,0.2,1) on the pseudo-element transform",
       "decision": "adopt; add a visible focus state. Using a text link rather than a button as the dominant CTA keeps the pages quiet, which suits an unhurried voice - worth preserving.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/ui.tsx (ArrowLink)",
+      "build_note": "Focus state added."
     },
     {
       "component": "button_box_fill",
@@ -343,7 +396,8 @@
       "responsive": "unchanged",
       "motion": "background-color and border-color 150ms",
       "decision": "adopt with a focus ring added.",
-      "status": "pending"
+      "status": "deferred",
+      "build_note": "Not used. The system settled on pill buttons plus underline links; a third button style would be an unneeded variant."
     },
     {
       "component": "button_glow_pill",
@@ -354,7 +408,9 @@
       "responsive": "identical at all breakpoints",
       "motion": "two infinite loops, always running, no reduced-motion handling",
       "decision": "adopt the pill geometry, REJECT the perpetual animation. A continuously pulsing element in fixed chrome is exactly the kind of motion this audience reads as sales pressure, and it runs regardless of prefers-reduced-motion. Ours animates the border only on hover and focus.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/site-header.tsx",
+      "build_note": "Pill geometry adopted, perpetual glow and spin rejected — continuous motion in fixed chrome reads as sales pressure and ignores reduced-motion."
     },
     {
       "component": "social_share_row",
@@ -365,7 +421,8 @@
       "responsive": "unchanged",
       "motion": "colour 150ms",
       "decision": "adopt; LinkedIn and X only. Facebook share on an enterprise data case study is a slot nobody uses, and each icon is a request.",
-      "status": "pending"
+      "status": "deferred",
+      "build_note": "Not built. Reconsider when a case study is real enough to be worth sharing."
     },
     {
       "component": "cookie_consent",
@@ -376,7 +433,9 @@
       "responsive": "full-width panel on mobile, obscuring the hero until dismissed",
       "motion": "0.5s width/position/opacity transition",
       "decision": "REPLACE with a first-party consent banner styled in the design system. Requirements are the same - non-essential scripts blocked until consent, granular categories, a re-open path from the footer - but a third-party SDK for a banner is a dependency, a request, and a component that visibly does not belong to the site.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/cookie-consent.tsx",
+      "build_note": "First-party. Non-essential scripts gated behind a published consent state; re-openable from the cookie policy."
     },
     {
       "component": "chat_widget",
@@ -387,7 +446,8 @@
       "responsive": "same position at all widths; overlaps the cookie widget on mobile (observed)",
       "motion": "none",
       "decision": "OMIT. A chat launcher with nobody behind it is worse than no chat launcher, and it collides with the consent widget at 390px on the reference itself.",
-      "status": "pending"
+      "status": "omitted",
+      "build_note": "A chat launcher with nobody behind it is worse than none."
     },
     {
       "component": "illustrative_content_banner",
@@ -398,7 +458,9 @@
       "responsive": "wraps to two lines below 390",
       "motion": "none",
       "decision": "build. Driven by one exported constant so flipping a single value removes every banner at once when real studies land. Unattributed illustrative scenarios are ordinary marketing practice; the same content presented as real client outcomes is a misleading commercial practice under the DMCC Act and the CAP Code. The constant and the banner are what stop the first quietly becoming the second during a launch rush.",
-      "status": "pending"
+      "status": "verified",
+      "implementation": "src/components/blocks/illustrative-banner.tsx",
+      "build_note": "Driven by CONTENT_STATUS. Coverage verified on every case-study surface."
     }
   ],
   "rejected_from_reference": [
@@ -414,5 +476,17 @@
     "slick-carousel plus a 24 KB icon webfont for two card rows",
     "Third-party chat widget and third-party consent SDK",
     "Machine-generated alt text describing pixels rather than meaning"
-  ]
+  ],
+  "build": {
+    "updated": "2026-08-09",
+    "stack": "Next.js 16.3 App Router, React 19.2, TypeScript, Tailwind CSS v4",
+    "routes": 31,
+    "verification": "reference/build-screenshots/ (four breakpoints per route), audit.json (a11y, hero fallbacks, hero contrast, banner coverage), progress.md (Lighthouse)",
+    "status_legend": {
+      "verified": "Built and checked against screenshots and behaviour tests",
+      "deferred": "Slot exists in the audit; deliberately not built yet, with the reason recorded",
+      "replaced": "Reference pattern deliberately swapped for a different one",
+      "omitted": "Reference pattern deliberately not carried across"
+    }
+  }
 }

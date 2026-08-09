@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       title: `${insight.title} — Bromely Code`,
       description: insight.standfirst,
       publishedTime: insight.published,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: insight.title }],
     },
   };
 }

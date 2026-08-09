@@ -102,7 +102,8 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
 
         <div>
           <label htmlFor={`${formId}-organisation`} className={label}>
-            Organisation <span className="font-normal opacity-70">(optional)</span>
+            Organisation {/* No opacity here: it drops muted label text below 4.5:1. */}
+            <span className="font-normal">(optional)</span>
           </label>
           <input
             id={`${formId}-organisation`}
@@ -117,7 +118,8 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
 
         <div>
           <label htmlFor={`${formId}-role`} className={label}>
-            Your role <span className="font-normal opacity-70">(optional)</span>
+            Your role {/* No opacity here: it drops muted label text below 4.5:1. */}
+            <span className="font-normal">(optional)</span>
           </label>
           <input
             id={`${formId}-role`}

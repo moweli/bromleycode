@@ -1,0 +1,333 @@
+{
+  "keyboardTrail": [
+    {
+      "tag": "A",
+      "label": "Skip to main content",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    },
+    {
+      "tag": "A",
+      "label": "Bromely Code — home",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    },
+    {
+      "tag": "A",
+      "label": "Services",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "How we work",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "Industries",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "Case studies",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "Insights",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "About",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgba(255, 255, 255, 0.85)"
+    },
+    {
+      "tag": "A",
+      "label": "Start a conversation",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(5, 8, 13)"
+    },
+    {
+      "tag": "A",
+      "label": "How we work",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(5, 8, 13)"
+    },
+    {
+      "tag": "A",
+      "label": "Start a conversation",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    },
+    {
+      "tag": "A",
+      "label": "Intelligence extraction",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    },
+    {
+      "tag": "A",
+      "label": "Data & pipeline engineering",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    },
+    {
+      "tag": "A",
+      "label": "AI strategy & roadmap",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(255, 184, 77)"
+    }
+  ],
+  "focusInvisible": 0,
+  "mobileMenu": {
+    "openedByKeyboard": true,
+    "focusStaysInside": true,
+    "closedByEscape": true
+  },
+  "heroReducedMotion": {
+    "videoElements": 0,
+    "videoRequests": 0,
+    "posterVisible": true
+  },
+  "heroMobile": {
+    "videoElements": 0,
+    "videoRequests": 0
+  },
+  "heroContrast": {
+    "region": {
+      "x": 152,
+      "y": 267,
+      "w": 608,
+      "h": 492,
+      "dur": 12,
+      "videoPresent": true
+    },
+    "frames": [
+      {
+        "t": 0,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 1.5,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 3,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 4.5,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 6,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 7.5,
+        "meanContrast": 19.69,
+        "p95Worst": 18.99,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 9,
+        "meanContrast": 19.69,
+        "p95Worst": 18.98,
+        "pctBelow4_5": 0
+      },
+      {
+        "t": 10.5,
+        "meanContrast": 19.69,
+        "p95Worst": 19.01,
+        "pctBelow4_5": 0
+      }
+    ]
+  },
+  "markup": [
+    {
+      "route": "/",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 7,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 1,
+      "title": "Bromely Code — Decision-grade intelligence from unstructured data.",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/services/intelligence-extraction",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 1,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 2,
+      "title": "Intelligence extraction — Bromely Code",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/case-studies/asset-information-retrieval-water-utility",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 4,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 1,
+      "title": "Making thirty years of asset documentation answerable at a UK water ut",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/insights/abstention-is-a-feature",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 3,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 2,
+      "title": "Abstention is a feature — Bromely Code",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/about",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 1,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 1,
+      "title": "About — Bromely Code",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/contact",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 0,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 1,
+      "title": "Contact — Bromely Code",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    },
+    {
+      "route": "/privacy",
+      "mainCount": 1,
+      "h1Count": 1,
+      "skipLink": true,
+      "lang": "en-GB",
+      "imgsMissingAlt": 0,
+      "imgsTotal": 0,
+      "buttonsNoLabel": 0,
+      "inputsUnlabelled": 0,
+      "jsonLd": 1,
+      "title": "Privacy policy — Bromely Code",
+      "metaDescription": true,
+      "ogImage": true,
+      "headingOrder": 0
+    }
+  ],
+  "illustrativeBanners": [
+    {
+      "route": "/case-studies",
+      "caseStudyCards": 4,
+      "bannerCount": 5
+    },
+    {
+      "route": "/case-studies/asset-information-retrieval-water-utility",
+      "caseStudyCards": 3,
+      "bannerCount": 4
+    },
+    {
+      "route": "/case-studies/regulatory-evidence-pipeline-central-government",
+      "caseStudyCards": 3,
+      "bannerCount": 4
+    },
+    {
+      "route": "/case-studies/claims-evidence-assurance-financial-services",
+      "caseStudyCards": 3,
+      "bannerCount": 4
+    },
+    {
+      "route": "/case-studies/ai-roadmap-professional-services",
+      "caseStudyCards": 3,
+      "bannerCount": 4
+    },
+    {
+      "route": "/",
+      "caseStudyCards": 3,
+      "bannerCount": 3
+    },
+    {
+      "route": "/industries/water-utilities",
+      "caseStudyCards": 1,
+      "bannerCount": 1
+    },
+    {
+      "route": "/services/intelligence-extraction",
+      "caseStudyCards": 1,
+      "bannerCount": 1
+    }
+  ]
+}

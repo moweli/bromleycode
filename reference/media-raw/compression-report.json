@@ -80,25 +80,25 @@
   {
     "asset": "hero/hero.mp4",
     "beforeKB": 15002,
-    "afterKB": 456,
-    "saved": "97%"
+    "afterKB": 535,
+    "saved": "96%"
   },
   {
     "asset": "hero/hero.webm",
     "beforeKB": 15002,
-    "afterKB": 203,
-    "saved": "99%"
+    "afterKB": 237,
+    "saved": "98%"
   },
   {
     "asset": "hero/hero-poster.webp",
     "beforeKB": 15002,
-    "afterKB": 38,
+    "afterKB": 45,
     "saved": "100%"
   },
   {
     "asset": "hero/hero-mobile.webp",
     "beforeKB": 15002,
-    "afterKB": 16,
+    "afterKB": 19,
     "saved": "100%"
   }
 ]

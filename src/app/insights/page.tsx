@@ -3,7 +3,7 @@ import { PageHero } from "@/components/blocks/page-hero";
 import { ArticleCard } from "@/components/blocks/cards";
 import { CtaBand } from "@/components/blocks/sections";
 import { Reveal } from "@/components/reveal";
-import { Section } from "@/components/ui";
+import { Section, SectionHeading } from "@/components/ui";
 import { insights } from "@/content/insights";
 import { insightImages } from "@/content/media";
 
@@ -27,7 +27,14 @@ export default function InsightsPage() {
 
       <Section size="lg">
         <div className="container-bc">
-          <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Latest"
+              title="Four decisions that decide whether a retrieval system survives."
+              body="Chunking, permission inheritance, abstention and evaluation design. None of them are the model, and all of them are where the projects we get called into have already gone wrong."
+            />
+          </Reveal>
+          <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {insights.map((insight, index) => (
               <Reveal as="li" key={insight.slug} delay={index * 70}>
                 <ArticleCard insight={insight} image={insightImages[insight.slug]} />

@@ -32,6 +32,14 @@ export default function CaseStudiesPage() {
       <Section size="lg">
         <div className="container-bc">
           <Reveal>
+            <SectionHeading
+              eyebrow="Four engagements"
+              title="Written to be checked, not skimmed."
+              body="Each one names the chunking strategy, the retrieval approach, the permission model and the evaluation method — because that is the level at which a technical buyer can tell whether a supplier has done this before."
+              className="mb-14"
+            />
+          </Reveal>
+          <Reveal>
             <CaseStudyCard study={featured} featured />
           </Reveal>
           <ul className="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

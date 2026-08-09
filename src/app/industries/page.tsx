@@ -26,7 +26,14 @@ export default function IndustriesPage() {
 
       <Section size="lg">
         <div className="container-bc">
-          <ul className="grid gap-6 md:grid-cols-3">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Where we work"
+              title="Large corpora, real permission models, expensive mistakes."
+              body="Each of these sectors keeps its most decision-relevant material outside the warehouse, and each has a reason why a wrong answer is not a minor inconvenience."
+            />
+          </Reveal>
+          <ul className="mt-14 grid gap-6 md:grid-cols-3">
             {industries.map((industry, index) => (
               <Reveal as="li" key={industry.slug} delay={index * 70}>
                 <IndustryCard industry={industry} />

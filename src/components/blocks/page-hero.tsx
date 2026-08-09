@@ -29,11 +29,13 @@ export function PageHero({
 
   return (
     <section
+      // The header watches this element: it stays transparent while any part of
+      // a dark hero is still behind the header band.
+      id={dark ? "hero-sentinel" : undefined}
       className={`relative isolate overflow-hidden ${
         dark ? "wash-dark grain text-paper" : "bg-paper-alt text-ink"
       }`}
     >
-      {dark ? <div id="hero-sentinel" className="absolute inset-x-0 top-0 h-px" aria-hidden="true" /> : null}
       {dark ? (
         <div aria-hidden="true" className="grid-lines pointer-events-none absolute inset-0 -z-10" />
       ) : null}

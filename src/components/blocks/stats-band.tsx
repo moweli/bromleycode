@@ -76,7 +76,9 @@ export function StatsBand() {
               <p className="text-[length:var(--text-h4)] font-semibold">{item.label}</p>
               <p className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-stat)] leading-[0.9] tracking-[-0.05em]">
                 {item.value === null ? (
-                  <span className="text-line-light" aria-hidden="true">
+                  // Visible enough to read as a reserved slot rather than a
+                  // rendering failure, quiet enough not to claim anything.
+                  <span className="text-ink-muted/35" aria-hidden="true">
                     —
                   </span>
                 ) : (

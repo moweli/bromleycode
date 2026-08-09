@@ -1,0 +1,20 @@
+{
+  "problems": [
+    "not-found@1440 console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "not-found@1024 console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "not-found@768 console: Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "not-found@390 console: Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ],
+  "menu": {
+    "open": true,
+    "links": [
+      "ServicesWhat we are engaged to build",
+      "How we workThe pipeline, stage by stage",
+      "IndustriesWhere we have depth",
+      "Case studiesEngagements, end to end",
+      "InsightsNotes from the build",
+      "AboutWho you would be working with",
+      "Start a conversation"
+    ]
+  }
+}

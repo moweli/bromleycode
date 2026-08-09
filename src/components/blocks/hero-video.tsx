@@ -46,20 +46,25 @@ export function HeroVideo() {
   }, [useVideo]);
 
   return (
-    <section className="relative isolate overflow-hidden bg-ink-950 text-paper">
-      <div id="hero-sentinel" className="absolute inset-x-0 top-0 h-px" aria-hidden="true" />
+    <section id="hero-sentinel" className="relative isolate overflow-hidden bg-ink-950 text-paper">
 
       {/* Poster is a real <img> so it is discoverable by the preload scanner
           and paints before any JavaScript runs. */}
       <div className="absolute inset-0 -z-10">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={hero.video.poster}
-          alt={hero.video.alt}
-          fetchPriority="high"
-          decoding="async"
-          className="h-full w-full object-cover"
-        />
+        {/* Art-directed: below 768px this is the only hero asset that is ever
+            requested, so it is a separately-cropped 828px still rather than a
+            downscaled 1920px poster. */}
+        <picture>
+          <source media="(max-width: 767px)" srcSet={hero.video.mobile} type="image/webp" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={hero.video.poster}
+            alt={hero.video.alt}
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
+          />
+        </picture>
         {useVideo ? (
           <video
             ref={videoRef}

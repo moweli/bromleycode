@@ -27,7 +27,14 @@ export default function ServicesPage() {
 
       <Section size="lg">
         <div className="container-bc">
-          <ul className="grid gap-6 md:grid-cols-2">
+          <Reveal>
+            <SectionHeading
+              eyebrow="What we are engaged to do"
+              title="Pick the entry point; the pipeline is the same."
+              body="Extraction and engineering usually run together. Strategy comes first when nobody has opened the corpus yet. Assurance runs alongside everything and is the one most often left out."
+            />
+          </Reveal>
+          <ul className="mt-14 grid gap-6 md:grid-cols-2">
             {services.map((service, index) => (
               <Reveal as="li" key={service.slug} delay={index * 70}>
                 <CapabilityCard service={service} />

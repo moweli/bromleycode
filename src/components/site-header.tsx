@@ -60,7 +60,17 @@ export function SiteHeader() {
         solid ? "border-b border-line-light bg-paper" : "border-b border-transparent bg-transparent",
       ].join(" ")}
     >
-      <div className="container-bc flex h-20 items-center justify-between gap-6 lg:h-24">
+      {/* Scrim behind the transparent state. Without it, hero copy scrolling
+          under the header collides with the nav links — the reference avoids
+          this by never being transparent at all. */}
+      {!solid ? (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-32 bg-[linear-gradient(to_bottom,rgba(5,8,13,0.85),rgba(5,8,13,0.55)_55%,transparent)]"
+        />
+      ) : null}
+
+      <div className="container-bc relative flex h-20 items-center justify-between gap-6 lg:h-24">
         <Link
           href="/"
           aria-label={`${site.name} — home`}
