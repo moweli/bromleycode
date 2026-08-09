@@ -49,40 +49,51 @@ attribution is not required but provenance is, and a licence can change.
 
 ## Hero video
 
-| Field | Value |
-|---|---|
-| Shipped files | `public/media/hero/hero.mp4`, `hero.webm`, `hero-poster.webp`, `hero-mobile.webp` |
-| Library | Pexels Videos |
-| Licence | Pexels Licence — free for commercial use, no attribution required |
-| Source | https://www.pexels.com/video/blue-colored-cables-1085656/ |
-| Downloaded | 9 August 2026 |
-| Subject | Network patch panel, static camera, link LEDs — real infrastructure, no legible branding |
-| Source file | 1920×1080, 23.5s, 15002 KB |
+Six clips cut into one 12-second loop, two seconds each, on hard cuts. Because
+the joins are cuts rather than dissolves, the loop point is simply another cut,
+so the montage loops seamlessly by construction.
 
-**Why this clip.** Candidates from `content.pexels.com/aigc-bundle/*` were
-excluded on sight: they are AI-generated stock, and an AI-generated data centre
-on a page selling GenAI engineering is precisely the tell this audience reads.
-Results served from `media.istockphoto.com` inside the same markup were also
-excluded — those are paid placements, not free-licence content. A second
-shortlisted clip was dropped because the switch in frame carried a legible
-vendor logo.
+All six are from **Pexels Videos** under the **Pexels Licence**: free for
+commercial use, no attribution required.
 
-**Processing** (`ffmpeg`, all steps recorded so the encode is reproducible):
+| # | Segment | Source file | Pexels ID | Original | Cut |
+|---|---|---|---|---|---|
+| 1 | Network infrastructure | network-7140928 | [7140928](https://www.pexels.com/video/7140928/) | 6.1 MB | from 1.4s, 2s used |
+| 2 | Retrieval at scale | fibre-5926165 | [5926165](https://www.pexels.com/video/5926165/) | 9 MB | from 3s, 2s used |
+| 3 | Water & utilities | water-5115937 | [5115937](https://www.pexels.com/video/5115937/) | 22.1 MB | from 6s, 2s used |
+| 4 | Financial services | finance-11977876 | [11977876](https://www.pexels.com/video/11977876/) | 24.9 MB | from 9s, 2s used |
+| 5 | Central government | government-5372949 | [5372949](https://www.pexels.com/video/5372949/) | 8.2 MB | from 2s, 2s used |
+| 6 | Unstructured records | archive-6550428 | [6550428](https://www.pexels.com/video/6550428/) | 8.9 MB | from 4s, 2s used |
+
+**Two categories excluded on sight.** Results served from
+`content.pexels.com/aigc-bundle/*` are AI-generated stock, and an AI-generated
+data centre on a page selling GenAI engineering is exactly the tell this audience
+reads. Results from `media.istockphoto.com`, which appear inside the same
+markup, are paid placements rather than free-licence content. A further clip was
+rejected because the switch in frame carried a legible vendor logo, which the
+stock licence does not cover.
+
+**Processing** (`ffmpeg`, reproducible from `build-hero.mjs`):
 
 | Step | Detail |
 |---|---|
-| Trim | 1.5s → 13.5s, a 12-second window |
-| Seamless loop | tail alpha-faded and overlaid onto the head over 0.8s, so the last frame matches the first |
-| Grade | `eq=contrast=1.16:saturation=0.50:brightness=0.01` + `colorbalance=rs=0.05:gs=0.02:bs=-0.07` — the source is heavily blue, which fights an amber accent |
-| Audio | stripped entirely (`-an`) — it is never played and only adds weight |
-| MP4 | H.264 high profile, CRF 30, maxrate 2200k, faststart → **535 KB** |
-| WebM | VP9, CRF 40 → **237 KB** |
-| Poster | frame 0 of the *encoded* clip, so the swap is invisible → **45 KB** |
-| Mobile still | 4:5 crop of frame 0 at 828px → **19 KB** |
+| Per-clip exposure | Individual brightness trim so a bright London aerial and a dark server room sit at the same level |
+| Shared grade | `eq=contrast=1.12:saturation=0.48:brightness=-0.02` plus `vignette=PI/5`, applied after the concat so six clips read as one piece of footage |
+| Order | Opens on the darkest segment: it compresses far better as the LCP poster and gives the headline more contrast at first paint |
+| Audio | stripped entirely (`-an`) |
+| MP4 | H.264 high, CRF 31, maxrate 2600k, faststart, 1920×1080, 25fps → **2326 KB** |
+| WebM | VP9, CRF 52 → **1325 KB** (listed first, so most browsers take the smaller file) |
+| Poster | frame 0.4s of the *encoded* montage → **19 KB** |
+| Mobile still | 4:5 crop at 828px → **8 KB** |
 
-Budget was under 3 MB for the MP4; the shipped file is 535 KB, about
-6× inside it. The reference site's equivalent is 3,095 KB and is served
-unchanged to a 390px phone.
+Budget was under 3 MB for the MP4; the shipped file is 2326 KB. The
+reference site's single-scene equivalent is 3,095 KB and is served unchanged to a
+390px phone.
+
+The sector caption that cycles over the video is **real HTML text**, stepped by a
+CSS animation on the same 12-second period. The reference burns equivalent tags
+into its footage, which cannot be selected, translated or read aloud.
+
 
 ---
 

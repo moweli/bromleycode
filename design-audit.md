@@ -445,3 +445,73 @@ B and C ship as a comment above the implemented headline for review.
 | `reference/data/probe-states.json` | type scale per breakpoint, hover/focus states, reveal detection, a11y census |
 | `reference/data/hero-contrast.json` | per-frame contrast measurements across the video loop |
 | `reference/data/cs-*.json` | four case studies, full text and structure |
+
+---
+
+## 13. Copy voice — measured
+
+Added 9 August 2026, after the client asked for the writing to follow the
+reference as well as the design. Measured over the captured page text: 23 pages,
+178 unique headings, 379 paragraphs, 577 sentences.
+
+### Headings
+
+| Property | Measured |
+|---|---|
+| Mean length | **7.0 words** (median 6) |
+| **Ending in a full stop** | **76%** |
+| Opening with an `-ing` verb | 22% — "Transforming…", "Delivering…", "Creating…", "Powering…" |
+| Question form | 8% |
+| Containing "you/your" | 12% |
+
+The full stop on a five-word heading is the single most characterful thing about
+this site's writing. It turns fragments into statements: *"Less hype. More
+impact."*, *"Aiimi at a glance."*, *"Talk to us."*, *"Opportunities. Ideas.
+Questions."* Two-fragment headings are a recurring device.
+
+Case-study titles are uniformly gerund-led and name the outcome before the
+client: *"Delivering 5x faster fault resolution answers with AI assistant at
+Niftylift."*
+
+### Body
+
+| Property | Measured |
+|---|---|
+| Mean sentence | **19.1 words** (median 17, p90 32, max 60) |
+| Sentences under 8 words | **4%** |
+| Comma-listed triples (`x, y, and z`) | **29% of sentences** |
+| Em or en dash | 9% |
+| Mid-sentence colon | 6% |
+| Contains a numeral | 9% |
+| Contains a `%` figure | 2% |
+
+The body copy is **not** clipped or aphoristic. It runs at a steady 17–19 words
+with almost no short punchy sentences, and its signature move is the comma-listed
+triple. Numerals are rare outside case studies, where they carry the argument.
+
+### Person
+
+"we/our" appears in 32% of paragraphs, "you/your" in 26% — near balance, tilted
+slightly to the first person. Only 7% of sentences open with "We" and 1% with
+"You", so the person is present without the copy ever sounding like a boast or a
+lecture.
+
+### CTA labels
+
+Verb-first and short, usually naming the destination: *Talk to us · Get in touch
+· Discover Aiimi · Download now · View all Case Studies · Find out more about…*
+
+### What we changed to match
+
+| Before | After |
+|---|---|
+| Clipped, aphoristic, contrarian — *"We would rather be checkable than impressive."* | Steady 17–19 word sentences, comma triples — *"Built on mechanism, not adjectives."* |
+| Headings without terminal punctuation | Full stops on section headings and card titles |
+| CTAs naming an action — *"Start a conversation"* | CTAs in the reference's register — *"Talk to us."*, *"Discover how we work"* |
+| Metric-forward marketing prose | Numerals confined to case studies and the stats band |
+| Mono eyebrows with wide tracking | Sans, bold, 12px, uppercase — the reference's own label treatment |
+
+**One deliberate divergence from the measurement:** the reference uses an em or
+en dash in 9% of sentences. Ours uses none at all, at the client's request. The
+constructions that would have taken a dash now take a colon, a comma or a full
+stop.

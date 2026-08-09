@@ -357,3 +357,128 @@ edit.
 - **The seamless hero loop uses a 0.8s crossfade**, not a genuinely matched cut.
   On close inspection there is a slow dissolve at the loop point. A matched-cut
   clip would be better; this one was chosen for content over cut.
+
+---
+
+## Round 3 — client revisions, 9 August 2026
+
+### Design alignment to the reference
+
+The client asked for the typography, colour, hero and copy voice to follow
+aiimi.com rather than diverge from it. The original brief specified divergence,
+so this reverses that decision deliberately. It is all token-level, so it is
+reversible from `globals.css` and the content modules.
+
+| Area | Change |
+|---|---|
+| Typeface | Geist Sans throughout, replacing Satoshi + IBM Plex Sans/Mono. SIL OFL, self-hosted by the `geist` package, no third-party origin. Single-family hierarchy carried by size, weight and tracking, as measured on the reference |
+| Scale | The reference's own 60 / 40 / 30 / 22 / 18, stepping to 30 / 30 / 18 at 390px. Kept fluid via `clamp()` so the 768–1023 dead zone disappears while hitting identical values at 390 and 1440 |
+| Tracking | Two tiers exactly as measured: −0.05em on display, −0.025em on the 18–22px band, normal on body |
+| Eyebrows | Mono retired. Now Geist Sans, 12px, bold, uppercase, 0.04em — the reference's own label treatment |
+| Colour | Pure black surfaces, `#141414` ink, one magenta accent, `#D6D6D6` divider. Two tokens added that the reference does without: a muted text colour and a darkened accent for text on light |
+| Accent | `#E0245A`, three per cent deeper than the reference's `#E7295D`. See below |
+| Hero | Narrow left column, no eyebrow, single underlined text CTA, deep top padding. **1007px tall at 1440 against the reference's measured 1014px**; h1 60px / 60 / −3px, matching exactly |
+
+### The accent had to move to carry white text
+
+The client asked for white text on the red buttons. Measured:
+
+| Colour | White text on it | It as text on black |
+|---|---|---|
+| `#E7295D` (reference) | 4.31:1 ✗ | 4.87:1 ✓ |
+| `#E32C5F` | 4.38:1 ✗ | 4.79:1 ✓ |
+| **`#E0245A` (shipped)** | **4.60:1 ✓** | **4.57:1 ✓** |
+| `#DE1E54` | 4.75:1 ✓ | 4.42:1 ✗ |
+
+Only a narrow band satisfies both. `#E0245A` sits in it, and is visually a
+whisker from the reference red. Hover darkens to `#C9143F` rather than
+lightening, because lightening drops white back below 4.5:1.
+
+### Hero video — six segments
+
+Recut from one static clip to a six-segment montage on hard cuts: network
+infrastructure, fibre, water treatment, the London financial district,
+Westminster, and an archive stack. Two seconds each, twelve seconds total.
+
+Hard cuts mean the loop point is just another cut, so it loops seamlessly with
+no crossfade. A sector caption cycles in step, as real HTML text rather than
+burnt into the footage.
+
+| Asset | Weight |
+|---|---|
+| `hero.mp4` (H.264, 1920×1080, 12s, no audio) | **2,326 KB** — budget was 3 MB |
+| `hero.webm` (VP9) | **1,325 KB** — listed first, so most browsers take it |
+| `hero-poster.webp` | **19 KB** |
+| `hero-mobile.webp` | **8 KB** |
+
+Contrast behind the headline, measured across all six segments with the copy
+block hidden and the video forced visible:
+
+| t | 0s | 1.5s | 3s | 4.5s | 6s | 7.5s | 9s | 10.5s |
+|---|---|---|---|---|---|---|---|---|
+| Mean | 20.7 | 20.8 | 19.6 | 16.4 | 18.7 | 18.7 | 19.7 | 18.6 |
+| 95th worst | 19.8 | 20.1 | 18.9 | **11.5** | 14.8 | 14.8 | 16.4 | 16.5 |
+
+Worst case is 11.5:1 on the water cut, against a 4.5:1 requirement.
+
+### Copy voice
+
+Rewritten against a measured profile of the reference's writing, recorded in
+`design-audit.md` section 13. Headings now carry terminal full stops, body
+sentences run at 17–19 words, comma triples replace clipped fragments, and CTAs
+adopt the reference's register. **All dashes removed from visible copy** at the
+client's request, which is the one deliberate divergence from the measurement —
+the reference uses one in 9% of its sentences.
+
+### Other changes this round
+
+- Team section removed; the staffing argument moved into the About prose.
+- `enquiries@` replaces `hello@` throughout.
+- Wordmark scaled to a 40px lockup, comparable to the reference's 33px.
+- `/how-we-work` opened with a dark hero directly above a dark section, so the
+  two read as one slab. Hero is now light and the principles band moved off dark.
+- Stats band populated (24+ pipelines, 12m+ documents, 94% answer-supported).
+
+### Verification after all of the above
+
+Lighthouse, production build, desktop preset:
+
+| Route | Perf | A11y | Best practices | SEO |
+|---|---|---|---|---|
+| `/` | 100 | 100 | 100 | 100 |
+| `/how-we-work` | 100 | 100 | 100 | 100 |
+| `/case-studies` | 100 | 100 | 100 | 100 |
+| `/about` | 100 | 100 | 100 | 100 |
+| `/contact` | 100 | 100 | 100 | 100 |
+
+Keyboard traversal clean, mobile dialog still traps focus and closes on Escape,
+reduced-motion still holds the poster with zero video requests, mobile still
+requests no video, zero horizontal overflow at four breakpoints.
+
+---
+
+## ⚠ The case-study banner has been removed
+
+`CONTENT_STATUS` is now `"verified"`, so no banner renders anywhere. This was
+done at the client's explicit instruction, having been raised twice.
+
+**What that means in practice.** The four case studies are invented composites
+and every figure in them is invented. They are now presented without any visible
+label saying so. Invented prose carrying visible placeholders is self-evidently
+illustrative; invented prose carrying `93.1%` reads as a reported result.
+
+**What still discloses it.** Two places, deliberately left in place:
+
+1. `/terms` section 3 states that the case studies are illustrative composites
+   and that the figures are not measured client outcomes.
+2. The `/about` FAQ answers "Do you have case studies from real clients?"
+   honestly.
+
+Disclosure in terms rather than on every card is a real and common industry
+position. It is materially weaker than the banner was, and if those two passages
+are also removed there is no disclosure left anywhere on the site.
+
+**To restore the banners:** set `CONTENT_STATUS` back to `"illustrative"` in
+`src/content/case-studies.ts`. One value, every surface.
+
+The swap-in checklist above still applies in full.
