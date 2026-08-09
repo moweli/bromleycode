@@ -61,19 +61,19 @@ export function SiteHeader() {
       ].join(" ")}
     >
       {/* Scrim behind the transparent state. Without it, hero copy scrolling
-          under the header collides with the nav links — the reference avoids
+          under the header collides with the nav links, the reference avoids
           this by never being transparent at all. */}
       {!solid ? (
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-32 bg-[linear-gradient(to_bottom,rgba(5,8,13,0.85),rgba(5,8,13,0.55)_55%,transparent)]"
+          className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-32 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.85),rgba(0,0,0,0.5)_55%,transparent)]"
         />
       ) : null}
 
       <div className="container-bc relative flex h-20 items-center justify-between gap-6 lg:h-24">
         <Link
           href="/"
-          aria-label={`${site.name} — home`}
+          aria-label={`${site.name}, home`}
           className="shrink-0 transition-opacity duration-150 hover:opacity-70"
         >
           <Wordmark className={onDark ? "text-paper" : "text-ink"} />
@@ -110,7 +110,7 @@ export function SiteHeader() {
             className={[
               "hidden rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-150 sm:inline-flex",
               onDark
-                ? "bg-accent text-ink-950 hover:bg-accent-hover"
+                ? "bg-accent text-paper hover:bg-accent-hover"
                 : "bg-ink text-paper hover:bg-ink-700",
             ].join(" ")}
           >
@@ -168,7 +168,7 @@ export function SiteHeader() {
               <li key={item.href} style={{ animationDelay: `${60 + index * 55}ms` }} className="[animation:reveal-up_400ms_both]">
                 <Link
                   href={item.href}
-                  className="block border-b border-line-light py-5 font-[family-name:var(--font-display)] text-3xl font-semibold tracking-[-0.03em] transition-colors duration-150 hover:text-accent-ink"
+                  className="block border-b border-line-light py-5 text-3xl font-semibold tracking-[-0.03em] transition-colors duration-150 hover:text-accent-ink"
                 >
                   {item.label}
                   {item.description ? (

@@ -5,14 +5,14 @@
       "label": "Skip to main content",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
     },
     {
       "tag": "A",
       "label": "Bromely Code — home",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
     },
     {
       "tag": "A",
@@ -61,42 +61,42 @@
       "label": "Start a conversation",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(5, 8, 13)"
+      "outlineColor": "rgb(255, 255, 255)"
     },
     {
       "tag": "A",
-      "label": "How we work",
+      "label": "Discover how we work",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(5, 8, 13)"
-    },
-    {
-      "tag": "A",
-      "label": "Start a conversation",
-      "outlineWidth": "2px",
-      "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
     },
     {
       "tag": "A",
       "label": "Intelligence extraction",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
     },
     {
       "tag": "A",
       "label": "Data & pipeline engineering",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
     },
     {
       "tag": "A",
       "label": "AI strategy & roadmap",
       "outlineWidth": "2px",
       "outlineStyle": "solid",
-      "outlineColor": "rgb(255, 184, 77)"
+      "outlineColor": "rgb(231, 41, 93)"
+    },
+    {
+      "tag": "A",
+      "label": "Evaluation & assurance",
+      "outlineWidth": "2px",
+      "outlineStyle": "solid",
+      "outlineColor": "rgb(231, 41, 93)"
     }
   ],
   "focusInvisible": 0,
@@ -117,59 +117,59 @@
   "heroContrast": {
     "region": {
       "x": 152,
-      "y": 267,
-      "w": 608,
-      "h": 492,
+      "y": 256,
+      "w": 480,
+      "h": 460,
       "dur": 12,
       "videoPresent": true
     },
     "frames": [
       {
         "t": 0,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 20.71,
+        "p95Worst": 19.83,
         "pctBelow4_5": 0
       },
       {
         "t": 1.5,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 20.77,
+        "p95Worst": 20.12,
         "pctBelow4_5": 0
       },
       {
         "t": 3,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 19.62,
+        "p95Worst": 18.89,
         "pctBelow4_5": 0
       },
       {
         "t": 4.5,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 16.44,
+        "p95Worst": 11.48,
         "pctBelow4_5": 0
       },
       {
         "t": 6,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 18.71,
+        "p95Worst": 14.82,
         "pctBelow4_5": 0
       },
       {
         "t": 7.5,
-        "meanContrast": 19.69,
-        "p95Worst": 18.99,
+        "meanContrast": 18.73,
+        "p95Worst": 14.78,
         "pctBelow4_5": 0
       },
       {
         "t": 9,
-        "meanContrast": 19.69,
-        "p95Worst": 18.98,
+        "meanContrast": 19.65,
+        "p95Worst": 16.35,
         "pctBelow4_5": 0
       },
       {
         "t": 10.5,
-        "meanContrast": 19.69,
-        "p95Worst": 19.01,
+        "meanContrast": 18.57,
+        "p95Worst": 16.52,
         "pctBelow4_5": 0
       }
     ]
@@ -292,42 +292,42 @@
     {
       "route": "/case-studies",
       "caseStudyCards": 4,
-      "bannerCount": 5
+      "bannerCount": 0
     },
     {
       "route": "/case-studies/asset-information-retrieval-water-utility",
       "caseStudyCards": 3,
-      "bannerCount": 4
+      "bannerCount": 0
     },
     {
       "route": "/case-studies/regulatory-evidence-pipeline-central-government",
       "caseStudyCards": 3,
-      "bannerCount": 4
+      "bannerCount": 0
     },
     {
       "route": "/case-studies/claims-evidence-assurance-financial-services",
       "caseStudyCards": 3,
-      "bannerCount": 4
+      "bannerCount": 0
     },
     {
       "route": "/case-studies/ai-roadmap-professional-services",
       "caseStudyCards": 3,
-      "bannerCount": 4
+      "bannerCount": 0
     },
     {
       "route": "/",
       "caseStudyCards": 3,
-      "bannerCount": 3
+      "bannerCount": 0
     },
     {
       "route": "/industries/water-utilities",
       "caseStudyCards": 1,
-      "bannerCount": 1
+      "bannerCount": 0
     },
     {
       "route": "/services/intelligence-extraction",
       "caseStudyCards": 1,
-      "bannerCount": 1
+      "bannerCount": 0
     }
   ]
 }

@@ -36,8 +36,8 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
         <h3 className="mt-3 text-[length:var(--text-h4)]">{state.message}</h3>
         <p className={`mt-3 text-body-sm ${dark ? "text-mist-bright" : "text-ink-muted"}`}>
           If it is urgent, email us directly at{" "}
-          <a href="mailto:hello@bromelycode.com" className="underline underline-offset-4">
-            hello@bromelycode.com
+          <a href="mailto:enquiries@bromelycode.com" className="underline underline-offset-4">
+            enquiries@bromelycode.com
           </a>
           .
         </p>
@@ -156,7 +156,7 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
         ) : null}
       </div>
 
-      {/* Honeypot — visually and programmatically hidden from people. */}
+      {/* Honeypot, visually and programmatically hidden from people. */}
       <div aria-hidden="true" className="absolute h-px w-px overflow-hidden opacity-0">
         <label htmlFor={`${formId}-website`}>Company website</label>
         <input id={`${formId}-website`} name="company_website" type="text" tabIndex={-1} autoComplete="off" />
@@ -188,7 +188,7 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
         type="submit"
         disabled={pending}
         className={`inline-flex items-center justify-center rounded-full px-8 py-4 font-semibold transition-colors duration-150 disabled:cursor-progress disabled:opacity-70 ${
-          dark ? "bg-accent text-ink-950 hover:bg-accent-hover" : "bg-ink text-paper hover:bg-ink-700"
+          dark ? "bg-accent text-paper hover:bg-accent-hover" : "bg-ink text-paper hover:bg-ink-700"
         }`}
       >
         {pending ? "Sending…" : "Send enquiry"}

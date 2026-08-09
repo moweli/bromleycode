@@ -16,7 +16,7 @@ const expectations = [
   {
     title: "What a first conversation covers",
     items: [
-      "What the corpus actually looks like — formats, volume, scan quality, revision hygiene",
+      "What the corpus actually looks like, formats, volume, scan quality, revision hygiene",
       "Whether anyone can define a correct answer, and who adjudicates it",
       "Whether the permission model can be resolved per user at query time",
       "What decision the output is meant to support, and how reversible it is",
@@ -27,7 +27,7 @@ const expectations = [
     items: [
       "Which parts are tractable now, and which need remediation first",
       "Which parts we would advise against, with the specific blocker named",
-      "A rough shape and duration, or an honest 'not yet' — both are useful answers",
+      "A rough shape and duration, or an honest 'not yet', both are useful answers",
     ],
   },
 ];

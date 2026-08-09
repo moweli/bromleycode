@@ -27,7 +27,7 @@ export async function generateMetadata({
     // Overriding openGraph replaces the parent's entry wholesale, so the image
     // has to be restated or these routes ship without one.
     openGraph: {
-      title: `${service.title} — Bromely Code`,
+      title: `${service.title}. Bromely Code`,
       description: service.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: service.title }],
     },

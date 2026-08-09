@@ -21,7 +21,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
   updated: LEGAL_UPDATED,
   intro: [
     "This notice explains what personal data Bromely Code Ltd collects through this website, why we collect it, what we do with it, and the rights you have over it.",
-    "It covers this website and enquiries made through it. Personal data we process on behalf of a client during an engagement is governed by the data processing agreement in that engagement's contract — in that context the client is the controller and we are the processor, and this notice does not apply.",
+    "It covers this website and enquiries made through it. Personal data we process on behalf of a client during an engagement is governed by the data processing agreement in that engagement's contract, in that context the client is the controller and we are the processor, and this notice does not apply.",
   ],
   sections: [
     {
@@ -30,7 +30,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
         "Bromely Code Ltd is a data intelligence consultancy based in London, United Kingdom. For personal data collected through this website, we are the data controller.",
         "Company registration is in progress. Our company number, registered office and ICO registration number will be published here and in the site footer on incorporation, and this notice updated accordingly.",
         "For anything in this notice, or to exercise any of the rights described in section 8, contact privacy@bromelycode.com.",
-        "CONFIRM: whether a Data Protection Officer is required under Article 37. On the processing described here — no large-scale monitoring, no large-scale special-category data — one is unlikely to be required, but engagements involving client data may change that assessment.",
+        "CONFIRM: whether a Data Protection Officer is required under Article 37. On the processing described here: no large-scale monitoring, no large-scale special-category data: one is unlikely to be required, but engagements involving client data may change that assessment.",
       ],
     },
     {
@@ -39,10 +39,10 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
         "Only what we need in order to reply to you and to keep the site working. We do not buy personal data, we do not enrich what you give us from third-party sources, and we do not build profiles.",
       ],
       list: [
-        "Enquiry data — the name, email address and message you submit through the contact form, plus organisation and role if you choose to give them. These two fields are optional and marked as such.",
-        "Consent data — your cookie choices and the date you made them, stored in your browser's local storage under the key bc-consent-v1. This never leaves your device unless you submit an enquiry.",
-        "Technical data — IP address, user agent and requested URL, recorded in our hosting provider's server logs. We do not use these for analytics.",
-        "Analytics data — none. No analytics or advertising product is installed on this site. If that changes, this notice and the cookie policy will be updated before it goes live, and analytics will remain off until you consent.",
+        "Enquiry data: the name, email address and message you submit through the contact form, plus organisation and role if you choose to give them. These two fields are optional and marked as such.",
+        "Consent data: your cookie choices and the date you made them, stored in your browser's local storage under the key bc-consent-v1. This never leaves your device unless you submit an enquiry.",
+        "Technical data. IP address, user agent and requested URL, recorded in our hosting provider's server logs. We do not use these for analytics.",
+        "Analytics data, none. No analytics or advertising product is installed on this site. If that changes, this notice and the cookie policy will be updated before it goes live, and analytics will remain off until you consent.",
       ],
     },
     {
@@ -51,10 +51,10 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
         "Under Article 6 of the UK GDPR we rely on the following:",
       ],
       list: [
-        "Replying to your enquiry — legitimate interests, Article 6(1)(f). Our interest is in responding to someone who has approached us about our services; the processing is what you would expect, minimal, and easy to object to. A legitimate interests assessment supporting this is retained and available on request.",
-        "Keeping a record of enquiries that become engagements — necessary for the performance of a contract, Article 6(1)(b), and thereafter legal obligation, Article 6(1)(c), for accounting records.",
-        "Keeping the site secure and available — legitimate interests, Article 6(1)(f), covering server logs and abuse prevention.",
-        "Any future analytics — consent, Article 6(1)(a), withdrawable at any time through the cookie controls.",
+        "Replying to your enquiry, legitimate interests, Article 6(1)(f). Our interest is in responding to someone who has approached us about our services; the processing is what you would expect, minimal, and easy to object to. A legitimate interests assessment supporting this is retained and available on request.",
+        "Keeping a record of enquiries that become engagements, necessary for the performance of a contract, Article 6(1)(b), and thereafter legal obligation, Article 6(1)(c), for accounting records.",
+        "Keeping the site secure and available, legitimate interests, Article 6(1)(f), covering server logs and abuse prevention.",
+        "Any future analytics, consent, Article 6(1)(a), withdrawable at any time through the cookie controls.",
       ],
     },
     {
@@ -83,10 +83,10 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
         "We do not keep personal data for longer than we need it. Our retention positions are:",
       ],
       list: [
-        "Enquiries that do not lead to an engagement — 24 months from your last contact with us, then deleted. Long enough to recognise you if you come back, short enough not to be a standing liability.",
-        "Enquiries that become engagements — retained for the life of the contract and for six years afterwards, in line with the limitation period and our accounting obligations.",
-        "Server logs — CONFIRM with the hosting provider; typically 30 to 90 days.",
-        "Consent records — 24 months from the date the choice was made, after which we ask again.",
+        "Enquiries that do not lead to an engagement, 24 months from your last contact with us, then deleted. Long enough to recognise you if you come back, short enough not to be a standing liability.",
+        "Enquiries that become engagements, retained for the life of the contract and for six years afterwards, in line with the limitation period and our accounting obligations.",
+        "Server logs. CONFIRM with the hosting provider; typically 30 to 90 days.",
+        "Consent records, 24 months from the date the choice was made, after which we ask again.",
       ],
     },
     {
@@ -102,7 +102,7 @@ export const privacyPolicy: { updated: string; intro: string[]; sections: LegalS
       paragraphs: [
         "Under the UK GDPR you have the right to be informed about how we use your data, to request a copy of it, to have inaccurate data corrected, to have data erased, to restrict how we use it, to object to processing based on legitimate interests, and to data portability. Where we rely on consent, you can withdraw it at any time and as easily as you gave it.",
         "To exercise any of these, email privacy@bromelycode.com. We will respond within one month. We will not charge you, and we will not ask you to justify the request.",
-        "If you object to us processing your enquiry under legitimate interests, we will stop unless we have compelling grounds not to — in practice, that means we will delete it and not reply further.",
+        "If you object to us processing your enquiry under legitimate interests, we will stop unless we have compelling grounds not to, in practice, that means we will delete it and not reply further.",
       ],
     },
     {
@@ -147,7 +147,7 @@ export const cookiePolicy: { updated: string; intro: string[]; sections: LegalSe
         "Required for the site to work, and exempt from the consent requirement under regulation 6(4) of the Privacy and Electronic Communications Regulations. You cannot switch these off.",
       ],
       list: [
-        "bc-consent-v1 — browser local storage, first party. Records your cookie choices and the date you made them, so we do not ask again on every page. Retained for 24 months or until you clear your browser storage.",
+        "bc-consent-v1, browser local storage, first party. Records your cookie choices and the date you made them, so we do not ask again on every page. Retained for 24 months or until you clear your browser storage.",
       ],
     },
     {
@@ -179,7 +179,7 @@ export const cookiePolicy: { updated: string; intro: string[]; sections: LegalSe
       heading: "Changing your mind",
       paragraphs: [
         "Use the control below to reopen the cookie panel at any time. Withdrawing consent takes effect immediately and is as easy as giving it.",
-        "You can also clear site data in your browser settings, which removes the stored choice entirely — the banner will then ask again on your next visit.",
+        "You can also clear site data in your browser settings, which removes the stored choice entirely: the banner will then ask again on your next visit.",
       ],
     },
   ],
@@ -196,7 +196,7 @@ export const termsOfUse: { updated: string; intro: string[]; sections: LegalSect
       heading: "1. Who we are",
       paragraphs: [
         "This site is operated by Bromely Code Ltd, a data intelligence consultancy based in London, United Kingdom. Company registration is in progress; registration details will be published here on incorporation.",
-        "You can contact us at hello@bromelycode.com.",
+        "You can contact us at enquiries@bromelycode.com.",
       ],
     },
     {
@@ -217,7 +217,7 @@ export const termsOfUse: { updated: string; intro: string[]; sections: LegalSect
     {
       heading: "4. Intellectual property",
       paragraphs: [
-        "The content, design, code and diagrams on this site belong to Bromely Code Ltd, except where third-party material is used under licence — the photography, typefaces and vendor marks are credited in the repository's media credits.",
+        "The content, design, code and diagrams on this site belong to Bromely Code Ltd, except where third-party material is used under licence: the photography, typefaces and vendor marks are credited in the repository's media credits.",
         "You may read, print and share pages for your own or your organisation's internal use. You may quote from them with attribution. You may not republish substantial parts commercially, or present our material as your own.",
         "Third-party trademarks shown on this site, including the platform marks in the technology band, remain the property of their owners. Their presence indicates platforms we build on and does not imply partnership, affiliation or endorsement in either direction.",
       ],
@@ -270,7 +270,7 @@ export const accessibilityStatement: { updated: string; intro: string[]; section
   updated: LEGAL_UPDATED,
   intro: [
     "We want this site to be usable by as many people as possible, including people using a screen reader, a keyboard alone, magnification, or a browser with motion reduced.",
-    "This statement describes where the site currently stands, what we have tested, and what we know is not perfect. It is written to be specific rather than reassuring — a statement that claims full conformance without evidence is worth nothing.",
+    "This statement describes where the site currently stands, what we have tested, and what we know is not perfect. It is written to be specific rather than reassuring: a statement that claims full conformance without evidence is worth nothing.",
   ],
   sections: [
     {

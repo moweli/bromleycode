@@ -11,7 +11,7 @@ export function IllustrativeBanner({ variant = "full" }: { variant?: "full" | "c
 
   if (variant === "compact") {
     return (
-      <p className="flex items-center gap-2 bg-accent-soft px-4 py-2 font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.1em] text-accent-ink">
+      <p className="flex items-center gap-2 bg-accent-soft px-4 py-2 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-accent-ink">
         <Dot />
         {CONTENT_STATUS_NOTICE.short}
       </p>
@@ -24,7 +24,7 @@ export function IllustrativeBanner({ variant = "full" }: { variant?: "full" | "c
         <Dot className="mt-1.5" />
         <p className="text-body-sm text-accent-ink">
           <strong className="font-semibold">{CONTENT_STATUS_NOTICE.short}.</strong>{" "}
-          {CONTENT_STATUS_NOTICE.long.split(" — ")[1]}
+          {CONTENT_STATUS_NOTICE.long.split(", ")[1]}
         </p>
       </div>
     </div>

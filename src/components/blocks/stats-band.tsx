@@ -74,18 +74,18 @@ export function StatsBand() {
           {stats.items.map((item) => (
             <li key={item.label} className="border-t border-line-light pt-6">
               <p className="text-[length:var(--text-h4)] font-semibold">{item.label}</p>
-              <p className="mt-4 font-[family-name:var(--font-display)] text-[length:var(--text-stat)] leading-[0.9] tracking-[-0.05em]">
+              <p className="mt-4 text-[length:var(--text-stat)] leading-[0.9] tracking-[-0.05em]">
                 {item.value === null ? (
                   // Visible enough to read as a reserved slot rather than a
                   // rendering failure, quiet enough not to claim anything.
                   <span className="text-ink-muted/35" aria-hidden="true">
-                    —
+, 
                   </span>
                 ) : (
                   <CountUp value={item.value} suffix={item.suffix} />
                 )}
               </p>
-              <p className="mt-4 font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.1em] text-accent-ink">
+              <p className="mt-4 text-xs font-bold uppercase tracking-[0.04em] text-accent-ink">
                 {item.note}
               </p>
             </li>

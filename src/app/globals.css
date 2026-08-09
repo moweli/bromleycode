@@ -11,56 +11,72 @@
 --------------------------------------------------------------------------- */
 
 @theme {
-  /* -- Colour: one dominant ink, one accent ------------------------------- */
-  --color-ink-950: #05080d;
-  --color-ink-900: #080c12; /* dominant dark surface */
-  --color-ink-800: #0e141d; /* raised dark surface */
-  --color-ink-700: #161e29; /* raised dark, second level */
-  --color-ink-600: #223040; /* borders / rules on dark */
+  /* -- Colour ------------------------------------------------------------
+     Aligned to the reference's measured palette (design-audit.md §1.3): pure
+     black surfaces, #141414 ink, one magenta accent, one divider grey. Two
+     tokens the reference does not have are added because it needs them and
+     does without: a muted text colour (it re-uses full-strength ink at a
+     smaller size) and a darkened accent for text on light surfaces, because
+     #E7295D on white measures 4.33:1 and fails AA for body text. */
+  --color-ink-950: #000000;
+  --color-ink-900: #000000; /* dominant dark surface — the reference uses pure black */
+  --color-ink-800: #141414; /* raised dark surface */
+  --color-ink-700: #1f1f1f; /* raised dark, second level */
+  --color-ink-600: #2e2e2e; /* borders / rules on dark */
 
   --color-paper: #ffffff;
-  --color-paper-alt: #f4f6f7; /* raised light surface */
-  --color-ink: #0c1219; /* body text on light — 17.4:1 */
-  --color-ink-muted: #4a5866; /* muted text on light — 7.4:1 */
-  --color-mist: #7c8b9c; /* muted text on dark — 5.6:1 */
-  --color-mist-bright: #a9b6c4; /* muted text on dark, emphasis */
+  --color-paper-alt: #f4f4f4; /* raised light surface — the reference's rgba(0,0,0,0.05) */
+  --color-ink: #141414; /* body text on light — 16.6:1, the reference's real ink */
+  --color-ink-muted: #5a5a5a; /* muted text on light — 7.0:1 */
+  --color-mist: #9b9b9b; /* muted text on dark — 6.9:1 */
+  --color-mist-bright: #c4c4c4; /* muted text on dark, emphasis */
 
-  --color-accent: #f5a524; /* signal amber — 9.6:1 on ink-900 */
-  --color-accent-hover: #ffb84d;
-  --color-accent-ink: #8a5200; /* accent as TEXT on light — 6.4:1 */
-  --color-accent-soft: rgba(245, 165, 36, 0.12);
+  --color-accent: #e0245a; /* the reference's magenta, deepened 3% so WHITE text on a
+                              filled button reaches 4.60:1 while the colour itself
+                              still reaches 4.57:1 as text on black. #E7295D does
+                              the second but not the first. */
+  --color-accent-hover: #c9143f; /* hover darkens rather than lightens — lightening
+                                    would drop white below 4.5:1 */
+  --color-accent-ink: #b3123f; /* accent as TEXT on light — 6.8:1 */
+  --color-accent-soft: rgba(224, 36, 90, 0.1);
 
-  --color-line-light: rgba(12, 18, 25, 0.14);
-  --color-line-dark: rgba(255, 255, 255, 0.14);
-  --color-focus: #ffb84d;
+  --color-line-light: #d6d6d6; /* the reference's divider grey */
+  --color-line-dark: rgba(255, 255, 255, 0.16);
+  --color-focus: #e7295d;
 
-  /* -- Type -------------------------------------------------------------- */
-  --font-display: var(--font-satoshi), ui-sans-serif, system-ui, sans-serif;
-  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, monospace;
+  /* -- Type --------------------------------------------------------------
+     One family, as on the reference. Hierarchy is carried by size, weight and
+     letter-spacing alone. */
+  --font-display: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
 
-  /* Fluid where the reference stepped. Its h1 sat at 40px across the whole
-     768–1023 range; clamp removes that dead zone. Bounds are the reference's
-     own measured 390px and 1440px values, adjusted for Satoshi's metrics. */
-  --text-display: clamp(2.25rem, 1.25rem + 4.2vw, 4.25rem); /* 36 → 68 */
-  --text-h1: clamp(2rem, 1.35rem + 2.7vw, 3.5rem); /* 32 → 56 */
-  --text-h2: clamp(1.625rem, 1.28rem + 1.45vw, 2.5rem); /* 26 → 40 */
-  --text-h3: clamp(1.3125rem, 1.17rem + 0.6vw, 1.75rem); /* 21 → 28 */
-  --text-h4: clamp(1.125rem, 1.06rem + 0.28vw, 1.375rem); /* 18 → 22 */
+  /* The reference's measured scale — 60 / 40 / 30 / 22 / 18, stepping to
+     30 / 30 / 18 at 390px. Kept fluid rather than class-swapped: its h1 sits at
+     40px across the whole 768–1023 range, and clamp removes that dead zone
+     while hitting exactly the same values at 390 and 1440. */
+  --text-display: clamp(1.875rem, 0.79rem + 4.45vw, 3.75rem); /* 30 → 60 */
+  --text-h1: clamp(1.875rem, 0.79rem + 4.45vw, 3.75rem); /* 30 → 60 */
+  --text-h2: clamp(1.875rem, 1.44rem + 1.79vw, 2.5rem); /* 30 → 40 */
+  --text-h3: clamp(1.375rem, 1.16rem + 0.89vw, 1.875rem); /* 22 → 30 */
+  --text-h4: clamp(1.125rem, 1.02rem + 0.42vw, 1.375rem); /* 18 → 22 */
   --text-lead: clamp(1.125rem, 1.02rem + 0.42vw, 1.375rem); /* 18 → 22 */
   --text-body: 1rem;
   --text-body-sm: 0.9375rem; /* 15px — the reference's true body size */
-  --text-label: 0.75rem; /* 12px mono eyebrow */
-  --text-stat: clamp(4rem, 2.1rem + 7.8vw, 8.75rem); /* 64 → 140 */
+  --text-label: 0.75rem; /* 12px eyebrow */
+  --text-stat: clamp(4rem, 0.87rem + 12.8vw, 10rem); /* 64 → 160 */
 
-  --leading-display: 1;
-  --leading-heading: 1.08;
+  --leading-display: 1; /* leading-none, as on every reference heading */
+  --leading-heading: 1;
   --leading-snug: 1.25;
-  --leading-body: 1.6;
+  --leading-body: 1.5; /* the reference's 16/24 */
 
-  --tracking-display: -0.04em;
-  --tracking-heading: -0.025em;
-  --tracking-label: 0.12em;
+  /* Two tiers, exactly as measured: -0.05em on display sizes, -0.025em on the
+     18–22px band, normal on body. */
+  --tracking-display: -0.05em;
+  --tracking-heading: -0.05em;
+  --tracking-mid: -0.025em;
+  --tracking-label: 0.04em;
 
   /* -- Space: the reference's 1:2 mobile→desktop ladder, made fluid ------- */
   --space-section-sm: clamp(1rem, 0.3rem + 2.9vw, 3rem); /* 16 → 48 */
@@ -85,7 +101,7 @@
   --duration-reveal: 500ms; /* scroll tier */
 
   /* -- Elevation: borders and surface inversion, not shadow ramps --------- */
-  --shadow-glow: 0 0 24px 2px rgba(245, 165, 36, 0.18);
+  --shadow-glow: 0 0 18px 4px rgba(224, 36, 90, 0.15), 0 0 40px 8px rgba(224, 36, 90, 0.08);
   --shadow-lift: 0 30px 70px rgba(5, 8, 13, 0.35);
 }
 
@@ -134,7 +150,7 @@
 
   ::selection {
     background: var(--color-accent);
-    color: var(--color-ink-950);
+    color: var(--color-paper);
   }
 
   /* Reduced motion, handled once at the token level. The reference has zero
@@ -225,11 +241,12 @@
     font-weight: 600;
   }
 
-  /* Mono eyebrow — marks a category, a stage, or anything measured. */
+  /* Eyebrow — the reference's category label: 12px, bold, uppercase, in the
+     same family as everything else. No mono, no wide tracking. */
   .eyebrow {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
     font-size: var(--text-label);
-    font-weight: 500;
+    font-weight: 700;
     letter-spacing: var(--tracking-label);
     text-transform: uppercase;
   }
@@ -250,19 +267,21 @@
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   }
 
-  /* Layered radial wash for dark bands. */
+  /* Layered radial wash for dark bands. Kept, but pulled back hard — the
+     reference's dark bands are flat black, so this reads as a subtle lift off
+     the page rather than a gradient in its own right. */
   .wash-dark {
     background-color: var(--color-ink-900);
     background-image:
       radial-gradient(
         60rem 30rem at 12% -10%,
-        rgba(245, 165, 36, 0.09),
-        transparent 60%
+        rgba(224, 36, 90, 0.1),
+        transparent 62%
       ),
       radial-gradient(
-        50rem 34rem at 92% 8%,
-        rgba(66, 122, 168, 0.14),
-        transparent 62%
+        50rem 34rem at 94% 6%,
+        rgba(224, 36, 90, 0.05),
+        transparent 60%
       );
   }
 
@@ -313,6 +332,18 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+/* Steps the sector caption one line per hero segment. The step count and total
+   duration are set inline from SEGMENT_LABELS so the caption stays in lockstep
+   with the montage cut. */
+@keyframes segment-cycle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
   }
 }
 

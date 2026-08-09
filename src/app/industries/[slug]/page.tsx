@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: industry.summary,
     alternates: { canonical: `/industries/${industry.slug}` },
     openGraph: {
-      title: `${industry.name} — Bromely Code`,
+      title: `${industry.name}. Bromely Code`,
       description: industry.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: industry.name }],
     },
@@ -92,7 +92,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
               tone="dark"
               eyebrow="Challenges"
               title="What actually goes wrong."
-              body="Not the sector's problems in general — the specific failure modes that decide whether a retrieval system in this sector survives contact with production."
+              body="Not the sector's problems in general, the specific failure modes that decide whether a retrieval system in this sector survives contact with production."
             />
           </Reveal>
           <ul className="mt-14 grid gap-px border border-line-dark bg-line-dark md:grid-cols-2">

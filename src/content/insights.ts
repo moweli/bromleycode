@@ -32,14 +32,14 @@ export const insights: Insight[] = [
       {
         heading: "What a bad split costs you",
         paragraphs: [
-          "Consider a condition report where a finding reads: 'Section 4.2 — Chamber 7, Site ref WTW-0412. Spalling observed to the north wall, moderate, monitor at 12 months.' A fixed window that splits between the site reference and the finding produces two chunks, neither of which is retrievable by a question that names the asset and asks about its condition.",
+          "Consider a condition report where a finding reads: 'Section 4.2. Chamber 7, Site ref WTW-0412. Spalling observed to the north wall, moderate, monitor at 12 months.' A fixed window that splits between the site reference and the finding produces two chunks, neither of which is retrievable by a question that names the asset and asks about its condition.",
           "The embedding model is not at fault, and no amount of upgrading it will recover the relationship, because the relationship is no longer present in either chunk. This is why teams who swap models and see no improvement are often looking in the wrong place.",
         ],
       },
       {
         heading: "Structure first, size second",
         paragraphs: [
-          "Split on the structure the document already has — sections, clauses, conversational turns, table rows grouped by their subject — then enforce a maximum size within those boundaries rather than across them.",
+          "Split on the structure the document already has, sections, clauses, conversational turns, table rows grouped by their subject, then enforce a maximum size within those boundaries rather than across them.",
           "Attach the parent context to every chunk: document title, identifiers, revision state, section heading. It costs tokens and it is almost always worth them, because it is what makes a chunk retrievable in isolation.",
         ],
         list: [
@@ -79,7 +79,7 @@ export const insights: Insight[] = [
       {
         heading: "The two wrong answers",
         paragraphs: [
-          "The first is filtering after generation: retrieve from everything, generate an answer, then check whether the user can see the sources and suppress the answer if not. This leaks. The suppression itself is a signal, and worse, an answer synthesised from restricted material has already been produced — the model saw content the user cannot access, and the system's own logs now contain it.",
+          "The first is filtering after generation: retrieve from everything, generate an answer, then check whether the user can see the sources and suppress the answer if not. This leaks. The suppression itself is a signal, and worse, an answer synthesised from restricted material has already been produced: the model saw content the user cannot access, and the system's own logs now contain it.",
           "The second is filtering after ranking: retrieve the top fifty, drop the ones the user cannot open, return what remains. This leaks more subtly. The user's result count and ordering vary with the existence of documents they cannot see, and a determined user can enumerate what exists by watching how results shift. It also degrades quality, because a user with restricted access gets a thin result set assembled from what happened to survive the filter rather than the best fifty they were entitled to.",
         ],
       },
@@ -91,7 +91,7 @@ export const insights: Insight[] = [
         ],
         list: [
           "Store source ACLs alongside each chunk at index time, not as a lookup at query time",
-          "Re-resolve group membership per query — cached memberships are how a revoked permission stays live for six hours",
+          "Re-resolve group membership per query, cached memberships are how a revoked permission stays live for six hours",
           "Re-index on permission change, and treat permission changes as a first-class event in the ingestion pipeline",
           "Test with synthetic users on every release, including indirect questions that name a subject rather than a document",
         ],
@@ -133,12 +133,12 @@ export const insights: Insight[] = [
         heading: "How to build it",
         paragraphs: [
           "Abstention is not a prompt instruction. It is an architectural property with three parts: retrieval that reliably surfaces the supporting passage when one exists, generation constrained to cite retrieved spans, and a check that refuses output where no cited span supports the claim.",
-          "Then measure both halves. Track the abstention rate and the answer-supported rate together — one without the other is easy to game. A system can reach a perfect supported rate by declining almost everything, and that is a different failure.",
+          "Then measure both halves. Track the abstention rate and the answer-supported rate together: one without the other is easy to game. A system can reach a perfect supported rate by declining almost everything, and that is a different failure.",
         ],
         list: [
           "Abstention rate: share of questions where the system declines",
           "Answer-supported rate: of answered questions, the share where the citation genuinely supports the claim",
-          "False abstention: questions the corpus could have answered but the system declined — the cost of tuning too conservatively",
+          "False abstention: questions the corpus could have answered but the system declined: the cost of tuning too conservatively",
         ],
       },
       {

@@ -1,0 +1,32 @@
+[
+  {
+    "key": "fibre",
+    "label": "Retrieval at scale",
+    "id": "5926165",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/fibre-5926165.mp4",
+    "url": "https://videos.pexels.com/video-files/5926165/5926165-hd_1920_1080_30fps.mp4",
+    "bytes": 9441465,
+    "query": "fiber optic cable close up",
+    "page": "https://www.pexels.com/video/5926165/"
+  },
+  {
+    "key": "finance",
+    "label": "Financial services",
+    "id": "11977876",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/finance-11977876.mp4",
+    "url": "https://videos.pexels.com/video-files/11977876/11977876-hd_1920_1080_30fps.mp4",
+    "bytes": 26063977,
+    "query": "london city skyline aerial",
+    "page": "https://www.pexels.com/video/11977876/"
+  },
+  {
+    "key": "government",
+    "label": "Central government",
+    "id": "5372949",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/government-5372949.mp4",
+    "url": "https://videos.pexels.com/video-files/5372949/5372949-hd_1920_1080_30fps.mp4",
+    "bytes": 8562915,
+    "query": "london westminster architecture",
+    "page": "https://www.pexels.com/video/5372949/"
+  }
+]

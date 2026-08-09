@@ -99,8 +99,8 @@ export function CookieConsent() {
               Cookies on this site
             </h2>
             <p className="mt-2 text-body-sm text-mist">
-              We use strictly necessary cookies to make the site work. Everything else —
-              analytics and marketing — stays switched off until you say otherwise. No
+              We use strictly necessary cookies to make the site work. Everything else, 
+              analytics and marketing, stays switched off until you say otherwise. No
               non-essential script runs before you choose.{" "}
               <Link href="/cookies" className="text-accent underline underline-offset-4">
                 Cookie policy
@@ -139,7 +139,7 @@ export function CookieConsent() {
                   />
                   <span>
                     <span className="block font-medium text-paper">Marketing</span>
-                    Campaign attribution. Currently unused — the category exists so the choice is honest if it ever is.
+                    Campaign attribution. Currently unused, the category exists so the choice is honest if it ever is.
                   </span>
                 </label>
               </fieldset>
@@ -174,7 +174,7 @@ export function CookieConsent() {
             <button
               type="button"
               onClick={() => decide({ analytics: true, marketing: true })}
-              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-ink-950 transition-colors duration-150 hover:bg-accent-hover"
+              className="rounded-full bg-accent px-6 py-3 text-sm font-semibold text-paper transition-colors duration-150 hover:bg-accent-hover"
             >
               Accept all
             </button>

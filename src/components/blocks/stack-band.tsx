@@ -58,7 +58,7 @@ function Track({ items, direction, duration }: { items: Mark[]; direction: "left
             </svg>
             <span className="whitespace-nowrap">
               <span className="block text-body-sm font-medium text-paper">{mark.name}</span>
-              <span className="block font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.08em]">
+              <span className="block text-[0.6875rem] font-bold uppercase tracking-[0.04em]">
                 {mark.role}
               </span>
             </span>

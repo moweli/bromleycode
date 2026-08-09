@@ -11,14 +11,14 @@ export const site = {
   description:
     "Bromely Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
   url: "https://bromelycode.com",
-  email: "hello@bromelycode.com",
+  email: "enquiries@bromelycode.com",
   /**
    * Ofcom reserves 020 7946 0xxx for fiction and documentation — it cannot ring
    * a real subscriber. Replace with the real number; do not leave this live.
    */
   phone: "+44 20 7946 0412",
   phoneHref: "+442079460412",
-  hours: "Monday to Friday, 09:00–17:30 UK time",
+  hours: "Monday to Friday, 09:00, 17:30 UK time",
   locale: "en_GB",
   /**
    * UK convention — enterprise procurement looks for these in the footer.

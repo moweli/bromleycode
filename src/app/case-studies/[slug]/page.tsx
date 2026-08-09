@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: study.summary,
     alternates: { canonical: `/case-studies/${study.slug}` },
     openGraph: {
-      title: `${study.title} — Bromely Code`,
+      title: `${study.title}. Bromely Code`,
       description: study.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: study.title }],
     },
@@ -131,7 +131,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                   {study.stack.map((item) => (
                     <li
                       key={item}
-                      className="border border-line-light px-2 py-1 font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.08em] text-ink-muted"
+                      className="border border-line-light px-2 py-1 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted"
                     >
                       {item}
                     </li>
@@ -191,7 +191,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 <p>
                   Each figure below carries the method behind it and the baseline it is measured
                   against, which is the form a real result should take. These particular numbers are
-                  illustrative — they show the shape and scale of the outcome, not a measured client
+                  illustrative, they show the shape and scale of the outcome, not a measured client
                   result.
                 </p>
                 <dl className="not-prose mt-8 space-y-px border border-line-light bg-line-light">
@@ -211,10 +211,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 <blockquote className="text-[length:var(--text-h4)] leading-[1.45]">
                   &ldquo;{study.quote.text}&rdquo;
                 </blockquote>
-                <figcaption className="mt-6 font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.1em] text-ink-muted">
+                <figcaption className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
                   {study.quote.attribution}
                   <span className="mt-2 block normal-case tracking-normal">
-                    Attributed to a role and sector, not an individual — this is an illustrative
+                    Attributed to a role and sector, not an individual, this is an illustrative
                     engagement and no person said this.
                   </span>
                 </figcaption>

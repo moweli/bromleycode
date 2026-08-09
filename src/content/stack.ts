@@ -40,7 +40,7 @@ export const stackItems: StackItem[] = [
 export const stackBand = {
   eyebrow: "Where we build",
   heading: "Your platform, not ours.",
-  body: "We have no product to sell you, which means we have no reason to recommend one. Engagements are built on the platforms you already run — including Microsoft Azure and AWS, whose marks we do not display because their brand guidelines require assets to be sourced and approved directly. Vendor marks below indicate platforms we build on, not partnership or endorsement.",
+  body: "We have no product to sell you, which means we have no reason to recommend one. Engagements are built on the platforms you already run, including Microsoft Azure and AWS, whose marks we do not display because their brand guidelines require assets to be sourced and approved directly. Vendor marks below indicate platforms we build on, not partnership or endorsement.",
   ctaLabel: "How we work",
   ctaHref: "/how-we-work",
 };

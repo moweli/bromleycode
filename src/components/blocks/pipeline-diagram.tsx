@@ -173,7 +173,7 @@ export function PipelineDiagram() {
         </svg>
       </div>
 
-      <figcaption className="mt-4 font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.1em] text-mist">
+      <figcaption className="mt-4 text-xs font-bold uppercase tracking-[0.04em] text-mist">
         Solid: the forward path. Dashed: the two loops that decide whether it improves.
       </figcaption>
     </figure>

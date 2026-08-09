@@ -17,9 +17,10 @@ export default function HowWeWorkPage() {
   return (
     <>
       <PageHero
+        tone="light"
         eyebrow="Method"
         title="The mechanism, in the open."
-        standfirst="We have no client logos to argue on our behalf, so the argument has to be the method. This is the whole of it — the stages, the loops, the engagement shape and the first 90 days."
+        standfirst="We have no client logos to argue on our behalf, so the argument has to be the method. This is the whole of it, the stages, the loops, the engagement shape and the first 90 days."
         width="medium"
       />
 
@@ -102,16 +103,18 @@ export default function HowWeWorkPage() {
         </div>
       </Section>
 
-      <Section tone="dark" size="lg">
+      {/* Light: the dark CTA band follows immediately, and two dark sections in a
+          row read as one undifferentiated slab. */}
+      <Section size="lg" className="bg-paper-alt">
         <div className="container-bc">
           <Reveal>
-            <SectionHeading tone="dark" eyebrow="Principles" title="Five things we will not trade away." />
+            <SectionHeading eyebrow="Principles" title="Five things we will not trade away." />
           </Reveal>
           <ul className="mt-14 grid gap-x-10 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
             {principles.map((principle, index) => (
-              <Reveal as="li" key={principle.name} delay={index * 60} className="border-t border-line-dark pt-6">
+              <Reveal as="li" key={principle.name} delay={index * 60} className="border-t border-line-light pt-6">
                 <h3 className="text-[length:var(--text-h4)]">{principle.name}</h3>
-                <p className="mt-3 text-body-sm text-mist-bright">{principle.detail}</p>
+                <p className="mt-3 text-body-sm text-ink-muted">{principle.detail}</p>
               </Reveal>
             ))}
           </ul>

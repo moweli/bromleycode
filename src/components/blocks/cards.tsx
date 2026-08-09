@@ -60,7 +60,7 @@ export function CaseStudyCard({ study, featured = false }: { study: CaseStudy; f
             {study.title}
           </h3>
           <p className="mt-4 flex-1 text-body-sm text-ink-muted">{study.summary}</p>
-          <p className="mt-6 font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.1em] text-ink-muted">
+          <p className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
             {study.scale} · {study.duration}
           </p>
           <Link
@@ -105,7 +105,7 @@ export function ArticleCard({ insight, image }: { insight: Insight; image?: stri
         </p>
         <h3 className="mt-4 text-[length:var(--text-h4)]">{insight.title}</h3>
         <p className="mt-4 flex-1 text-body-sm text-ink-muted">{insight.standfirst}</p>
-        <p className="mt-6 font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.1em] text-ink-muted">
+        <p className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
           {insight.author} ·{" "}
           <time dateTime={insight.published}>
             {new Date(insight.published).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}

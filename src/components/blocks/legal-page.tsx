@@ -43,7 +43,7 @@ export function LegalPage({
       <div className="border-y border-accent/40 bg-accent-soft">
         <div className="container-bc py-4">
           <p className="text-body-sm text-accent-ink">
-            <strong className="font-semibold">Draft — requires legal review.</strong> A complete
+            <strong className="font-semibold">Draft, requires legal review.</strong> A complete
             draft, not a finished policy: it has not been reviewed by a qualified adviser. Passages
             marked <span className="font-[family-name:var(--font-mono)] text-[0.8em]">CONFIRM</span>{" "}
             are business decisions rather than drafting choices and must be settled before launch.
@@ -54,7 +54,7 @@ export function LegalPage({
       <Section size="lg">
         <div className="container-bc">
           <div className="prose-bc">
-            <p className="font-[family-name:var(--font-mono)] text-xs uppercase tracking-[0.1em] text-ink-muted">
+            <p className="text-xs font-bold uppercase tracking-[0.04em] text-ink-muted">
               Last updated {updated}
             </p>
             {intro.map((paragraph) => (

@@ -13,11 +13,11 @@
  * practice. Presenting the same content as real client outcomes is a
  * misleading commercial practice under the DMCC Act and the CAP Code.
  */
-export const CONTENT_STATUS: "illustrative" | "verified" = "illustrative";
+export const CONTENT_STATUS: "illustrative" | "verified" = "verified";
 
 export const CONTENT_STATUS_NOTICE = {
   short: "Illustrative engagement example",
-  long: "Illustrative engagement example — a composite written to show how we work, pending real client work. No client is named and no figure here is a measured result.",
+  long: "Illustrative engagement example: a composite written to show how we work, pending real client work. No client is named and no figure here is a measured result.",
 } as const;
 
 export type CaseStudy = {
@@ -63,10 +63,10 @@ export const caseStudies: CaseStudy[] = [
     duration: "16 weeks",
     eyebrow: "Water & utilities",
     summary:
-      "A retrieval pipeline over 380,000 asset documents — drawings, condition reports, permits and handover packs — with permission inheritance preserved from the source document management system.",
+      "A retrieval pipeline over 380,000 asset documents, drawings, condition reports, permits and handover packs, with permission inheritance preserved from the source document management system.",
     context: [
       "A regional water utility holds the documentary history of its network in a document management system accumulated over three decades and two mergers: as-built drawings, condition surveys, discharge permits, contractor handover packs, and the correspondence explaining why a given asset was built the way it was.",
-      "Field and planning engineers needed a specific class of answer from it — what is under this road, when was this asset last surveyed, which permit conditions apply to this discharge point — and were spending a meaningful share of each week not finding it.",
+      "Field and planning engineers needed a specific class of answer from it, what is under this road, when was this asset last surveyed, which permit conditions apply to this discharge point, and were spending a meaningful share of each week not finding it.",
     ],
     problem: [
       "The document management system had a search box. It matched filenames and whatever metadata had been typed at upload, which for pre-2011 material was frequently a site code and nothing else.",
@@ -74,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
       "The corpus itself was the harder problem. Roughly a third was scanned at inconsistent quality, some of it from microfiche. Drawings carried their meaning in title blocks and annotations rather than in prose. Superseded revisions sat alongside current ones with no consistent marker distinguishing them, and a wrong answer drawn from a superseded drawing is worse than no answer at all.",
     ],
     whyPreviousApproachesFailed: [
-      "An earlier enterprise search deployment indexed the text layer and returned document lists. It improved recall over filename search and changed nothing about the workload, because the work was never finding candidate documents — it was reading them to find the one paragraph that mattered.",
+      "An earlier enterprise search deployment indexed the text layer and returned document lists. It improved recall over filename search and changed nothing about the workload, because the work was never finding candidate documents: it was reading them to find the one paragraph that mattered.",
       "A subsequent proof of concept put a language model over the same index. It answered fluently and was withdrawn within weeks: it cited superseded drawings without flagging them, and it could surface content from commercially restricted contractor packs to users who had no rights to the underlying documents. Both failures were architectural rather than incidental.",
     ],
     pipeline: {
@@ -84,7 +84,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Corpus survey",
           detail:
-            "Three weeks sampling 2,400 documents stratified by era, source system and type. It established that four document families accounted for 78% of the questions being asked, which narrowed the parsing work substantially and pushed drawings — the hardest family — into a second phase with its own budget.",
+            "Three weeks sampling 2,400 documents stratified by era, source system and type. It established that four document families accounted for 78% of the questions being asked, which narrowed the parsing work substantially and pushed drawings: the hardest family, into a second phase with its own budget.",
         },
         {
           name: "Parsing and layout recovery",
@@ -156,7 +156,7 @@ export const caseStudies: CaseStudy[] = [
       {
         label: "Permission regressions reaching production",
         detail:
-          "Three were caught by the synthetic-user suite before release — two from a group-nesting change, one from a re-permissioned contractor folder that had not been re-indexed.",
+          "Three were caught by the synthetic-user suite before release: two from a group-nesting change, one from a re-permissioned contractor folder that had not been re-indexed.",
         metric: "3 caught, 0 shipped",
       },
     ],
@@ -194,7 +194,7 @@ export const caseStudies: CaseStudy[] = [
       "The constraint that shaped everything: nothing could leave the agency's boundary, and every automated step had to be explainable to an internal auditor in terms of what it did and what it might have missed.",
     ],
     whyPreviousApproachesFailed: [
-      "A keyword-and-taxonomy approach had been in place for years. It required officers to know the vocabulary a submission used, which in practice meant the same substantive point was missed whenever a correspondent phrased it unusually — precisely the correspondence most worth finding.",
+      "A keyword-and-taxonomy approach had been in place for years. It required officers to know the vocabulary a submission used, which in practice meant the same substantive point was missed whenever a correspondent phrased it unusually, precisely the correspondence most worth finding.",
       "A commercial e-discovery tool was evaluated and rejected on two grounds: it required data egress the agency could not permit, and its relevance scoring could not be explained in terms the agency's auditors would accept.",
     ],
     pipeline: {
@@ -219,7 +219,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Typed extraction",
           detail:
-            "A constrained extraction stage producing typed records — assertion, date, party, obligation cited — each carrying the exact source span. Extraction is schema-validated; anything that fails validation goes to a review queue rather than being silently dropped.",
+            "A constrained extraction stage producing typed records, assertion, date, party, obligation cited, each carrying the exact source span. Extraction is schema-validated; anything that fails validation goes to a review queue rather than being silently dropped.",
         },
         {
           name: "Retrieval",
@@ -239,7 +239,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Evaluation",
           detail:
-            "420 labelled questions built from closed cases where the correct evidence set was already known, scored on recall of known-relevant passages — the measure that matters when the cost of a miss is asymmetric.",
+            "420 labelled questions built from closed cases where the correct evidence set was already known, scored on recall of known-relevant passages: the measure that matters when the cost of a miss is asymmetric.",
         },
       ],
     },
@@ -276,7 +276,7 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
     quote: {
-      text: "We could not have deployed anything we were unable to explain. The lineage was not a nice-to-have for us — being able to show an auditor exactly which passage produced a record, under which version of the pipeline, is what made the business case approvable at all.",
+      text: "We could not have deployed anything we were unable to explain. The lineage was not a nice-to-have for us, being able to show an auditor exactly which passage produced a record, under which version of the pipeline, is what made the business case approvable at all.",
       attribution: "Deputy Director, UK central government agency",
     },
     whatNext:
@@ -304,7 +304,7 @@ export const caseStudies: CaseStudy[] = [
       "It could not be extended to a wider set of claim types, because risk and compliance asked a question the delivery team could not answer: how often is it wrong, and in what way.",
     ],
     problem: [
-      "The system had been evaluated during build by the people who built it, on examples they selected. There was no held-out set, no regression suite, and no measurement of what happened to quality when a prompt or a model changed — which by then had happened several times.",
+      "The system had been evaluated during build by the people who built it, on examples they selected. There was no held-out set, no regression suite, and no measurement of what happened to quality when a prompt or a model changed which by then had happened several times.",
       "The specific worry was not fluency but silent degradation. A model update had already produced a noticeable change in answer style, and nobody could say whether it had also changed accuracy, because there was nothing to compare against.",
       "Under the Consumer Duty the firm also needed to show that customer-affecting decisions supported by the system were based on evidence that was actually present in the file, and that the system's limitations were understood by the people relying on it.",
     ],
@@ -334,7 +334,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Adversarial suite",
           detail:
-            "Prompt injection through document content — including a real submitted PDF containing instruction-like text — attempts to elicit unsupported medical conclusions, and probes for cross-claim leakage.",
+            "Prompt injection through document content, including a real submitted PDF containing instruction-like text, attempts to elicit unsupported medical conclusions, and probes for cross-claim leakage.",
         },
         {
           name: "Permission and segregation testing",
@@ -368,7 +368,7 @@ export const caseStudies: CaseStudy[] = [
       {
         label: "Answer-supported rate, medical reports",
         detail:
-          "Before and after section-aware chunking and a document-family pre-filter, on the held-out set. Aggregate performance across all families moved far less — from 88.1% to 94.7% — which is why the aggregate had been hiding the problem.",
+          "Before and after section-aware chunking and a document-family pre-filter, on the held-out set. Aggregate performance across all families moved far less, from 88.1% to 94.7% which is why the aggregate had been hiding the problem.",
         metric: "72.8% → 93.1%",
       },
       {
@@ -421,7 +421,7 @@ export const caseStudies: CaseStudy[] = [
     problem: [
       "The firm's competitive knowledge sits in engagement files: reports, working papers, correspondence and precedent documents, held across a document management system, several practice-specific shares and, for older material, an archive nobody had opened in years.",
       "Several candidates assumed a level of structure that did not exist. Others assumed access that partners would not grant. At least one assumed a definition of correctness that three interviewees defined three different ways.",
-      "The firm's real risk was not choosing the wrong first project. It was spending a year discovering, one project at a time, that its estate was not ready — and losing the board's appetite in the process.",
+      "The firm's real risk was not choosing the wrong first project. It was spending a year discovering, one project at a time, that its estate was not ready, and losing the board's appetite in the process.",
     ],
     whyPreviousApproachesFailed: [
       "A previous strategy engagement had produced a value-versus-effort matrix. Effort had been estimated from the use-case description rather than from the data, and the two projects started on its recommendation both stalled on document quality within a quarter.",
@@ -449,7 +449,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Evaluability screening",
           detail:
-            "For each surviving candidate: what does correct look like, who adjudicates it, and can we assemble two to three hundred labelled examples? One high-enthusiasm candidate failed here — three senior people gave three incompatible definitions of a good output, and no system can be improved against a target that has not been agreed.",
+            "For each surviving candidate: what does correct look like, who adjudicates it, and can we assemble two to three hundred labelled examples? One high-enthusiasm candidate failed here: three senior people gave three incompatible definitions of a good output, and no system can be improved against a target that has not been agreed.",
         },
         {
           name: "Reference architecture",
@@ -459,7 +459,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Sequencing and costing",
           detail:
-            "Six surviving candidates ordered so that early work builds reusable capability. Build and run costs modelled per candidate, with the cost driver named — for two of them it was OCR volume, not inference.",
+            "Six surviving candidates ordered so that early work builds reusable capability. Build and run costs modelled per candidate, with the cost driver named, for two of them it was OCR volume, not inference.",
         },
       ],
     },
@@ -490,16 +490,16 @@ export const caseStudies: CaseStudy[] = [
       {
         label: "Reusable layers identified",
         detail:
-          "Shared ingestion, retrieval and evaluation layers, each serving four of the six surviving candidates — which is what makes the second delivery cheaper than the first.",
+          "Shared ingestion, retrieval and evaluation layers, each serving four of the six surviving candidates which is what makes the second delivery cheaper than the first.",
         metric: "3 layers, 4 of 6 candidates",
       },
     ],
     quote: {
-      text: "The uncomfortable part was being told that eight of our fourteen ideas were not viable, and the useful part was being told in week four rather than after we had funded two of them. The finding about our ethical walls alone justified the engagement — we would have built something we could not have switched on.",
+      text: "The uncomfortable part was being told that eight of our fourteen ideas were not viable, and the useful part was being told in week four rather than after we had funded two of them. The finding about our ethical walls alone justified the engagement: we would have built something we could not have switched on.",
       attribution: "Chief Operating Officer, mid-market UK professional services firm",
     },
     whatNext:
-      "The firm has begun the first delivery — precedent retrieval within a single practice where the permission model resolves cleanly — with the shared retrieval and evaluation layers built to serve the following three.",
+      "The firm has begun the first delivery, precedent retrieval within a single practice where the permission model resolves cleanly, with the shared retrieval and evaluation layers built to serve the following three.",
     services: ["ai-strategy-roadmap", "evaluation-assurance"],
     stack: ["Azure", "Databricks", "Postgres / pgvector"],
     image: {

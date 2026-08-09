@@ -45,7 +45,7 @@ export function AccreditationBand({ tone = "dark" }: { tone?: "dark" | "light" }
                     <span className="text-[0.8125rem] font-medium leading-tight">{item.name}</span>
                     {/* No opacity reduction here: at 11px it drops this text to
                         3.3:1, which is a WCAG AA failure on the dark surface. */}
-                    <span className="font-[family-name:var(--font-mono)] text-[0.6875rem] uppercase tracking-[0.1em]">
+                    <span className="text-[0.6875rem] font-bold uppercase tracking-[0.04em]">
                       Pending · {item.detail}
                     </span>
                   </div>

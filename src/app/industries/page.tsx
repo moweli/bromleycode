@@ -9,7 +9,7 @@ import { industries } from "@/content/industries";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Water and utilities, central government and financial services — three sectors where the unstructured mass is large and the cost of a wrong answer is high.",
+    "Water and utilities, central government and financial services, three sectors where the unstructured mass is large and the cost of a wrong answer is high.",
   alternates: { canonical: "/industries" },
 };
 

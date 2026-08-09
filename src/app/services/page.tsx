@@ -83,7 +83,7 @@ export default function ServicesPage() {
       <CtaBand
         eyebrow="Start here"
         heading="Not sure which of these you need?"
-        body="Most people are not, at the point they get in touch. Describe the corpus and what you want out of it and we will tell you which of the four this actually is — including when the honest answer is none of them yet."
+        body="Most people are not, at the point they get in touch. Describe the corpus and what you want out of it and we will tell you which of the four this actually is, including when the honest answer is none of them yet."
       />
     </>
   );

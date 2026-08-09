@@ -92,39 +92,36 @@ export function HeroVideo() {
           first frame. */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(5,8,13,0.94)_0%,rgba(5,8,13,0.88)_34%,rgba(5,8,13,0.55)_62%,rgba(5,8,13,0.35)_100%)]"
+        // Heavy behind the text column, clearing to the right so the footage
+        // still reads. Measured across all six segments of the loop: worst 95th
+        // percentile is 11.5:1 on the water cut, against a 4.5:1 requirement.
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(0,0,0,0.96)_0%,rgba(0,0,0,0.9)_34%,rgba(0,0,0,0.55)_64%,rgba(0,0,0,0.3)_100%)]"
       />
       <div
         aria-hidden="true"
         className="absolute inset-x-0 bottom-0 -z-10 h-40 bg-[linear-gradient(to_top,var(--color-ink-950),transparent)]"
       />
 
-      <div className="container-bc relative pt-40 pb-24 lg:pt-56 lg:pb-40">
-        <div className="max-w-[38rem]">
-          <p className="eyebrow text-accent [animation:reveal-up_600ms_both] motion-reduce:animate-none">
-            Data intelligence consultancy
-          </p>
-          <h1
-            className="mt-6 text-[length:var(--text-display)] leading-[var(--leading-display)] tracking-[var(--tracking-display)] [animation:reveal-up_600ms_80ms_both] motion-reduce:animate-none"
-          >
+      {/* Composition follows the reference's measured hero: a narrow left column
+          (~473px of a 1136px content area), no eyebrow, deep top padding, and a
+          single underlined text link rather than a filled button. */}
+      {/* Padding pair mirrors the reference's measured pt-80 / pb-72, landing the
+          hero at ~1014px tall at a 1440 viewport. */}
+      <div className="container-bc relative pt-40 pb-28 lg:pt-80 lg:pb-56">
+        <div className="max-w-[30rem]">
+          <h1 className="text-[length:var(--text-display)] leading-[var(--leading-display)] tracking-[var(--tracking-display)] [animation:reveal-up_600ms_both] motion-reduce:animate-none">
             {hero.headline}
           </h1>
-          <p className="mt-7 max-w-[34rem] text-[length:var(--text-lead)] leading-[1.45] text-paper/90 [animation:reveal-up_600ms_160ms_both] motion-reduce:animate-none">
+          <p className="mt-8 text-[length:var(--text-lead)] leading-[1.25] font-medium tracking-[var(--tracking-mid)] text-paper [animation:reveal-up_600ms_80ms_both] motion-reduce:animate-none">
             {hero.standfirst}
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4 [animation:reveal-up_600ms_240ms_both] motion-reduce:animate-none">
+          <div className="mt-10 [animation:reveal-up_600ms_160ms_both] motion-reduce:animate-none">
             <Link
               href={hero.primaryCta.href}
-              className="inline-flex items-center justify-center rounded-full bg-accent px-7 py-4 font-semibold text-ink-950 transition-colors duration-150 hover:bg-accent-hover"
+              className="group relative inline-block pb-2 text-[length:var(--text-h4)] font-medium tracking-[var(--tracking-mid)] text-paper"
             >
               {hero.primaryCta.label}
-            </Link>
-            <Link
-              href={hero.secondaryCta.href}
-              className="group relative inline-flex items-center gap-2 pb-2 font-medium text-paper"
-            >
-              {hero.secondaryCta.label}
-              <span aria-hidden="true" className="absolute inset-x-0 bottom-0 h-px bg-paper/30" />
+              <span aria-hidden="true" className="absolute inset-x-0 bottom-0 h-px bg-paper/40" />
               <span
                 aria-hidden="true"
                 className="absolute inset-x-0 bottom-0 h-px origin-left scale-x-0 bg-accent transition-transform duration-150 group-hover:scale-x-100"
@@ -132,7 +129,53 @@ export function HeroVideo() {
             </Link>
           </div>
         </div>
+
+        {/* Sector caption, cycling in step with the video segments, the
+            reference burns equivalent tags into its footage. Real text here, so
+            it is selectable, translatable and reachable by a screen reader. */}
+        <SegmentCaption />
       </div>
     </section>
+  );
+}
+
+/**
+ * Order and timing must match the montage cut in build-hero.mjs: six segments,
+ * two seconds each, hard cuts. If the video is recut, this list moves with it.
+ */
+const SEGMENT_LABELS = [
+  "Network infrastructure",
+  "Retrieval at scale",
+  "Water & utilities",
+  "Financial services",
+  "Central government",
+  "Unstructured records",
+];
+
+function SegmentCaption() {
+  return (
+    <div className="pointer-events-none absolute right-8 bottom-10 hidden w-[22rem] text-right lg:block">
+      <p className="eyebrow text-paper/60">Industry expertise</p>
+      {/* Explicit width and a fixed row height: shrink-to-fit lets the longest
+          label wrap, and a wrapped row is taller than the window, which shows
+          two labels at once. */}
+      <div className="relative mt-2 h-7 overflow-hidden">
+        <ul
+          className="absolute inset-x-0 top-0 motion-reduce:animate-none"
+          style={{
+            animation: `segment-cycle ${SEGMENT_LABELS.length * 2}s steps(${SEGMENT_LABELS.length}) infinite`,
+          }}
+        >
+          {SEGMENT_LABELS.map((label) => (
+            <li
+              key={label}
+              className="flex h-7 items-center justify-end whitespace-nowrap text-body font-medium tracking-[var(--tracking-mid)] text-paper"
+            >
+              {label}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
   );
 }

@@ -1,0 +1,62 @@
+[
+  {
+    "key": "water",
+    "label": "Water & utilities",
+    "query": "water treatment plant aerial",
+    "id": "5115937",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/water-5115937.mp4",
+    "url": "https://videos.pexels.com/video-files/5115937/5115937-hd_1920_1080_30fps.mp4",
+    "bytes": 23172615,
+    "page": "https://www.pexels.com/video/5115937/"
+  },
+  {
+    "key": "network",
+    "label": "Network infrastructure",
+    "query": "server room data center",
+    "id": "7140928",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/network-7140928.mp4",
+    "url": "https://videos.pexels.com/video-files/7140928/7140928-hd_1920_1080_24fps.mp4",
+    "bytes": 6448036,
+    "page": "https://www.pexels.com/video/7140928/"
+  },
+  {
+    "key": "fibre",
+    "label": "Retrieval at scale",
+    "query": "fiber optic cables",
+    "id": "33717724",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/fibre-33717724.mp4",
+    "url": "https://videos.pexels.com/video-files/33717724/14320524_640_360_60fps.mp4",
+    "bytes": 1991237,
+    "page": "https://www.pexels.com/video/33717724/"
+  },
+  {
+    "key": "finance",
+    "label": "Financial services",
+    "query": "city skyscrapers aerial london",
+    "id": "29993472",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/finance-29993472.mp4",
+    "url": "https://videos.pexels.com/video-files/29993472/12869854_640_360_30fps.mp4",
+    "bytes": 2084863,
+    "page": "https://www.pexels.com/video/29993472/"
+  },
+  {
+    "key": "government",
+    "label": "Central government",
+    "query": "government building architecture",
+    "id": "28454582",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/government-28454582.mp4",
+    "url": "https://videos.pexels.com/video-files/28454582/12388280_640_360_50fps.mp4",
+    "bytes": 2236786,
+    "page": "https://www.pexels.com/video/28454582/"
+  },
+  {
+    "key": "archive",
+    "label": "Unstructured records",
+    "query": "archive shelves documents library",
+    "id": "6550428",
+    "file": "/Users/moweli43-studio/Projects/bromleycode/reference/media-raw/hero-segments/archive-6550428.mp4",
+    "url": "https://videos.pexels.com/video-files/6550428/6550428-hd_1920_1080_25fps.mp4",
+    "bytes": 9382601,
+    "page": "https://www.pexels.com/video/6550428/"
+  }
+]

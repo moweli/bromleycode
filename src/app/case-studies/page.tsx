@@ -10,7 +10,7 @@ import { caseStudies } from "@/content/case-studies";
 export const metadata: Metadata = {
   title: "Case studies",
   description:
-    "Four illustrative engagements — water and utilities, central government, financial services and professional services — written the way we would write a real one.",
+    "Four illustrative engagements, water and utilities, central government, financial services and professional services, written the way we would write a real one.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -35,7 +35,7 @@ export default function CaseStudiesPage() {
             <SectionHeading
               eyebrow="Four engagements"
               title="Written to be checked, not skimmed."
-              body="Each one names the chunking strategy, the retrieval approach, the permission model and the evaluation method — because that is the level at which a technical buyer can tell whether a supplier has done this before."
+              body="Each one names the chunking strategy, the retrieval approach, the permission model and the evaluation method, because that is the level at which a technical buyer can tell whether a supplier has done this before."
               className="mb-14"
             />
           </Reveal>
@@ -59,7 +59,7 @@ export default function CaseStudiesPage() {
               eyebrow="On these being illustrative"
               title="Why we would rather label them than dress them up."
               body={[
-                "Bromely Code is new. We could have written these without the banner and most readers would not have checked — which is exactly why the banner is driven by a single constant rather than by good intentions.",
+                "Bromely Code is new. We could have written these without the banner and most readers would not have checked which is exactly why the banner is driven by a single constant rather than by good intentions.",
                 "Presenting unattributed illustrative scenarios is ordinary marketing practice. Presenting the same content as real client outcomes is a misleading commercial practice under the DMCC Act and the CAP Code. The distance between those two things is one careless edit, and this is the control that prevents it.",
               ]}
             />

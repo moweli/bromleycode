@@ -206,7 +206,7 @@ export const industries: Industry[] = [
       {
         name: "Aggregate scores hiding a failing family",
         detail:
-          "Acceptable mean performance frequently conceals one document family performing far below it — usually the specialist one.",
+          "Acceptable mean performance frequently conceals one document family performing far below it, usually the specialist one.",
       },
       {
         name: "Vendor benchmarks",

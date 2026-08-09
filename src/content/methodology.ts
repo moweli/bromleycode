@@ -23,7 +23,7 @@ export const pipelineStages: PipelineStage[] = [
     name: "Survey",
     short: "Open the corpus before designing anything",
     detail:
-      "A stratified sample of the real corpus — formats, scan quality, revision patterns, duplication, and the permission model each source enforces. Two or three document families usually account for most of the value, which changes what gets built first.",
+      "A stratified sample of the real corpus, formats, scan quality, revision patterns, duplication, and the permission model each source enforces. Two or three document families usually account for most of the value, which changes what gets built first.",
     hardPart:
       "Skipping this is the most expensive decision available. Almost every stalled pilot we are asked to look at was designed against an assumed corpus rather than a sampled one.",
     services: ["ai-strategy-roadmap"],
@@ -126,12 +126,12 @@ export const engagementShape = {
     "We are engaged to build and hand over, not to stay. Every engagement is scoped so that the people who will run the system afterwards have changed it themselves before we leave.",
   items: [
     {
-      name: "Discovery, 2–3 weeks",
+      name: "Discovery, 2, 3 weeks",
       detail:
         "Corpus survey, permission modelling, evaluability screening. Ends with a written recommendation, including the recommendation not to proceed where that is the honest answer.",
     },
     {
-      name: "Build, 8–16 weeks",
+      name: "Build, 8, 16 weeks",
       detail:
         "Two-week increments against a working system, not a sequence of documents. Your engineers are in the repository from the first increment; a handover that begins at the end is a handover that fails.",
     },
@@ -154,26 +154,26 @@ export const firstNinetyDays = {
     "Concrete enough to hold us to. Dates shift with corpus size and access lead times; the sequence does not.",
   phases: [
     {
-      window: "Days 1–15",
+      window: "Days 1, 15",
       title: "Survey and access",
       items: [
         "Stratified sample of the real corpus, by format, era and source system",
         "Permission model mapped, including whether it resolves per user at query time",
-        "Access, environments and security review under way — usually the long pole",
+        "Access, environments and security review under way, usually the long pole",
         "Evaluability check: what does correct look like, and who adjudicates it",
       ],
     },
     {
-      window: "Days 16–30",
+      window: "Days 16, 30",
       title: "Baseline and first slice",
       items: [
-        "A labelled question set of 200–400 items, built with the people who ask the questions",
+        "A labelled question set of 200, 400 items, built with the people who ask the questions",
         "Ingestion and parsing for the highest-value document family only",
-        "A measured retrieval baseline — deliberately unimpressive, and the number everything is compared against",
+        "A measured retrieval baseline, deliberately unimpressive, and the number everything is compared against",
       ],
     },
     {
-      window: "Days 31–60",
+      window: "Days 31, 60",
       title: "Build against the number",
       items: [
         "Chunking, enrichment and hybrid retrieval tuned against the labelled set",
@@ -183,7 +183,7 @@ export const firstNinetyDays = {
       ],
     },
     {
-      window: "Days 61–90",
+      window: "Days 61, 90",
       title: "Production and handover",
       items: [
         "Deployment into your environment, behind your identity provider, inside your boundary",

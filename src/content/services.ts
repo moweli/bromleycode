@@ -39,7 +39,7 @@ export const services: Service[] = [
       heading: "The problem this solves",
       body: [
         "Your warehouse holds what someone thought to model. It does not hold the surveyor's report, the supplier contract with the non-standard indemnity clause, the eighteen months of support tickets describing the same fault in nine different vocabularies, or the recorded call where a customer explained precisely why they left.",
-        "The usual answer is a search box. Search returns documents; leaders need positions. The gap between the two is extraction — turning a corpus into a set of typed, attributed, contestable facts that a person can check and a system can aggregate.",
+        "The usual answer is a search box. Search returns documents; leaders need positions. The gap between the two is extraction, turning a corpus into a set of typed, attributed, contestable facts that a person can check and a system can aggregate.",
         "That gap is where most GenAI pilots stall. A demonstration over fifty clean PDFs proves nothing about a corpus of four hundred thousand documents with inconsistent scanning quality, three overlapping permission models, and twenty years of superseded revisions sitting alongside current ones.",
       ],
     },
@@ -51,7 +51,7 @@ export const services: Service[] = [
         {
           name: "Corpus survey",
           detail:
-            "Before any code, we sample the actual corpus — formats, scan quality, revision patterns, duplication rate, and the permission model each source enforces. The survey usually reveals that two or three document families account for most of the value, which changes what gets built first.",
+            "Before any code, we sample the actual corpus, formats, scan quality, revision patterns, duplication rate, and the permission model each source enforces. The survey usually reveals that two or three document families account for most of the value, which changes what gets built first.",
         },
         {
           name: "Parsing and layout recovery",
@@ -76,7 +76,7 @@ export const services: Service[] = [
         {
           name: "Grounding and attribution",
           detail:
-            "Every generated claim carries a citation back to a specific chunk of a specific revision. Answers without a supporting passage are refused rather than improvised — an abstention is a feature for this audience, not a failure.",
+            "Every generated claim carries a citation back to a specific chunk of a specific revision. Answers without a supporting passage are refused rather than improvised: an abstention is a feature for this audience, not a failure.",
         },
         {
           name: "Permission inheritance",
@@ -94,7 +94,7 @@ export const services: Service[] = [
       {
         name: "An evaluation harness",
         detail:
-          "A labelled question set, a scoring pipeline, and a regression suite that runs on every change — so the system's quality is a number your team can watch rather than an impression.",
+          "A labelled question set, a scoring pipeline, and a regression suite that runs on every change, so the system's quality is a number your team can watch rather than an impression.",
       },
       {
         name: "The decisions, written down",
@@ -126,7 +126,7 @@ export const services: Service[] = [
       {
         question: "Where does a human stay in the loop?",
         answer:
-          "Wherever an error is expensive and reversible only by a person. Typically: a review queue for extractions above a value threshold, a feedback control on every answer that writes to the evaluation set, and a periodic sampled audit. The review effort should fall over time — if it does not, the pipeline is not improving and we would rather find that in month two than month ten.",
+          "Wherever an error is expensive and reversible only by a person. Typically: a review queue for extractions above a value threshold, a feedback control on every answer that writes to the evaluation set, and a periodic sampled audit. The review effort should fall over time, if it does not, the pipeline is not improving and we would rather find that in month two than month ten.",
       },
     ],
     relatedCaseStudy: "asset-information-retrieval-water-utility",
@@ -212,7 +212,7 @@ export const services: Service[] = [
       {
         question: "Do we need a vector database?",
         answer:
-          "Often not. Below roughly ten million chunks, pgvector on the Postgres you already operate is usually the right answer — one fewer system to run, back up and secure, and hybrid search alongside your relational filters comes free. We recommend a dedicated vector store when scale, latency budget or a specific index type actually requires it, and we will show you the numbers behind the recommendation.",
+          "Often not. Below roughly ten million chunks, pgvector on the Postgres you already operate is usually the right answer: one fewer system to run, back up and secure, and hybrid search alongside your relational filters comes free. We recommend a dedicated vector store when scale, latency budget or a specific index type actually requires it, and we will show you the numbers behind the recommendation.",
       },
       {
         question: "How do you handle re-embedding when a model changes?",
@@ -278,7 +278,7 @@ export const services: Service[] = [
         {
           name: "Governance",
           detail:
-            "The approval path, the review points, and the model and data policies each use case has to satisfy — agreed with risk and legal during the engagement rather than discovered afterwards.",
+            "The approval path, the review points, and the model and data policies each use case has to satisfy, agreed with risk and legal during the engagement rather than discovered afterwards.",
         },
       ],
     },
@@ -305,7 +305,7 @@ export const services: Service[] = [
       {
         question: "Will you tell us not to do something?",
         answer:
-          "Regularly. The most common recommendation against is a use case where no one can define a correct answer — without that, there is nothing to evaluate, nothing to improve, and no way to know whether the system is getting better or worse. The second most common is a corpus whose permission model cannot be resolved per user, which makes the system undeployable to the audience that wanted it.",
+          "Regularly. The most common recommendation against is a use case where no one can define a correct answer, without that, there is nothing to evaluate, nothing to improve, and no way to know whether the system is getting better or worse. The second most common is a corpus whose permission model cannot be resolved per user, which makes the system undeployable to the audience that wanted it.",
       },
       {
         question: "How is this different from a strategy deck?",
@@ -330,7 +330,7 @@ export const services: Service[] = [
       body: [
         "Most GenAI systems in production are evaluated by the people who built them, on examples they chose, at a point in time. That is not evidence. It is a demonstration with a sample size.",
         "The consequences arrive later: nobody notices when a model update moves behaviour, a prompt change silently degrades a subset of queries, or a new document family enters the corpus that the retrieval configuration handles badly. Without a regression suite, all three are invisible until a user complains.",
-        "For regulated buyers there is a second problem. The system will eventually need to be explained to someone with the authority to stop it — an internal auditor, a regulator, a court. That conversation goes very differently when there is a measured error rate and a documented method.",
+        "For regulated buyers there is a second problem. The system will eventually need to be explained to someone with the authority to stop it: an internal auditor, a regulator, a court. That conversation goes very differently when there is a measured error rate and a documented method.",
       ],
     },
     approach: {
@@ -382,7 +382,7 @@ export const services: Service[] = [
       {
         name: "An assurance pack",
         detail:
-          "Method, measured error rates, known failure modes, and the mitigations in place — written for a risk committee rather than for engineers.",
+          "Method, measured error rates, known failure modes, and the mitigations in place, written for a risk committee rather than for engineers.",
       },
       {
         name: "Monitoring in production",
@@ -393,7 +393,7 @@ export const services: Service[] = [
       {
         question: "Can an LLM judge be trusted to score another LLM?",
         answer:
-          "Only with its own error rate measured. We calibrate every judge against human scores on a stratified sample, report the agreement rate, and treat the judge as an instrument with known precision rather than an oracle. Where agreement is poor — usually on nuanced faithfulness judgements — those categories stay human-scored.",
+          "Only with its own error rate measured. We calibrate every judge against human scores on a stratified sample, report the agreement rate, and treat the judge as an instrument with known precision rather than an oracle. Where agreement is poor, usually on nuanced faithfulness judgements, those categories stay human-scored.",
       },
       {
         question: "How large does a labelled set need to be?",
@@ -403,7 +403,7 @@ export const services: Service[] = [
       {
         question: "What error rate is acceptable?",
         answer:
-          "That is your decision, not ours, and it depends entirely on what the answer is used for and how reversible the consequence is. Our job is to make the number real, break it down by failure mode, and be explicit about the confidence interval — so the decision is made on evidence rather than on comfort.",
+          "That is your decision, not ours, and it depends entirely on what the answer is used for and how reversible the consequence is. Our job is to make the number real, break it down by failure mode, and be explicit about the confidence interval, so the decision is made on evidence rather than on comfort.",
       },
     ],
     relatedCaseStudy: "claims-evidence-assurance-financial-services",

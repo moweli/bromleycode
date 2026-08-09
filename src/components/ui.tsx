@@ -117,7 +117,7 @@ export function Button({
 }) {
   const styles = {
     primary: "bg-ink text-paper hover:bg-ink-700",
-    accent: "bg-accent text-ink-950 hover:bg-accent-hover",
+    accent: "bg-accent text-paper hover:bg-accent-hover",
     "ghost-dark": "border border-paper/30 text-paper hover:border-accent hover:text-accent",
   }[variant];
   return (

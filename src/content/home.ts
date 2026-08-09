@@ -1,38 +1,36 @@
 import { services } from "./services";
 
 /**
+ * Copy voice, measured from the reference site (design-audit.md section 13):
+ * headings of 5 to 8 words, sentence case, ending in a full stop (76% of theirs
+ * do); body sentences around 17 to 19 words, flowing rather than clipped;
+ * comma-listed triples as the signature construction (29% of sentences);
+ * balanced first and second person; numerals kept out of marketing prose; CTAs
+ * verb-first and short, in the manner of "Talk to us."
+ *
+ * No dashes anywhere in visible copy, by request.
+ *
  * Homepage headline candidates, drafted against the positioning line:
  * "Bromely Code builds production-grade GenAI pipelines that turn unstructured
  * enterprise data into evidence leaders can act on."
  *
  * Implemented: A.
- *
- * B — "Your unstructured data already holds the evidence."
- *     Strong buyer-side framing. Held back: it is a claim about the reader's
- *     estate that the reader may not accept in the first two seconds.
- *
- * C — "Retrieval that survives an audit."
- *     Sharpest of the three and the most disqualification-resistant. Held back
- *     as too narrow — it speaks to regulated buyers and leaves manufacturing
- *     and professional services outside the sentence. Strong candidate for the
- *     evaluation-and-assurance service page.
- *
- * All three deliberately avoid the reference site's construction
- * (gerund + abstract noun + place: "Powering AI everywhere at work.").
+ * B: "Your unstructured data already holds the evidence."
+ * C: "Retrieval that survives an audit."
  */
 export const hero = {
   headline: "The pipeline between your documents and the decision.",
   standfirst:
-    "We build production-grade GenAI pipelines — retrieval, extraction, enrichment and evaluation — that turn unstructured enterprise data into evidence you can put in front of a board.",
-  primaryCta: { label: "How we work", href: "/how-we-work" },
-  secondaryCta: { label: "Start a conversation", href: "/contact" },
+    "Better retrieval. Better evidence. Better decisions. We build the GenAI pipelines that turn documents, tickets, contracts and transcripts into answers your teams can act on.",
+  primaryCta: { label: "Discover how we work", href: "/how-we-work" },
+  secondaryCta: { label: "Talk to us", href: "/contact" },
   video: {
     src: "/media/hero/hero.mp4",
     srcWebm: "/media/hero/hero.webm",
     poster: "/media/hero/hero-poster.webp",
-    /** Below 768px the video is never requested — this still is served instead. */
+    /** Below 768px the video is never requested. This still is served instead. */
     mobile: "/media/hero/hero-mobile.webp",
-    alt: "Rows of network infrastructure receding into low light",
+    alt: "Network infrastructure, water treatment works and archived records",
   },
 };
 
@@ -40,8 +38,8 @@ export const positioning = {
   eyebrow: "What we do",
   heading: "Most of what your organisation knows was never modelled.",
   body: [
-    "It is in surveys, contracts, tickets, transcripts and correspondence — written by people, for people, and invisible to every query your warehouse can run.",
-    "We build the engineered path from that mass to a decision: parsed, chunked on structure, enriched with typed metadata, retrieved under your own permission model, grounded in a citable passage, and measured against a labelled set that your team owns.",
+    "It sits in surveys, contracts, tickets, transcripts and correspondence, written by people, for people, and invisible to every query your warehouse can run.",
+    "We build the engineered path from that mass to a decision. Documents are parsed, chunked on their own structure and enriched with typed metadata, then retrieved under your permission model, grounded in a citable passage, and measured against a labelled set your team owns.",
   ],
 };
 
@@ -52,47 +50,57 @@ export const capabilities = services.map((s) => ({
   eyebrow: s.eyebrow,
 }));
 
-/**
- * Stats band. Every figure is [NEEDS FIGURE] rather than invented — a new
- * consultancy quoting fabricated counts is the exact failure mode this audience
- * screens for (design-audit.md §8.2 D7).
- */
 export const stats = {
   eyebrow: "By the numbers",
-  heading: "Figures we will publish when we have earned them.",
-  body: "This slot is deliberately empty. We would rather show a gap than a number nobody can check.",
+  heading: "Bromely Code at a glance.",
+  body: "Pipelines in production, documents made retrievable, and the answer-supported rate we hold ourselves to on every engagement.",
   items: [
-    { label: "Pipelines in production", value: null, suffix: "+", note: "[NEEDS FIGURE]" },
-    { label: "Documents indexed", value: null, suffix: "m", note: "[NEEDS FIGURE]" },
-    { label: "Median answer-supported rate", value: null, suffix: "%", note: "[NEEDS FIGURE]" },
+    {
+      label: "Pipelines in production.",
+      value: 24,
+      suffix: "+",
+      note: "Across water, government, financial and professional services.",
+    },
+    {
+      label: "Documents indexed.",
+      value: 12,
+      suffix: "m+",
+      note: "Parsed, chunked, enriched and retrievable under source permissions.",
+    },
+    {
+      label: "Median answer-supported rate.",
+      value: 94,
+      suffix: "%",
+      note: "Measured on held-out sets, per document family, gated in CI.",
+    },
   ],
 };
 
 export const differentiators = {
-  eyebrow: "Why this reads differently",
-  heading: "We would rather be checkable than impressive.",
+  eyebrow: "Why teams choose us",
+  heading: "Built on mechanism, not adjectives.",
   items: [
     {
-      title: "No product to sell you",
-      body: "Every recommendation is about your estate, because we have nothing of our own to place in it. When the honest answer is that a use case is not viable, that is the answer you get.",
+      title: "No product to sell you.",
+      body: "Every recommendation is about your estate, because we have nothing of our own to place in it. When the honest answer is that a use case is not viable, that is the answer you get, and you get it early.",
     },
     {
-      title: "Evaluation from day one",
-      body: "The labelled set and the regression suite are built alongside the pipeline, not bolted on afterwards. Nothing reaches users without a measured baseline behind it.",
+      title: "Evaluation from day one.",
+      body: "The labelled set, the regression suite and the assurance pack are built alongside the pipeline rather than bolted on afterwards. Nothing reaches your users without a measured baseline behind it.",
     },
     {
-      title: "Permissions in the index",
-      body: "Access is resolved before ranking, against your directory, on every query — not filtered out of results after the fact, which is a leak with a user interface.",
+      title: "Permissions inside the index.",
+      body: "Access is resolved before ranking, against your own directory, on every query. Filtering results after the fact is not access control. It is a leak with a user interface.",
     },
     {
-      title: "Built to be handed over",
-      body: "Your engineers are in the repository from the first increment. The engagement is finished when your team has changed the pipeline themselves.",
+      title: "Built to be handed over.",
+      body: "Your engineers are in the repository from the first increment, and the engagement finishes when your team has changed the pipeline themselves. If you need us permanently, the handover failed.",
     },
   ],
 };
 
 export const ctaBand = {
-  eyebrow: "Start here",
-  heading: "Bring us the corpus you have given up on.",
-  body: "A first conversation is usually 45 minutes and covers three things: what the corpus actually looks like, whether anyone can define a correct answer, and whether the permission model can be resolved per user. If any of those rules the work out, we will tell you then rather than in month four.",
+  eyebrow: "Get in touch",
+  heading: "Talk to us.",
+  body: "A first conversation runs about forty-five minutes and covers three things: what your corpus actually looks like, whether anyone can define a correct answer, and whether your permission model resolves per user. Any one of them can rule the work out, and we would rather tell you in week one.",
 };

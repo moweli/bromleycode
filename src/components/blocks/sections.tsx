@@ -29,10 +29,10 @@ export function CtaBand({
               <dt className="eyebrow text-mist">Prefer email</dt>
               <dd className="mt-1">
                 <a
-                  href="mailto:hello@bromelycode.com"
+                  href="mailto:enquiries@bromelycode.com"
                   className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
                 >
-                  hello@bromelycode.com
+                  enquiries@bromelycode.com
                 </a>
               </dd>
             </div>
@@ -129,7 +129,7 @@ export function ArchitectureBlock() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 font-[family-name:var(--font-mono)] text-[0.6875rem] leading-relaxed uppercase tracking-[0.06em] text-mist">
+            <p className="mt-5 text-[0.6875rem] font-bold uppercase leading-relaxed tracking-[0.04em] text-mist">
               {layer.note}
             </p>
           </li>
