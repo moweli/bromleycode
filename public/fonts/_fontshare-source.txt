@@ -1,0 +1,6 @@
+Satoshi — Fontshare (Indian Type Foundry)
+Licence: ITF Free Font Licence (free for commercial use)
+Source CSS: https://api.fontshare.com/v2/css?f%5B%5D=satoshi@1,2
+Downloaded: 2026-08-09
+
+Satoshi-Variable.woff2  42KB  https://cdn.fontshare.com/wf/NWBQYJIM7GCZ5XWD7D26ARB3VDY55ZRT/K63EV2KZIGKLE7RANQ2U42S6SVHU5RJ7/X6XYTKIVDUW7GZTZPZNN4EUM5KH54KHF.woff2

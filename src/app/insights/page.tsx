@@ -1,0 +1,43 @@
+import type { Metadata } from "next";
+import { PageHero } from "@/components/blocks/page-hero";
+import { ArticleCard } from "@/components/blocks/cards";
+import { CtaBand } from "@/components/blocks/sections";
+import { Reveal } from "@/components/reveal";
+import { Section } from "@/components/ui";
+import { insights } from "@/content/insights";
+import { insightImages } from "@/content/media";
+
+export const metadata: Metadata = {
+  title: "Insights",
+  description:
+    "Notes from the build: chunking strategy, permission inheritance, abstention, and how to size an evaluation set.",
+  alternates: { canonical: "/insights" },
+};
+
+export default function InsightsPage() {
+  return (
+    <>
+      <PageHero
+        tone="light"
+        eyebrow="Insights"
+        title="Notes from the build."
+        standfirst="Written for the people who will have to run these systems. Specific enough to disagree with, which is the point."
+        width="medium"
+      />
+
+      <Section size="lg">
+        <div className="container-bc">
+          <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {insights.map((insight, index) => (
+              <Reveal as="li" key={insight.slug} delay={index * 70}>
+                <ArticleCard insight={insight} image={insightImages[insight.slug]} />
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      <CtaBand />
+    </>
+  );
+}

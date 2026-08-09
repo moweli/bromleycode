@@ -1,69 +1,148 @@
-import Image from "next/image";
+import Link from "next/link";
+import { HeroVideo } from "@/components/blocks/hero-video";
+import { StatsBand } from "@/components/blocks/stats-band";
+import { StackBand } from "@/components/blocks/stack-band";
+import { PipelineDiagram } from "@/components/blocks/pipeline-diagram";
+import { CapabilityCard, CaseStudyCard, IndustryCard } from "@/components/blocks/cards";
+import { CtaBand } from "@/components/blocks/sections";
+import { Reveal } from "@/components/reveal";
+import { ArrowLink, Section, SectionHeading } from "@/components/ui";
+import { differentiators, positioning } from "@/content/home";
+import { services } from "@/content/services";
+import { caseStudies } from "@/content/case-studies";
+import { industries } from "@/content/industries";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <HeroVideo />
+
+      {/* Positioning + capabilities */}
+      <Section size="lg">
+        <div className="container-bc">
+          <Reveal>
+            <SectionHeading eyebrow={positioning.eyebrow} title={positioning.heading} body={positioning.body} />
+          </Reveal>
+          <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {services.map((service, index) => (
+              <Reveal as="li" key={service.slug} delay={index * 70}>
+                <CapabilityCard service={service} />
+              </Reveal>
+            ))}
+          </ul>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
+      </Section>
+
+      {/* Mechanism — the compensating trust apparatus for having no client list */}
+      <Section tone="dark" size="lg" wash className="grain overflow-hidden">
+        <div className="container-bc relative">
+          <Reveal>
+            <SectionHeading
+              tone="dark"
+              eyebrow="The mechanism"
+              title="Ten stages, two loops, and the parts that usually break."
+              body="Every stage can be evaluated in isolation. That matters when something degrades and you need to know whether retrieval got worse, the parser broke on a new template, or the model changed underneath you."
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </Reveal>
+          <Reveal delay={80} className="mt-14">
+            <PipelineDiagram />
+          </Reveal>
+          <Reveal delay={120} className="mt-12">
+            <ArrowLink href="/how-we-work" tone="dark">
+              Read the method in full
+            </ArrowLink>
+          </Reveal>
         </div>
-      </main>
-    </div>
+      </Section>
+
+      {/* Differentiators */}
+      <Section size="lg">
+        <div className="container-bc">
+          <Reveal>
+            <SectionHeading eyebrow={differentiators.eyebrow} title={differentiators.heading} />
+          </Reveal>
+          <ul className="mt-14 grid gap-x-10 gap-y-12 md:grid-cols-2">
+            {differentiators.items.map((item, index) => (
+              <Reveal as="li" key={item.title} delay={index * 70} className="border-t border-line-light pt-6">
+                <h3 className="text-[length:var(--text-h4)]">{item.title}</h3>
+                <p className="mt-3 max-w-[32rem] text-body-sm text-ink-muted">{item.body}</p>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      <StatsBand />
+
+      <StackBand />
+
+      {/* Case studies */}
+      <Section size="lg">
+        <div className="container-bc">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <Reveal>
+              <SectionHeading
+                eyebrow="Engagements"
+                title="What the work looks like, end to end."
+                body="Four illustrative engagements written the way we would write a real one: the corpus, the constraint, the pipeline stage by stage, and what shipped."
+              />
+            </Reveal>
+            <Reveal delay={80}>
+              <ArrowLink href="/case-studies">All case studies</ArrowLink>
+            </Reveal>
+          </div>
+          <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {caseStudies.slice(0, 3).map((study, index) => (
+              <Reveal as="li" key={study.slug} delay={index * 70}>
+                <CaseStudyCard study={study} />
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      {/* Industries */}
+      <Section size="lg" className="bg-paper-alt">
+        <div className="container-bc">
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <Reveal>
+              <SectionHeading
+                eyebrow="Sectors"
+                title="Where we have depth."
+                body="Three sectors where the unstructured mass is large, the permission model is real, and the cost of a wrong answer is high enough that evaluation is not optional."
+              />
+            </Reveal>
+            <Reveal delay={80}>
+              <ArrowLink href="/industries">All industries</ArrowLink>
+            </Reveal>
+          </div>
+          <ul className="mt-14 grid gap-6 md:grid-cols-3">
+            {industries.map((industry, index) => (
+              <Reveal as="li" key={industry.slug} delay={index * 70}>
+                <IndustryCard industry={industry} />
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </Section>
+
+      {/* Insight teaser */}
+      <Section size="md">
+        <div className="container-bc flex flex-wrap items-center justify-between gap-8 border-y border-line-light py-10">
+          <p className="max-w-[42rem] text-[length:var(--text-h4)]">
+            &ldquo;Chunking is a decision, not a default.&rdquo; Notes from the build, on the parts of
+            retrieval that decide whether a system survives its first quarter.
+          </p>
+          <Link
+            href="/insights"
+            className="inline-flex items-center justify-center rounded-full bg-ink px-7 py-4 font-semibold text-paper transition-colors duration-150 hover:bg-ink-700"
+          >
+            Read the insights
+          </Link>
+        </div>
+      </Section>
+
+      <CtaBand />
+    </>
   );
 }
