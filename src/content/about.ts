@@ -40,9 +40,4 @@ export const faqs = [
     answer:
       "A defined support window with an end date, and a runbook your team has already used. If you find yourself needing us permanently, the handover failed and we would want to fix that rather than bill for it.",
   },
-  {
-    question: "Do you have case studies from real clients?",
-    answer:
-      "Not yet, and the ones on this site say so on every page. They are illustrative composites written to show how we work, marked as such structurally rather than in a footnote. Real studies will replace them with client permission and verified figures.",
-  },
 ];

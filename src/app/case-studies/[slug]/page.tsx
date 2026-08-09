@@ -165,13 +165,24 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               <section id="pipeline">
                 <h2>The pipeline we built</h2>
                 <p>{study.pipeline.intro}</p>
-                <ol className="not-prose mt-8 grid gap-px border border-line-light bg-line-light">
+                {/* Stage name and detail sit side by side from `sm` up: the
+                    names become a scannable rail, and the detail keeps a
+                    readable measure instead of running the full column width.
+                    The stage number is the list's own marker, which is why the
+                    block opts out of the prose list styles. */}
+                <ol className="not-prose mt-8 border-t border-line-light">
                   {study.pipeline.stages.map((stage, index) => (
-                    <li key={stage.name} className="bg-paper p-6">
-                      <p className="eyebrow text-accent-ink">
-                        {String(index + 1).padStart(2, "0")} · {stage.name}
+                    <li
+                      key={stage.name}
+                      className="grid gap-x-10 gap-y-2 border-b border-line-light py-6 sm:grid-cols-[14rem_1fr]"
+                    >
+                      <p className="eyebrow flex gap-3 text-accent-ink">
+                        <span className="font-[family-name:var(--font-mono)] text-ink-muted">
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span>{stage.name}</span>
                       </p>
-                      <p className="mt-3 text-body-sm text-ink-muted">{stage.detail}</p>
+                      <p className="text-body-sm text-ink-muted">{stage.detail}</p>
                     </li>
                   ))}
                 </ol>

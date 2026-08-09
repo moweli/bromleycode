@@ -231,6 +231,21 @@
     margin-block: 0.5rem;
   }
 
+  /* Escape hatch for composed blocks set inside prose — lists that carry their
+     own numbering, definition lists, figures. Without it the prose list rules
+     above add a second set of markers beside the block's own, and the li
+     margins push apart rows that are meant to sit on shared hairlines. Named
+     for the Tailwind Typography convention; the prose layer here is hand
+     rolled, so the class has to be defined rather than inherited. */
+  .prose-bc :is(.not-prose, .not-prose ol, .not-prose ul) {
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  .prose-bc .not-prose :is(li, p) {
+    margin-block: 0;
+  }
+
   .prose-bc a {
     color: var(--color-accent-ink);
     text-decoration: underline;

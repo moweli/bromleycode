@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/blocks/page-hero";
 import { CtaBand, Faq } from "@/components/blocks/sections";
-import { AccreditationBand } from "@/components/blocks/accreditation-band";
 import { Reveal } from "@/components/reveal";
 import { Section, SectionHeading } from "@/components/ui";
 import { faqs, story } from "@/content/about";
@@ -85,9 +84,6 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      <div className="bg-ink-900 text-paper">
-        <AccreditationBand />
-      </div>
 
       <CtaBand />
     </>
