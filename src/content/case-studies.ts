@@ -24,6 +24,12 @@ export type CaseStudy = {
   slug: string;
   /** No client names. Sector and scale only. */
   title: string;
+  /**
+   * Short form for the browser tab and search results. The editorial title
+   * runs to 75 characters, which truncates in both. The page keeps the long
+   * one; only the metadata uses this.
+   */
+  metaTitle: string;
   sector: string;
   sectorSlug: string;
   scale: string;
@@ -56,6 +62,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "asset-information-retrieval-water-utility",
     title: "Making thirty years of asset documentation answerable at a UK water utility",
+    metaTitle: "Asset documentation retrieval, water utility",
     sector: "Water and utilities",
     sectorSlug: "water-utilities",
     scale: "UK regional water utility, ~4,500 staff",
@@ -176,6 +183,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "regulatory-evidence-pipeline-central-government",
     title: "Assembling regulatory evidence from casework correspondence in central government",
+    metaTitle: "Regulatory evidence pipeline, central government",
     sector: "Central government",
     sectorSlug: "central-government",
     scale: "UK central government agency, ~2,000 staff",
@@ -291,6 +299,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "claims-evidence-assurance-financial-services",
     title: "Putting a measured error rate behind claims-evidence retrieval at a specialist insurer",
+    metaTitle: "Claims evidence assurance, specialist insurer",
     sector: "Financial services",
     sectorSlug: "financial-services",
     scale: "UK specialist insurer, ~1,200 staff",
@@ -406,6 +415,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "ai-roadmap-professional-services",
     title: "A two-year AI roadmap grounded in what the document estate could actually support",
+    metaTitle: "AI roadmap, professional services firm",
     sector: "Professional services",
     sectorSlug: "professional-services",
     scale: "Mid-market UK professional services firm, ~600 staff",

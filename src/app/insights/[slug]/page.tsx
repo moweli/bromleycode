@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: { canonical: `/insights/${insight.slug}` },
     openGraph: {
       type: "article",
-      title: `${insight.title}. Bromley Code`,
+      title: `${insight.title} | Bromley Code`,
       description: insight.standfirst,
       publishedTime: insight.published,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: insight.title }],

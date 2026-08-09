@@ -20,11 +20,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const study = getCaseStudy(slug);
   if (!study) return { title: "Case study not found" };
   return {
-    title: study.title,
+    title: study.metaTitle,
     description: study.summary,
     alternates: { canonical: `/case-studies/${study.slug}` },
     openGraph: {
-      title: `${study.title}. Bromley Code`,
+      title: `${study.title} | Bromley Code`,
       description: study.summary,
       images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: study.title }],
     },

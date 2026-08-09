@@ -23,22 +23,25 @@ import { site } from "@/content/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
+  // A tab is about 25 characters wide, so the page name leads and the brand
+  // follows. The tagline's full stop is dropped: it belongs in a sentence, not
+  // in a tab.
   title: {
-    default: `${site.name}, ${site.tagline}`,
-    template: `%s, ${site.name}`,
+    default: `${site.name} | ${site.tagline.replace(/\.$/, "")}`,
+    template: `%s | ${site.name}`,
   },
   description: site.description,
   openGraph: {
     type: "website",
     locale: site.locale,
     siteName: site.name,
-    title: `${site.name}, ${site.tagline}`,
+    title: `${site.name} | ${site.tagline.replace(/\.$/, "")}`,
     description: site.description,
     images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: site.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name}, ${site.tagline}`,
+    title: `${site.name} | ${site.tagline.replace(/\.$/, "")}`,
     description: site.description,
   },
   robots: { index: true, follow: true },
