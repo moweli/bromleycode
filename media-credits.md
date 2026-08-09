@@ -140,23 +140,37 @@ thing a client's legal team asks about.
 
 | Shipped file | Mark | Rights holder | Source | Downloaded |
 |---|---|---|---|---|
-| `public/media/accreditations/cyber-essentials.webp` | Cyber Essentials | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09 |
-| `reference/media-raw/badges/iasme.png` | IASME Consortium | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/) | 2026-08-09, held in reserve |
-| `reference/media-raw/badges/ncsc-chevron.png` | NCSC chevron | National Cyber Security Centre, Crown copyright | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09, held in reserve |
+| `public/media/accreditations/cyber-essentials.webp` | Cyber Essentials (white) | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/) | 2026-08-09 |
+| `public/media/accreditations/cyber-essentials-plus.webp` | Cyber Essentials Plus (white) | IASME Consortium | [iasme.co.uk](https://iasme.co.uk/cyber-essentials/cyber-essentials-plus/) | 2026-08-09 |
+| `public/media/accreditations/cyber-essentials-blue.webp` | Cyber Essentials (blue) | IASME Consortium | as above | 2026-08-09, held for light surfaces |
+| `public/media/accreditations/cyber-essentials-plus-blue.webp` | Cyber Essentials Plus (blue) | IASME Consortium | as above | 2026-08-09, held for light surfaces |
 
-The Cyber Essentials Plus, ISO 27001, ISO 9001, ICO and Companies House tiles are
-typographic lockups drawn in this repository. No official public artwork exists
-for the ISO scheme marks: they are issued by the certification body that audited
-you and carry that body's accreditation number, so an approximation drawn by us
-would be wrong on the detail that matters. Replace each lockup with the body's
-issued artwork on award.
+Taken from IASME's own asset directory. IASME operates the Cyber Essentials
+scheme and issues these marks, so this is the primary source. The white variants
+sit on the black footer band; the blue variants are held for light surfaces.
 
-**These are certification marks, not decoration.** IASME licenses the Cyber
-Essentials marks to certified organisations only and publishes a public search of
-who holds them. Every tile with `status: held` in `src/content/site.ts` is a
-claim a procurement reviewer can check in under a minute. Confirm each
-certificate is in hand before launch; set a tile to `pending` and it renders
-as a labelled outline instead of a badge.
+The ISO 27001 and ISO 9001 tiles are typographic lockups drawn in this
+repository, and **there is no artwork to fetch for them.** ISO does not license
+its own logo to certified organisations at all. A certified company displays the
+mark of the certification body that audited it, which carries that body's UKAS
+accreditation number and is issued against a specific certificate. Once a
+certifier is appointed, replace `lockup` with their issued artwork in `logo`.
+
+### Not used, deliberately
+
+The accreditation images hosted on the reference site's own CDN were offered and
+not taken. Two of the three are the same IASME marks, which we now hold from
+source. The third is an ISO 27001 badge issued to that company by its
+certification body: copying it would put somebody else's certificate on this
+site. Hotlinking their CDN would also place our bandwidth on their bill and hand
+them our referrer traffic.
+
+### These are certification marks, not decoration
+
+IASME licenses them to certified organisations only and publishes a public
+search of who holds them. Every tile with `status: "held"` in
+`src/content/site.ts` is a claim a procurement reviewer can check in under a
+minute. Set a tile to `"pending"` and it renders as a labelled outline instead.
 
 ---
 

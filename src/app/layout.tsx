@@ -52,7 +52,6 @@ const organisationJsonLd = {
   alternateName: site.name,
   url: site.url,
   email: site.email,
-  telephone: site.phone,
   description: site.description,
   areaServed: "GB",
   // Locality only until incorporation — a fabricated street address in

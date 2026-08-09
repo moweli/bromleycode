@@ -62,12 +62,7 @@ export function SiteFooter() {
             <address className="mt-5 space-y-1 text-body-sm not-italic text-paper/85">
               <p>{site.legalName}</p>
               {site.registration.status === "registered" ? (
-                <>
-                  {site.registration.registeredOffice.lines.map((line) => (
-                    <p key={line}>{line}</p>
-                  ))}
-                  <p>{site.registration.registeredOffice.postcode}</p>
-                </>
+                <p>{site.registration.registeredOffice.oneLine}</p>
               ) : (
                 <p>{site.location}</p>
               )}
@@ -77,14 +72,6 @@ export function SiteFooter() {
                   className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
                 >
                   {site.email}
-                </a>
-              </p>
-              <p>
-                <a
-                  href={`tel:${site.phoneHref}`}
-                  className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
-                >
-                  {site.phone}
                 </a>
               </p>
             </address>

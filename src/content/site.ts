@@ -13,13 +13,7 @@ export const site = {
     "Bromely Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
   url: "https://bromelycode.com",
   email: "enquiries@bromelycode.com",
-  /**
-   * Ofcom reserves 020 7946 0xxx for fiction and documentation — it cannot ring
-   * a real subscriber. Replace with the real number; do not leave this live.
-   */
-  phone: "+44 20 7946 0412",
-  phoneHref: "+442079460412",
-  hours: "Monday to Friday, 09:00, 17:30 UK time",
+  hours: "Monday to Friday, 09:00 to 17:30 UK time",
   locale: "en_GB",
   /**
    * Verified against the Companies House register on 9 August 2026:
@@ -46,7 +40,9 @@ export const site = {
     vatNumber: "",
     icoRegistration: "",
     registeredOffice: {
-      lines: ["262 Bancroft Road", "London", "England"],
+      /** One line. Four stacked lines for a London postcode is padding. */
+      oneLine: "262 Bancroft Road, London E1 4BS",
+      lines: ["262 Bancroft Road", "London"],
       postcode: "E1 4BS",
     },
   },
@@ -115,12 +111,6 @@ export const socials: { label: string; href: string; icon: "linkedin" | "github"
 ];
 
 /**
- * Accreditation slots exist from day one so the component does not need a
- * retrofit the week a certificate lands. `status: "pending"` renders a labelled
- * outline, never a badge — a placeholder that looks like an accreditation is
- * worse than an empty one (design-audit.md §8.1 D3).
- */
-/**
  * Accreditation row.
  *
  * `logo` is the certifying body's own artwork where that artwork is published.
@@ -162,9 +152,21 @@ export const accreditations: Accreditation[] = [
     name: "Cyber Essentials Plus",
     detail: "IASME certified",
     status: "held",
-    lockup: { line1: "Cyber Essentials", line2: "Plus" },
+    logo: {
+      src: "/media/accreditations/cyber-essentials-plus.webp",
+      alt: "Cyber Essentials Plus certified",
+      width: 250,
+      height: 100,
+    },
     verifyUrl: "https://iasme.co.uk/cyber-essentials/cyber-essentials-plus/",
   },
+  /**
+   * ISO tiles stay as drawn lockups, and there is no artwork to fetch for them.
+   * ISO does not license its own logo to certified organisations at all: a
+   * certified company uses the mark of the certification body that audited it,
+   * which carries that body's UKAS accreditation number. Once a certifier is
+   * appointed, swap `lockup` for their issued artwork in `logo`.
+   */
   {
     name: "ISO 27001",
     detail: "Information security management",
@@ -182,12 +184,5 @@ export const accreditations: Accreditation[] = [
     detail: "Data protection register",
     status: "pending",
     lockup: { line1: "ICO registered", line2: "Data protection" },
-  },
-  {
-    name: "Companies House",
-    detail: "Registered in England & Wales",
-    status: "held",
-    lockup: { line1: "Registered 16566018", line2: "England & Wales" },
-    verifyUrl: "https://find-and-update.company-information.service.gov.uk/company/16566018",
   },
 ];
