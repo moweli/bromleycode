@@ -374,34 +374,44 @@
   transform: none;
 }
 
-/* The pulse and the marching dashes hold until the diagram has been seen, so
+/* The relay and the marching dashes hold until the diagram has been seen, so
    they never animate to an empty screen. */
-.pipeline .pipeline-pulse {
+.pipeline .pipeline-border {
   opacity: 0;
+  stroke-dashoffset: 304;
 }
 
-.pipeline[data-shown="true"] .pipeline-pulse {
-  animation: pipeline-pulse 6.5s linear infinite;
+/* Every box shares one 4.2s cycle and is offset by 420ms, so ten boxes fill the
+   cycle exactly: the tenth hands back to the first with no gap and no overlap.
+   Changing the count or the step means changing both, together. */
+.pipeline[data-shown="true"] .pipeline-border {
+  animation: pipeline-border 4.2s linear infinite;
 }
 
 .pipeline[data-shown="true"] .pipeline-dash {
   animation: pipeline-dash 1.1s linear infinite;
 }
 
-@keyframes pipeline-pulse {
+/* 304 is the box perimeter, 2 × (96 + 56). The lit segment travels it once
+   inside the first fifth of the cycle, then waits its turn. */
+@keyframes pipeline-border {
   0% {
-    transform: translateX(0);
+    stroke-dashoffset: 304;
     opacity: 0;
   }
-  6% {
+  2% {
     opacity: 1;
   }
-  94% {
+  20% {
+    stroke-dashoffset: 0;
     opacity: 1;
+  }
+  25% {
+    stroke-dashoffset: 0;
+    opacity: 0;
   }
   100% {
-    /* Spine runs from x=48 to x=1152 in user units. */
-    transform: translateX(1104px);
+    stroke-dashoffset: 0;
     opacity: 0;
   }
 }
@@ -413,8 +423,8 @@
 }
 
 /* Under reduced motion the diagram is simply drawn: everything final, nothing
-   moving. The global rule already collapses durations, but the pulse would
-   still be mid-flight, so it is removed outright. */
+   moving. The global rule already collapses durations, but a collapsed relay
+   would leave a lit segment frozen on one box, so it is removed outright. */
 @media (prefers-reduced-motion: reduce) {
   .pipeline .pipeline-stage,
   .pipeline .pipeline-loop {
@@ -422,7 +432,7 @@
     transform: none;
   }
 
-  .pipeline .pipeline-pulse {
+  .pipeline .pipeline-border {
     display: none;
   }
 

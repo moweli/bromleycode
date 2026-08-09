@@ -17,13 +17,14 @@ import { pipelineStages } from "@/content/methodology";
  *
  *  1. Stages build left to right on first view, 70ms apart. The diagram is a
  *     sequence, and drawing it in sequence is the cheapest way to say so.
- *  2. A pulse travels the spine, continuously. That is a document moving
- *     through the pipeline.
+ *  2. A lit segment runs the perimeter of each stage in turn, left to right,
+ *     handing off to the next. That is work moving through the pipeline, and
+ *     it reads on the boxes themselves rather than on a line behind them.
  *  3. The two feedback loops march their dashes in their own direction. They
  *     are loops, and loops do not stop.
  *
  * Everything holds still under prefers-reduced-motion: the build completes
- * immediately, the pulse and the dashes do not run.
+ * immediately, the relay and the dashes do not run.
  *
  * The SVG remains decorative-with-a-caption: the same information is in the
  * ordered list beneath it, so nothing is lost to a screen reader, a printed
@@ -37,6 +38,19 @@ const NODE_Y = 132;
 const NODE_H = 56;
 const SPINE_Y = NODE_Y + NODE_H / 2;
 const STAGGER = 70;
+
+/**
+ * Border relay. A lit segment runs the perimeter of each box in turn, left to
+ * right, handing off to the next.
+ *
+ * The dash pattern must sum to exactly the perimeter, or the lit segment
+ * repeats partway round instead of travelling once cleanly. Every box is the
+ * same size, so one constant covers all ten.
+ */
+const PERIMETER = 2 * (NODE_W + NODE_H);
+const LIT = 50;
+/** Hand-off interval. Ten boxes at this spacing gives the full cycle below. */
+const RELAY_STEP = 420;
 
 const nodeX = (index: number) => X0 + index * (NODE_W + GAP);
 const nodeCentre = (index: number) => nodeX(index) + NODE_W / 2;
@@ -106,11 +120,6 @@ export function PipelineDiagram() {
             <marker id="arrow-muted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
               <path d="M0 0 L8 4 L0 8 z" fill="var(--color-mist)" />
             </marker>
-            <radialGradient id="pulse-glow">
-              <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.9" />
-              <stop offset="60%" stopColor="var(--color-accent)" stopOpacity="0.25" />
-              <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
-            </radialGradient>
           </defs>
 
           {/* Spine */}
@@ -137,6 +146,20 @@ export function PipelineDiagram() {
                 height={NODE_H}
                 fill="var(--color-ink-800)"
                 stroke="var(--color-ink-600)"
+              />
+              {/* The travelling border. A second outline over the first, lit
+                  only while its turn comes round. */}
+              <rect
+                className="pipeline-border"
+                style={{ animationDelay: `${loopDelay + index * RELAY_STEP}ms` }}
+                x={nodeX(index)}
+                y={NODE_Y}
+                width={NODE_W}
+                height={NODE_H}
+                fill="none"
+                stroke="var(--color-accent)"
+                strokeWidth="1.75"
+                strokeDasharray={`${LIT} ${PERIMETER - LIT}`}
               />
               <text
                 x={nodeCentre(index)}
@@ -225,14 +248,6 @@ export function PipelineDiagram() {
             />
           </g>
 
-          {/* A document moving through the pipeline. Drawn last so it passes
-              over the stage boxes rather than behind them: the boxes are opaque,
-              and underneath it would only be visible in the gaps. Starts once
-              the build has finished, so the two effects never compete. */}
-          <g className="pipeline-pulse" style={{ animationDelay: `${loopDelay}ms` }}>
-            <circle cx={X0} cy={SPINE_Y} r="15" fill="url(#pulse-glow)" />
-            <circle cx={X0} cy={SPINE_Y} r="3.5" fill="var(--color-paper)" />
-          </g>
         </svg>
       </div>
 
