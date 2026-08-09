@@ -249,7 +249,7 @@ export const services: Service[] = [
       "Most AI roadmaps fail on a data constraint that was discoverable in week one. We go looking for those constraints first, then sequence the work around what survives.",
     image: {
       src: "/media/services/ai-strategy-roadmap.webp",
-      alt: "A detailed architectural floor plan with dimensions marked throughout.",
+      alt: "A multi-level road interchange from the air in black and white, routes crossing and branching at several heights.",
     },
     problem: {
       heading: "The problem this solves",
