@@ -275,7 +275,7 @@ pass.
 - [ ] **Review by a qualified adviser.** These are drafts written to be reviewed,
       not advice. Remove the banner from `src/components/blocks/legal-page.tsx`
       only after sign-off.
-- [ ] Settle the eleven `CONFIRM` points — `grep -n CONFIRM src/content/legal.ts`.
+- [ ] Settle the nine `CONFIRM` points — `grep -n CONFIRM src/content/legal.ts`.
       In summary: whether a DPO is required; hosting and email providers and their
       sub-processor lists; international transfer safeguards per processor; server
       log retention; alignment of the security section with the client-contract
