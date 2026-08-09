@@ -2,7 +2,7 @@
 
 **Project:** Bromely Code marketing site
 **Reference audited:** aiimi.com, 9 August 2026 (`design-audit.md`)
-**Last updated:** 9 August 2026
+**Last updated:** 9 August 2026 (Round 3)
 
 ---
 
@@ -75,18 +75,10 @@ video is never requested below 768px.
 
 ## Media weights
 
-### Hero video — budget was under 3 MB for the MP4
+### Hero video
 
-| Asset | Before | After |
-|---|---|---|
-| Source clip (1920×1080, 23.5s) | 15,046 KB | — |
-| `hero.mp4` (H.264, 12s seamless loop, no audio) | | **535 KB** |
-| `hero.webm` (VP9) | | **237 KB** |
-| `hero-poster.webp` (frame 0 of the encoded clip) | | **45 KB** |
-| `hero-mobile.webp` (4:5 crop, 828px) | | **19 KB** |
-
-For comparison, the reference site's hero video is **3,095 KB** and the same file
-is served to a 390px phone.
+**Superseded by Round 3.** The single-clip hero was replaced by a six-segment
+montage; current weights are in the Round 3 section below.
 
 ### Photography — 13 files, JPEG → WebP at ≤2000px
 
@@ -114,8 +106,11 @@ above are the stored originals, not what a visitor downloads.
 
 | Face | Weight |
 |---|---|
-| Satoshi variable (300–900) | 42 KB |
-| IBM Plex Sans (400/500/600) + Mono (400/500) | self-hosted by `next/font`, subset to `latin` |
+| Geist Sans (variable) | self-hosted by the  package, SIL OFL |
+| Geist Mono (variable) | self-hosted, used only in the pipeline diagram |
+
+**Superseded by Round 3.** Satoshi and IBM Plex were replaced by Geist to match
+the reference.
 
 ---
 
@@ -138,7 +133,7 @@ checked against `design-audit.md` §8 and classified.
 | Scroll reveal | 20px rise, ~500ms, once | Same | Match |
 | Card treatment | 1px border, radius 0, no hover state | Same, plus a border-colour hover | Intentional — the reference wastes an affordance |
 | Logo band | Two opposing marquees, 45px lockups, black | Same geometry, technology marks | **Intentional — deviation D2** |
-| Stats band | 160px numerals counting up from live data | Same component, `[NEEDS FIGURE]` | **Intentional — deviation D7** |
+| Stats band | 160px numerals counting up from live data | Same component, populated in Round 3 | Match |
 | Page density | 8 propositions across 7,383px | Denser on services and method pages | Intentional — deviation D9 |
 | Motion tiers | Load: none · scroll: one effect · hover: 150ms | Same rule; load-stagger added on the hero only | Minor, intentional |
 
