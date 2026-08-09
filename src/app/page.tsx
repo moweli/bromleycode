@@ -17,17 +17,21 @@ export default function HomePage() {
     <>
       <HeroVideo />
 
-      {/* Positioning + capabilities */}
+      {/* Positioning + capabilities.
+          No scroll reveal in this section, deliberately. Part of it is already
+          on screen when the page loads, and the observer's -12% bottom margin
+          means anything peeking above the fold stays at opacity 0 until the
+          reader scrolls. That reads as a rendering fault rather than as motion.
+          Every section below this one starts well out of view, so the reveal is
+          kept there. */}
       <Section size="lg">
         <div className="container-bc">
-          <Reveal>
-            <SectionHeading eyebrow={positioning.eyebrow} title={positioning.heading} body={positioning.body} />
-          </Reveal>
+          <SectionHeading eyebrow={positioning.eyebrow} title={positioning.heading} body={positioning.body} />
           <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {services.map((service, index) => (
-              <Reveal as="li" key={service.slug} delay={index * 70}>
+            {services.map((service) => (
+              <li key={service.slug}>
                 <CapabilityCard service={service} />
-              </Reveal>
+              </li>
             ))}
           </ul>
         </div>
