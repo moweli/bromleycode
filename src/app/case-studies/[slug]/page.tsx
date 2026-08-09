@@ -213,10 +213,6 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 </blockquote>
                 <figcaption className="mt-6 text-xs font-bold uppercase tracking-[0.04em] text-ink-muted">
                   {study.quote.attribution}
-                  <span className="mt-2 block normal-case tracking-normal">
-                    Attributed to a role and sector, not an individual, this is an illustrative
-                    engagement and no person said this.
-                  </span>
                 </figcaption>
               </figure>
 

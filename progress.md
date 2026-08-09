@@ -462,7 +462,7 @@ and every figure in them is invented. They are now presented without any visible
 label saying so. Invented prose carrying visible placeholders is self-evidently
 illustrative; invented prose carrying `93.1%` reads as a reported result.
 
-**What still discloses it.** Two places, deliberately left in place:
+**What still discloses it.** Two places, and only two:
 
 1. `/terms` section 3 states that the case studies are illustrative composites
    and that the figures are not measured client outcomes.
@@ -470,8 +470,17 @@ illustrative; invented prose carrying `93.1%` reads as a reported result.
    honestly.
 
 Disclosure in terms rather than on every card is a real and common industry
-position. It is materially weaker than the banner was, and if those two passages
-are also removed there is no disclosure left anywhere on the site.
+position, and it is materially weaker than the banner was.
+
+**Nothing on the case-study pages themselves discloses it any more.** The
+quote-attribution note ("attributed to a role and sector, not an individual,
+this is an illustrative engagement and no person said this") was removed on
+9 August 2026 at the client's instruction. The pull quotes now read as ordinary
+attributed testimony from a named role at a named kind of organisation. They are
+invented, as are the figures beside them.
+
+If sections 3 of `/terms` and the `/about` FAQ answer are also edited, there is
+no disclosure left anywhere on the site.
 
 **To restore the banners:** set `CONTENT_STATUS` back to `"illustrative"` in
 `src/content/case-studies.ts`. One value, every surface.
