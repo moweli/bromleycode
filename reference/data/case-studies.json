@@ -1,0 +1,1172 @@
+{
+  "url": "https://aiimi.com/case-studies",
+  "title": "Case Studies from Aiimi - Aiimi",
+  "meta": {
+    "description": "Discover the latest data, digital, and AI success stories from our customers - infrastructure providers, government agencies, GSIs, and the world's most prestigious brands. ",
+    "og": [
+      [
+        "og:title",
+        "Case Studies from Aiimi - Aiimi"
+      ],
+      [
+        "og:description",
+        "Discover the latest data, digital, and AI success stories from our customers - infrastructure providers, government agen"
+      ],
+      [
+        "og:image",
+        "https://a.storyblok.com/f/321130/1920x1080/d5d899dbce/web_case-studies_web-imagery_v1-201125-_url-card-thumbnail_1920-x-"
+      ]
+    ],
+    "jsonLd": []
+  },
+  "rootVars": {
+    "--background": "#ffffff",
+    "--foreground": "#171717"
+  },
+  "rootFont": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px"
+  },
+  "bodyStyle": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px",
+    "lh": "24px",
+    "color": "rgb(23, 23, 23)",
+    "bg": "rgb(255, 255, 255)"
+  },
+  "fontFaces": [
+    {
+      "family": "slick",
+      "weight": "400",
+      "style": "normal",
+      "src": "url(\"/_next/static/media/slick.653a4cbb.woff\") format(\"woff\"), url(\"/_next/static/media/slick.6aa1ee46.ttf\") format(\"truetype\")"
+    },
+    {
+      "family": "GeistSans",
+      "weight": "100 900",
+      "style": "",
+      "src": "url(\"/_next/static/media/e11418ac562b8ac1-s.p.woff2\") format(\"woff2\")"
+    },
+    {
+      "family": "\"GeistSans Fallback\"",
+      "weight": "",
+      "style": "",
+      "src": "local(\"Arial\")"
+    }
+  ],
+  "stylesheets": [
+    "https://aiimi.com/_next/static/css/0c6f7836c4757a14.css",
+    "https://aiimi.com/_next/static/css/63c7182515913e2f.css",
+    "https://aiimi.com/_next/static/css/301ea550c1275951.css"
+  ],
+  "typography": {
+    "h1": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 60,
+          "x": 152,
+          "y": 336
+        },
+        "_cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+        "_tag": "h1",
+        "_text": "Case Studies."
+      }
+    ],
+    "h2": [],
+    "h3": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "500",
+        "lineHeight": "37.5px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 12px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 75,
+          "x": 152,
+          "y": 1489
+        },
+        "_cls": "mb-3 text-h4 lg:text-h3 font-medium tracking-tighter leading-tight group-hover:text-aiimi-pink transition-colors",
+        "_tag": "h3",
+        "_text": "Delivering 5x faster fault resolution answers with AI assistant at Niftylift"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "500",
+        "lineHeight": "30px",
+        "letterSpacing": "-0.75px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 28px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1136px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1136,
+          "h": 30,
+          "x": 152,
+          "y": 1716
+        },
+        "_cls": "mb-7 text-h3 font-medium tracking-tight leading-none",
+        "_tag": "h3",
+        "_text": "Browse all Case Studies."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "450px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 450,
+          "h": 60,
+          "x": 209,
+          "y": 2919
+        },
+        "_cls": "text-h4 lg:text-h3 tracking-tighter leading-none font-semibold",
+        "_tag": "h3",
+        "_text": "Explore our in-depth guides and industry reports, all in one place."
+      }
+    ],
+    "h4": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "22px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 12px",
+        "margin": "0px 0px 12px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "681.594px",
+        "border": "",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 682,
+          "h": 35,
+          "x": 152,
+          "y": 793
+        },
+        "_cls": "pb-3 mb-3 text-h4 font-medium tracking-tight leading-none border-b border-black",
+        "_tag": "h4",
+        "_text": "Browse by topic."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "12px",
+        "letterSpacing": "-0.3px",
+        "textTransform": "uppercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 12,
+          "x": 152,
+          "y": 970
+        },
+        "_cls": "mb-5 lg:mb-8 text-xs font-medium tracking-tight leading-none uppercase",
+        "_tag": "h4",
+        "_text": "Latest Post"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "12px",
+        "letterSpacing": "-0.3px",
+        "textTransform": "uppercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "441.594px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 442,
+          "h": 12,
+          "x": 846,
+          "y": 970
+        },
+        "_cls": "mb-8 text-xs font-medium tracking-tight leading-none uppercase",
+        "_tag": "h4",
+        "_text": "Featured"
+      }
+    ],
+    "p": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "27.5px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 138,
+          "x": 152,
+          "y": 428
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Discover the latest data, digital, and AI success stories from our customers - critical in"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "27.5px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 28,
+          "x": 152,
+          "y": 566
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": ""
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "-0.4px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "450px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 450,
+          "h": 40,
+          "x": 209,
+          "y": 3011
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "No form fills or personal information required. Just fast, free access to the expert insig"
+      }
+    ],
+    "eyebrow": [],
+    "blockquote": [],
+    "li": []
+  },
+  "interactive": {
+    "links": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 28px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 425,
+          "x": 152,
+          "y": 1014
+        },
+        "_cls": "relative w-full h-[200px] md:h-[425px] mb-7 border border-black group",
+        "_tag": "a",
+        "_text": "Artificial Intelligence"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "auto",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 75,
+          "x": 152,
+          "y": 1489
+        },
+        "_cls": "group",
+        "_tag": "a",
+        "_text": "Delivering 5x faster fault resolution answers with AI assistant at Niftylift"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "auto",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 442,
+          "h": 92,
+          "x": 846,
+          "y": 1043
+        },
+        "_cls": "",
+        "_tag": "a",
+        "_text": "Risk & ComplianceSaving an international retailer 3,000 hours with 4x faster Disclosure Re"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "auto",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 442,
+          "h": 92,
+          "x": 846,
+          "y": 1192
+        },
+        "_cls": "",
+        "_tag": "a",
+        "_text": "Artificial Intelligence | Data GovernanceManaging sensitive information and unlocking valu"
+      }
+    ],
+    "buttons": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(23, 23, 23)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 28px",
+        "margin": "0px",
+        "borderRadius": "9999px",
+        "boxShadow": "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        "maxWidth": "none",
+        "width": "152.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "flex",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 153,
+          "h": 44,
+          "x": 1081,
+          "y": 128
+        },
+        "_cls": "demo-glow-btn relative flex items-center justify-center h-[44px] px-4 lg:px-7 rounded-full overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "125.75px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline-block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 126,
+          "h": 36,
+          "x": 209,
+          "y": 3099
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View All Guides"
+      }
+    ],
+    "cards": [],
+    "inputs": [
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 353,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 550,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 727,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      }
+    ]
+  },
+  "chrome": {
+    "header": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(23, 23, 23)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 204,
+        "x": 0,
+        "y": 0
+      },
+      "_cls": "fixed top-0 left-0 w-full bg-white z-[9999] transition-colors duration-300",
+      "_tag": "header",
+      "_text": "WEBINAR 28/09: Why Automated Data Governance is the only option for AI success - with indu"
+    },
+    "nav": null,
+    "navLinks": [],
+    "footer": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "64px 0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "all",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 656,
+        "x": 0,
+        "y": 3281
+      },
+      "_cls": "block w-full py-8 lg:py-16 bg-black text-white border-t border-aiimi-pink",
+      "_tag": "footer",
+      "_text": "Homepage linkPowering AI everywhere at workWhat we doPlatformServicesCase StudiesResources"
+    },
+    "footerHeadings": [],
+    "footerLinks": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3435
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Platform"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3477
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Services"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3519
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3561
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Resources"
+      }
+    ],
+    "logo": {
+      "tag": "svg",
+      "src": "",
+      "w": 9,
+      "h": 10
+    }
+  },
+  "sections": [
+    {
+      "tag": "main",
+      "cls": "",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 3185,
+      "text": "Case Studies.Discover the latest data, digital, and AI success stories from our customers - critical infrastructure prov"
+    }
+  ],
+  "videos": [
+    {
+      "autoplay": false,
+      "muted": true,
+      "loop": true,
+      "playsInline": true,
+      "poster": "",
+      "preload": "metadata",
+      "currentSrc": "https://a.storyblok.com/f/321130/x/f4a2cd83c4/web_case-studies_header_compressed.mp4",
+      "attrs": {
+        "class": "w-full h-auto h-full object-cover aspect-16/9",
+        "muted": "",
+        "playsinline": "",
+        "preload": "metadata",
+        "loop": ""
+      },
+      "sources": [
+        {
+          "src": "https://a.storyblok.com/f/321130/x/f4a2cd83c4/web_case-studies_header_compressed.mp4",
+          "type": "video/mp4",
+          "media": ""
+        }
+      ],
+      "rect": {
+        "w": 1440,
+        "h": 641
+      },
+      "parentStyle": {
+        "position": "absolute",
+        "overflow": "visible",
+        "height": "641px"
+      }
+    }
+  ],
+  "iframes": [
+    {
+      "src": "",
+      "title": "Blank"
+    },
+    {
+      "src": "https://consentcdn.cookiebot.com/sdk/bc-v4.min.html",
+      "title": "Blank"
+    }
+  ],
+  "containers": [
+    [
+      "1280px",
+      10
+    ],
+    [
+      "1440px",
+      1
+    ],
+    [
+      "1600px",
+      1
+    ],
+    [
+      "450px",
+      1
+    ]
+  ],
+  "census": {
+    "colours": [
+      [
+        "rgb(20, 20, 20)",
+        187
+      ],
+      [
+        "rgb(0, 0, 0)",
+        60
+      ],
+      [
+        "rgb(255, 255, 255)",
+        27
+      ],
+      [
+        "rgb(23, 23, 23)",
+        11
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ]
+    ],
+    "backgrounds": [
+      [
+        "rgba(0, 0, 0, 0.05)",
+        32
+      ],
+      [
+        "rgb(255, 255, 255)",
+        29
+      ],
+      [
+        "rgb(214, 214, 214)",
+        21
+      ],
+      [
+        "rgb(20, 20, 20)",
+        7
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ],
+      [
+        "rgb(0, 0, 0)",
+        3
+      ],
+      [
+        "rgb(231, 41, 93)",
+        2
+      ],
+      [
+        "",
+        1
+      ]
+    ],
+    "families": [
+      [
+        "sans-serif",
+        191
+      ],
+      [
+        "GeistSans, \"GeistSans Fallback\"",
+        97
+      ]
+    ],
+    "sizes": [
+      [
+        "15px/700",
+        104
+      ],
+      [
+        "15px/400",
+        53
+      ],
+      [
+        "16px/400",
+        32
+      ],
+      [
+        "12px/500",
+        26
+      ],
+      [
+        "12px/700",
+        21
+      ],
+      [
+        "15px/600",
+        13
+      ],
+      [
+        "22px/500",
+        10
+      ],
+      [
+        "18px/600",
+        10
+      ],
+      [
+        "14px/500",
+        9
+      ],
+      [
+        "14px/600",
+        2
+      ],
+      [
+        "30px/500",
+        2
+      ],
+      [
+        "16px/600",
+        2
+      ],
+      [
+        "60px/600",
+        1
+      ],
+      [
+        "30px/600",
+        1
+      ],
+      [
+        "16px/500",
+        1
+      ],
+      [
+        "14px/400",
+        1
+      ]
+    ],
+    "radii": [
+      [
+        "15px",
+        31
+      ],
+      [
+        "60px",
+        21
+      ],
+      [
+        "7.5px",
+        17
+      ],
+      [
+        "9999px",
+        10
+      ],
+      [
+        "32px",
+        9
+      ],
+      [
+        "6px",
+        6
+      ],
+      [
+        "3.75px",
+        4
+      ],
+      [
+        "8px",
+        1
+      ],
+      [
+        "5px",
+        1
+      ],
+      [
+        "",
+        1
+      ]
+    ],
+    "shadows": [
+      [
+        "rgba(0, 0, 0, 0.3) 0px 30px 70px 0px",
+        1
+      ],
+      [
+        "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        1
+      ],
+      [
+        "rgba(226, 41, 93, 0.3) 0px 0px 12px 2px, rgba(226, 41, 93, 0.1) 0px 0px 12px 2px inset",
+        1
+      ],
+      [
+        "",
+        1
+      ]
+    ]
+  },
+  "headingOutline": [
+    "H1: Case Studies.",
+    "H3: Delivering 5x faster fault resolution answers with AI assistant at Niftylift",
+    "H3: Browse all Case Studies.",
+    "H3: Explore our in-depth guides and industry reports, all in one place."
+  ],
+  "bodyText": "Case Studies.\n\nDiscover the latest data, digital, and AI success stories from our customers - critical infrastructure providers and central government agencies, leading GSIs, and the world's most prestigious brands.\n\nBrowse by topic.\nArtificial Intelligence\nData Governance\nData Science & Engineering\nDigital\nRisk & Compliance\nStrategy\nLATEST POST\nARTIFICIAL INTELLIGENCE\nCASE STUDY\nDelivering 5x faster fault resolution answers with AI assistant at Niftylift\nFEATURED\nRISK & COMPLIANCE\nSaving an international retailer 3,000 hours with 4x faster Disclosure Requests\nCASE STUDY\nARTIFICIAL INTELLIGENCE | DATA GOVERNANCE\nManaging sensitive information and unlocking valuable data insights at KPMG\nCASE STUDY\nARTIFICIAL INTELLIGENCE\nBuilding an AI roadmap at Jaguar Land Rover\nCASE STUDY\nDIGITAL\nTransforming asset information management at Anglian Water\nCASE STUDY\nBrowse all Case Studies.\nARTIFICIAL INTELLIGENCE\nCASE STUDY\nDelivering 5x faster fault resolution answers with AI assistant at Niftylift\nDATA SCIENCE & ENGINEERING\nCASE STUDY\nUnifying clean water customer journeys and automating regulatory reporting at Yorkshire Water\nARTIFICIAL INTELLIGENCE\nCASE STUDY\nBuilding an AI roadmap at Jaguar Land Rover\nDIGITAL\nCASE STUDY\nTransforming asset information management at Anglian Water\nARTIFICIAL INTELLIGENCE\nCASE STUDY\nCandu Energy chooses Aiimi's AI search platform to fuel smarter design decisions\nDATA GOVERNANCE\nCASE STUDY\nManaging sensitive information and unlocking valuable data insights at KPMG\nDATA GOVERNANCE\nCASE STUDY\nAI-driven data management saves £1m in storage costs for leading professional services firm\nARTIFICIAL INTELLIGENCE\nCASE STUDY\nCreating a three-year AI roadmap for the Government’s Insolvency Service\nPrev\n1\n2\n3\nNext\nExplore our in-depth guides and industry reports, all in one place.\n\nNo form fills or personal information required. Just fast, free access to the expert insights you need.\n\nView All Guides"
+}

@@ -1,0 +1,1252 @@
+{
+  "url": "https://aiimi.com/",
+  "title": "Data. Digital. AI. Turn your enterprise data into answers - Aiimi",
+  "meta": {
+    "description": "We’re the tech company that turns enterprise data into answers. Transform your organisation into an interconnected enterprise. Get the answers to your toughest challenges.",
+    "og": [
+      [
+        "og:title",
+        "Data. Digital. AI. Turn your enterprise data into answers - Aiimi"
+      ],
+      [
+        "og:description",
+        "We’re the tech company that turns enterprise data into answers. Transform your organisation into an interconnected enter"
+      ],
+      [
+        "og:image",
+        "https://a.storyblok.com/f/321130/1920x1080/a239988dc2/web_homepage_web-imagery_v1-210825-_web_homepage_url-card-thumbnai"
+      ]
+    ],
+    "jsonLd": []
+  },
+  "rootVars": {
+    "--background": "#ffffff",
+    "--foreground": "#171717"
+  },
+  "rootFont": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px"
+  },
+  "bodyStyle": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px",
+    "lh": "24px",
+    "color": "rgb(23, 23, 23)",
+    "bg": "rgb(255, 255, 255)"
+  },
+  "fontFaces": [
+    {
+      "family": "slick",
+      "weight": "400",
+      "style": "normal",
+      "src": "url(\"/_next/static/media/slick.653a4cbb.woff\") format(\"woff\"), url(\"/_next/static/media/slick.6aa1ee46.ttf\") format(\"truetype\")"
+    },
+    {
+      "family": "GeistSans",
+      "weight": "100 900",
+      "style": "",
+      "src": "url(\"/_next/static/media/e11418ac562b8ac1-s.p.woff2\") format(\"woff2\")"
+    },
+    {
+      "family": "\"GeistSans Fallback\"",
+      "weight": "",
+      "style": "",
+      "src": "local(\"Arial\")"
+    }
+  ],
+  "stylesheets": [
+    "https://aiimi.com/_next/static/css/0c6f7836c4757a14.css",
+    "https://aiimi.com/_next/static/css/63c7182515913e2f.css",
+    "https://aiimi.com/_next/static/css/301ea550c1275951.css"
+  ],
+  "typography": {
+    "h1": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 180,
+          "x": 152,
+          "y": 416
+        },
+        "_cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+        "_tag": "h1",
+        "_text": "Powering AI everywhere at work."
+      }
+    ],
+    "h2": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "56px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "341.25px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 341,
+          "h": 60,
+          "x": 209,
+          "y": 1331
+        },
+        "_cls": "mt-14 mb-5 lg:mb-8 text-h4 lg:text-h3 font-semibold tracking-tighter leading-none font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "The essential enterprise Insight Report for 2026."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "600",
+        "lineHeight": "40px",
+        "letterSpacing": "-2px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 160,
+          "x": 152,
+          "y": 1714
+        },
+        "_cls": "text-h4 lg:text-h2 font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "Transform how your people work with data, through Aiimi Workplace AI, data and digital pro"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "600",
+        "lineHeight": "40px",
+        "letterSpacing": "-2px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 80,
+          "x": 152,
+          "y": 2986
+        },
+        "_cls": "text-h3 lg:text-h2 font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "Purpose-driven AI across the enterprise."
+      }
+    ],
+    "h3": [],
+    "h4": [],
+    "p": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "27.5px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 110,
+          "x": 152,
+          "y": 628
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Better data. Better results. Greater value. Meet the Workplace AI platform and people deli"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "341.25px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 341,
+          "h": 72,
+          "x": 209,
+          "y": 1423
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Six vital chapters to discover 2026's biggest opportunities for data and AI. No forms, no "
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "22.5px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "8px 0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "346.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 347,
+          "h": 23,
+          "x": 152,
+          "y": 1959
+        },
+        "_cls": "my-2 text-h5 font-semibold tracking-tight leading-tight",
+        "_tag": "p",
+        "_text": "Make your data better."
+      }
+    ],
+    "eyebrow": [],
+    "blockquote": [],
+    "li": []
+  },
+  "interactive": {
+    "links": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "113.641px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 114,
+          "h": 36,
+          "x": 152,
+          "y": 786
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Discover Aiimi"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "padding": "8px 16px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "166.938px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 167,
+          "h": 42,
+          "x": 209,
+          "y": 1527
+        },
+        "_cls": "cta_box_fill relative inline-block px-4 py-2 uppercase border border-black text-white bg-black hover:bg-aiimi-pink hover:border-aiimi-pink transition-colors",
+        "_tag": "a",
+        "_text": "Download now"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "160.25px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 160,
+          "h": 36,
+          "x": 185,
+          "y": 3617
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "AI Data Governance"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "187.234px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 187,
+          "h": 36,
+          "x": 574,
+          "y": 3617
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "AI Strategy & Roadmap"
+      }
+    ],
+    "buttons": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(23, 23, 23)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 28px",
+        "margin": "0px",
+        "borderRadius": "9999px",
+        "boxShadow": "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        "maxWidth": "none",
+        "width": "152.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "flex",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 153,
+          "h": 44,
+          "x": 1081,
+          "y": 128
+        },
+        "_cls": "demo-glow-btn relative flex items-center justify-center h-[44px] px-4 lg:px-7 rounded-full overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "113.641px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 114,
+          "h": 36,
+          "x": 152,
+          "y": 786
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Discover Aiimi"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "uppercase",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "padding": "8px 16px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "166.938px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 167,
+          "h": 42,
+          "x": 209,
+          "y": 1527
+        },
+        "_cls": "cta_box_fill relative inline-block px-4 py-2 uppercase border border-black text-white bg-black hover:bg-aiimi-pink hover:border-aiimi-pink transition-colors",
+        "_tag": "a",
+        "_text": "Download now"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "160.25px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 160,
+          "h": 36,
+          "x": 185,
+          "y": 3617
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "AI Data Governance"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "187.234px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 187,
+          "h": 36,
+          "x": 574,
+          "y": 3617
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "AI Strategy & Roadmap"
+      }
+    ],
+    "cards": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "padding": "0px 0px 48px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 272,
+          "x": 0,
+          "y": 1890
+        },
+        "_cls": "card-carousel px-6 md:px-0 pt-0 lg:pt-0 pb-4 lg:pb-12 bg-white text-black",
+        "_tag": "div",
+        "_text": "Make your data better.Connect all data, structured and unstructured, from any source. Clas"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "padding": "0px 0px 96px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 458,
+          "x": 0,
+          "y": 4798
+        },
+        "_cls": "card-carousel px-6 lg:px-0 pt-0 lg:pt-0 pb-12 lg:pb-24 bg-white text-black",
+        "_tag": "div",
+        "_text": "Bringing clarity to complexity.The enterprise is a complicated place. Fragmented systems, "
+      }
+    ],
+    "inputs": [
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 353,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 550,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 727,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      }
+    ]
+  },
+  "chrome": {
+    "header": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(23, 23, 23)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 204,
+        "x": 0,
+        "y": 0
+      },
+      "_cls": "fixed top-0 left-0 w-full bg-black z-[9999] transition-colors duration-300",
+      "_tag": "header",
+      "_text": "WEBINAR 28/09: Why Automated Data Governance is the only option for AI success - with indu"
+    },
+    "nav": null,
+    "navLinks": [],
+    "footer": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "64px 0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "all",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 656,
+        "x": 0,
+        "y": 7479
+      },
+      "_cls": "block w-full py-8 lg:py-16 bg-black text-white border-t border-aiimi-pink",
+      "_tag": "footer",
+      "_text": "Homepage linkPowering AI everywhere at workWhat we doPlatformServicesCase StudiesResources"
+    },
+    "footerHeadings": [],
+    "footerLinks": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 7633
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Platform"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 7675
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Services"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 7717
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 7759
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Resources"
+      }
+    ],
+    "logo": {
+      "tag": "svg",
+      "src": "",
+      "w": 9,
+      "h": 10
+    }
+  },
+  "sections": [
+    {
+      "tag": "main",
+      "cls": "",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 7383,
+      "text": "Powering AI everywhere at work.Better data. Better results. Greater value. Meet the Workplace AI platform and people del"
+    }
+  ],
+  "videos": [
+    {
+      "autoplay": false,
+      "muted": true,
+      "loop": true,
+      "playsInline": true,
+      "poster": "",
+      "preload": "metadata",
+      "currentSrc": "https://a.storyblok.com/f/321130/x/96cdf42de2/web_homepage_background-animation_new-tags_industries_desktop_heavy_compressed.mp4",
+      "attrs": {
+        "class": "w-full h-auto h-full object-cover aspect-16/9",
+        "muted": "",
+        "playsinline": "",
+        "preload": "metadata",
+        "loop": ""
+      },
+      "sources": [
+        {
+          "src": "https://a.storyblok.com/f/321130/x/96cdf42de2/web_homepage_background-animation_new-tags_industries_desktop_heavy_compressed.mp4",
+          "type": "video/mp4",
+          "media": ""
+        }
+      ],
+      "rect": {
+        "w": 1440,
+        "h": 1014
+      },
+      "parentStyle": {
+        "position": "absolute",
+        "overflow": "visible",
+        "height": "1014px"
+      }
+    }
+  ],
+  "iframes": [
+    {
+      "src": "https://fast.wistia.net/embed/iframe/95rl3j7fui",
+      "title": "Embedded Video"
+    },
+    {
+      "src": "",
+      "title": "Blank"
+    },
+    {
+      "src": "https://consentcdn.cookiebot.com/sdk/bc-v4.min.html",
+      "title": "Blank"
+    }
+  ],
+  "containers": [
+    [
+      "1280px",
+      19
+    ],
+    [
+      "1440px",
+      1
+    ],
+    [
+      "1600px",
+      1
+    ]
+  ],
+  "census": {
+    "colours": [
+      [
+        "rgb(20, 20, 20)",
+        187
+      ],
+      [
+        "rgb(255, 255, 255)",
+        57
+      ],
+      [
+        "rgb(0, 0, 0)",
+        46
+      ],
+      [
+        "rgb(23, 23, 23)",
+        12
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ]
+    ],
+    "backgrounds": [
+      [
+        "rgb(0, 0, 0)",
+        42
+      ],
+      [
+        "rgba(0, 0, 0, 0.05)",
+        32
+      ],
+      [
+        "rgb(255, 255, 255)",
+        27
+      ],
+      [
+        "rgb(214, 214, 214)",
+        21
+      ],
+      [
+        "rgb(231, 41, 93)",
+        10
+      ],
+      [
+        "rgb(20, 20, 20)",
+        7
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ],
+      [
+        "",
+        1
+      ]
+    ],
+    "families": [
+      [
+        "sans-serif",
+        191
+      ],
+      [
+        "GeistSans, \"GeistSans Fallback\"",
+        114
+      ]
+    ],
+    "sizes": [
+      [
+        "15px/700",
+        104
+      ],
+      [
+        "15px/400",
+        53
+      ],
+      [
+        "16px/400",
+        43
+      ],
+      [
+        "12px/700",
+        21
+      ],
+      [
+        "15px/600",
+        13
+      ],
+      [
+        "22px/500",
+        11
+      ],
+      [
+        "18px/600",
+        9
+      ],
+      [
+        "18px/500",
+        9
+      ],
+      [
+        "16px/500",
+        8
+      ],
+      [
+        "40px/600",
+        6
+      ],
+      [
+        "14px/500",
+        6
+      ],
+      [
+        "22px/600",
+        5
+      ],
+      [
+        "160px/600",
+        3
+      ],
+      [
+        "60px/600",
+        3
+      ],
+      [
+        "11.2px/500",
+        3
+      ],
+      [
+        "14px/600",
+        2
+      ],
+      [
+        "12px/500",
+        2
+      ],
+      [
+        "16px/600",
+        2
+      ],
+      [
+        "30px/600",
+        1
+      ],
+      [
+        "14px/400",
+        1
+      ]
+    ],
+    "radii": [
+      [
+        "15px",
+        31
+      ],
+      [
+        "60px",
+        21
+      ],
+      [
+        "7.5px",
+        17
+      ],
+      [
+        "32px",
+        9
+      ],
+      [
+        "9999px",
+        9
+      ],
+      [
+        "3.75px",
+        4
+      ],
+      [
+        "8px",
+        1
+      ],
+      [
+        "5px",
+        1
+      ],
+      [
+        "",
+        1
+      ]
+    ],
+    "shadows": [
+      [
+        "rgba(0, 0, 0, 0.3) 0px 30px 70px 0px",
+        1
+      ],
+      [
+        "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        1
+      ],
+      [
+        "rgba(226, 41, 93, 0.3) 0px 0px 12px 2px, rgba(226, 41, 93, 0.1) 0px 0px 12px 2px inset",
+        1
+      ],
+      [
+        "",
+        1
+      ]
+    ]
+  },
+  "headingOutline": [
+    "H1: Powering AI everywhere at work.",
+    "H2: The essential enterprise Insight Report for 2026.",
+    "H2: Transform how your people work with data, through Aiimi Workplace AI, data and digital products, and consultin",
+    "H2: Purpose-driven AI across the enterprise.",
+    "H2: Where artificial intelligence meets human intuition.",
+    "H2: Trusted by the trusted.",
+    "H2: Aiimi by industry.",
+    "H2: Talk to us."
+  ],
+  "bodyText": "Powering AI everywhere\nat work.\n\nBetter data. Better results. Greater value. Meet the Workplace AI platform and people delivering transformational, trusted AI for the enterprise.\n\nDiscover Aiimi\nThe essential enterprise Insight Report for 2026.\n\nSix vital chapters to discover 2026's biggest opportunities for data and AI. No forms, no fuss – just download and enjoy.\n\nDOWNLOAD NOW\nTransform how your people work with data, through Aiimi Workplace AI, data and digital products, and consulting services.\n\nMake your data better.\n\nConnect all data, structured and unstructured, from any source. Classify, label, and control it. Govern access, automate cleanup, and surface golden records. Make progress in the toughest areas to ready your data for AI.\n\nGet value from your data.\n\nOperationalise AI for process automation and real-time decision-making. Apply Generative AI, RAG, and Agentic AI for context-aware solutions. Fuel digital and data products with good data. Think strategic transformation, not just quick wins.\n\nKickstart your AI future.\n\nGet access to world-class AI expertise and technology, tailored to your goals and readiness. Adopt AI responsibly and confidently, with strategy, ethics, and a roadmap designed to evolve with you.\n\nPurpose-driven AI across the enterprise.\n\nEquip every area of your business to work smarter with data and AI – from automating complex workflows to guiding strategic decisions, and building the capabilities that will define your organisation's future.\n\nData Governance with AI, for AI\n\nAutomatically classify, clean up, and protect all data with AI-powered governance – for secure, connected, AI-ready data.\n\nAI Data Governance\n\nScalable AI Strategy\n\nFind the best AI use cases and develop a roadmap for fully operationalised AI that aligns to your business objectives.\n\nAI Strategy & Roadmap\n\nExpert squads\n\nAugment your internal capabilities with outcome-driven experts who integrate seamlessly into your organisation.\n\nHow our Services Work\n\nWorkplace AI for the enterprise\n\nConnect to all data and systems, and bring secure, trusted AI capabilities to every corner of your organisation.\n\nWorkplace AI Platform\n\nAutomated DSARs\n\nStreamline workflows and reduce risk, with automated disclosure request processing and ongoing compliance.\n\nDSAR Management\n\nAI-powered Search & Chat\n\nUnlock timely, trusted insights through intuitive chat experiences, underwritten by responsible and explainable AI.\n\nAI Search\nAI Chat & Assistant\nWhere artificial intelligence meets human intuition.\n\nAiimi is the bridge between data and decisions. Our AI platform is built for enterprise scale, and our people bring world-class expertise in digital, data, and AI.\n\nProjects.\n\n0+\n\nCustomers.\n\n0+\n\nExperts.\n\n0+\n\nBringing clarity to complexity.\n\nThe enterprise is a complicated place. Fragmented systems, mountains of unstructured data, and dispersed teams. Our culture is built on an unshakeable belief in making things simple, through our deep expertise and next-generation technology.\n\nSpeed to value is everything.\n\nYour goals drive us – and this alignment means our services, products, and AI platform start delivering value from day one. AI moves fast and so do we. Experimenting, iterating, and zeroing in on what matters most, to accelerate time to value.​\n\nTrusted by the trusted.\n\nFrom national security and critical infrastructure to central government agencies, leading GSIs, and the world's most prestigious luxury brands – our customers are major enterprise organisations who rely on rapid time to value, peer-to-peer relationships, a results-driven culture, and technology that sets the global standard.\n\nView all Case Studies\nAiimi by industry.\n\nExplore our expertise and experience in your sector.\n\nEnergy & Utilities\nManufacturing\nGovernment & Public Sector\nFinancial Services\nWater\nProfessional Services\nTalk to us.\n\nWe're here to help, whether you want a quick chat about our consulting services, or a personalised demo from one of our experts. Just fill in the form and we'll be in touch within one working day.\n\nFirst Name*\nLast Name*\nEmail*\nPhone\nMessage\nHow did you first hear about us?\nPlease select\nSearch engine (e.g. Google, Bing)\nSocial media\nAI (ChatGPT, Copilot, Claude, etc)\nEvent or Webinar\nOnline advertisement\nNews or media article\nPodcast\nOfficial Aiimi Partner\nReview site (e.g. Gartner, G2)\nReferred by an Aiimi customer\nWord of mouth\nColleague or employer\nOther\nFrom time to time, we would like to contact you about our products, services, events and other content that we think will be of interest to you. You can unsubscribe from these communications at any time.\nYes please - I’d like to hear more from Aiimi!\nBy submitting this form you consent to us processing and storing the information you provide in accordance with our Privacy Policy\nSUBMIT"
+}

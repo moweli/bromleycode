@@ -1,0 +1,1127 @@
+{
+  "url": "https://aiimi.com/resources",
+  "title": "Insights and Resources | Aiimi - Aiimi",
+  "meta": {
+    "description": "Discover the latest data and AI insights, opinions,\nand news from the Aiimi experts, all in one place.",
+    "og": [
+      [
+        "og:title",
+        "Insights and Resources | Aiimi - Aiimi"
+      ],
+      [
+        "og:description",
+        "Discover the latest data and AI insights, opinions,\nand news from the Aiimi experts, all in one place."
+      ],
+      [
+        "og:image",
+        "https://a.storyblok.com/f/321130/1920x1080/2048cfa8d4/web_resource-hub_web-imagery_v2-191125-_url-card-thumbnail_1920-x-"
+      ]
+    ],
+    "jsonLd": []
+  },
+  "rootVars": {
+    "--background": "#ffffff",
+    "--foreground": "#171717"
+  },
+  "rootFont": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px"
+  },
+  "bodyStyle": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px",
+    "lh": "24px",
+    "color": "rgb(23, 23, 23)",
+    "bg": "rgb(255, 255, 255)"
+  },
+  "fontFaces": [
+    {
+      "family": "slick",
+      "weight": "400",
+      "style": "normal",
+      "src": "url(\"/_next/static/media/slick.653a4cbb.woff\") format(\"woff\"), url(\"/_next/static/media/slick.6aa1ee46.ttf\") format(\"truetype\")"
+    },
+    {
+      "family": "GeistSans",
+      "weight": "100 900",
+      "style": "",
+      "src": "url(\"/_next/static/media/e11418ac562b8ac1-s.p.woff2\") format(\"woff2\")"
+    },
+    {
+      "family": "\"GeistSans Fallback\"",
+      "weight": "",
+      "style": "",
+      "src": "local(\"Arial\")"
+    }
+  ],
+  "stylesheets": [
+    "https://aiimi.com/_next/static/css/0c6f7836c4757a14.css",
+    "https://aiimi.com/_next/static/css/63c7182515913e2f.css",
+    "https://aiimi.com/_next/static/css/301ea550c1275951.css"
+  ],
+  "typography": {
+    "h1": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 120,
+          "x": 152,
+          "y": 336
+        },
+        "_cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+        "_tag": "h1",
+        "_text": "Insights and guides from Aiimi."
+      }
+    ],
+    "h2": [],
+    "h3": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "500",
+        "lineHeight": "37.5px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 12px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 38,
+          "x": 152,
+          "y": 1467
+        },
+        "_cls": "mb-3 text-h4 lg:text-h3 font-medium tracking-tighter leading-tight group-hover:text-aiimi-pink transition-colors",
+        "_tag": "h3",
+        "_text": "How ‘tokenomics’ exposes AI’s true business case"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "450px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 450,
+          "h": 60,
+          "x": 209,
+          "y": 1840
+        },
+        "_cls": "text-h4 lg:text-h3 tracking-tighter leading-none font-semibold",
+        "_tag": "h3",
+        "_text": "Explore our in-depth guides and industry reports, all in one place."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "500",
+        "lineHeight": "30px",
+        "letterSpacing": "-0.75px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 28px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1136px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1136,
+          "h": 30,
+          "x": 152,
+          "y": 2174
+        },
+        "_cls": "mb-7 text-h3 font-medium tracking-tight leading-none",
+        "_tag": "h3",
+        "_text": "Browse all resources."
+      }
+    ],
+    "h4": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "22px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 12px",
+        "margin": "0px 0px 12px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 35,
+          "x": 152,
+          "y": 771
+        },
+        "_cls": "pb-3 mb-3 text-h4 font-medium tracking-tight leading-none border-b border-black",
+        "_tag": "h4",
+        "_text": "Browse by topic."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "22px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 12px",
+        "margin": "0px 0px 12px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "441.594px",
+        "border": "",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 442,
+          "h": 35,
+          "x": 846,
+          "y": 771
+        },
+        "_cls": "pb-3 mb-3 text-h4 font-medium tracking-tight leading-none border-b border-black",
+        "_tag": "h4",
+        "_text": "Browse by resource type."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "12px",
+        "letterSpacing": "-0.3px",
+        "textTransform": "uppercase",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 12,
+          "x": 152,
+          "y": 948
+        },
+        "_cls": "mb-5 lg:mb-8 text-xs font-medium tracking-tight leading-none uppercase",
+        "_tag": "h4",
+        "_text": "Latest Post"
+      }
+    ],
+    "p": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "27.5px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 83,
+          "x": 152,
+          "y": 488
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Discover the latest data and AI insights, opinions, and news from our experts, all in one "
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "500",
+        "lineHeight": "20px",
+        "letterSpacing": "-0.4px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "450px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 450,
+          "h": 40,
+          "x": 209,
+          "y": 1932
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "No form fills or personal information required. Just fast, free access to the expert insig"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "lineHeight": "15px",
+        "letterSpacing": "-0.3px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "375px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 375,
+          "h": 45,
+          "x": 201,
+          "y": 3362
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "You may unsubscribe from these communications at any time. For information about our commi"
+      }
+    ],
+    "eyebrow": [],
+    "blockquote": [],
+    "li": []
+  },
+  "interactive": {
+    "links": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "-0.35px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "8px 10px",
+        "margin": "0px",
+        "borderRadius": "6px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "126.922px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "gap": "normal",
+        "display": "flex",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 127,
+          "h": 32,
+          "x": 1131,
+          "y": 818
+        },
+        "_cls": "flex items-center px-2.5 py-2 text-sm font-medium tracking-tight leading-none border border-black rounded-md hover:bg-black/5 transition-colors cursor-pointer",
+        "_tag": "a",
+        "_text": "Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 28px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.406px",
+        "border": "1px solid rgb(0, 0, 0)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 425,
+          "x": 152,
+          "y": 992
+        },
+        "_cls": "relative w-full h-[200px] md:h-[425px] mb-7 border border-black group",
+        "_tag": "a",
+        "_text": "Artificial Intelligence"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "auto",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 662,
+          "h": 38,
+          "x": 152,
+          "y": 1467
+        },
+        "_cls": "group",
+        "_tag": "a",
+        "_text": "How ‘tokenomics’ exposes AI’s true business case"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "auto",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 442,
+          "h": 92,
+          "x": 846,
+          "y": 1021
+        },
+        "_cls": "",
+        "_tag": "a",
+        "_text": "Artificial Intelligence | Data GovernanceData governance is more valuable than ever – beca"
+      }
+    ],
+    "buttons": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(23, 23, 23)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 28px",
+        "margin": "0px",
+        "borderRadius": "9999px",
+        "boxShadow": "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        "maxWidth": "none",
+        "width": "152.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "flex",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 153,
+          "h": 44,
+          "x": 1081,
+          "y": 128
+        },
+        "_cls": "demo-glow-btn relative flex items-center justify-center h-[44px] px-4 lg:px-7 rounded-full overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "125.75px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline-block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 126,
+          "h": 36,
+          "x": 209,
+          "y": 2020
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View All Guides"
+      }
+    ],
+    "cards": [],
+    "inputs": [
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 353,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 550,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 727,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      }
+    ]
+  },
+  "chrome": {
+    "header": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(23, 23, 23)",
+      "backgroundColor": "rgb(255, 255, 255)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 204,
+        "x": 0,
+        "y": 0
+      },
+      "_cls": "fixed top-0 left-0 w-full bg-white z-[9999] transition-colors duration-300",
+      "_tag": "header",
+      "_text": "WEBINAR 28/09: Why Automated Data Governance is the only option for AI success - with indu"
+    },
+    "nav": null,
+    "navLinks": [],
+    "footer": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "64px 0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "all",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 656,
+        "x": 0,
+        "y": 3540
+      },
+      "_cls": "block w-full py-8 lg:py-16 bg-black text-white border-t border-aiimi-pink",
+      "_tag": "footer",
+      "_text": "Homepage linkPowering AI everywhere at workWhat we doPlatformServicesCase StudiesResources"
+    },
+    "footerHeadings": [],
+    "footerLinks": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3694
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Platform"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3736
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Services"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3778
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 3820
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Resources"
+      }
+    ],
+    "logo": {
+      "tag": "svg",
+      "src": "",
+      "w": 9,
+      "h": 10
+    }
+  },
+  "sections": [
+    {
+      "tag": "main",
+      "cls": "",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 3444,
+      "text": "Insights and guides from Aiimi.Discover the latest data and AI insights, opinions, and news from our experts, all in one"
+    }
+  ],
+  "videos": [],
+  "iframes": [
+    {
+      "src": "",
+      "title": "Blank"
+    },
+    {
+      "src": "https://consentcdn.cookiebot.com/sdk/bc-v4.min.html",
+      "title": "Blank"
+    }
+  ],
+  "containers": [
+    [
+      "1280px",
+      10
+    ],
+    [
+      "1440px",
+      1
+    ],
+    [
+      "1600px",
+      1
+    ],
+    [
+      "450px",
+      1
+    ]
+  ],
+  "census": {
+    "colours": [
+      [
+        "rgb(20, 20, 20)",
+        187
+      ],
+      [
+        "rgb(0, 0, 0)",
+        79
+      ],
+      [
+        "rgb(255, 255, 255)",
+        27
+      ],
+      [
+        "rgb(23, 23, 23)",
+        11
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ]
+    ],
+    "backgrounds": [
+      [
+        "rgba(0, 0, 0, 0.05)",
+        32
+      ],
+      [
+        "rgb(255, 255, 255)",
+        30
+      ],
+      [
+        "rgb(214, 214, 214)",
+        21
+      ],
+      [
+        "rgb(20, 20, 20)",
+        7
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ],
+      [
+        "rgb(231, 41, 93)",
+        3
+      ],
+      [
+        "rgb(0, 0, 0)",
+        3
+      ]
+    ],
+    "families": [
+      [
+        "sans-serif",
+        191
+      ],
+      [
+        "GeistSans, \"GeistSans Fallback\"",
+        116
+      ]
+    ],
+    "sizes": [
+      [
+        "15px/700",
+        104
+      ],
+      [
+        "15px/400",
+        53
+      ],
+      [
+        "16px/400",
+        34
+      ],
+      [
+        "12px/500",
+        32
+      ],
+      [
+        "12px/700",
+        21
+      ],
+      [
+        "14px/500",
+        14
+      ],
+      [
+        "15px/600",
+        13
+      ],
+      [
+        "22px/500",
+        12
+      ],
+      [
+        "18px/600",
+        10
+      ],
+      [
+        "16px/500",
+        5
+      ],
+      [
+        "14px/600",
+        2
+      ],
+      [
+        "30px/500",
+        2
+      ],
+      [
+        "16px/600",
+        2
+      ],
+      [
+        "60px/600",
+        1
+      ],
+      [
+        "30px/600",
+        1
+      ],
+      [
+        "14px/400",
+        1
+      ]
+    ],
+    "radii": [
+      [
+        "15px",
+        31
+      ],
+      [
+        "60px",
+        21
+      ],
+      [
+        "7.5px",
+        17
+      ],
+      [
+        "9999px",
+        16
+      ],
+      [
+        "6px",
+        11
+      ],
+      [
+        "32px",
+        9
+      ],
+      [
+        "3.75px",
+        4
+      ],
+      [
+        "8px",
+        1
+      ],
+      [
+        "5px",
+        1
+      ]
+    ],
+    "shadows": [
+      [
+        "rgba(0, 0, 0, 0.3) 0px 30px 70px 0px",
+        1
+      ],
+      [
+        "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        1
+      ],
+      [
+        "rgba(226, 41, 93, 0.3) 0px 0px 12px 2px, rgba(226, 41, 93, 0.1) 0px 0px 12px 2px inset",
+        1
+      ]
+    ]
+  },
+  "headingOutline": [
+    "H1: Insights and guides from Aiimi.",
+    "H3: How ‘tokenomics’ exposes AI’s true business case",
+    "H3: Explore our in-depth guides and industry reports, all in one place.",
+    "H3: Browse all resources."
+  ],
+  "bodyText": "Insights and guides from Aiimi.\n\nDiscover the latest data and AI insights, opinions, and news from our experts, all in one place.\n\nBrowse by topic.\nAiimi News\nArtificial Intelligence\nData Governance\nData Science & Engineering\nDigital\nRisk & Compliance\nStrategy\nBrowse by resource type.\nVideos\nBlogs\nGuides & Reports\nCase Studies\nLATEST POST\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\n06 July 2026\nFEATURED\nARTIFICIAL INTELLIGENCE | DATA GOVERNANCE\nData governance is more valuable than ever – because of AI\nBLOG\nARTIFICIAL INTELLIGENCE\nTop-priority GenAI use cases for your business\nBLOG\nAIIMI NEWS\nGlobal tech leaders gather at Bletchley Park to tackle barriers to AI adoption\nBLOG\nAIIMI NEWS\nNew UKWP x Aiimi white paper reveals AI opportunities for water sector\nBLOG\nExplore our in-depth guides and industry reports, all in one place.\n\nNo form fills or personal information required. Just fast, free access to the expert insights you need.\n\nView All Guides\nBrowse all resources.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace\nARTIFICIAL INTELLIGENCE\nGUIDE\n2026 Insight Report: Leading the way with AI & Data Governance\nAIIMI NEWS\nVIDEO\nWhat does Aiimi do?\nDATA GOVERNANCE\nBLOG\nAsset health data: a call to action for water companies\nBy\nOlivia Wallis\nAIIMI NEWS\nBLOG\nGlobal tech leaders gather at Bletchley Park to tackle barriers to AI adoption\nBy\nOlivia Wallis\nPrev\n1\n2\n3\n...\n26\nNext\nStay in the know with updates, articles, and events from Aiimi.\nYour Email Address\nSUBSCRIBE\n\nYou may unsubscribe from these communications at any time. For information about our commitment to protecting your information, please review our Privacy Policy."
+}

@@ -1,0 +1,1459 @@
+{
+  "url": "https://aiimi.com/platform/enterprise-data-governance",
+  "title": "Enterprise Data Governance Platform | Aiimi - Aiimi",
+  "meta": {
+    "description": "Classify, protect, and unlock your data with Aiimi's enterprise data governance platform. AI-powered. Automated. Built to make your data ready for AI.",
+    "og": [
+      [
+        "og:title",
+        " Enterprise Data Governance Platform | Aiimi - Aiimi"
+      ],
+      [
+        "og:description",
+        "Classify, protect, and unlock your data with Aiimi's enterprise data governance platform. AI-powered. Automated. Built t"
+      ],
+      [
+        "og:image",
+        "https://a.storyblok.com/f/321130/1920x1080/cd5a179cfc/ai-data-governance_url-card.jpg"
+      ]
+    ],
+    "jsonLd": []
+  },
+  "rootVars": {
+    "--background": "#ffffff",
+    "--foreground": "#171717"
+  },
+  "rootFont": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px"
+  },
+  "bodyStyle": {
+    "family": "GeistSans, \"GeistSans Fallback\"",
+    "size": "16px",
+    "lh": "24px",
+    "color": "rgb(23, 23, 23)",
+    "bg": "rgb(255, 255, 255)"
+  },
+  "fontFaces": [
+    {
+      "family": "slick",
+      "weight": "400",
+      "style": "normal",
+      "src": "url(\"/_next/static/media/slick.653a4cbb.woff\") format(\"woff\"), url(\"/_next/static/media/slick.6aa1ee46.ttf\") format(\"truetype\")"
+    },
+    {
+      "family": "GeistSans",
+      "weight": "100 900",
+      "style": "",
+      "src": "url(\"/_next/static/media/e11418ac562b8ac1-s.p.woff2\") format(\"woff2\")"
+    },
+    {
+      "family": "\"GeistSans Fallback\"",
+      "weight": "",
+      "style": "",
+      "src": "local(\"Arial\")"
+    }
+  ],
+  "stylesheets": [
+    "https://aiimi.com/_next/static/css/0c6f7836c4757a14.css",
+    "https://aiimi.com/_next/static/css/63c7182515913e2f.css",
+    "https://aiimi.com/_next/static/css/301ea550c1275951.css"
+  ],
+  "typography": {
+    "h1": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "60px",
+        "fontWeight": "600",
+        "lineHeight": "60px",
+        "letterSpacing": "-3px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px 0px 32px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 180,
+          "x": 152,
+          "y": 416
+        },
+        "_cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+        "_tag": "h1",
+        "_text": "Govern, protect, and unlock value from data."
+      }
+    ],
+    "h2": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "600",
+        "lineHeight": "40px",
+        "letterSpacing": "-2px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 80,
+          "x": 152,
+          "y": 1543
+        },
+        "_cls": "text-h4 lg:text-h2 font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "From exposure risk to strategic advantage."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "600",
+        "lineHeight": "40px",
+        "letterSpacing": "-2px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 80,
+          "x": 152,
+          "y": 2087
+        },
+        "_cls": "text-h4 lg:text-h2 font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "Protect and power your business with unified data governance."
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "40px",
+        "fontWeight": "600",
+        "lineHeight": "40px",
+        "letterSpacing": "-2px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 40,
+          "x": 152,
+          "y": 2738
+        },
+        "_cls": "text-h4 lg:text-h2 font-semibold tracking-tighter leading-tight lg:leading-none",
+        "_tag": "h2",
+        "_text": "Precise data classification, in context."
+      }
+    ],
+    "h3": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "495px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 495,
+          "h": 240,
+          "x": 169,
+          "y": 4048
+        },
+        "_cls": "mt-2 lg:mt-4 text-h4 lg:text-h3 tracking-tighter leading-none font-semibold",
+        "_tag": "h3",
+        "_text": "“The rise of AI technologies means Information Management and Data Governance have never b"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "495px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 495,
+          "h": 150,
+          "x": 1417,
+          "y": 4138
+        },
+        "_cls": "mt-2 lg:mt-4 text-h4 lg:text-h3 tracking-tighter leading-none font-semibold",
+        "_tag": "h3",
+        "_text": "“With Aiimi, I've added three key areas of business value: data compliance, cost, and effi"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "30px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-1.5px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "16px 0px 0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "495px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 495,
+          "h": 60,
+          "x": 2665,
+          "y": 4228
+        },
+        "_cls": "mt-2 lg:mt-4 text-h4 lg:text-h3 tracking-tighter leading-none font-semibold",
+        "_tag": "h3",
+        "_text": "Making 5.7TB of critical historical data discoverable and usable at RES."
+      }
+    ],
+    "h4": [],
+    "p": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "27.5px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "473.328px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 473,
+          "h": 165,
+          "x": 152,
+          "y": 628
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Understand what data you have, where it's stored, who has access, and how much risk and va"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "30.25px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 91,
+          "x": 152,
+          "y": 1639
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Our automated data governance tools remediate and protect your most sensitive information "
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "22px",
+        "fontWeight": "500",
+        "lineHeight": "30.25px",
+        "letterSpacing": "-0.55px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "662.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 663,
+          "h": 182,
+          "x": 152,
+          "y": 1762
+        },
+        "_cls": "",
+        "_tag": "p",
+        "_text": "Traditional data governance processes can’t keep up with the pace of AI or the scale and c"
+      }
+    ],
+    "eyebrow": [],
+    "blockquote": [],
+    "li": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "10px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "list-item",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 10,
+          "h": 10,
+          "x": 152,
+          "y": 3774
+        },
+        "_cls": "slick-active",
+        "_tag": "li",
+        "_text": ""
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "10px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "list-item",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 10,
+          "h": 10,
+          "x": 178,
+          "y": 3774
+        },
+        "_cls": "",
+        "_tag": "li",
+        "_text": ""
+      }
+    ]
+  },
+  "interactive": {
+    "links": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "106.453px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 106,
+          "h": 36,
+          "x": 152,
+          "y": 841
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "345.266px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 345,
+          "h": 36,
+          "x": 152,
+          "y": 2917
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo to see classification in action"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "174.188px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 174,
+          "h": 36,
+          "x": 152,
+          "y": 3709
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View all Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "137.266px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline-block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 137,
+          "h": 36,
+          "x": 169,
+          "y": 4328
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View Case Study"
+      }
+    ],
+    "buttons": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(23, 23, 23)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 28px",
+        "margin": "0px",
+        "borderRadius": "9999px",
+        "boxShadow": "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        "maxWidth": "none",
+        "width": "152.656px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "flex",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 153,
+          "h": 44,
+          "x": 1081,
+          "y": 128
+        },
+        "_cls": "demo-glow-btn relative flex items-center justify-center h-[44px] px-4 lg:px-7 rounded-full overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "106.453px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 106,
+          "h": 36,
+          "x": 152,
+          "y": 841
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "345.266px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 345,
+          "h": 36,
+          "x": 152,
+          "y": 2917
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "Book a demo to see classification in action"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "174.188px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 174,
+          "h": 36,
+          "x": 152,
+          "y": 3709
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View all Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px 0px 8px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "137.266px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "inline-block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 137,
+          "h": 36,
+          "x": 169,
+          "y": 4328
+        },
+        "_cls": "cta_underline relative inline-block group pb-2 text-lg font-medium tracking-tight overflow-hidden",
+        "_tag": "a",
+        "_text": "View Case Study"
+      }
+    ],
+    "cards": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "padding": "0px 0px 64px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 354,
+          "x": 0,
+          "y": 2336
+        },
+        "_cls": "card-carousel px-6 md:px-0 pt-0 lg:pt-0 pb-8 lg:pb-16 bg-white text-black",
+        "_tag": "div",
+        "_text": "Classify unstructured data, everywhereIdentifies personal and sensitive data at scale, wit"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "padding": "64px 0px 96px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 989,
+          "x": 0,
+          "y": 3521
+        },
+        "_cls": "card-carousel px-6 lg:px-0 pt-8 lg:pt-16 pb-12 lg:pb-24 bg-black text-white",
+        "_tag": "div",
+        "_text": "Data and information governance, relied on by the world's most trusted organisations.View "
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 336,
+          "x": 0,
+          "y": 4785
+        },
+        "_cls": "card-carousel px-6 md:px-0 pt-0 lg:pt-0 pb-0 lg:pb-0 bg-white text-black",
+        "_tag": "div",
+        "_text": "Improve and control dataLocate and protect sensitive or confidential data, 24/7/365Reduce "
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "normal",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "padding": "0px 0px 48px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "1440px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 1440,
+          "h": 318,
+          "x": 0,
+          "y": 6123
+        },
+        "_cls": "card-carousel px-6 md:px-0 pt-0 lg:pt-0 pb-4 lg:pb-12 bg-black text-white",
+        "_tag": "div",
+        "_text": "Fuel AI with the full data pictureClassify data across all sourcesSurface golden records a"
+      }
+    ],
+    "inputs": [
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 353,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 550,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      },
+      {
+        "fontFamily": "sans-serif",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "24px",
+        "letterSpacing": "0.1px",
+        "textTransform": "none",
+        "color": "rgb(20, 20, 20)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "57px",
+        "border": "0px none rgb(20, 20, 20)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "all",
+        "opacity": "0",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 57,
+          "h": 32,
+          "x": 727,
+          "y": 844
+        },
+        "_cls": "CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelConsentCheckbox",
+        "_tag": "input",
+        "_text": ""
+      }
+    ]
+  },
+  "chrome": {
+    "header": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(23, 23, 23)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 204,
+        "x": 0,
+        "y": 0
+      },
+      "_cls": "fixed top-0 left-0 w-full bg-black z-[9999] transition-colors duration-300",
+      "_tag": "header",
+      "_text": "WEBINAR 28/09: Why Automated Data Governance is the only option for AI success - with indu"
+    },
+    "nav": null,
+    "navLinks": [],
+    "footer": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "lineHeight": "24px",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "backgroundColor": "rgb(0, 0, 0)",
+      "padding": "64px 0px",
+      "margin": "0px",
+      "borderRadius": "0px",
+      "boxShadow": "none",
+      "maxWidth": "none",
+      "width": "1440px",
+      "border": "",
+      "gap": "normal",
+      "display": "block",
+      "gridTemplateColumns": "none",
+      "transition": "all",
+      "opacity": "1",
+      "textDecoration": "none",
+      "_rect": {
+        "w": 1440,
+        "h": 656,
+        "x": 0,
+        "y": 8656
+      },
+      "_cls": "block w-full py-8 lg:py-16 bg-black text-white border-t border-aiimi-pink",
+      "_tag": "footer",
+      "_text": "Homepage linkPowering AI everywhere at workWhat we doPlatformServicesCase StudiesResources"
+    },
+    "footerHeadings": [],
+    "footerLinks": [
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 8810
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Platform"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 8852
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Services"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 8894
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Case Studies"
+      },
+      {
+        "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "18px",
+        "letterSpacing": "-0.45px",
+        "textTransform": "none",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "maxWidth": "none",
+        "width": "268px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "gap": "normal",
+        "display": "block",
+        "gridTemplateColumns": "none",
+        "transition": "color 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.15s cubic-bezier(0.4, 0, 0.2, 1), fill 0.15s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        "opacity": "1",
+        "textDecoration": "none",
+        "_rect": {
+          "w": 268,
+          "h": 18,
+          "x": 720,
+          "y": 8936
+        },
+        "_cls": "text-h5 font-semibold tracking-tight leading-none transition-colors hover:text-aiimi-pink",
+        "_tag": "a",
+        "_text": "Resources"
+      }
+    ],
+    "logo": {
+      "tag": "svg",
+      "src": "",
+      "w": 9,
+      "h": 10
+    }
+  },
+  "sections": [
+    {
+      "tag": "main",
+      "cls": "",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 8560,
+      "text": "Govern, protect, and unlock value from data. Understand what data you have, where it's stored, who has access, and how m"
+    }
+  ],
+  "videos": [],
+  "iframes": [
+    {
+      "src": "",
+      "title": "Blank"
+    },
+    {
+      "src": "https://consentcdn.cookiebot.com/sdk/bc-v4.min.html",
+      "title": "Blank"
+    }
+  ],
+  "containers": [
+    [
+      "1280px",
+      23
+    ],
+    [
+      "1248px",
+      7
+    ],
+    [
+      "1440px",
+      1
+    ],
+    [
+      "1600px",
+      1
+    ]
+  ],
+  "census": {
+    "colours": [
+      [
+        "rgb(20, 20, 20)",
+        187
+      ],
+      [
+        "rgb(255, 255, 255)",
+        91
+      ],
+      [
+        "rgb(0, 0, 0)",
+        52
+      ],
+      [
+        "rgb(23, 23, 23)",
+        13
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ]
+    ],
+    "backgrounds": [
+      [
+        "rgb(255, 255, 255)",
+        45
+      ],
+      [
+        "rgb(0, 0, 0)",
+        34
+      ],
+      [
+        "rgba(0, 0, 0, 0.05)",
+        32
+      ],
+      [
+        "rgb(214, 214, 214)",
+        21
+      ],
+      [
+        "rgb(231, 41, 93)",
+        14
+      ],
+      [
+        "rgb(20, 20, 20)",
+        7
+      ],
+      [
+        "rgb(229, 30, 89)",
+        3
+      ],
+      [
+        "rgb(28, 28, 36)",
+        3
+      ]
+    ],
+    "families": [
+      [
+        "sans-serif",
+        191
+      ],
+      [
+        "GeistSans, \"GeistSans Fallback\"",
+        155
+      ]
+    ],
+    "sizes": [
+      [
+        "15px/700",
+        104
+      ],
+      [
+        "15px/400",
+        53
+      ],
+      [
+        "16px/400",
+        43
+      ],
+      [
+        "16px/500",
+        35
+      ],
+      [
+        "12px/700",
+        21
+      ],
+      [
+        "18px/600",
+        14
+      ],
+      [
+        "15px/600",
+        13
+      ],
+      [
+        "30px/600",
+        11
+      ],
+      [
+        "22px/500",
+        10
+      ],
+      [
+        "40px/600",
+        8
+      ],
+      [
+        "14px/500",
+        8
+      ],
+      [
+        "60px/600",
+        4
+      ],
+      [
+        "14px/400",
+        4
+      ],
+      [
+        "18px/400",
+        3
+      ],
+      [
+        "11.2px/500",
+        3
+      ],
+      [
+        "14px/600",
+        2
+      ],
+      [
+        "12px/500",
+        2
+      ],
+      [
+        "160px/600",
+        2
+      ],
+      [
+        "18px/500",
+        2
+      ],
+      [
+        "16px/600",
+        2
+      ],
+      [
+        "22px/700",
+        1
+      ],
+      [
+        "16px/700",
+        1
+      ]
+    ],
+    "radii": [
+      [
+        "15px",
+        31
+      ],
+      [
+        "60px",
+        21
+      ],
+      [
+        "7.5px",
+        17
+      ],
+      [
+        "9999px",
+        16
+      ],
+      [
+        "32px",
+        9
+      ],
+      [
+        "3.75px",
+        4
+      ],
+      [
+        "10px",
+        3
+      ],
+      [
+        "8px",
+        1
+      ],
+      [
+        "5px",
+        1
+      ]
+    ],
+    "shadows": [
+      [
+        "rgba(0, 0, 0, 0.3) 0px 30px 70px 0px",
+        1
+      ],
+      [
+        "rgba(231, 41, 93, 0.15) 0px 0px 18px 4px, rgba(231, 41, 93, 0.08) 0px 0px 40px 8px",
+        1
+      ],
+      [
+        "rgba(226, 41, 93, 0.3) 0px 0px 12px 2px, rgba(226, 41, 93, 0.1) 0px 0px 12px 2px inset",
+        1
+      ]
+    ]
+  },
+  "headingOutline": [
+    "H1: Govern, protect, and unlock value from data.",
+    "H2: From exposure risk to strategic advantage.",
+    "H2: Protect and power your business with unified data governance.",
+    "H2: Precise data classification, in context.",
+    "H2: Data and information governance, relied on by the world's most trusted organisations.",
+    "H3: “The rise of AI technologies means Information Management and Data Governance have never been more critical. T",
+    "H3: “With Aiimi, I've added three key areas of business value: data compliance, cost, and efficiencies.”\n\n– Adam S",
+    "H3: Making 5.7TB of critical historical data discoverable and usable at RES.",
+    "H3: Saving Holland & Barrett 3,000 hours through automated compliance.",
+    "H3: Mitigating risk and saving £1m in data storage costs at professional services firm.",
+    "H3: AI-powered data management at BEIS, built to Government Digital Standards.",
+    "H3: Driving 80% efficiency gain through data access at major manufacturer.",
+    "H2: Data governance without the wait.",
+    "H2: Better together: extending the reach of Microsoft Purview",
+    "H2: AI depends on data you can trust.",
+    "H2: Already using an AI copilot? We'll make your investment go further.",
+    "H2: Resources for AI Readiness and Data Governance.",
+    "H2: Talk to us about Data Governance."
+  ],
+  "bodyText": "Govern, protect, and unlock value from data.\n\nUnderstand what data you have, where it's stored, who has access, and how much risk and value it holds, with Aiimi's enterprise data governance platform.\n\nClassify. Govern. Get AI-ready.\n\nBook a demo\nFrom exposure risk to strategic advantage.\n\nOur automated data governance tools remediate and protect your most sensitive information – and make good data available to the teams who need it.\n\nTraditional data governance processes can’t keep up with the pace of AI or the scale and complexity of unstructured information. The Aiimi platform uses AI and ML automation to rapidly classify and manage data, 24/7/365, without needing to move anything. Valuable data is made usable for your teams and AI tools, and sensitive data is kept safe.\n\nProtect and power your business with unified data governance.\n\nHighly accurate classification identifies valuable and sensitive data no matter where it lives, providing a clear view of your entire data picture – and the tools to automatically enforce information governance policies.\n\nClassify unstructured data, everywhere\n\nIdentifies personal and sensitive data at scale, with precision accuracy\n\nAdvanced AI clustering, enrichment, and labelling\n\nConnects to Cloud and on-premises sources, no need to move data\n\nTransform data quality and discoverability\n\nAutomatically finds and deletes duplicates to support data minimisation\n\nPinpoints 'golden records' as single sources of truth\n\nFlags and relocates data found in the wrong location, widening access safely\n\nAutomate data security and compliance\n\nFinds and remediates data risks for Data Security Posture Management (DSPM)\n\nRestricts access based on information risk, to protect all sensitive data\n\nBuilt-in workflows for migration, deletion, retention, legal hold\n\nPrecise data classification, in context.\n\nGo beyond basic pattern matching and regex. Aiimi dynamically classifies data using AI and ML techniques like Named Entity Recognition and Clustering.\n\nBook a demo to see classification in action\n\nCut out false positives with contextual awareness and in-built verification, without training.\n\nIntegrate enterprise data governance with classification labels that work across all systems.\n\nApply labels that matter to your business, from risk to quality metrics.\n\nData and information governance, relied on by the world's most trusted organisations.\nView all Case Studies\n“The rise of AI technologies means Information Management and Data Governance have never been more critical. To have trust in AI outputs you must first have trust in your underlying data. The Aiimi platform gives us that trust.” – Chris Allen, Chief Data Officer at KPMG UK\nView Case Study\n“With Aiimi, I've added three key areas of business value: data compliance, cost, and efficiencies.” – Adam Stancliffe, Head of Data Governance at NOW: Pensions\nView Case Study\nMaking 5.7TB of critical historical data discoverable and usable at RES.\nView Case Study\nSaving Holland & Barrett 3,000 hours through automated compliance.\nView Case Study\n£\n1\nm\nMitigating risk and saving £1m in data storage costs at professional services firm.\nView Case Study\nAI-powered data management at BEIS, built to Government Digital Standards.\nView Case Study\n80\n%\nDriving 80% efficiency gain through data access at major manufacturer.\nView Case Study\nData governance without the wait.\n\nWith AI-powered classification, information governance is fast, dynamic, and automated - with humans in the loop for the data decisions that matter most.\n\nImprove and control data\n\nLocate and protect sensitive or confidential data, 24/7/365\n\nReduce risk of information sprawl\n\nSupport Data Loss Prevention\n\nComply with retention policies and external standards like GDPR, ISO27001\n\nIdentify ROT and delete duplicate data to reduce costs and carbon\n\nAutomate Disclosure Responses and Legal Hold\n\nAnonymise and pseudonymise data\n\nGet value from data\n\nMake hidden data discoverable and usable \n\nPromote safe data to users and AI tools\n\nPrepare data for Cloud Migration\n\nTurn unstructured data silos into AI-ready data\n\nPinpoint top-quality data for analytics and AI use cases\n\nComplete gaps in structured data using unstructured content\n\nBetter together: extending the reach of Microsoft Purview\n\nAiimi's enterprise data governance platform extends the reach of data classification, allowing you to label information consistently no matter where it lives. It works seamlessly with your existing tools like Microsoft Purview, for a unified information governance approach.\n\nTalk to us about unifying data governance\nAI depends on data you can trust.\n\nGartner predicts that 60% of AI projects will be abandoned due to a lack of AI-ready data. Aiimi's data governance platform ensures your data and information are ready to meet your AI ambitions.\n\nFuel AI with the full data picture\n\nClassify data across all sources\n\nSurface golden records as ‘single source of truth’ for AI\n\nEnrich structured data with unstructured content\n\nOpen up locked-down data for AI value\n\nContext-aware data classification with AI and ML\n\nAI agents safely automate data management\n\nRisk scoring & remediation keep sensitive data safe\n\nMaximise investments in enterprise AI tools\n\nUnderwrite AI outputs with improved data quality\n\nExtend reach of AI tools to new data sources\n\nControl costs and carbon by only passing hyper-relevant data to AI\n\nAlready using an\nAI copilot? We'll make\nyour investment\ngo further.\n\nPowerful copilot tools boost productivity, but they can't see beyond their host systems. Aiimi provides a unified view of data across all systems, with consistent labelling, protection for sensitive data, and kitemarked high-quality data. Safely extend the reach of your AI copilot, while maximising the value of your investment.\n\nTalk to us about extending copilots\nResources for AI Readiness and Data Governance.\n\nRead, watch, and download expert resources to support your data governance and AI readiness priorities.\n\nDiscover more\nBLOG\n\nData governance is more valuable than ever – because of AI\n\nDiscover more\nGUIDE\n\n2026 Insight Report: Leading the way with AI & Data Governance\n\nDiscover more\nBLOG\n\nThe benefits of data governance in the age of AI: delivering trust, supporting innovation\n\nDiscover more\nTalk to us about Data Governance.\n\nWe're here to help – whether you want a quick chat or a personalised demo from one of our experts. Just fill in the form and we'll be in touch within one working day.\n\nFirst Name*\nLast Name*\nEmail*\nPhone\nJob Title\nCompany Name\nMessage\nHow did you first hear about us?\nPlease select\nSearch engine (e.g. Google, Bing)\nSocial media\nAI (ChatGPT, Copilot, Claude, etc)\nEvent or Webinar\nOnline advertisement\nNews or media article\nPodcast\nOfficial Aiimi Partner\nReview site (e.g. Gartner, G2)\nReferred by an Aiimi customer\nWord of mouth\nColleague or employer\nOther\nFrom time to time, we would like to contact you about our products, services, events and other content that we think will be of interest to you. You can unsubscribe from these communications at any time.\nYes please - I’d like to hear more from Aiimi!\nBy submitting this form you consent to us processing and storing the information you provide in accordance with our Privacy Policy\nSUBMIT"
+}

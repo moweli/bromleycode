@@ -1,0 +1,216 @@
+{
+  "url": "https://aiimi.com/case-studies/creating-ai-roadmap-government-insolvency-service",
+  "title": "AI roadmap for the Government’s Insolvency Service - Aiimi",
+  "outline": [
+    "H1 | Creating a three-year AI roadmap for the Government’s Insolvency Service.",
+    "H2 | Developing a roadmap for high-value AI use cases.",
+    "H3 | The Problem",
+    "H3 | The Solution",
+    "H3 | The Results",
+    "H3 | What’s next?",
+    "H3 | “Aiimi has provided us with a detailed AI roadmap that addresses our unique, specific needs while having the flexibility to test a",
+    "H3 | Learn More",
+    "H3 | Aiimi has given us the strongest possible footing to start our AI journey.",
+    "H3 | Discover more.",
+    "H4 | How ‘tokenomics’ exposes AI’s true business case",
+    "H4 | We're asking the wrong questions about Sovereign AI.",
+    "H4 | AI Impact Guide: How to move your AI use cases from hype to ROI",
+    "H4 | How to protect sensitive data when using AI assistants"
+  ],
+  "blocks": [
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    }
+  ],
+  "h1": {
+    "tag": "h1",
+    "cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+    "fs": "60px",
+    "fw": "600",
+    "lh": "60px",
+    "ls": "-3px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "maxWidth": "none",
+    "w": 852,
+    "text": "Creating a three-year AI roadmap for the Government’s Insolvency Service."
+  },
+  "paragraphs": [
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "27.5px",
+      "ls": "-0.55px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 852,
+      "text": "The Insolvency Service knew AI could supercharge its work supporting the UK economy. But it needed trusted experts to lead them into this ne"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "The Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor re"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Their Digital Innovation Team knew AI had huge potential to fine-tune their approach to fraud detection, increase organisational efficiency,"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "But with so many potential applications it was hard to know where to start."
+    }
+  ],
+  "quotes": [],
+  "bigNumbers": [
+    {
+      "text": "The Solution",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ProblemThe Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor r"
+    },
+    {
+      "text": "The Results",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ProblemThe Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor r"
+    },
+    {
+      "text": "What’s next?",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ProblemThe Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor r"
+    },
+    {
+      "text": "Learn More",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ProblemThe Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor r"
+    }
+  ],
+  "images": [
+    {
+      "alt": "UK Government’s Insolvency Service logo",
+      "w": 124,
+      "h": 65,
+      "src": "https://a.storyblok.com/f/321130/0x0/c8566b3fe7/insolvency-white.svg"
+    },
+    {
+      "alt": "Abstract image featuring overlapping architectural elements with glass facades and reflections, crea",
+      "w": 1440,
+      "h": 792,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F7a89742b57%2Fcase-studies_the-insolvenc"
+    },
+    {
+      "alt": "Abstract image featuring glowing pink tokens and text: \"How ‘tokenomics’ exposes AI’s true business ",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F58539f334c%2Fblogs-how-tokenomics-expos"
+    },
+    {
+      "alt": "Paul Maker profile picture",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F266x266%2Faa9b9d726b%2Fpaul-maker.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Text reads \"We’re asking the wrong questions about Sovereign AI.\" Abstract graphic of a padlock on a",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F0414386d9a%2Fcover-image-sovereign-al-b"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F2250x2250%2F6c06395ade%2Fthe-ai-impact-guide-square"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F800x450%2F0e79ef0c0c%2Fhow-to-protect-sensitive-dat"
+    },
+    {
+      "alt": "Matt Eustace profile photo",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1015x1015%2F38c0e2e8d7%2Fmatt-eustace-head-of-solut"
+    }
+  ],
+  "text": "Creating a three-year AI roadmap for the Government’s Insolvency Service.\n\nThe Insolvency Service knew AI could supercharge its work supporting the UK economy. But it needed trusted experts to lead them into this new territory and build a plan for its AI rollout.\n\nAiimi Facebook link\nAiimi Twitter/X link\nAiimi LinkedIn link\nDeveloping a roadmap for high-value AI use cases.\n\nThe Problem\n\nThe Insolvency Service is a data-driven government agency that supports the economy by tackling financial wrongdoing, maximising creditor returns, and helping people in financial distress.\n\nTheir Digital Innovation Team knew AI had huge potential to fine-tune their approach to fraud detection, increase organisational efficiency, and assist their work helping the public.\n\nBut with so many potential applications it was hard to know where to start.\n\nSo the team came to Aiimi for our digital, data, and AI consulting services and asked us to draw up a strategic and achievable roadmap for AI implementation.\n\nThe Solution\n\nWe began our work with The Insolvency Service at the end of 2024 and got started analysing the ways data was being used within the agency and identifying points of friction.\n\nThere’s no substitute for face-to-face meetings so we conducted over 20 hours of interviews - engaging seven Directorates and speaking with 17 teams across the agency.\n\nThrough these interviews, combined with rigorous additional research, we identified five key themes that typified the agency’s approach to data, shining a light on areas of potential not only for AI implementation but wider digital transformation.\n\nThis extensive research was the background we needed to tailor our AI use case assessment framework to The Insolvency Service's unique needs. This framework underpins our three-year roadmap for the agency, and is also a reusable asset that can be applied to future strategy.\n\nThe Results\n\nOur work with The Insolvency Service was a truly collaborative process. Our expertise and meticulous research saw us:\n\nNarrow down 80 AI use cases to the most promising 29 that will bring maximum, immediate benefits to the agency.\n\nIdentify eight new AI use cases the agency hadn’t previously considered.\n\nConstruct a tailored, reusable framework to help prioritise and make the most strategic decisions.\n\nRefine the list of use cases to pinpoint the five most high-value applications for AI. These include:\n\nAn external-facing customer chatbot to reduce the agency’s workload, free up time for high-value activities, and provide customers with 24/7 access.\n\nEnhanced fraud detection capabilities that allow the agency to quickly scour financial data and documents.\n\nTools that support case targeting and prioritisation based on vast volumes of financial data and documents - maximising efficient use of staff time and focusing on case resolution time.\n\nCreate a three-year AI roadmap for the agency to guide its digital transformation - collapsing an overwhelming world of options down to the solutions that effect the biggest change.\n\nProduce solution architecture including delivery timelines and metrics to track the impact of each solution.\n\nAiimi’s consultancy work is helping The Insolvency Service improve their customer experience, boost staff efficiency and enhance their fraud detection capabilities. With our support, the agency is swiftly yet sustainably embracing automation and AI. Our work has set the agency on the right path to AI transformation, providing them with a detailed plan of action that will elevate their services over the next three years and beyond. \n\nWhat’s next?\n\nAiimi will be on hand to support The Insolvency Service with the next phase of their journey, as they prepare to move through to building and development.\n\n“Aiimi has provided us with a detailed AI roadmap that addresses our unique, specific needs while having the flexibility to test and adapt as we go. Their research has helped us identify key areas that would benefit from AI and automation but they’ve also given us broader insights into the way we manage data, which is crucial to our wider work. Embracing AI aligns us with the government-wide drive for AI and automation, as well as making it easier to do business with the agency, improving our customers’ experience, and lightening the workload of agency staff.”\n\nNathan Marsh, Digital Innovation Lead\n\nLearn More\n\nDiscover how Aiimi's AI strategy consulting can give you a fast track to unlocking AI's value.\n\nAiimi has given us the strongest possible footing to start our AI journey.\nNathan Marsh\n\nDigital Innovation Lead\n\nDiscover more.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace"
+}

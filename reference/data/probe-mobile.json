@@ -1,0 +1,31 @@
+{
+  "cookieDismiss": "#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll",
+  "headerButtons": [
+    {
+      "label": "Open menu",
+      "cls": "relative px-1.5 py-1.5 cursor-pointer border-[1.5px] border-white rounded-[5px]",
+      "text": "",
+      "expanded": "false"
+    }
+  ],
+  "clicked": true,
+  "panel": [],
+  "heroMobile": {
+    "videoDisplay": "block",
+    "videoSrc": "https://a.storyblok.com/f/321130/x/96cdf42de2/web_homepage_background-animation_new-tags_industries_desktop_heavy_compressed.mp4",
+    "videoPoster": "",
+    "videoRect": {
+      "w": 390,
+      "h": 582
+    },
+    "h1": {
+      "fs": "30px",
+      "lh": "30px",
+      "ls": "-1.5px",
+      "color": "rgb(255, 255, 255)",
+      "w": 342
+    },
+    "heroWrapH": 246,
+    "headerH": 108
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "url": "https://aiimi.com/case-studies/5x-faster-fault-resolution-answers-with-ai-assistant-niftylift",
+  "title": "Case Study: Delivering 5x faster fault resolution answers with AI assistant at Niftylift - Aiimi",
+  "outline": [
+    "H1 | Delivering 5x faster fault resolution answers with AI assistant at Niftylift.",
+    "H3 | Find out more about Aiimi's AI Chat & Assistant solution.",
+    "H3 | Discover more.",
+    "H4 | How ‘tokenomics’ exposes AI’s true business case",
+    "H4 | We're asking the wrong questions about Sovereign AI.",
+    "H4 | AI Impact Guide: How to move your AI use cases from hype to ROI",
+    "H4 | How to protect sensitive data when using AI assistants"
+  ],
+  "blocks": [
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    }
+  ],
+  "h1": {
+    "tag": "h1",
+    "cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+    "fs": "60px",
+    "fw": "600",
+    "lh": "60px",
+    "ls": "-3px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "maxWidth": "none",
+    "w": 852,
+    "text": "Delivering 5x faster fault resolution answers with AI assistant at Niftylift."
+  },
+  "paragraphs": [
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Off-highway equipment manufacturer Niftylift wanted to streamline the way fault diagnosis data was handled, aiming to save valuable speciali"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "The Challenge Niftylift’s production teams were losing time to fault diagnosis. When a fault occurred, operators had to leave their stations"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "In short, Niftylift needed a faster, simpler way for the production line to identify what was wrong and act with confidence at the point of "
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "The Solution Aiimi built a conversational AI assistant for Niftylift, based on our AI platform and integrated with their existing fault know"
+    }
+  ],
+  "quotes": [],
+  "bigNumbers": [
+    {
+      "text": ".",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "Off-highway equipment manufacturer Niftylift wanted to streamline the way fault diagnosis data was handled, aiming to save valuable specialist time an"
+    }
+  ],
+  "images": [
+    {
+      "alt": "White Niftylift logo",
+      "w": 238,
+      "h": 65,
+      "src": "https://a.storyblok.com/f/321130/300x82/411a2c0368/niftylift-logo_padded_left_white.svg"
+    },
+    {
+      "alt": "A dimly lit scene showing an elevated work platform or cherry picker against a cloudy sky.",
+      "w": 1440,
+      "h": 677,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2Fb417034c22%2Fcase-studies_niftylift_del"
+    },
+    {
+      "alt": "Abstract image featuring glowing pink tokens and text: \"How ‘tokenomics’ exposes AI’s true business ",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F58539f334c%2Fblogs-how-tokenomics-expos"
+    },
+    {
+      "alt": "Paul Maker profile picture",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F266x266%2Faa9b9d726b%2Fpaul-maker.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Text reads \"We’re asking the wrong questions about Sovereign AI.\" Abstract graphic of a padlock on a",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F0414386d9a%2Fcover-image-sovereign-al-b"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F2250x2250%2F6c06395ade%2Fthe-ai-impact-guide-square"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F800x450%2F0e79ef0c0c%2Fhow-to-protect-sensitive-dat"
+    },
+    {
+      "alt": "Matt Eustace profile photo",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1015x1015%2F38c0e2e8d7%2Fmatt-eustace-head-of-solut"
+    }
+  ],
+  "text": "Delivering 5x faster fault resolution answers with AI assistant at Niftylift.\nAiimi Facebook link\nAiimi Twitter/X link\nAiimi LinkedIn link\n\nOff-highway equipment manufacturer Niftylift wanted to streamline the way fault diagnosis data was handled, aiming to save valuable specialist time and improve consistency. By partnering with Aiimi, Niftylift sought a solution to accelerate the resolution of common issues, reduce unnecessary escalations, and enhance the quality of operational data - without needing to escalate every fault to the specialist fault diagnostics team. \n\nThe Challenge   \nNiftylift’s production teams were losing time to fault diagnosis. When a fault occurred, operators had to leave their stations, log into a central database, and navigate multiple screens to interpret symptoms and determine the right fix. The database was difficult to use, with lots of time spent manually filtering through columns and searching for information. The result was a familiar operational pattern: frontline teams escalated routine issues to specialists because they couldn’t quickly find or trust the answer themselves. This meant more downtime on the line, pressure on throughput targets, and a growing queue of low-complexity queries pulling experts away from higher value work.\n\nIn short, Niftylift needed a faster, simpler way for the production line to identify what was wrong and act with confidence at the point of work, without trawling through imperfect records or relying on escalations.\n\n \nThe Solution   \nAiimi built a conversational AI assistant for Niftylift, based on our AI platform and integrated with their existing fault knowledge base, to run on operators’ tablets. Instead of forcing users to search and interpret, the AI chatbot assistant guides operators through diagnosis in plain language, asking targeted follow up questions to clarify descriptions or error codes, then providing clear next steps. By bringing the tool to the point-of-work, operators no longer need to leave the line to diagnose, eliminating movement and context-switching.\n\nCrucially, Aiimi's platform transforms hard-to-find, historical data into something usable and valuable. The assistant pulls together relevant entries from across the fault database – even where similar issues are scattered across different categories – and presents the user with the most relevant options, so they can decide what best aligns with what they’re seeing and provide concise actions. A built in feedback loop flags any outdated or irrelevant records for improvement, steadily increasing accuracy over time. The outcome is a faster, more intuitive route from symptom to resolution, powered by the data Niftylift already owns.\n\nAdditional inspection data helps fill knowledge gaps; for example, the production line was able to self-resolve an issue where a specific wire was not connected to a specific port, by surfacing an old inspection record. Previously, the diagnosis of this simple issue would have taken hours of effort – the inspection data wouldn’t have been surfaced, so the job would have been escalated to the resolution specialist team. This demonstrates how the AI assistant saves hours of diagnostics time and reduces reliance on expensive specialist intervention, with unknown faults now almost twice as likely to be resolved.\n\nAiimi paired the rollout with training and usage monitoring to build adoption and trust among staff, updating content to fit real workflows. Users are trained and scored on the quality of their prompts, encouraging them to describe faults accurately and provide context, which helps the AI assistant deliver better guidance. The system also provides an audit trail: if an operator attempts to escalate an issue without following due diligence, they will be asked to attempt resolution first using the AI assistant. This not only alleviates pressure on the diagnostics team but also ensures that production line engineers are empowered – and required – to self-resolve where possible. The platform is designed with safety, security, and explainability in mind; all data ingested is protected, and every decision made by the AI assistant is auditable, which is essential in regulated, Health & Safety-driven environments.\n\nThe Results \nSince the integration of the AI assistant into the fault diagnosis process, Niftylift has seen measurable gains in speed, quality, and capacity, with less time spent searching, more issues resolved at source, and fewer interruptions on the line. This translates directly to greater operational efficiency, cost avoidance, and reduced risk of missed targets.  \n\nFaster time to answers: Operators now reach relevant guidance in less than a minute – at least an 80% reduction from the five or more minutes typically spent navigating the old system. Working next to the machine removes back‑and‑forth and accelerates action.  \n\nBetter outcomes even without a standard fix: The success rate for resolving issues without a previously known solution almost doubled, from 15% in February 2025 to 28% in February 2026, by surfacing investigation insights that were buried in historic records.  \n\nReduced reliance on specialists and lower downtime: By enabling operators to self‑diagnose and take action, fewer routine issues are escalated to the diagnostics team, protecting expert capacity for complex problems and helping stabilise throughput against build targets. Time to resolve has been trending down week‑on‑week across most issue types, freeing up time to support new designs and machinery and improve fault resolutions steps to better support the production line.  \n\nContinuous data improvement: The feedback loop is elevating the quality of resolution data in the knowledge base, increasing trust in results and reinforcing a cycle of operational learning.  \n\nBeyond the metrics, operators can now describe problems in their own words – whether it’s a vague symptom or an alphanumeric code – and receive clear, simple guidance that unifies scattered knowledge and avoids guesswork. The approach is highly repeatable and transferable to other teams or organisations where a high‑friction process is anchored on a large, imperfect knowledge base: add a guided, conversational layer at the point of work; create a feedback loop to improve the data; and track adoption and outcomes to prove value.   \n\nWhat’s next  \nPlans are underway to extend the assistant to broader use of AI applications across the organisation, with Aiimi as a key partner in this transformation.  \n\nFind out more about Aiimi's AI Chat & Assistant solution.\n\nReplacing the old database with the Aiimi AI assistant has been a major enhancement to the Niftylift Fault Diagnosis Process. It has significantly improved how fault diagnosis data is accessed and applied – delivering faster, more accurate insights through a more intuitive interface. This has empowered operators to engage more confidently in machine diagnosis, increasing exposure to relevant diagnostic pathways and promoting more consistent and effective use of the process. The built-in feedback loop and scoring system support our continuous improvement strategy, encouraging consistent engagement and capture of high-quality diagnostic data. This ensures the knowledge base continues to evolve, driving more reliable and meaningful fault resolution over time.\n\nMarian-Toma Diaconescu\n\n Senior Fault Diagnostics Engineer at Niftylift\n\nDiscover more.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace"
+}

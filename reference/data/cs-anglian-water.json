@@ -1,0 +1,204 @@
+{
+  "url": "https://aiimi.com/case-studies/digital-asset-information-management-at-anglian-water",
+  "title": "Transforming asset information management to deliver operational value at Anglian Water. - Aiimi",
+  "outline": [
+    "H1 | Transforming asset information management at Anglian Water.",
+    "H2 | The Challenge",
+    "H2 | The Solution",
+    "H2 | The Results",
+    "H2 | What’s Next?",
+    "H3 | Discover more.",
+    "H4 | How ‘tokenomics’ exposes AI’s true business case",
+    "H4 | We're asking the wrong questions about Sovereign AI.",
+    "H4 | AI Impact Guide: How to move your AI use cases from hype to ROI",
+    "H4 | How to protect sensitive data when using AI assistants"
+  ],
+  "blocks": [
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    }
+  ],
+  "h1": {
+    "tag": "h1",
+    "cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+    "fs": "60px",
+    "fw": "600",
+    "lh": "60px",
+    "ls": "-3px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "maxWidth": "none",
+    "w": 852,
+    "text": "Transforming asset information management at Anglian Water."
+  },
+  "paragraphs": [
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Anglian Water partnered with Aiimi to digitise and automate its critical asset information management – replacing fragmented physical ‘blue "
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Within the highly regulated water industry, managing documents and information related to assets is a constant challenge. Traditionally, wat"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Over time, these blue boxes have become increasingly difficult to manage. Information is often inconsistent, duplicated, out of date, or mis"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "As regulatory requirements have evolved and assets changed, there has been no reliable way to ensure every site holds the right information,"
+    }
+  ],
+  "quotes": [],
+  "bigNumbers": [
+    {
+      "text": "The Solution",
+      "fs": "40px",
+      "fw": "600",
+      "ls": "-2px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The Solution"
+    },
+    {
+      "text": "The Results",
+      "fs": "40px",
+      "fw": "600",
+      "ls": "-2px",
+      "color": "rgb(33, 37, 41)",
+      "ctx": "The Results"
+    },
+    {
+      "text": "What’s Next?",
+      "fs": "40px",
+      "fw": "600",
+      "ls": "-2px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "What’s Next?"
+    }
+  ],
+  "images": [
+    {
+      "alt": "",
+      "w": 121,
+      "h": 65,
+      "src": "https://a.storyblok.com/f/321130/279x150/765c5ba27c/anglian-water_white.svg"
+    },
+    {
+      "alt": "Abstract image of a circular structure with radial beams and a central metal framework, resembling a",
+      "w": 1440,
+      "h": 617,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F19f0a2e9fa%2Fcase-studies_anglian-water"
+    },
+    {
+      "alt": "Abstract image featuring glowing pink tokens and text: \"How ‘tokenomics’ exposes AI’s true business ",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F58539f334c%2Fblogs-how-tokenomics-expos"
+    },
+    {
+      "alt": "Paul Maker profile picture",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F266x266%2Faa9b9d726b%2Fpaul-maker.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Text reads \"We’re asking the wrong questions about Sovereign AI.\" Abstract graphic of a padlock on a",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F0414386d9a%2Fcover-image-sovereign-al-b"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F2250x2250%2F6c06395ade%2Fthe-ai-impact-guide-square"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F800x450%2F0e79ef0c0c%2Fhow-to-protect-sensitive-dat"
+    },
+    {
+      "alt": "Matt Eustace profile photo",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1015x1015%2F38c0e2e8d7%2Fmatt-eustace-head-of-solut"
+    }
+  ],
+  "text": "Transforming asset information management at Anglian Water.\nAiimi Facebook link\nAiimi Twitter/X link\nAiimi LinkedIn link\n\nAnglian Water partnered with Aiimi to digitise and automate its critical asset information management – replacing fragmented physical ‘blue boxes’ with a single, trusted digital platform. The result: improved compliance, reduced risk, and significant operational efficiencies. \n\nWithin the highly regulated water industry, managing documents and information related to assets is a constant challenge. Traditionally, water companies have relied on hard-copy documents on site for critical information such as asset records, Health & Safety documentation, operational procedures, and compliance materials. In Anglian Water, these documents were stored in physical containers that came to be known as the ‘blue box’. \n\nOver time, these blue boxes have become increasingly difficult to manage. Information is often inconsistent, duplicated, out of date, or missing altogether. Documents are added manually, reviews are inconsistent, and almost impossible to audit at scale.  \n\nAs regulatory requirements have evolved and assets changed, there has been no reliable way to ensure every site holds the right information, in the right format, at the right time. Meanwhile, the majority of documents are required to be kept fresh, reviewed and updated every three years.  \n\nThe Challenge \n\nAnglian Water recognised the need for a better way to manage these documents at scale. Asset and site information was fragmented across physical blue boxes, shared drives, document management systems, and specialist applications. These documents are subject to controls, with set documents expected for each site, including Health & Safety, surveys, and operational documents – but each site differed in the quality, completeness, and timeliness of its information. \n\nManual audits were resource-intensive and reactive, often taking up to 17,000 hours per audit cycle to collect and redistribute physical copies. Risks were often only identified after they had already materialised. Compliance reviews, including BSI, Environment Agency, and Environmental Performance Assessment audits, often resulted in actions being raised due to document control issues. There was no systematic way to prove ongoing compliance or respond quickly to new regulatory requirements – creating increased operational risk, reduced confidence in information used by frontline teams, and higher costs associated with rework, duplication, and governance overhead. \n\nAlthough asset and site information was already available to the organisation electronically, the sheer quantity of content that could be related to a single site (major sites have multiple thousands of documents) meant that without an intuitive search, a user would struggle to quickly and easily find the information they need. \n\nThe Solution \n\nAnglian Water worked with Aiimi to modernise the way asset and site information was governed and accessed across its estate. The key objectives of the Virtual Blue Box programme were to: \n\nEstablish a single, trusted digital source of truth for all asset, safety, and site information. \n\nEnsure consistent, complete, and compliant information is available for 100% of sites, with governance controls applied by default. \n\nReduce manual effort, operational risk, and cost associated with finding, updating, auditing, and maintaining asset information at scale. \n\nEnsure completeness of documents, highlight compliance gaps, and flag out-of-date information. \n\nAiimi’s Workplace AI platform was used to deliver the Virtual Blue Box, replicating the purpose of the physical blue box while eliminating its limitations. As a bespoke digital product, the platform provides a complete digital representation of a site’s required information, enabling it to be continuously maintained and governed by the system itself. Documents are scanned and made available for easier retrieval, supporting field technicians, back-office teams, and ensuring the review process is monitored. \n\nKey automated data governance capabilities of the platform include: \n\nAutomated classification and tagging: All documents and records are automatically classified by type, asset, and location, improving discoverability and consistency. By tagging ‘blue-box’ documents, it enables users to limit their search – serving 10-20 results rather than thousands – while also removing the need for a human to manually add those metadata tags. \n\nPolicy-driven completeness checks: The platform continuously checks each site’s required documents, identifying missing, outdated, or duplicate content, and triggering remediation workflows automatically. Users can track document status via Power BI reports, highlighting missing documents, those outside the three-year review cycle, and those approaching review deadlines. \n\nFull audit trails and compliance reporting: Every action – upload, modification, access, or deletion – is logged, providing a complete, searchable audit trail to support regulatory and safety assurance. \n\nContinuous compliance monitoring: When policies or regulations change, the platform can assess compliance across 7,000 sites instantly, rather than waiting for the next audit cycle. \n\nThe Results \n\nSince deploying the Virtual Blue Box with automated data governance, Anglian Water has achieved significant operational and governance improvements, including: \n\nDramatic reduction in manual governance effort: Manual audit and information assurance activities can be reduced by up to 6,000 hours annually. \n\nBSI Audit minor risks reduction: In the most recent BSI audit, 0 minor risks were raised in relation to document control processes. \n\nReduction in EA and EPA visit actions: Up to 40% reduction in the number of actions raised from EA and EPA visits to sites in relation to documentation. \n\nFaster, more reliable access to information: Engineers, contractors, and managers can locate critical information in minutes, instead of hours. \n\nSupporting better operational decisions: Greater trust in decisions, with information more accessible and readily available for operational teams. \n\nConsistent and complete site information: Required information is present and readily available across sites. \n\nReduced compliance and safety risk: Automated controls and audit trails enable continuous assurance and faster response to regulatory changes, reducing exposure to compliance breaches. \n\nCost avoidance and efficiency gains: Reduced rework, duplication, and governance overhead can deliver up to £450,000 in annual estimated cost avoidance. \n\nThe Virtual Blue Box does not simply digitise documents; it transforms information governance from a manual, reactive process into an automated, proactive capability. By embedding governance rules into the platform itself, Anglian Water ensures that data quality, completeness, and compliance are maintained continuously – even as assets, regulations, and operational demands change. \n\nWhat’s Next? \n\nWith the Virtual Blue Box now embedded across the organisation, we’ll continue developing its capabilities, refining and automating data governance controls in the near future. Anglian Water is also exploring further enhancements using the Workplace AI platform and AI technologies. This includes driving governance across the entire information estate to reduce risks caused by duplicate information, redundant, obsolete, and trivial (ROT) data, and overexposed information.\n\n\"The creation of a Virtual Blue Box with Aiimi represents a pivotal advancement for Anglian Water. By harnessing the capabilities of Machine Learning and Natural Language Processing, it addresses critical challenges faced by technicians in having access to the most relevant and latest information when they're on-site and need it most. Its success underscores the strategic value of investing in intelligent systems that bridge the gap between human expertise and digital intelligence, helping make us more operationally efficient and compliant.\"\n- Stuart Rawdon, Enterprise Content Governance Manager, Anglian Water \n\nThe Virtual Blue Box approach is highly repeatable and transferable to any organisation managing complex, regulated, asset-intensive operations. It is also enabling Anglian Water to leverage advanced AI capabilities, with ongoing work in the AI Accelerator set up by Aiimi at Anglian Water, where Aiimi’s Workplace AI platform is the tool of choice for innovation. \n\nLearn more about our Digital Product Services or explore the Aiimi Workplace AI platform.\n\nThe creation of a Virtual Blue Box with Aiimi represents a pivotal advancement for Anglian Water.\n\nStuart Rawdon\n\nEnterprise Content Governance Manager, Anglian Water\n\nDiscover more.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace"
+}

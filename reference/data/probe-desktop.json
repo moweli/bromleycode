@@ -1,0 +1,295 @@
+{
+  "sitemap": {
+    "count": 5,
+    "urls": [
+      "https://aiimi.com/sitemap/pages",
+      "https://aiimi.com/sitemap/insights",
+      "https://aiimi.com/sitemap/guides",
+      "https://aiimi.com/sitemap/case-studies",
+      "https://aiimi.com/sitemap/videos"
+    ]
+  },
+  "navTop": {
+    "headerCls": "fixed top-0 left-0 w-full bg-black z-[9999] transition-colors duration-300",
+    "position": "fixed",
+    "bg": "rgb(0, 0, 0)",
+    "backdrop": "none",
+    "height": 204,
+    "borderBottom": "0px solid rgb(229, 231, 235)",
+    "boxShadow": "none",
+    "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    "transform": "none",
+    "zIndex": "9999",
+    "padding": "0px",
+    "innerMaxWidth": "none",
+    "link": null,
+    "cta": {
+      "color": "rgb(23, 23, 23)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16px",
+      "fw": "400",
+      "ls": "normal",
+      "lh": "24px",
+      "pad": "0px 28px",
+      "radius": "9999px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "transition": "all",
+      "textTransform": "none"
+    },
+    "linkTexts": []
+  },
+  "navScrolled": {
+    "headerCls": "fixed top-0 left-0 w-full bg-white z-[9999] transition-colors duration-300",
+    "position": "fixed",
+    "bg": "rgb(255, 255, 255)",
+    "backdrop": "none",
+    "height": 108,
+    "borderBottom": "0px solid rgb(229, 231, 235)",
+    "boxShadow": "none",
+    "transition": "color 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), fill 0.3s cubic-bezier(0.4, 0, 0.2, 1), stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    "transform": "none",
+    "zIndex": "9999",
+    "padding": "0px",
+    "innerMaxWidth": "none",
+    "link": null,
+    "cta": {
+      "color": "rgb(23, 23, 23)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "fs": "16px",
+      "fw": "400",
+      "ls": "normal",
+      "lh": "24px",
+      "pad": "0px 28px",
+      "radius": "9999px",
+      "border": "0px solid rgb(229, 231, 235)",
+      "transition": "all",
+      "textTransform": "none"
+    },
+    "linkTexts": []
+  },
+  "navHover": "hover failed: locator.hover: Timeout 4000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h",
+  "motion": {
+    "keyframes": [
+      {
+        "name": "spin-border",
+        "frames": [
+          "100% {transform: translate(-50%, -50%) rotate(1turn);}"
+        ]
+      },
+      {
+        "name": "glow-pulse",
+        "frames": [
+          "0%, 100% {opacity: 0.4;}",
+          "50% {opacity: 1;}"
+        ]
+      },
+      {
+        "name": "index-module_cursor__PQg0P",
+        "frames": [
+          "50% {opacity: 0;}"
+        ]
+      },
+      {
+        "name": "scroll",
+        "frames": [
+          "0% {transform: translateX(0%);}",
+          "100% {transform: translateX(-100%);}"
+        ]
+      }
+    ],
+    "transitions": [
+      [
+        "color, background-color, border-color, text-decoration-color, fill, stroke 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s",
+        25
+      ],
+      [
+        "transform 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s",
+        16
+      ],
+      [
+        "background-color 0.4s ease 0s",
+        9
+      ],
+      [
+        "opacity 0.3s ease 0s",
+        6
+      ],
+      [
+        "opacity 0.5s ease 0s",
+        5
+      ],
+      [
+        "all 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
+        5
+      ],
+      [
+        "color, background-color, border-color, text-decoration-color, fill, stroke 0.3s cubic-bezier(0.4, 0, 0.2, 1) 0s",
+        3
+      ],
+      [
+        "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        2
+      ],
+      [
+        "transform, opacity, top 0.5s ease 0s",
+        1
+      ],
+      [
+        "border-color 0.3s ease 0s",
+        1
+      ],
+      [
+        "opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0.3s",
+        1
+      ],
+      [
+        "all  ",
+        1
+      ],
+      [
+        "opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s",
+        1
+      ]
+    ],
+    "animations": [
+      [
+        "scroll 53.68s linear infinite",
+        2
+      ],
+      [
+        "scroll 48.8s linear infinite",
+        2
+      ],
+      [
+        "spin-border 4s linear infinite",
+        1
+      ],
+      [
+        "glow-pulse 6s ease-in-out infinite",
+        1
+      ],
+      [
+        "   ",
+        1
+      ]
+    ],
+    "revealCandidates": [],
+    "reducedMotionRules": [],
+    "scriptSrcs": [
+      "https://consent.cookiebot.com/ee484f05-6aa7-4183-a313-fcd7f0eb152e/cc.js?renew=false&referer=aiimi.com&dnt=false&init=false",
+      "https://www.googletagmanager.com/gtag/js?id=AW-10865943163&cx=c&gtm=4e6852",
+      "https://www.googletagmanager.com/gtag/js?id=G-5LN808XGS5&cx=c&gtm=4e6852",
+      "https://consent.cookiebot.com/uc.js?cbid=ee484f05-6aa7-4183-a313-fcd7f0eb152e&implementation=gtm&consentmode-dataredaction=dynamic",
+      "https://www.googletagmanager.com/gtm.js?id=GTM-TDCHF85",
+      "https://aiimi.com/_next/static/chunks/4bd1b696-ed406e908e9a2961.js",
+      "https://aiimi.com/_next/static/chunks/684-ed3e5ba85cae219a.js",
+      "https://aiimi.com/_next/static/chunks/polyfills-42372ed130431b0a.js"
+    ],
+    "hasIntersectionObserver": true,
+    "libs": [
+      "ondevicemotion",
+      "MotionIsMounted"
+    ]
+  },
+  "statsBand": [
+    {
+      "text": "0",
+      "fontSize": "160px",
+      "fontWeight": "600",
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "color": "rgb(0, 0, 0)",
+      "lh": "160px",
+      "ls": "-8px",
+      "fontVariantNumeric": "normal",
+      "parentCls": "font-semibold leading-none",
+      "sibling": "0+"
+    },
+    {
+      "text": "0",
+      "fontSize": "160px",
+      "fontWeight": "600",
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "color": "rgb(0, 0, 0)",
+      "lh": "160px",
+      "ls": "-8px",
+      "fontVariantNumeric": "normal",
+      "parentCls": "font-semibold leading-none",
+      "sibling": "0+"
+    },
+    {
+      "text": "0",
+      "fontSize": "160px",
+      "fontWeight": "600",
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "color": "rgb(0, 0, 0)",
+      "lh": "160px",
+      "ls": "-8px",
+      "fontVariantNumeric": "normal",
+      "parentCls": "font-semibold leading-none",
+      "sibling": "0+"
+    }
+  ],
+  "hero": {
+    "heroTag": "BODY",
+    "heroCls": "",
+    "heroHeight": 8039,
+    "heroBg": "rgba(0, 0, 0, 0)",
+    "heroBgImage": "none",
+    "heroPadding": "0px",
+    "heroMinHeight": "0px",
+    "h1": {
+      "text": "Powering AI everywhere at work.",
+      "fontSize": "60px",
+      "fontWeight": "600",
+      "lineHeight": "60px",
+      "letterSpacing": "-3px",
+      "color": "rgb(255, 255, 255)",
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "maxWidth": "none",
+      "width": 473
+    },
+    "overlays": [
+      {
+        "cls": "CybotCookiebotFader CybotCookiebotFaderLeft",
+        "bgImage": "linear-gradient(to right, rgb(255, 255, 255), color(srgb 1 1 1 / 0.8), color(srgb 0 0 0 / 0))",
+        "bg": "rgba(0, 0, 0, 0)",
+        "opacity": "0",
+        "position": "absolute",
+        "inset": "auto auto 0px 0px",
+        "mixBlend": "normal",
+        "zIndex": "10"
+      },
+      {
+        "cls": "CybotCookiebotFader CybotCookiebotFaderRight",
+        "bgImage": "linear-gradient(to left, rgb(255, 255, 255), color(srgb 1 1 1 / 0.8), color(srgb 0 0 0 / 0))",
+        "bg": "rgba(0, 0, 0, 0)",
+        "opacity": "0",
+        "position": "absolute",
+        "inset": "auto 0px 0px auto",
+        "mixBlend": "normal",
+        "zIndex": "10"
+      },
+      {
+        "cls": "CybotCookiebotFader",
+        "bgImage": "linear-gradient(to top, rgb(255, 255, 255), color(srgb 1 1 1 / 0.8), color(srgb 0 0 0 / 0))",
+        "bg": "rgba(0, 0, 0, 0)",
+        "opacity": "0",
+        "position": "absolute",
+        "inset": "114px 21.5px 0px 1px",
+        "mixBlend": "normal",
+        "zIndex": "10"
+      },
+      {
+        "cls": "CybotCookiebotFader",
+        "bgImage": "linear-gradient(to top, rgb(255, 255, 255), color(srgb 1 1 1 / 0.8), color(srgb 0 0 0 / 0))",
+        "bg": "rgba(0, 0, 0, 0)",
+        "opacity": "0",
+        "position": "absolute",
+        "inset": "auto auto 0px 1px",
+        "mixBlend": "normal",
+        "zIndex": "10"
+      }
+    ],
+    "viewportW": 1440
+  }
+}

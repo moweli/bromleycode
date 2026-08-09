@@ -1,0 +1,84 @@
+{
+  "url": "https://aiimi.com/",
+  "textRegion": {
+    "x": 152,
+    "y": 416,
+    "w": 473,
+    "h": 410,
+    "dur": 16.666667
+  },
+  "results": [
+    {
+      "t": 0,
+      "meanContrast": 14.75,
+      "p50": 19.47,
+      "p95Worst": 16.44,
+      "p99Worst": 1.48,
+      "pctPixelsBelow4_5": 2.9
+    },
+    {
+      "t": 2,
+      "meanContrast": 14.77,
+      "p50": 19.49,
+      "p95Worst": 16.43,
+      "p99Worst": 1.48,
+      "pctPixelsBelow4_5": 2.9
+    },
+    {
+      "t": 4,
+      "meanContrast": 15.49,
+      "p50": 20.38,
+      "p95Worst": 18.42,
+      "p99Worst": 1.5,
+      "pctPixelsBelow4_5": 2.8
+    },
+    {
+      "t": 6,
+      "meanContrast": 15.5,
+      "p50": 20.38,
+      "p95Worst": 18.73,
+      "p99Worst": 1.5,
+      "pctPixelsBelow4_5": 2.8
+    },
+    {
+      "t": 8,
+      "meanContrast": 15.77,
+      "p50": 20.87,
+      "p95Worst": 19.03,
+      "p99Worst": 1.51,
+      "pctPixelsBelow4_5": 2.8
+    },
+    {
+      "t": 10,
+      "meanContrast": 15.82,
+      "p50": 21,
+      "p95Worst": 19.17,
+      "p99Worst": 1.51,
+      "pctPixelsBelow4_5": 2.8
+    },
+    {
+      "t": 12,
+      "meanContrast": 13.21,
+      "p50": 17.06,
+      "p95Worst": 12.79,
+      "p99Worst": 1.45,
+      "pctPixelsBelow4_5": 2.9
+    },
+    {
+      "t": 14,
+      "meanContrast": 15.81,
+      "p50": 20.87,
+      "p95Worst": 19.17,
+      "p99Worst": 1.51,
+      "pctPixelsBelow4_5": 2.8
+    },
+    {
+      "t": 16,
+      "meanContrast": 15.77,
+      "p50": 20.87,
+      "p95Worst": 19.17,
+      "p99Worst": 1.51,
+      "pctPixelsBelow4_5": 2.8
+    }
+  ]
+}

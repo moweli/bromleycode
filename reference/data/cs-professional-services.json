@@ -1,0 +1,198 @@
+{
+  "url": "https://aiimi.com/case-studies/ai-enabled-data-management-leading-professional-services-firm",
+  "title": "AI-driven data management saves £1m for professional services firm - Aiimi",
+  "outline": [
+    "H1 | AI-driven data management saves £1m in storage costs for leading professional services firm.",
+    "H3 | The Challenge",
+    "H3 | Our Solution",
+    "H3 | The Results",
+    "H3 | Learn more about our AI platform for Automated Data Governance.",
+    "H3 | Discover more.",
+    "H4 | How ‘tokenomics’ exposes AI’s true business case",
+    "H4 | We're asking the wrong questions about Sovereign AI.",
+    "H4 | AI Impact Guide: How to move your AI use cases from hype to ROI",
+    "H4 | How to protect sensitive data when using AI assistants"
+  ],
+  "blocks": [
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    }
+  ],
+  "h1": {
+    "tag": "h1",
+    "cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+    "fs": "60px",
+    "fw": "600",
+    "lh": "60px",
+    "ls": "-3px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "maxWidth": "none",
+    "w": 1136,
+    "text": "AI-driven data management saves £1m in storage costs for leading professional services firm."
+  },
+  "paragraphs": [
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "27.5px",
+      "ls": "-0.55px",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 1136,
+      "text": "How one leading professional services firm is using Aiimi’s AI-enabled technology to help manage, classify, and govern its data, saving appr"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "With 20,000 clients, five lines of service, and almost 30,000 employees, this professional services firm is a complex business operating in "
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "The firm faced several internal drivers for changes in data management – such as its ESG commitments, increased demand for unstructured data"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Now, the firm is using the Aiimi Workplace AI Platform to power a new AI-enabled data management approach. Together, we set some key objecti"
+    }
+  ],
+  "quotes": [],
+  "bigNumbers": [
+    {
+      "text": "Our Solution",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ChallengeWith 20,000 clients, five lines of service, and almost 30,000 employees, this professional services firm is a complex business operating "
+    },
+    {
+      "text": "The Results",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ChallengeWith 20,000 clients, five lines of service, and almost 30,000 employees, this professional services firm is a complex business operating "
+    },
+    {
+      "text": ".",
+      "fs": "30px",
+      "fw": "600",
+      "ls": "-1.5px",
+      "color": "rgb(0, 0, 0)",
+      "ctx": "The ChallengeWith 20,000 clients, five lines of service, and almost 30,000 employees, this professional services firm is a complex business operating "
+    }
+  ],
+  "images": [
+    {
+      "alt": "Dark abstract image of intersecting geometric structures and shadows, creating a complex, layered pa",
+      "w": 1440,
+      "h": 651,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F11543cad2c%2Fcase-studies_professional-"
+    },
+    {
+      "alt": "Abstract image featuring glowing pink tokens and text: \"How ‘tokenomics’ exposes AI’s true business ",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F58539f334c%2Fblogs-how-tokenomics-expos"
+    },
+    {
+      "alt": "Paul Maker profile picture",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F266x266%2Faa9b9d726b%2Fpaul-maker.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Text reads \"We’re asking the wrong questions about Sovereign AI.\" Abstract graphic of a padlock on a",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F0414386d9a%2Fcover-image-sovereign-al-b"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F2250x2250%2F6c06395ade%2Fthe-ai-impact-guide-square"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F800x450%2F0e79ef0c0c%2Fhow-to-protect-sensitive-dat"
+    },
+    {
+      "alt": "Matt Eustace profile photo",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1015x1015%2F38c0e2e8d7%2Fmatt-eustace-head-of-solut"
+    }
+  ],
+  "text": "AI-driven data management saves £1m in storage costs for leading professional services firm.\n\nHow one leading professional services firm is using Aiimi’s AI-enabled technology to help manage, classify, and govern its data, saving approximately £1m in storage costs, reducing risk, and lowering carbon emissions.\n\nAiimi Facebook link\nAiimi Twitter/X link\nAiimi LinkedIn link\nThe Challenge\n\nWith 20,000 clients, five lines of service, and almost 30,000 employees, this professional services firm is a complex business operating in a highly regulated industry. Its data landscape is a reflection of that scale and complexity, with petabytes of unstructured data, content saved across many file types, dozens of systems of record  and environments, and thousands of different applications.\n\nThe firm faced several internal drivers  for changes in data management – such as its ESG commitments, increased demand for unstructured data, cost optimisation, preparing for adopting enterprise AI, and a sprawling tech stack – as well as multiple external factors, including evolving regulatory and technology landscapes, increased complexity in data sovereignty laws, and ever-present and increasingly sophisticated cyber risks.\n\nOur Solution\n\nNow, the firm is using the Aiimi Workplace AI Platform to power a new AI-enabled data management approach. Together, we set some key objectives for data management that would ultimately help manage their risk and/or enable business value:\n\nEnable colleagues to locate and classify the content they need.\n\nEmbed data governance model through clarity of data ownership .\n\nReduce data storage costs and carbon emissions.\n\nEnsure high-risk content is managed appropriately and policies are adhered to.\n\nDrive Generative AI  and data innovation.\n\nThe Aiimi platform scans the firm’s environment to automatically identify and classify personal or sensitive data, like corporate IP, enabling the firm to secure that content and facilitating better management of data risks. Using AI and enrichment technology, the Aiimi platform automatically discovers and labels data by topics and teams, to give the firm a clear picture of its broader data landscape, as well as the ability to curate its information and the opportunity to reduce storage requirements. The AI platform enables innovation by connecting people to insights and content, so that the business can leverage its data and prepare for the adoption of Generative AI. And through data ownership, Aiimi’s technology is helping the firm to operationalise data management and establish its own Data Service.\n\nThe Results\n\nUsing Aiimi’s AI-enabled technology, this leading professional services organisation is able to better manage risk, reduce costs, and lower its carbon emissions. This approach has strengthened data governance and provided strong content management foundations for added-value use cases. It’s enabled the firm to remediate more than 200 million files, delete 150TB of data, and remove thousands of data leakage risks, saving approximately £1m in storage costs      and reducing associated CO₂ emissions. The programme has reached more than 25,000 employees and empowered data owners. And through the curation of data, it’s enabling Generative AI use cases for the firm.\n\nLooking ahead, the focus is on transitioning these programme activities into a Data Service, to enable the continual understanding, governing, and connecting of data across the firm’s landscape. To achieve this, discoverability and data curation activities will be underpinned by ongoing change management. Objectives for its Data Service will include curating documents for Generative AI use cases, connecting SMEs to content, finding, classifying, and labelling unstructured data, and ensuring ongoing compliance.\n\nLearn more about our AI platform for Automated Data Governance.\nDiscover more.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace"
+}

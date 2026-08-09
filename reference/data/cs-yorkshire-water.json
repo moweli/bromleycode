@@ -1,0 +1,169 @@
+{
+  "url": "https://aiimi.com/case-studies/unifying-clean-water-customer-journeys-and-automating-regulatory-reporting-at-yorkshire-water",
+  "title": "Case Study: Transforming customer journeys and regulatory reporting at Yorkshire Water. - Aiimi",
+  "outline": [
+    "H1 | Unifying clean water customer journeys and automating regulatory reporting at Yorkshire Water.",
+    "H3 | Discover more.",
+    "H4 | How ‘tokenomics’ exposes AI’s true business case",
+    "H4 | We're asking the wrong questions about Sovereign AI.",
+    "H4 | AI Impact Guide: How to move your AI use cases from hype to ROI",
+    "H4 | How to protect sensitive data when using AI assistants"
+  ],
+  "blocks": [
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    },
+    {
+      "tag": "div",
+      "cls": "flex flex-col border border-black",
+      "pt": "0px",
+      "pb": "0px",
+      "bg": "rgba(0, 0, 0, 0)",
+      "h": 375,
+      "heading": ""
+    }
+  ],
+  "h1": {
+    "tag": "h1",
+    "cls": "mb-8 text-h3 md:text-h2 lg:text-h1 font-semibold tracking-tighter leading-none",
+    "fs": "60px",
+    "fw": "600",
+    "lh": "60px",
+    "ls": "-3px",
+    "color": "rgb(255, 255, 255)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "maxWidth": "none",
+    "w": 852,
+    "text": "Unifying clean water customer journeys and automating regulatory reporting at Yorkshire Water."
+  },
+  "paragraphs": [
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "Across two strategic projects at Yorkshire Water, Aiimi consolidated clean water interaction data and automated reporting for the 23 Perform"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "The Problem Yorkshire Water faced significant challenges with fragmented visibility of customer journeys and the manual, error-prone trackin"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "In Customer Experience Management, disparate manual reporting and a disjointed customer journey, managed across 4+ fragmented source systems"
+    },
+    {
+      "tag": "p",
+      "cls": "",
+      "fs": "22px",
+      "fw": "500",
+      "lh": "30.25px",
+      "ls": "-0.55px",
+      "color": "rgb(0, 0, 0)",
+      "bg": "rgba(0, 0, 0, 0)",
+      "pad": "0px",
+      "maxWidth": "none",
+      "w": 725,
+      "text": "In Performance Commitment Reporting, manually tracking the 23 Performance Commitments was a substantial operational burden. Reporting was in"
+    }
+  ],
+  "quotes": [],
+  "bigNumbers": [],
+  "images": [
+    {
+      "alt": "Yorkshire Water logo",
+      "w": 169,
+      "h": 65,
+      "src": "https://a.storyblok.com/f/321130/0x0/0123ca2e6a/yorkshire-water-logo_white.svg"
+    },
+    {
+      "alt": "Abstract image featuring glowing pink tokens and text: \"How ‘tokenomics’ exposes AI’s true business ",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F58539f334c%2Fblogs-how-tokenomics-expos"
+    },
+    {
+      "alt": "Paul Maker profile picture",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F266x266%2Faa9b9d726b%2Fpaul-maker.jpg&w=1920&q=75"
+    },
+    {
+      "alt": "Text reads \"We’re asking the wrong questions about Sovereign AI.\" Abstract graphic of a padlock on a",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1920x1080%2F0414386d9a%2Fcover-image-sovereign-al-b"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F2250x2250%2F6c06395ade%2Fthe-ai-impact-guide-square"
+    },
+    {
+      "alt": "",
+      "w": 258,
+      "h": 169,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F800x450%2F0e79ef0c0c%2Fhow-to-protect-sensitive-dat"
+    },
+    {
+      "alt": "Matt Eustace profile photo",
+      "w": 34,
+      "h": 34,
+      "src": "https://aiimi.com/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F321130%2F1015x1015%2F38c0e2e8d7%2Fmatt-eustace-head-of-solut"
+    }
+  ],
+  "text": "Unifying clean water customer journeys and automating regulatory reporting at Yorkshire Water.\nAiimi Facebook link\nAiimi Twitter/X link\nAiimi LinkedIn link\n\nAcross two strategic projects at Yorkshire Water, Aiimi consolidated clean water interaction data and automated reporting for the 23 Performance Commitments – critical regulatory measures that directly impact financial penalties and rewards for water companies.\n\nThe Problem  \nYorkshire Water faced significant challenges with fragmented visibility of customer journeys and the manual, error-prone tracking of regulatory Performance Commitments, using Ofwat’s rigorous definitions.\n\nIn Customer Experience Management, disparate manual reporting and a disjointed customer journey, managed across 4+ fragmented source systems and 7+ business areas, resulting in poor governance and a lack of trust in the data. This made it difficult for the Customer Service teams and Operational Managers to make informed resource decisions, manage performance, share best practice, or establish and track KPIs.   \n\nIn Performance Commitment Reporting, manually tracking the 23 Performance Commitments was a substantial operational burden. Reporting was inconsistent across departments and calculations of Outcome Delivery Incentives were manual and error-prone, resulting in splintered sources and inconsistent measures being reported to executive teams.  Under regulatory scrutiny, these errors and inconsistencies led to millions in unforeseen costs.  \n\nThe Solution  \nAiimi partnered with Yorkshire Water to modernise their data landscape and regulatory management, creating a ‘single source of truth’ for operational efficiency and automated reporting. We delivered a suite of reports to ensure insights can be seen by the teams doing the work and used to accurately inform executive-level decision-making.  \n\nIn Customer Experience Management, we designed and deployed consolidated customer journey dashboards, spanning four key customer journeys and drawing from multiple disparate data sources and business areas. These dashboards surface near-real-time data to support operational decision-making, delivering insights across eight KPIs, with the ability to drill-down into the data across 18 key drivers. Subject Matter Experts can interrogate the data, identify where customers are slipping through the net, and direct resource to areas that need it most.   \n\nIn Performance Commitment reporting, Aiimi built an end-to-end reporting framework for the 23 regulatory measures, taking Ofwat’s complex calculations and translating them into automated data-engineering logic. By embedding the regulatory definitions directly into reporting processes, we enabled the system to not only calculate current forecast positions but also surface predictive forecasting and current financial positions. This provides executive teams with an accurate, governed, assured, and data-rich report to inform decision-making.\n\nThe Result   \nAiimi has delivered tangible commercial value across both projects, solving problems that are common and increasingly urgent in the utilities sector: fragmented data, high regulatory risk, and limited confidence in reporting. Yorkshire Water has shifted from reactive, manual processes towards governed, predictive, and scalable performance management, laying the foundations for a more proactive approach.  \n\nOne version of the truth: Disparate data sources and inconsistent reporting were brought together in a consolidated, governed data foundation, enabling a shared and trusted view of the customer journey and regulatory performance. Operational teams and leaders are aligned around the same assured metrics for Clean Water, reducing duplication and manual effort while strengthening confidence and decision-making.  \n\nLower operational costs through better visibility: Near-real‑time customer journey insights enable teams to identify pressure points, repeat contacts, and service failures early. This supports targeted resourcing, faster intervention, and improved customer outcomes, reducing the operational cost of poor service without increasing headcount or reporting burden.  \n\nEarly warning of financial exposure: Surfacing predictive forecasting against Outcome Delivery Incentives gives leadership teams clear visibility of risks and opportunities earlier in the reporting cycle. It provides an audit trail and reduces misreporting and the associated multimillion-pound penalties. Executives can now take corrective action before year-end, rather than reacting to issues after the financial impact has been felt.  \n\nIncreased confidence at operational and board levels: With a single, auditable, and assured reporting framework, leaders across the organisation have confidence that performance positions are accurate, consistent, and defensible. This strengthens governance, supports regulatory challenge, and enables strategic decision‑making.  \n\nBy unifying data and automating regulatory reporting, Aiimi has empowered Yorkshire Water to move from fragmented, reactive management to a proactive, data-driven culture – delivering greater efficiency, reduced risk, and more effective regulatory compliance.  \n\nFind out more about how our Services work – from Data Engineering to Digital Products and AI Strategy.\n\nWorking with Aiimi gives us a real advantage: we can see what’s happening sooner across customer journeys and regulatory reporting, respond with confidence, and make better decisions before issues become cost or compliance risks.\n\nRichard Heighington\n\nCIO at Yorkshire Water  \n\nDiscover more.\nARTIFICIAL INTELLIGENCE\nBLOG\nHow ‘tokenomics’ exposes AI’s true business case\nBy\nPaul Maker\nARTIFICIAL INTELLIGENCE\nBLOG\nWe're asking the wrong questions about Sovereign AI.\nMD\nBy\nMike Dixon\nARTIFICIAL INTELLIGENCE\nGUIDE\nAI Impact Guide: How to move your AI use cases from hype to ROI\nARTIFICIAL INTELLIGENCE\nBLOG\nHow to protect sensitive data when using AI assistants\nBy\nMatt Eustace"
+}
