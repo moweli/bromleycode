@@ -565,3 +565,101 @@ One failure was found and fixed on the way: the accreditation links carried an
 `aria-label` that did not contain their visible text, which fails WCAG 2.5.3
 Label in Name. The tile's own text now names the link, with a visually-hidden
 note that it opens the public register in a new tab.
+
+---
+
+## Round 6 — mobile video, reviews, ship, 9 August 2026
+
+### Live
+
+| | |
+|---|---|
+| Production | **https://bromleycode.vercel.app** |
+| Repository | **https://github.com/moweli/bromleycode** (private) |
+| Vercel project | `omgdigital/bromleycode`, connected to the repo, so pushes to `master` deploy |
+
+The per-deployment URL (`bromleycode-<hash>-omgdigital.vercel.app`) sits behind
+the team's Deployment Protection and shows a Vercel login. That is expected: the
+production alias above is the public one. All 12 sampled routes return 200 with
+exactly one h1.
+
+Production Lighthouse, desktop: **100 / 100 / 100 / 100**, LCP 0.6 s, CLS 0,
+TBT 0 ms, no accessibility failures.
+
+### Hero video now plays on phones
+
+This reverses the earlier decision to serve a still below 768px, at the client's
+request. It is not the reference's mistake of shipping the desktop file to a
+phone: the mobile hero is a portrait box and `object-cover` discards most of a
+landscape frame's width, so phones get their own 9:16 cut.
+
+| Asset | Weight |
+|---|---|
+| `hero.mp4` desktop, 1920×1080 | 2,326 KB |
+| `hero-mobile.mp4` phone, 540×960 portrait | **718 KB** |
+| `hero-mobile.webp` poster, matched crop | 6 KB |
+
+Verified in production: 1440px loads `hero.webm` and plays; 390px loads
+`hero-mobile.mp4` at 540×960 and plays; reduced-motion loads neither.
+
+Two conditions still hold the poster and request no video at all:
+`prefers-reduced-motion` and the `Save-Data` header. Corporate and roaming users
+set the latter, and this audience browses on both.
+
+Mobile page weight rose from 415 KB to 1,151 KB, which is the cost of the
+request. Mobile Lighthouse performance 93.
+
+### Mobile responsiveness audit
+
+14 routes × 4 widths (320, 360, 390, 414).
+
+| Check | Result |
+|---|---|
+| Horizontal overflow | **0 px on every route at every width** |
+| Lines over 78 characters | **none** |
+| Tap targets under 24 px (WCAG 2.5.8) | fixed, see below |
+| Text under 12 px | fixed, see below |
+
+Fixed:
+
+- Micro-labels were 11 px in 116 places. Raised to 12 px, which is also the
+  smallest size the reference uses.
+- Consent and marketing checkboxes were 13×16. Now 20×20.
+- Footer navigation, legal links and the contact email were 19 px tall. Padded
+  to roughly 28 px, past the 24 px minimum, without stretching the footer.
+- Pipeline diagram SVG labels were 11 px. Now 12 px.
+
+The one remaining "wide element" the audit reports is the technology marquee,
+which is inside an `overflow-hidden` track by design and does not move the page.
+
+### Copywriting review
+
+Mechanical pass over all visible copy on 16 routes, about 58,000 characters.
+Clean on: doubled words, stray punctuation, Americanisms, and dashes.
+
+It did surface real damage left by the earlier dash removal, now repaired:
+
+| Damage | Example | Fix |
+|---|---|---|
+| Numeric ranges lost their en dash entirely | `Days 1, 15` · `Discovery, 2, 3 weeks` | `Days 1 to 15` · `Discovery, 2 to 3 weeks` |
+| Appositive dashes became commas where a colon was needed | "a stratified sample of the real corpus, formats, scan quality…" | "…of the real corpus: formats, scan quality…" |
+| A relative clause lost its comma | "…surviving candidates which is what makes…" | "…surviving candidates, which is what makes…" |
+
+Six of those, across methodology, services, case studies and insights. They were
+grammatical but misleading: a colon-list read as a continuation of the sentence
+before it, and `Days 1, 15` read as two numbers rather than a range.
+
+One editorial fix: capability cards used the service name as both the card
+heading and the link text two lines below it. The link now reads "See how it
+works".
+
+### Repository hygiene
+
+- `reference/media-raw/` untracked: 346 MB of source video the build never
+  reads, and every original is re-fetchable from the URLs in `media-credits.md`.
+- `.vercelignore` excludes `reference/` so deploys do not upload the audit
+  evidence.
+- History still contains the raw media, so the pack is 276 MiB. Vercel clones
+  shallowly for builds, so this costs a one-time clone rather than every deploy.
+  If a slim repo is wanted later, that is a `git filter-repo` pass and a
+  force-push, and it is a separate job.
