@@ -28,8 +28,14 @@ export const hero = {
     src: "/media/hero/hero.mp4",
     srcWebm: "/media/hero/hero.webm",
     poster: "/media/hero/hero-poster.webp",
-    /** Below 768px the video is never requested. This still is served instead. */
-    mobile: "/media/hero/hero-mobile.webp",
+    /**
+     * Separate portrait cut for phones. The mobile hero is a portrait box and
+     * object-cover discards most of a landscape frame, so a 9:16 encode puts the
+     * bytes into pixels that are actually seen: 718 KB against the desktop
+     * file's 2,326 KB, and sharper on the screen it is made for.
+     */
+    mobileSrc: "/media/hero/hero-mobile.mp4",
+    mobilePoster: "/media/hero/hero-mobile.webp",
     alt: "Network infrastructure, water treatment works and archived records",
   },
 };

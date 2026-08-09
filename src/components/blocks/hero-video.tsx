@@ -13,20 +13,36 @@ import { hero } from "@/content/home";
  *
  * Here:
  *  - poster paints first; video swaps in only once it can play through
- *  - below 768px the <video> is never mounted, so the file is never requested
- *  - prefers-reduced-motion holds the poster
+ *  - phones get their own portrait cut, 718 KB against the desktop 2,326 KB
+ *  - prefers-reduced-motion and Save-Data both hold the poster
  *  - a directional scrim is anchored behind the text block, and contrast is
  *    verified across the whole loop rather than the opening frame
  */
+type Mode = "poster" | "mobile" | "desktop";
+
 export function HeroVideo() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [ready, setReady] = useState(false);
-  const [useVideo, setUseVideo] = useState(false);
+  // Starts as "poster" so the server render and the first paint agree, whatever
+  // the device turns out to be.
+  const [mode, setMode] = useState<Mode>("poster");
 
   useEffect(() => {
     const wide = window.matchMedia("(min-width: 768px)");
     const still = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const decide = () => setUseVideo(wide.matches && !still.matches);
+
+    const decide = () => {
+      // Save-Data is an explicit request not to spend the user's bandwidth.
+      // Corporate and roaming users set it, and this audience browses on both.
+      const saveData =
+        (navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData === true;
+      if (still.matches || saveData) {
+        setMode("poster");
+        return;
+      }
+      setMode(wide.matches ? "desktop" : "mobile");
+    };
+
     decide();
     wide.addEventListener("change", decide);
     still.addEventListener("change", decide);
@@ -36,26 +52,30 @@ export function HeroVideo() {
     };
   }, []);
 
+  // A source swap needs an explicit load() or the element keeps the old file.
   useEffect(() => {
-    if (!useVideo) return;
+    setReady(false);
+    if (mode === "poster") return;
     const video = videoRef.current;
     if (!video) return;
+    video.load();
     // Autoplay can be refused (low power mode, corporate policy). The poster
     // stays visible if it is, which is the correct degraded state.
     video.play().catch(() => setReady(false));
-  }, [useVideo]);
+  }, [mode]);
+
+  const isMobile = mode === "mobile";
+  const poster = isMobile ? hero.video.mobilePoster : hero.video.poster;
 
   return (
     <section id="hero-sentinel" className="relative isolate overflow-hidden bg-ink-950 text-paper">
 
       {/* Poster is a real <img> so it is discoverable by the preload scanner
-          and paints before any JavaScript runs. */}
+          and paints before any JavaScript runs. Art-directed: the phone gets a
+          portrait still cut to match its portrait video. */}
       <div className="absolute inset-0 -z-10">
-        {/* Art-directed: below 768px this is the only hero asset that is ever
-            requested, so it is a separately-cropped 828px still rather than a
-            downscaled 1920px poster. */}
         <picture>
-          <source media="(max-width: 767px)" srcSet={hero.video.mobile} type="image/webp" />
+          <source media="(max-width: 767px)" srcSet={hero.video.mobilePoster} type="image/webp" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={hero.video.poster}
@@ -65,15 +85,18 @@ export function HeroVideo() {
             className="h-full w-full object-cover"
           />
         </picture>
-        {useVideo ? (
+        {mode !== "poster" ? (
           <video
             ref={videoRef}
+            // key forces a fresh element on a source swap, so a rotated phone
+            // never keeps the file it loaded in the other orientation.
+            key={mode}
             muted
             loop
             playsInline
             autoPlay
             preload="auto"
-            poster={hero.video.poster}
+            poster={poster}
             aria-hidden="true"
             tabIndex={-1}
             onCanPlayThrough={() => setReady(true)}
@@ -81,8 +104,16 @@ export function HeroVideo() {
               ready ? "opacity-100" : "opacity-0"
             }`}
           >
-            <source src={hero.video.srcWebm} type="video/webm" />
-            <source src={hero.video.src} type="video/mp4" />
+            {isMobile ? (
+              // MP4 only on the phone: the VP9 encode of this crop came out
+              // larger than the H.264 one, so WebM would cost bytes, not save them.
+              <source src={hero.video.mobileSrc} type="video/mp4" />
+            ) : (
+              <>
+                <source src={hero.video.srcWebm} type="video/webm" />
+                <source src={hero.video.src} type="video/mp4" />
+              </>
+            )}
           </video>
         ) : null}
       </div>

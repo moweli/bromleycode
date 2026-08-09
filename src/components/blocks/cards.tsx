@@ -20,12 +20,14 @@ export function CapabilityCard({ service }: { service: Service }) {
       <p className="eyebrow text-accent-ink">{service.eyebrow}</p>
       <h3 className="mt-5 text-[length:var(--text-h4)]">{service.shortTitle}</h3>
       <p className="mt-4 flex-1 text-body-sm text-ink-muted">{service.summary}</p>
+      {/* Not the service name again: it is the card's own heading two lines up,
+          and repeating it reads as a stutter. */}
       <Link
         href={`/services/${service.slug}`}
         className="mt-7 inline-flex items-center gap-2 font-medium after:absolute after:inset-0 after:content-['']"
       >
         <span className="relative">
-          {service.shortTitle}
+          See how it works
           <span aria-hidden="true" className="absolute inset-x-0 -bottom-1 h-px bg-line-light" />
           <span
             aria-hidden="true"
@@ -60,7 +62,7 @@ export function CaseStudyCard({ study, featured = false }: { study: CaseStudy; f
             {study.title}
           </h3>
           <p className="mt-4 flex-1 text-body-sm text-ink-muted">{study.summary}</p>
-          <p className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
+          <p className="mt-6 text-xs font-bold uppercase tracking-[0.04em] text-ink-muted">
             {study.scale} · {study.duration}
           </p>
           <Link
@@ -105,7 +107,7 @@ export function ArticleCard({ insight, image }: { insight: Insight; image?: stri
         </p>
         <h3 className="mt-4 text-[length:var(--text-h4)]">{insight.title}</h3>
         <p className="mt-4 flex-1 text-body-sm text-ink-muted">{insight.standfirst}</p>
-        <p className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
+        <p className="mt-6 text-xs font-bold uppercase tracking-[0.04em] text-ink-muted">
           {insight.author} ·{" "}
           <time dateTime={insight.published}>
             {new Date(insight.published).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}

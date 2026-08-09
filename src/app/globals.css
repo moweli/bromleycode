@@ -235,6 +235,9 @@
     color: var(--color-accent-ink);
     text-decoration: underline;
     text-underline-offset: 3px;
+    /* Inline links reach the 24px WCAG 2.5.8 target without disturbing
+       the line box. */
+    padding-block: 0.15rem;
   }
 
   .prose-bc strong {

@@ -51,7 +51,7 @@ export const services: Service[] = [
         {
           name: "Corpus survey",
           detail:
-            "Before any code, we sample the actual corpus, formats, scan quality, revision patterns, duplication rate, and the permission model each source enforces. The survey usually reveals that two or three document families account for most of the value, which changes what gets built first.",
+            "Before any code, we sample the actual corpus: formats, scan quality, revision patterns, duplication rate, and the permission model each source enforces. The survey usually reveals that two or three document families account for most of the value, which changes what gets built first.",
         },
         {
           name: "Parsing and layout recovery",

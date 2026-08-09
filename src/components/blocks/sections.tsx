@@ -129,7 +129,7 @@ export function ArchitectureBlock() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-[0.6875rem] font-bold uppercase leading-relaxed tracking-[0.04em] text-mist">
+            <p className="mt-5 text-xs font-bold uppercase leading-relaxed tracking-[0.04em] text-mist">
               {layer.note}
             </p>
           </li>

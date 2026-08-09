@@ -39,7 +39,7 @@ export const insights: Insight[] = [
       {
         heading: "Structure first, size second",
         paragraphs: [
-          "Split on the structure the document already has, sections, clauses, conversational turns, table rows grouped by their subject, then enforce a maximum size within those boundaries rather than across them.",
+          "Split on the structure the document already has: sections, clauses, conversational turns, table rows grouped by their subject, then enforce a maximum size within those boundaries rather than across them.",
           "Attach the parent context to every chunk: document title, identifiers, revision state, section heading. It costs tokens and it is almost always worth them, because it is what makes a chunk retrievable in isolation.",
         ],
         list: [
@@ -137,7 +137,7 @@ export const insights: Insight[] = [
         ],
         list: [
           "Abstention rate: share of questions where the system declines",
-          "Answer-supported rate: of answered questions, the share where the citation genuinely supports the claim",
+          "Answer-supported rate: of answered questions, the share whose citation genuinely supports the claim",
           "False abstention: questions the corpus could have answered but the system declined: the cost of tuning too conservatively",
         ],
       },

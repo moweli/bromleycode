@@ -59,7 +59,7 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
         breadcrumb={{ label: "All insights", href: "/insights" }}
         width="medium"
       >
-        <p className="mt-8 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-mist">
+        <p className="mt-8 text-xs font-bold uppercase tracking-[0.04em] text-mist">
           {insight.author} ·{" "}
           <time dateTime={insight.published}>
             {new Date(insight.published).toLocaleDateString("en-GB", {

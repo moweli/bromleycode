@@ -170,7 +170,7 @@ export function ContactForm({ tone = "dark" }: { tone?: "dark" | "light" }) {
             required
             defaultChecked={state.values?.consent === "on"}
             aria-invalid={state.fieldErrors?.consent ? true : undefined}
-            className="mt-1 h-4 w-4 accent-[var(--color-accent)]"
+            className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
           />
           <span>
             I agree that Bromely Code may store this enquiry in order to respond to it, as described in

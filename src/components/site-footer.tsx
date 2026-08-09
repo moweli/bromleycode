@@ -40,12 +40,14 @@ export function SiteFooter() {
           {footerNav.map((column) => (
             <nav key={column.heading} aria-label={column.heading}>
               <h2 className="eyebrow text-mist">{column.heading}</h2>
-              <ul className="mt-5 space-y-3">
+              {/* py-1 lifts each link to ~28px tall, over the 24px WCAG 2.5.8
+                  minimum, without stretching the footer. */}
+              <ul className="mt-4 space-y-1">
                 {column.items.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-body-sm text-paper/85 transition-colors duration-150 hover:text-accent"
+                      className="inline-block py-1 text-body-sm text-paper/85 transition-colors duration-150 hover:text-accent"
                     >
                       {item.label}
                     </Link>
@@ -69,33 +71,20 @@ export function SiteFooter() {
               <p className="pt-3">
                 <a
                   href={`mailto:${site.email}`}
-                  className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
+                  className="inline-block py-1 underline underline-offset-4 transition-colors duration-150 hover:text-accent"
                 >
                   {site.email}
                 </a>
               </p>
             </address>
-            {/* The registration line lives in the accreditation band below, so
-                only VAT appears here and only once it exists. */}
-            <p className="mt-5 text-xs leading-relaxed text-mist">
-              {site.registration.status === "registered" ? (
-                <>
-                  {/* VAT prints only once it exists. An empty label reads as an
-                      oversight; a fabricated number is checkable. */}
-                  {site.registration.vatNumber ? (
-                    <>
-                      <br />
-                      VAT {site.registration.vatNumber}
-                    </>
-                  ) : null}
-                </>
-              ) : (
-                <>
-                  Company registration in progress. Registered office and company number will be
-                  published here on incorporation.
-                </>
-              )}
-            </p>
+            {/* The registration line lives in the accreditation band below.
+                VAT appears here only once it exists: an empty label reads as an
+                oversight, and a fabricated number is checkable. */}
+            {site.registration.status === "registered" && site.registration.vatNumber ? (
+              <p className="mt-5 text-xs leading-relaxed text-mist">
+                VAT {site.registration.vatNumber}
+              </p>
+            ) : null}
           </div>
         </div>
       </div>
@@ -110,7 +99,7 @@ export function SiteFooter() {
           <ul className="flex flex-wrap gap-x-6 gap-y-2">
             {legalNav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="transition-colors duration-150 hover:text-accent">
+                <Link href={item.href} className="inline-block py-1 transition-colors duration-150 hover:text-accent">
                   {item.label}
                 </Link>
               </li>

@@ -131,7 +131,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                   {study.stack.map((item) => (
                     <li
                       key={item}
-                      className="border border-line-light px-2 py-1 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted"
+                      className="border border-line-light px-2 py-1 text-xs font-bold uppercase tracking-[0.04em] text-ink-muted"
                     >
                       {item}
                     </li>
@@ -211,7 +211,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 <blockquote className="text-[length:var(--text-h4)] leading-[1.45]">
                   &ldquo;{study.quote.text}&rdquo;
                 </blockquote>
-                <figcaption className="mt-6 text-[0.6875rem] font-bold uppercase tracking-[0.04em] text-ink-muted">
+                <figcaption className="mt-6 text-xs font-bold uppercase tracking-[0.04em] text-ink-muted">
                   {study.quote.attribution}
                   <span className="mt-2 block normal-case tracking-normal">
                     Attributed to a role and sector, not an individual, this is an illustrative

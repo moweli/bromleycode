@@ -112,7 +112,7 @@ export function CookieConsent() {
               <fieldset className="mt-5 space-y-3 border-t border-line-dark pt-5">
                 <legend className="sr-only">Cookie categories</legend>
                 <label className="flex items-start gap-3 text-body-sm text-mist">
-                  <input type="checkbox" checked readOnly disabled className="mt-1 accent-[var(--color-accent)]" />
+                  <input type="checkbox" checked readOnly disabled className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-accent)]" />
                   <span>
                     <span className="block font-medium text-paper">Strictly necessary</span>
                     Session, security and consent state. Always on; the site cannot function without them.
@@ -123,7 +123,7 @@ export function CookieConsent() {
                     type="checkbox"
                     checked={analytics}
                     onChange={(event) => setAnalytics(event.target.checked)}
-                    className="mt-1 accent-[var(--color-accent)]"
+                    className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
                   />
                   <span>
                     <span className="block font-medium text-paper">Analytics</span>
@@ -135,7 +135,7 @@ export function CookieConsent() {
                     type="checkbox"
                     checked={marketing}
                     onChange={(event) => setMarketing(event.target.checked)}
-                    className="mt-1 accent-[var(--color-accent)]"
+                    className="mt-0.5 h-5 w-5 shrink-0 accent-[var(--color-accent)]"
                   />
                   <span>
                     <span className="block font-medium text-paper">Marketing</span>

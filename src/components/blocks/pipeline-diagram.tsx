@@ -99,7 +99,7 @@ export function PipelineDiagram() {
                 textAnchor="middle"
                 fill="var(--color-accent)"
                 fontFamily="var(--font-mono)"
-                fontSize="11"
+                fontSize="12"
                 letterSpacing="0.1em"
               >
                 {String(index + 1).padStart(2, "0")}
@@ -133,7 +133,7 @@ export function PipelineDiagram() {
             textAnchor="middle"
             fill="var(--color-mist)"
             fontFamily="var(--font-mono)"
-            fontSize="11"
+            fontSize="12"
             letterSpacing="0.06em"
           >
             ACLs resolved per query, before ranking
@@ -154,7 +154,7 @@ export function PipelineDiagram() {
             textAnchor="middle"
             fill="var(--color-mist)"
             fontFamily="var(--font-mono)"
-            fontSize="11"
+            fontSize="12"
             letterSpacing="0.06em"
           >
             labelled set tunes chunking and retrieval

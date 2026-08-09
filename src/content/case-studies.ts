@@ -63,7 +63,7 @@ export const caseStudies: CaseStudy[] = [
     duration: "16 weeks",
     eyebrow: "Water & utilities",
     summary:
-      "A retrieval pipeline over 380,000 asset documents, drawings, condition reports, permits and handover packs, with permission inheritance preserved from the source document management system.",
+      "A retrieval pipeline over 380,000 asset documents: drawings, condition reports, permits and handover packs, with permission inheritance preserved from the source document management system.",
     context: [
       "A regional water utility holds the documentary history of its network in a document management system accumulated over three decades and two mergers: as-built drawings, condition surveys, discharge permits, contractor handover packs, and the correspondence explaining why a given asset was built the way it was.",
       "Field and planning engineers needed a specific class of answer from it, what is under this road, when was this asset last surveyed, which permit conditions apply to this discharge point, and were spending a meaningful share of each week not finding it.",
@@ -219,7 +219,7 @@ export const caseStudies: CaseStudy[] = [
         {
           name: "Typed extraction",
           detail:
-            "A constrained extraction stage producing typed records, assertion, date, party, obligation cited, each carrying the exact source span. Extraction is schema-validated; anything that fails validation goes to a review queue rather than being silently dropped.",
+            "A constrained extraction stage producing typed records: assertion, date, party, obligation cited, each carrying the exact source span. Extraction is schema-validated; anything that fails validation goes to a review queue rather than being silently dropped.",
         },
         {
           name: "Retrieval",
@@ -490,7 +490,7 @@ export const caseStudies: CaseStudy[] = [
       {
         label: "Reusable layers identified",
         detail:
-          "Shared ingestion, retrieval and evaluation layers, each serving four of the six surviving candidates which is what makes the second delivery cheaper than the first.",
+          "Shared ingestion, retrieval and evaluation layers, each serving four of the six surviving candidates, which is what makes the second delivery cheaper than the first.",
         metric: "3 layers, 4 of 6 candidates",
       },
     ],

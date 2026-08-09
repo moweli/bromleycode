@@ -1,0 +1,2882 @@
+[
+  {
+    "width": 320,
+    "route": "/",
+    "overflowPx": 0,
+    "wide": [
+      {
+        "tag": "UL",
+        "cls": "flex w-max items-center gap-16 py-6 [animation-play-state:ru",
+        "right": 4715,
+        "left": 0
+      },
+      {
+        "tag": "LI",
+        "cls": "flex shrink-0 items-center gap-3 text-mist transition-colors",
+        "right": 4715,
+        "left": 4532
+      },
+      {
+        "tag": "svg",
+        "cls": "[object SVGAnimatedString]",
+        "right": 4558,
+        "left": 4532
+      },
+      {
+        "tag": "path",
+        "cls": "[object SVGAnimatedString]",
+        "right": 4558,
+        "left": 4532
+      }
+    ],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Discover how we work",
+        "w": 180,
+        "h": 35
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 206,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Read the method in full",
+        "w": 191,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 137,
+        "h": 32
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/services",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 206,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "What the first 90 days looks like",
+        "w": 254,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/services/intelligence-extraction",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All services",
+        "w": 113,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/how-we-work",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/industries",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Water and utilities",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Central government",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Financial services",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/industries/water-utilities",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All industries",
+        "w": 125,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/case-studies",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/case-studies/asset-information-retrieval-water-utility",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 141,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Context",
+        "w": 54,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The problem",
+        "w": 85,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Why earlier approaches failed",
+        "w": 203,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The pipeline",
+        "w": 83,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/insights",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/insights/abstention-is-a-feature",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All insights",
+        "w": 109,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 214,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/about",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/contact",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/privacy",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 320,
+    "route": "/terms",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/",
+    "overflowPx": 0,
+    "wide": [
+      {
+        "tag": "UL",
+        "cls": "flex w-max items-center gap-16 py-6 [animation-play-state:ru",
+        "right": 4715,
+        "left": 0
+      },
+      {
+        "tag": "LI",
+        "cls": "flex shrink-0 items-center gap-3 text-mist transition-colors",
+        "right": 4715,
+        "left": 4532
+      },
+      {
+        "tag": "svg",
+        "cls": "[object SVGAnimatedString]",
+        "right": 4558,
+        "left": 4532
+      },
+      {
+        "tag": "path",
+        "cls": "[object SVGAnimatedString]",
+        "right": 4558,
+        "left": 4532
+      }
+    ],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Discover how we work",
+        "w": 180,
+        "h": 35
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 246,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Read the method in full",
+        "w": 191,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 137,
+        "h": 32
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/services",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 246,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "What the first 90 days looks like",
+        "w": 254,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/services/intelligence-extraction",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All services",
+        "w": 113,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/how-we-work",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/industries",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Water and utilities",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Central government",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Financial services",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/industries/water-utilities",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All industries",
+        "w": 125,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/case-studies",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/case-studies/asset-information-retrieval-water-utility",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 141,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Context",
+        "w": 54,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The problem",
+        "w": 85,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Why earlier approaches failed",
+        "w": 203,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The pipeline",
+        "w": 83,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/insights",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/insights/abstention-is-a-feature",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All insights",
+        "w": 109,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 254,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/about",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/contact",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/privacy",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 360,
+    "route": "/terms",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "overflowPx": 0,
+    "wide": [
+      {
+        "tag": "UL",
+        "cls": "flex w-max items-center gap-16 py-6 [animation-play-state:ru",
+        "right": 4715,
+        "left": 0
+      },
+      {
+        "tag": "LI",
+        "cls": "flex shrink-0 items-center gap-3 text-mist transition-colors",
+        "right": 4715,
+        "left": 4532
+      },
+      {
+        "tag": "SPAN",
+        "cls": "whitespace-nowrap",
+        "right": 4715,
+        "left": 4570
+      },
+      {
+        "tag": "SPAN",
+        "cls": "block text-body-sm font-medium text-paper",
+        "right": 4715,
+        "left": 4570
+      }
+    ],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Discover how we work",
+        "w": 180,
+        "h": 35
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 276,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Read the method in full",
+        "w": 191,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 137,
+        "h": 32
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/services",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 276,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "What the first 90 days looks like",
+        "w": 254,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/services/intelligence-extraction",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All services",
+        "w": 113,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/how-we-work",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/industries",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Water and utilities",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Central government",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Financial services",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/industries/water-utilities",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All industries",
+        "w": 125,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/case-studies",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/case-studies/asset-information-retrieval-water-utility",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 141,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Context",
+        "w": 54,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The problem",
+        "w": 85,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Why earlier approaches failed",
+        "w": 203,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The pipeline",
+        "w": 83,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/insights",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/insights/abstention-is-a-feature",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All insights",
+        "w": 109,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 284,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/contact",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/privacy",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 390,
+    "route": "/terms",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/",
+    "overflowPx": 0,
+    "wide": [
+      {
+        "tag": "UL",
+        "cls": "flex w-max items-center gap-16 py-6 [animation-play-state:ru",
+        "right": 4715,
+        "left": 0
+      },
+      {
+        "tag": "LI",
+        "cls": "flex shrink-0 items-center gap-3 text-mist transition-colors",
+        "right": 4715,
+        "left": 4532
+      },
+      {
+        "tag": "SPAN",
+        "cls": "whitespace-nowrap",
+        "right": 4715,
+        "left": 4570
+      },
+      {
+        "tag": "SPAN",
+        "cls": "block text-body-sm font-medium text-paper",
+        "right": 4715,
+        "left": 4570
+      }
+    ],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Discover how we work",
+        "w": 181,
+        "h": 35
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Read the method in full",
+        "w": 191,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 137,
+        "h": 32
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/services",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "See how it works",
+        "w": 300,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "What the first 90 days looks like",
+        "w": 254,
+        "h": 32
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/services/intelligence-extraction",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All services",
+        "w": 113,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/how-we-work",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [
+      {
+        "size": 11,
+        "text": "01"
+      },
+      {
+        "size": 11,
+        "text": "02"
+      },
+      {
+        "size": 11,
+        "text": "03"
+      },
+      {
+        "size": 11,
+        "text": "04"
+      }
+    ],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/industries",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Water and utilities",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Central government",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "Financial services",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/industries/water-utilities",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All industries",
+        "w": 125,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/case-studies",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read the engagement",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/case-studies/asset-information-retrieval-water-utility",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All case studies",
+        "w": 141,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Context",
+        "w": 54,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The problem",
+        "w": 85,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Why earlier approaches failed",
+        "w": 203,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "The pipeline",
+        "w": 83,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/insights",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/insights/abstention-is-a-feature",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "All insights",
+        "w": 109,
+        "h": 18
+      },
+      {
+        "tag": "A",
+        "label": "Read",
+        "w": 308,
+        "h": 24
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/about",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/contact",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "enquiries@bromelycode.com",
+        "w": 198,
+        "h": 31
+      },
+      {
+        "tag": "INPUT",
+        "label": "",
+        "w": 20,
+        "h": 20
+      },
+      {
+        "tag": "A",
+        "label": "privacy policy",
+        "w": 93,
+        "h": 19
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/privacy",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  },
+  {
+    "width": 414,
+    "route": "/terms",
+    "overflowPx": 0,
+    "wide": [],
+    "smallTargets": [
+      {
+        "tag": "A",
+        "label": "Skip to main content",
+        "w": 1,
+        "h": 1
+      },
+      {
+        "tag": "A",
+        "label": "Intelligence extraction",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Data & pipeline engineering",
+        "w": 188,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "AI strategy & roadmap",
+        "w": 152,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "Evaluation & assurance",
+        "w": 158,
+        "h": 31
+      },
+      {
+        "tag": "A",
+        "label": "How we work",
+        "w": 93,
+        "h": 31
+      }
+    ],
+    "tinyText": [],
+    "longLines": []
+  }
+]

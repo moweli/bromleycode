@@ -54,7 +54,7 @@ export function AccreditationBand({ tone = "dark" }: { tone?: "dark" | "light" }
                     <span className="text-[0.8125rem] font-semibold leading-tight">
                       {item.lockup?.line1 ?? item.name}
                     </span>
-                    <span className="text-[0.6875rem] font-bold uppercase tracking-[0.04em] opacity-80">
+                    <span className="text-xs font-bold uppercase tracking-[0.04em] opacity-80">
                       {item.status === "held" ? item.lockup?.line2 ?? item.detail : `In progress · ${item.detail}`}
                     </span>
                   </span>
