@@ -61,10 +61,16 @@ export function SiteFooter() {
             <h2 className="eyebrow text-mist">Get in touch</h2>
             <address className="mt-5 space-y-1 text-body-sm not-italic text-paper/85">
               <p>{site.legalName}</p>
-              {site.registeredOffice.lines.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-              <p>{site.registeredOffice.postcode}</p>
+              {site.registration.status === "registered" ? (
+                <>
+                  {site.registration.registeredOffice.lines.map((line) => (
+                    <p key={line}>{line}</p>
+                  ))}
+                  <p>{site.registration.registeredOffice.postcode}</p>
+                </>
+              ) : (
+                <p>{site.location}</p>
+              )}
               <p className="pt-3">
                 <a
                   href={`mailto:${site.email}`}
@@ -73,11 +79,28 @@ export function SiteFooter() {
                   {site.email}
                 </a>
               </p>
+              <p>
+                <a
+                  href={`tel:${site.phoneHref}`}
+                  className="underline underline-offset-4 transition-colors duration-150 hover:text-accent"
+                >
+                  {site.phone}
+                </a>
+              </p>
             </address>
             <p className="mt-5 text-xs leading-relaxed text-mist">
-              Registered in England &amp; Wales: {site.companyNumber}
-              <br />
-              VAT {site.vatNumber} · ICO {site.icoRegistration}
+              {site.registration.status === "registered" ? (
+                <>
+                  Registered in England &amp; Wales: {site.registration.companyNumber}
+                  <br />
+                  VAT {site.registration.vatNumber} · ICO {site.registration.icoRegistration}
+                </>
+              ) : (
+                <>
+                  Company registration in progress. Registered office, company number, VAT and ICO
+                  registration will be published here on incorporation.
+                </>
+              )}
             </p>
           </div>
         </div>

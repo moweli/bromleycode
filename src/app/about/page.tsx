@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { PageHero } from "@/components/blocks/page-hero";
-import { CtaBand, Faq, TeamGrid } from "@/components/blocks/sections";
+import { CtaBand, Faq } from "@/components/blocks/sections";
 import { AccreditationBand } from "@/components/blocks/accreditation-band";
 import { Reveal } from "@/components/reveal";
 import { Section, SectionHeading } from "@/components/ui";
@@ -71,21 +71,6 @@ export default function AboutPage() {
               </Reveal>
             ))}
           </ul>
-        </div>
-      </Section>
-
-      <Section size="lg">
-        <div className="container-bc">
-          <Reveal>
-            <SectionHeading
-              eyebrow="Team"
-              title="How engagements are staffed."
-              body="Small teams of three to five, all of whom write code or evaluate output. There is no separate delivery layer between you and the people building the thing."
-            />
-          </Reveal>
-          <Reveal delay={80} className="mt-14">
-            <TeamGrid />
-          </Reveal>
         </div>
       </Section>
 

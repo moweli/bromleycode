@@ -12,16 +12,36 @@ export const site = {
     "Bromely Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
   url: "https://bromelycode.com",
   email: "hello@bromelycode.com",
-  phone: "[NEEDS NUMBER]",
+  /**
+   * Ofcom reserves 020 7946 0xxx for fiction and documentation — it cannot ring
+   * a real subscriber. Replace with the real number; do not leave this live.
+   */
+  phone: "+44 20 7946 0412",
+  phoneHref: "+442079460412",
+  hours: "Monday to Friday, 09:00–17:30 UK time",
   locale: "en_GB",
-  /** UK convention — enterprise procurement looks for these in the footer. */
-  registeredOffice: {
-    lines: ["[REGISTERED OFFICE ADDRESS]", "London", "United Kingdom"],
-    postcode: "[POSTCODE]",
+  /**
+   * UK convention — enterprise procurement looks for these in the footer.
+   *
+   * The statutory identifiers below are deliberately NOT invented. A plausible
+   * eight-digit company number almost certainly belongs to a real, unrelated
+   * company, and printing one under "Registered in England & Wales" is a false
+   * statement about a real registration rather than harmless placeholder copy.
+   * The same applies to VAT and ICO numbers. Until incorporation, the site says
+   * registration is in progress, which is both true and unambiguous.
+   *
+   * On incorporation: set registration.status to "registered" and fill in the
+   * four fields. Nothing else needs to change.
+   */
+  registration: {
+    status: "pending" as "pending" | "registered",
+    companyNumber: "",
+    vatNumber: "",
+    icoRegistration: "",
+    registeredOffice: { lines: [] as string[], postcode: "" },
   },
-  companyNumber: "[COMPANY NUMBER]",
-  vatNumber: "[VAT NUMBER]",
-  icoRegistration: "[ICO REGISTRATION NUMBER]",
+  /** Where the team actually is, at the level of detail we can stand behind. */
+  location: "London, United Kingdom",
 } as const;
 
 export type NavItem = {
@@ -75,6 +95,8 @@ export const footerNav: { heading: string; items: NavItem[] }[] = [
 export const legalNav: NavItem[] = [
   { label: "Privacy policy", href: "/privacy" },
   { label: "Cookie policy", href: "/cookies" },
+  { label: "Terms of use", href: "/terms" },
+  { label: "Accessibility", href: "/accessibility" },
 ];
 
 export const socials: { label: string; href: string; icon: "linkedin" | "github" }[] = [

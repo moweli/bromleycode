@@ -1,63 +1,10 @@
-/**
- * Team roles carry a monogram, not a photograph. Free stock licences prohibit
- * implied endorsement by depicted individuals, so a stock portrait captioned as
- * a named team member is the same category of problem as an invented client.
- * The grid is built to take real headshots the day they exist — populate
- * `photo` and the component uses it.
- */
-export type TeamRole = {
-  /** Initials shown in the monogram tile. */
-  monogram: string;
-  role: string;
-  focus: string;
-  /** Populated when a real headshot and permission exist. */
-  photo?: { src: string; alt: string };
-  /** Set to a real name once the person is hired and has agreed to be listed. */
-  name?: string;
-};
-
-export const team: TeamRole[] = [
-  {
-    monogram: "PE",
-    role: "Principal engineer, retrieval",
-    focus: "Chunking strategy, hybrid retrieval, reranking, grounding and abstention behaviour.",
-  },
-  {
-    monogram: "DE",
-    role: "Lead data engineer",
-    focus: "Ingestion, orchestration, lineage, index lifecycle and the operational readiness handover.",
-  },
-  {
-    monogram: "EL",
-    role: "Evaluation lead",
-    focus: "Labelled sets, judge calibration, adversarial and permission suites, assurance packs.",
-  },
-  {
-    monogram: "SA",
-    role: "Solution architect",
-    focus: "Reference architecture, permission modelling, security review and platform fit.",
-  },
-  {
-    monogram: "DP",
-    role: "Delivery principal",
-    focus: "Engagement shape, sequencing, stakeholder alignment and the awkward conversations.",
-  },
-  {
-    monogram: "ML",
-    role: "Machine learning engineer",
-    focus: "Extraction schemas, model selection, fine-tuning where it earns its cost, inference economics.",
-  },
-];
-
-export const teamNote =
-  "Role titles are real and describe how engagements are staffed. Names and photographs will appear here as the team is named publicly — we would rather show an honest placeholder than a stock photograph of someone who has never heard of us.";
-
 export const story = {
   eyebrow: "About",
   heading: "A consultancy built around the parts that usually go wrong.",
   body: [
     "Bromely Code exists because the hard parts of enterprise GenAI are not the parts most engagements are staffed for. The model is rarely the problem. The corpus is the problem — its scanning quality, its revision sprawl, its three overlapping permission models, and the absence of any agreed definition of a correct answer.",
     "We are a data intelligence consultancy. The work is retrieval, extraction, enrichment and evaluation, delivered as engagements, on your platforms, inside your boundary. There is no product, no licence and no reason for us to recommend one.",
+    "Engagements are staffed with three to five people, all of whom write code or evaluate output. There is no account layer between you and the people building the thing, and no bench being kept warm at your expense.",
     "We take a narrow set of work and finish it. An engagement ends with a running pipeline, an evaluation harness your team owns, a rollback path that has been executed at least once against real data, and engineers who have already changed something in the pipeline without us in the room.",
   ],
 };

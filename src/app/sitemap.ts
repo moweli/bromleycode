@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/contact", priority: 0.7 },
     { path: "/privacy", priority: 0.2 },
     { path: "/cookies", priority: 0.2 },
+    { path: "/terms", priority: 0.2 },
+    { path: "/accessibility", priority: 0.3 },
     ...services.map((s) => ({ path: `/services/${s.slug}`, priority: 0.8 })),
     ...industries.map((i) => ({ path: `/industries/${i.slug}`, priority: 0.7 })),
     ...caseStudies.map((c) => ({ path: `/case-studies/${c.slug}`, priority: 0.7 })),

@@ -61,13 +61,14 @@ const organisationJsonLd = {
   alternateName: site.name,
   url: site.url,
   email: site.email,
+  telephone: site.phone,
   description: site.description,
   areaServed: "GB",
+  // Locality only until incorporation — a fabricated street address in
+  // structured data is a machine-readable false statement.
   address: {
     "@type": "PostalAddress",
-    streetAddress: site.registeredOffice.lines[0],
     addressLocality: "London",
-    postalCode: site.registeredOffice.postcode,
     addressCountry: "GB",
   },
   knowsAbout: [

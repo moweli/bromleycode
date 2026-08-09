@@ -11,7 +11,8 @@
 | Phase | Status |
 |---|---|
 | 1 — Reference design audit | **Complete.** `design-audit.md`, `components.json`, 116 captures in `reference/screenshots/`, 27 computed-style extractions in `reference/data/` |
-| 2 — Build | **Complete.** 31 static routes, all verified at four breakpoints |
+| 2 — Build | **Complete.** 33 static routes, all verified at four breakpoints |
+| 3 — Client revisions, 9 Aug 2026 | **Complete.** Team section removed · case-study figures populated with invented values (banner retained) · company details filled where safe, statutory identifiers withheld · four legal documents completed as drafts, two of them new |
 | Media sourcing and compression | **Complete.** 12 photographs, 1 hero video, 3 typefaces — all recorded in `media-credits.md` |
 | Verification | **Complete.** Lighthouse, keyboard, reduced-motion, mobile fallback, hero contrast across the loop, banner coverage |
 | Launch readiness | **Blocked** on the items in *Before launch* below — none of them are engineering |
@@ -51,6 +52,8 @@ preset unless stated.
 | `/contact` | 100 | 100 | 100 | 100 | 578 ms | 0 | 0 ms |
 | `/privacy` | 100 | 100 | 100 | 100 | 728 ms | 0 | 0 ms |
 | `/cookies` | 100 | 100 | 100 | 100 | 537 ms | 0 | 0 ms |
+| `/terms` | 100 | 100 | 100 | 100 | — | 0 | 0 ms |
+| `/accessibility` | 100 | 100 | 100 | 100 | — | 0 | 0 ms |
 | **`/` — mobile preset** | **93** | **100** | **100** | **100** | 3.2 s | 0 | 10 ms |
 
 Mobile LCP is the hero still under Lighthouse's simulated slow 4G. Total transfer
@@ -204,10 +207,25 @@ No case-study surface renders without one.
 
 ## Case-study swap-in checklist
 
-Four illustrative composites currently ship. Each needs **all** of the following
-before `CONTENT_STATUS` in `src/content/case-studies.ts` is flipped to
-`"verified"`. Flipping it removes every banner at once, which is the point — and
-the reason it must not be flipped per-study.
+Four illustrative composites ship, and **every figure in them is now populated
+with an invented number** (client request, 9 August 2026). There are no
+`[NEEDS FIGURE]` placeholders left.
+
+That raises the stakes on the labelling rather than lowering them. Invented
+prose with visible placeholders is obviously illustrative; invented prose with
+concrete percentages reads as reported fact unless something says otherwise. The
+`CONTENT_STATUS` banner is now the only thing separating ordinary marketing from
+a misleading commercial practice under the DMCC Act and the CAP Code. **Do not
+remove it until real studies replace this content.**
+
+What is currently invented, so nobody has to reverse-engineer it later:
+
+| Study | Invented figures |
+|---|---|
+| Water utility | 4 min 10 s → 38 s · 312 → 96 escalations/week · 71.6% → 94.2% supported · 3 permission regressions caught |
+| Central government | 31 h → 9 h per bundle · 64% → 91.4% recall · 18.3% → 6.1% amended · 0 audit findings |
+| Financial services | 72.8% → 93.1% on medical reports · 88.1% → 94.7% aggregate · 7 regressions blocked · 3 of 4 claim types · 88.6% judge agreement |
+| Professional services | 8 of 14 disqualified · £410,000 released · 19 days to delivery · 3 reusable layers |
 
 Per study — `asset-information-retrieval-water-utility`,
 `regulatory-evidence-pipeline-central-government`,
@@ -217,12 +235,9 @@ Per study — `asset-information-retrieval-water-utility`,
 - [ ] **Written client permission** to publish, naming what may be disclosed —
       sector, scale, technologies, figures — and what may not.
 - [ ] **Client sign-off on the text**, from someone with authority to give it.
-- [ ] **Every `[NEEDS FIGURE]` replaced with a measured number**, each with the
-      method and baseline recorded somewhere auditable. Search the file for
-      `NEEDS FIGURE`; there are 15 across the four studies.
-- [ ] **Illustrative ranges removed.** Three outcomes carry bracketed ranges
-      (`illustrative target range 92–96%` and similar) to make the layout work.
-      They are not measurements and must not survive.
+- [ ] **Every invented figure replaced with a measured one**, each with the
+      method and baseline recorded somewhere auditable. The table above is the
+      list; all of them live in the `outcomes` arrays.
 - [ ] **Named technologies confirmed** against what was actually deployed, and
       cleared with the client — a stack disclosure can be commercially sensitive.
 - [ ] **Pull quote re-attributed.** Quotes are currently role-and-sector only and
@@ -240,6 +255,8 @@ Then, once all four are complete:
 - [ ] Re-run the banner check — it should report 0 across every route.
 - [ ] Remove the "On these being illustrative" section from `/case-studies`.
 - [ ] Update the FAQ answer on `/about` about not yet having real case studies.
+- [ ] Update section 3 of `/terms`, which currently states that the case studies
+      are illustrative composites with illustrative figures.
 
 ---
 
@@ -249,24 +266,50 @@ Not engineering. Nothing below can be done from this repository.
 
 **Legal**
 
-- [ ] **Privacy policy reviewed by a qualified adviser.** `/privacy` follows the
-      ICO's expected structure and every gap is bracketed, but it is a template,
-      not advice. The page carries a visible "requires legal review" banner —
-      remove it only after the review.
-- [ ] Complete every `[BRACKETED]` field in `src/content/legal.ts`: company
-      number, registered office, ICO registration, DPO position, processor list,
-      international transfer safeguards, retention periods, security measures.
-- [ ] Legitimate-interests assessment for enquiry handling, retained.
-- [ ] Cookie policy completed once an analytics provider is chosen.
+Four documents now ship as **complete drafts** rather than outlines: `/privacy`,
+`/cookies`, `/terms` and `/accessibility`. Each carries a visible "requires legal
+review" banner, and each open business decision is marked inline with `CONFIRM`
+and rendered as a highlighted note, so a reviewer can find all of them in one
+pass.
+
+- [ ] **Review by a qualified adviser.** These are drafts written to be reviewed,
+      not advice. Remove the banner from `src/components/blocks/legal-page.tsx`
+      only after sign-off.
+- [ ] Settle the eleven `CONFIRM` points — `grep -n CONFIRM src/content/legal.ts`.
+      In summary: whether a DPO is required; hosting and email providers and their
+      sub-processor lists; international transfer safeguards per processor; server
+      log retention; alignment of the security section with the client-contract
+      security schedule; the liability wording in the terms; and whether public
+      sector accessibility regulations bite on any deliverable.
+- [ ] Legitimate-interests assessment for enquiry handling, written and retained —
+      the privacy notice says it exists and is available on request.
+- [ ] Set up `privacy@` and `accessibility@` mailboxes. Both are published.
+- [ ] Cookie policy updated **before** any analytics goes live, not after.
 - [ ] Confirm vendor brand guidelines permit the technology-band marks.
 
 **Company details**
 
-- [ ] Replace the placeholders in `src/content/site.ts`: `[COMPANY NUMBER]`,
-      `[REGISTERED OFFICE ADDRESS]`, `[POSTCODE]`, `[VAT NUMBER]`,
-      `[ICO REGISTRATION NUMBER]`, `[NEEDS NUMBER]`.
+Searched 9 August 2026: no Companies House record, no domain and no listing
+exists for Bromely Code. There was nothing to retrieve, so the site says what is
+true today rather than inventing identifiers.
+
+- [ ] **Incorporate**, then set `site.registration.status` to `"registered"` and
+      fill in `companyNumber`, `vatNumber`, `icoRegistration` and
+      `registeredOffice` in `src/content/site.ts`. The footer, contact page and
+      JSON-LD all switch from "registration in progress" automatically — nothing
+      else needs editing.
+- [ ] **Replace the phone number.** `+44 20 7946 0412` is inside Ofcom's reserved
+      020 7946 0xxx range for fiction and documentation. It cannot ring a real
+      subscriber, which is exactly why it was used, and it must not go live.
 - [ ] Point the social links at real profiles — they currently go to the
       platforms' home pages.
+
+Deliberately **not** invented, and why: a plausible eight-digit company number
+almost certainly belongs to a real, unrelated company, and printing one under
+"Registered in England & Wales" is a false statement about a real registration
+rather than placeholder copy. Same for VAT and ICO numbers, and for a street
+address that belongs to somebody. Give me the real details and it is a one-file
+edit.
 
 **Accreditations**
 
@@ -284,11 +327,13 @@ Not engineering. Nothing below can be done from this repository.
 
 **Content**
 
-- [ ] Team grid carries monograms and real role titles. Add names and headshots
-      as people are hired and agree to be listed — never stock portraits.
-- [ ] Stats band is three `[NEEDS FIGURE]` slots by design. Populate when the
-      numbers exist; the count-up animation runs automatically once `value` is
-      a number.
+- [ ] Stats band on the homepage is three `[NEEDS FIGURE]` slots by design — the
+      one place placeholders remain. Populate when the numbers exist; the count-up
+      animation runs automatically once `value` is a number rather than `null`.
+- [x] ~~Team grid~~ — removed on request, 9 August 2026. The staffing argument it
+      carried moved into the About page prose. If it returns, it needs real names
+      and headshots; stock portraits presented as team members are prohibited by
+      the licences the photography is used under.
 
 **Analytics**
 

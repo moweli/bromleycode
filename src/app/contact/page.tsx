@@ -67,15 +67,29 @@ export default function ContactPage() {
                     {site.email}
                   </a>
                 </p>
+                <p className="mt-1">
+                  <a href={`tel:${site.phoneHref}`} className="underline underline-offset-4 hover:text-accent-ink">
+                    {site.phone}
+                  </a>
+                </p>
+                <p className="mt-3 text-body-sm text-ink-muted">{site.hours}</p>
                 <address className="mt-6 space-y-1 text-body-sm not-italic text-ink-muted">
                   <p>{site.legalName}</p>
-                  {site.registeredOffice.lines.map((line) => (
-                    <p key={line}>{line}</p>
-                  ))}
-                  <p>{site.registeredOffice.postcode}</p>
+                  {site.registration.status === "registered" ? (
+                    <>
+                      {site.registration.registeredOffice.lines.map((line) => (
+                        <p key={line}>{line}</p>
+                      ))}
+                      <p>{site.registration.registeredOffice.postcode}</p>
+                    </>
+                  ) : (
+                    <p>{site.location}</p>
+                  )}
                 </address>
                 <p className="mt-4 text-xs text-ink-muted">
-                  Registered in England &amp; Wales: {site.companyNumber}
+                  {site.registration.status === "registered"
+                    ? `Registered in England & Wales: ${site.registration.companyNumber}`
+                    : "Company registration in progress."}
                 </p>
               </div>
             </div>

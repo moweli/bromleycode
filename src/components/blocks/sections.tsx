@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ContactForm } from "@/components/blocks/contact-form";
 import { Reveal } from "@/components/reveal";
 import { ctaBand } from "@/content/home";
-import { team, teamNote } from "@/content/about";
 
 /**
  * Terminal CTA band. The reference puts a form here rather than a link, which
@@ -46,42 +45,6 @@ export function CtaBand({
         <ContactForm tone="dark" />
       </div>
     </section>
-  );
-}
-
-/**
- * Team grid with monogram tiles. Free stock licences prohibit implied
- * endorsement by depicted individuals, so a stock portrait captioned as a named
- * team member is the same category of problem as an invented client
- * (components.json team_grid). Populate `photo` and the tile uses it.
- */
-export function TeamGrid({ tone = "light" }: { tone?: "light" | "dark" }) {
-  const dark = tone === "dark";
-  return (
-    <div>
-      <ul className="grid gap-px border border-line-light bg-line-light sm:grid-cols-2 lg:grid-cols-3">
-        {team.map((member, index) => (
-          <Reveal as="li" key={member.role} delay={index * 60} className={dark ? "bg-ink-900 p-7" : "bg-paper p-7"}>
-            <span
-              aria-hidden="true"
-              className={`flex h-14 w-14 items-center justify-center border font-[family-name:var(--font-mono)] text-body-sm tracking-[0.08em] ${
-                dark ? "border-line-dark text-accent" : "border-line-light text-accent-ink"
-              }`}
-            >
-              {member.monogram}
-            </span>
-            <h3 className={`mt-5 text-[length:var(--text-h4)] ${dark ? "text-paper" : "text-ink"}`}>
-              {member.name ?? member.role}
-            </h3>
-            {member.name ? (
-              <p className={`mt-1 text-body-sm ${dark ? "text-mist" : "text-ink-muted"}`}>{member.role}</p>
-            ) : null}
-            <p className={`mt-3 text-body-sm ${dark ? "text-mist-bright" : "text-ink-muted"}`}>{member.focus}</p>
-          </Reveal>
-        ))}
-      </ul>
-      <p className={`mt-6 max-w-[46rem] text-body-sm ${dark ? "text-mist" : "text-ink-muted"}`}>{teamNote}</p>
-    </div>
   );
 }
 

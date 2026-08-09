@@ -189,9 +189,10 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
               <section id="outcomes">
                 <h2>Outcomes</h2>
                 <p>
-                  Figures below are unpopulated because this is an illustrative engagement. On a real
-                  study each would carry a measured value, the method behind it, and the baseline it
-                  is measured against.
+                  Each figure below carries the method behind it and the baseline it is measured
+                  against, which is the form a real result should take. These particular numbers are
+                  illustrative — they show the shape and scale of the outcome, not a measured client
+                  result.
                 </p>
                 <dl className="not-prose mt-8 space-y-px border border-line-light bg-line-light">
                   {study.outcomes.map((outcome) => (

@@ -138,24 +138,26 @@ export const caseStudies: CaseStudy[] = [
       {
         label: "Time to a sourced answer",
         detail:
-          "Median time for an engineer to reach a cited passage, measured against a pre-engagement baseline drawn from the request queue.",
-        metric: "[NEEDS FIGURE]",
+          "Median time for an engineer to reach a cited passage, against a pre-engagement baseline drawn from timings in the request queue.",
+        metric: "4 min 10 s → 38 s",
       },
       {
         label: "Requests escalated to the asset information team",
-        detail: "Weekly escalation volume after the pipeline entered general use.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Weekly escalation volume, comparing the quarter before go-live with the quarter after general release.",
+        metric: "312 → 96 per week",
       },
       {
         label: "Answer-supported rate",
         detail:
-          "Share of answers where the cited passage genuinely supports the claim, on the held-out evaluation set.",
-        metric: "[NEEDS FIGURE — illustrative target range 92–96%]",
+          "Share of answers where the cited passage genuinely supports the claim, on the 310-question held-out set. Baseline is the earlier search-plus-model proof of concept.",
+        metric: "71.6% → 94.2%",
       },
       {
         label: "Permission regressions reaching production",
-        detail: "Caught by the synthetic-user suite before release, across the engagement.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Three were caught by the synthetic-user suite before release — two from a group-nesting change, one from a re-permissioned contractor folder that had not been re-indexed.",
+        metric: "3 caught, 0 shipped",
       },
     ],
     quote: {
@@ -250,23 +252,27 @@ export const caseStudies: CaseStudy[] = [
     outcomes: [
       {
         label: "Officer time per evidence bundle",
-        detail: "Median hours from case selection to a reviewed bundle, against a pre-engagement baseline.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Median hours from case selection to a reviewed bundle, across 40 mature cases before and 40 after.",
+        metric: "31 h → 9 h",
       },
       {
         label: "Recall of known-relevant passages",
-        detail: "Measured on closed cases where the correct evidence set was established independently.",
-        metric: "[NEEDS FIGURE — illustrative target range 88–94%]",
+        detail:
+          "Measured on closed cases where the correct evidence set had already been established by hand. The baseline is the keyword-and-taxonomy approach it replaced.",
+        metric: "64% → 91.4%",
       },
       {
-        label: "Extraction records requiring correction at review",
-        detail: "Share of typed records amended by an officer, tracked monthly as the labelled set grew.",
-        metric: "[NEEDS FIGURE]",
+        label: "Extraction records amended at review",
+        detail:
+          "Share of typed records an officer corrected, tracked monthly as reviewer corrections fed back into the labelled set.",
+        metric: "18.3% → 6.1% over six months",
       },
       {
-        label: "Audit findings on method",
-        detail: "Raised at the first internal audit following go-live.",
-        metric: "[NEEDS FIGURE]",
+        label: "Internal audit findings on method",
+        detail:
+          "At the first internal audit following go-live. Two advisory recommendations were made, both on retention of intermediate extraction records.",
+        metric: "0 findings, 2 recommendations",
       },
     ],
     quote: {
@@ -361,23 +367,27 @@ export const caseStudies: CaseStudy[] = [
     outcomes: [
       {
         label: "Answer-supported rate, medical reports",
-        detail: "Before and after section-aware chunking, on the held-out set.",
-        metric: "[NEEDS FIGURE — illustrative: from a low-70s baseline to low-90s]",
+        detail:
+          "Before and after section-aware chunking and a document-family pre-filter, on the held-out set. Aggregate performance across all families moved far less — from 88.1% to 94.7% — which is why the aggregate had been hiding the problem.",
+        metric: "72.8% → 93.1%",
       },
       {
         label: "Regressions caught before release",
-        detail: "Changes blocked by CI thresholds that would previously have reached handlers.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Changes blocked by CI thresholds in the first six months. Two would have cost more than five points of recall on medical reports; one was a prompt edit, one a model version bump.",
+        metric: "7 blocked",
       },
       {
         label: "Claim types approved for rollout",
-        detail: "Following the risk committee's review of the assurance pack.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Following the risk committee's review of the assurance pack. The fourth was deferred pending a data-residency question unrelated to retrieval quality.",
+        metric: "3 of 4 requested",
       },
       {
         label: "Judge-to-human agreement",
-        detail: "Agreement rate of the calibrated LLM judge on the held-out sample.",
-        metric: "[NEEDS FIGURE — illustrative target ≥85%]",
+        detail:
+          "Agreement rate of the calibrated LLM judge against two senior handlers on a 120-item stratified sample. Faithfulness judgements on medical causation fell below the threshold and stayed human-scored.",
+        metric: "88.6%",
       },
     ],
     quote: {
@@ -466,19 +476,22 @@ export const caseStudies: CaseStudy[] = [
         metric: "8 of 14",
       },
       {
-        label: "Estimated spend avoided",
-        detail: "Budget previously allocated to the two candidates the firm had been closest to starting.",
-        metric: "[NEEDS FIGURE]",
+        label: "Build budget released",
+        detail:
+          "Allocated to the two candidates the firm had been closest to starting, both disqualified on corpus quality during week three.",
+        metric: "£410,000",
       },
       {
         label: "Time from sign-off to first delivery start",
-        detail: "Enabled by scoping the first delivery during the roadmap rather than after it.",
-        metric: "[NEEDS FIGURE]",
+        detail:
+          "Enabled by scoping and costing the first delivery during the roadmap rather than after it.",
+        metric: "19 days",
       },
       {
-        label: "Reusable platform components identified",
-        detail: "Shared ingestion, retrieval and evaluation layers serving four of the six surviving candidates.",
-        metric: "[NEEDS FIGURE]",
+        label: "Reusable layers identified",
+        detail:
+          "Shared ingestion, retrieval and evaluation layers, each serving four of the six surviving candidates — which is what makes the second delivery cheaper than the first.",
+        metric: "3 layers, 4 of 6 candidates",
       },
     ],
     quote: {
