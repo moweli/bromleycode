@@ -1,16 +1,33 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
 import { pipelineStages } from "@/content/methodology";
 
 /**
  * The pipeline, drawn as code.
  *
- * The reference has no analogue for this — it sells outcomes and never shows
+ * The reference has no analogue for this: it sells outcomes and never shows
  * mechanism, because its client logo wall does the arguing (design-audit.md
  * §8.2 D8). With no logos to show, the mechanism has to carry that weight, and
  * a stock diagram would describe something slightly different from what the
  * words claim.
  *
- * The SVG is decorative-with-a-caption: the same information is in the ordered
- * list beneath it, so nothing is lost to a screen reader or a printed page.
+ * Motion, in three layers, each earning its place by saying something the
+ * static drawing cannot:
+ *
+ *  1. Stages build left to right on first view, 70ms apart. The diagram is a
+ *     sequence, and drawing it in sequence is the cheapest way to say so.
+ *  2. A pulse travels the spine, continuously. That is a document moving
+ *     through the pipeline.
+ *  3. The two feedback loops march their dashes in their own direction. They
+ *     are loops, and loops do not stop.
+ *
+ * Everything holds still under prefers-reduced-motion: the build completes
+ * immediately, the pulse and the dashes do not run.
+ *
+ * The SVG remains decorative-with-a-caption: the same information is in the
+ * ordered list beneath it, so nothing is lost to a screen reader, a printed
+ * page, or a reader who never sees the animation.
  */
 
 const NODE_W = 96;
@@ -18,6 +35,8 @@ const GAP = 16;
 const X0 = 48;
 const NODE_Y = 132;
 const NODE_H = 56;
+const SPINE_Y = NODE_Y + NODE_H / 2;
+const STAGGER = 70;
 
 const nodeX = (index: number) => X0 + index * (NODE_W + GAP);
 const nodeCentre = (index: number) => nodeX(index) + NODE_W / 2;
@@ -33,6 +52,32 @@ function loopPath(from: number, to: number, direction: "above" | "below", lift: 
 
 export function PipelineDiagram() {
   const total = pipelineStages.length;
+  const ref = useRef<SVGSVGElement>(null);
+  const [shown, setShown] = useState(false);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setShown(true);
+      return;
+    }
+    const node = ref.current;
+    if (!node) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShown(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.25 },
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, []);
+
+  const spineEnd = nodeX(total - 1) + NODE_W;
+  // Loops and their labels arrive after the forward path has finished drawing.
+  const loopDelay = total * STAGGER + 220;
 
   return (
     <figure className="not-prose">
@@ -40,8 +85,10 @@ export function PipelineDiagram() {
           page to scroll horizontally. */}
       <div className="overflow-x-auto pb-2">
         <svg
-          viewBox={`0 0 ${nodeX(total - 1) + NODE_W + X0} 300`}
-          className="h-auto w-full min-w-[900px]"
+          ref={ref}
+          data-shown={shown}
+          viewBox={`0 0 ${spineEnd + X0} 300`}
+          className="pipeline h-auto w-full min-w-[900px]"
           role="img"
           aria-labelledby="pipeline-title pipeline-desc"
         >
@@ -59,26 +106,24 @@ export function PipelineDiagram() {
             <marker id="arrow-muted" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="5" markerHeight="5" orient="auto">
               <path d="M0 0 L8 4 L0 8 z" fill="var(--color-mist)" />
             </marker>
+            <radialGradient id="pulse-glow">
+              <stop offset="0%" stopColor="var(--color-accent)" stopOpacity="0.9" />
+              <stop offset="60%" stopColor="var(--color-accent)" stopOpacity="0.25" />
+              <stop offset="100%" stopColor="var(--color-accent)" stopOpacity="0" />
+            </radialGradient>
           </defs>
 
           {/* Spine */}
-          <line
-            x1={X0}
-            y1={NODE_Y + NODE_H / 2}
-            x2={nodeX(total - 1) + NODE_W}
-            y2={NODE_Y + NODE_H / 2}
-            stroke="var(--color-ink-600)"
-            strokeWidth="1"
-          />
+          <line x1={X0} y1={SPINE_Y} x2={spineEnd} y2={SPINE_Y} stroke="var(--color-ink-600)" strokeWidth="1" />
 
           {pipelineStages.map((stage, index) => (
-            <g key={stage.id}>
+            <g key={stage.id} className="pipeline-stage" style={{ transitionDelay: `${index * STAGGER}ms` }}>
               {index < total - 1 ? (
                 <line
                   x1={nodeX(index) + NODE_W}
-                  y1={NODE_Y + NODE_H / 2}
+                  y1={SPINE_Y}
                   x2={nodeX(index + 1) - 3}
-                  y2={NODE_Y + NODE_H / 2}
+                  y2={SPINE_Y}
                   stroke="var(--color-accent)"
                   strokeWidth="1.25"
                   markerEnd="url(#arrow)"
@@ -119,57 +164,75 @@ export function PipelineDiagram() {
           ))}
 
           {/* Access control resolves from the index into retrieval, per query. */}
-          <path
-            d={loopPath(5, 6, "above", 62)}
-            fill="none"
-            stroke="var(--color-mist)"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-            markerEnd="url(#arrow-muted)"
-          />
-          <text
-            x={(nodeCentre(5) + nodeCentre(6)) / 2}
-            y={NODE_Y - 50}
-            textAnchor="middle"
-            fill="var(--color-mist)"
-            fontFamily="var(--font-mono)"
-            fontSize="12"
-            letterSpacing="0.06em"
-          >
-            ACLs resolved per query, before ranking
-          </text>
+          <g className="pipeline-loop" style={{ transitionDelay: `${loopDelay}ms` }}>
+            <path
+              d={loopPath(5, 6, "above", 62)}
+              className="pipeline-dash"
+              fill="none"
+              stroke="var(--color-mist)"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              markerEnd="url(#arrow-muted)"
+            />
+            <text
+              x={(nodeCentre(5) + nodeCentre(6)) / 2}
+              y={NODE_Y - 50}
+              textAnchor="middle"
+              fill="var(--color-mist)"
+              fontFamily="var(--font-mono)"
+              fontSize="12"
+              letterSpacing="0.06em"
+            >
+              ACLs resolved per query, before ranking
+            </text>
+          </g>
 
           {/* Evaluation tunes chunking and retrieval. */}
-          <path
-            d={loopPath(8, 3, "below", 74)}
-            fill="none"
-            stroke="var(--color-mist)"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-            markerEnd="url(#arrow-muted)"
-          />
-          <text
-            x={(nodeCentre(8) + nodeCentre(3)) / 2}
-            y={NODE_Y + NODE_H + 90}
-            textAnchor="middle"
-            fill="var(--color-mist)"
-            fontFamily="var(--font-mono)"
-            fontSize="12"
-            letterSpacing="0.06em"
-          >
-            labelled set tunes chunking and retrieval
-          </text>
+          <g className="pipeline-loop" style={{ transitionDelay: `${loopDelay + 160}ms` }}>
+            <path
+              d={loopPath(8, 3, "below", 74)}
+              className="pipeline-dash"
+              fill="none"
+              stroke="var(--color-mist)"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              markerEnd="url(#arrow-muted)"
+            />
+            <text
+              x={(nodeCentre(8) + nodeCentre(3)) / 2}
+              y={NODE_Y + NODE_H + 90}
+              textAnchor="middle"
+              fill="var(--color-mist)"
+              fontFamily="var(--font-mono)"
+              fontSize="12"
+              letterSpacing="0.06em"
+            >
+              labelled set tunes chunking and retrieval
+            </text>
+          </g>
 
           {/* Human corrections grow the labelled set. */}
-          <path
-            d={loopPath(9, 8, "below", 34)}
-            fill="none"
-            stroke="var(--color-accent)"
-            strokeWidth="1"
-            strokeDasharray="4 4"
-            markerEnd="url(#arrow)"
-            opacity="0.8"
-          />
+          <g className="pipeline-loop" style={{ transitionDelay: `${loopDelay + 320}ms` }}>
+            <path
+              d={loopPath(9, 8, "below", 34)}
+              className="pipeline-dash"
+              fill="none"
+              stroke="var(--color-accent)"
+              strokeWidth="1"
+              strokeDasharray="4 4"
+              markerEnd="url(#arrow)"
+              opacity="0.8"
+            />
+          </g>
+
+          {/* A document moving through the pipeline. Drawn last so it passes
+              over the stage boxes rather than behind them: the boxes are opaque,
+              and underneath it would only be visible in the gaps. Starts once
+              the build has finished, so the two effects never compete. */}
+          <g className="pipeline-pulse" style={{ animationDelay: `${loopDelay}ms` }}>
+            <circle cx={X0} cy={SPINE_Y} r="15" fill="url(#pulse-glow)" />
+            <circle cx={X0} cy={SPINE_Y} r="3.5" fill="var(--color-paper)" />
+          </g>
         </svg>
       </div>
 

@@ -350,6 +350,87 @@
   }
 }
 
+/* ---------------------------------------------------------------------------
+   Pipeline diagram
+
+   Three layers, each saying something the static drawing cannot: the stages
+   build in sequence because the pipeline is a sequence; a pulse travels the
+   spine because a document travels the pipeline; the feedback loops march
+   because loops do not stop.
+--------------------------------------------------------------------------- */
+
+.pipeline .pipeline-stage,
+.pipeline .pipeline-loop {
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 420ms var(--ease-out-soft),
+    transform 420ms var(--ease-out-soft);
+}
+
+.pipeline[data-shown="true"] .pipeline-stage,
+.pipeline[data-shown="true"] .pipeline-loop {
+  opacity: 1;
+  transform: none;
+}
+
+/* The pulse and the marching dashes hold until the diagram has been seen, so
+   they never animate to an empty screen. */
+.pipeline .pipeline-pulse {
+  opacity: 0;
+}
+
+.pipeline[data-shown="true"] .pipeline-pulse {
+  animation: pipeline-pulse 6.5s linear infinite;
+}
+
+.pipeline[data-shown="true"] .pipeline-dash {
+  animation: pipeline-dash 1.1s linear infinite;
+}
+
+@keyframes pipeline-pulse {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 1;
+  }
+  100% {
+    /* Spine runs from x=48 to x=1152 in user units. */
+    transform: translateX(1104px);
+    opacity: 0;
+  }
+}
+
+@keyframes pipeline-dash {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+/* Under reduced motion the diagram is simply drawn: everything final, nothing
+   moving. The global rule already collapses durations, but the pulse would
+   still be mid-flight, so it is removed outright. */
+@media (prefers-reduced-motion: reduce) {
+  .pipeline .pipeline-stage,
+  .pipeline .pipeline-loop {
+    opacity: 1;
+    transform: none;
+  }
+
+  .pipeline .pipeline-pulse {
+    display: none;
+  }
+
+  .pipeline[data-shown="true"] .pipeline-dash {
+    animation: none;
+  }
+}
+
 @keyframes reveal-up {
   from {
     opacity: 0;
