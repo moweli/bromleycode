@@ -73,14 +73,7 @@ export function HeroVideo() {
       {/* Poster is a real <img> so it is discoverable by the preload scanner
           and paints before any JavaScript runs. Art-directed: the phone gets a
           portrait still cut to match its portrait video. */}
-      {/* The footage is a dim archive interior and reads dark even with the
-          scrim thinned right down, so the lift happens on the picture rather
-          than by removing more of the scrim the headline sits on. Contrast is
-          eased slightly so the gain opens the shadows instead of clipping the
-          highlights on the brighter cuts. It sits on the wrapper so the still
-          and the video are lifted identically — on the wrong one of the two,
-          the brightness would visibly jump as the video fades in. */}
-      <div className="absolute inset-0 -z-10 [filter:brightness(1.32)_contrast(0.94)]">
+      <div className="absolute inset-0 -z-10">
         <picture>
           <source media="(max-width: 767px)" srcSet={hero.video.mobilePoster} type="image/webp" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -130,17 +123,10 @@ export function HeroVideo() {
           first frame. */}
       <div
         aria-hidden="true"
-        // Two jobs, and they are separable. Behind the text column the scrim
-        // keeps its original density and now holds it to 42% rather than
-        // starting to fall at 34%, so the whole headline sits on solid ground.
-        // Past the column it drops away much faster than it used to, which is
-        // where the footage was being lost. The picture is lifted separately on
-        // the wrapper above.
-        //
-        // Measured over 24 samples across the 12s loop, not on the first frame:
-        // the headline gets 19.6:1 worst case on desktop and 10.4:1 at 390px,
-        // where it spans a lighter part of the gradient. Against 4.5:1.
-        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(0,0,0,0.96)_0%,rgba(0,0,0,0.9)_42%,rgba(0,0,0,0.34)_72%,rgba(0,0,0,0.1)_100%)]"
+        // Heavy behind the text column, clearing to the right so the footage
+        // still reads. Measured across all six segments of the loop: worst 95th
+        // percentile is 11.5:1 on the water cut, against a 4.5:1 requirement.
+        className="absolute inset-0 -z-10 bg-[linear-gradient(100deg,rgba(0,0,0,0.96)_0%,rgba(0,0,0,0.9)_34%,rgba(0,0,0,0.55)_64%,rgba(0,0,0,0.3)_100%)]"
       />
       <div
         aria-hidden="true"
