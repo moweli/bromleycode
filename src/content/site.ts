@@ -179,10 +179,4 @@ export const accreditations: Accreditation[] = [
     status: "held",
     lockup: { line1: "ISO 9001", line2: "Quality management" },
   },
-  {
-    name: "ICO registered",
-    detail: "Data protection register",
-    status: "pending",
-    lockup: { line1: "ICO registered", line2: "Data protection" },
-  },
 ];
