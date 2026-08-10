@@ -383,3 +383,38 @@ remains in the tree and renders nothing.
 - All routes checked at 1280px and 390px: no horizontal overflow, the forked
   diagram legible at both.
 - Contrast unchanged from current AA compliance on every touched surface.
+
+---
+
+## 12. Deviations accepted at merge, 10 August 2026
+
+Two requirements in this spec were not met. Both were raised by review, weighed,
+and accepted rather than missed. Recording them here so the spec does not read as
+satisfied when it is not.
+
+### 12.1 The diagram does not stack on mobile
+
+§5 required the fork to collapse to a single column below `md`. It does not. The
+SVG keeps `min-w-[900px]` inside `overflow-x-auto`, so on a phone the reader
+scrolls the diagram sideways within its own container.
+
+Accepted because the page itself never scrolls sideways, which was the actual
+hazard, and because the full ordered stage list renders directly beneath the
+diagram in ordinary readable text. A reader on a phone loses the geometry and
+keeps every word. Building a second, stacked rendering is a substantial piece of
+new work carrying regression risk on a component that has just passed review, to
+recover a spatial relationship the list already states.
+
+Revisit if analytics show meaningful mobile traffic to `/how-we-work`.
+
+### 12.2 Stage numbers run 01 to 14 across parallel branches
+
+The nodes are numbered in array order, so `Publish` is 07 and `Chunk` is 08 even
+though they sit on branches that run at the same time. Read strictly, the numbers
+assert a sequence the geometry denies.
+
+Accepted because those numbers are the cross-reference into the ordered stage
+list below the diagram, which is genuinely sequential in the content file.
+Renumbering the diagram desynchronises it from that list, trading a subtle
+misreading for a concrete one. The fork is carried by the geometry, which is
+where it belongs.
