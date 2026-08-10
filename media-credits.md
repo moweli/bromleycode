@@ -6,7 +6,7 @@ time rather than assumed from the library's general terms — Unsplash+ and part
 of Mixkit and Videvo are paid or attribution-bound and sit alongside free
 content in the same search results.
 
-**Downloaded:** 9 August 2026. **Originals retained:** `reference/media-raw/`
+**Downloaded:** 9 August 2026, with two case-study images added 10 August 2026. **Originals retained:** `reference/media-raw/`
 (not served; kept so a re-encode never needs a re-download).
 
 ---
@@ -32,8 +32,8 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/insights/chunking.webp | Pexels | Pexels Licence | [11831530](https://www.pexels.com/photo/concrete-geometric-building-11831530/) | 2026-08-09 | 975 KB → 269 KB | Insight — “Chunking is a decision, not a default” |
 | public/media/insights/evaluation.webp | Pexels | Pexels Licence | [34368893](https://www.pexels.com/photo/geometric-steel-frame-with-crossed-shadows-34368893/) | 2026-08-09 | 310 KB → 51 KB | Insight — “Your evaluation set is too big, and too small” |
 | public/media/services/intelligence-extraction.webp | Pexels | Pexels Licence | [6549926](https://www.pexels.com/photo/6549926/) | 2026-08-09 | 503 KB → 122 KB | Service — intelligence extraction (section band) |
-| public/media/services/data-pipeline-engineering.webp | Pexels | Pexels Licence | [14845870](https://www.pexels.com/photo/14845870/) | 2026-08-09 | 467 KB → 115 KB | Service — data & pipeline engineering (section band) |
-| public/media/services/ai-strategy-roadmap.webp | Pexels | Pexels Licence | [5841733](https://www.pexels.com/photo/5841733/) | 2026-08-09 | 925 KB → 355 KB | Service — AI strategy & roadmap (section band) |
+| public/media/services/data-platform-engineering.webp | Pexels | Pexels Licence | [14845870](https://www.pexels.com/photo/14845870/) | 2026-08-09 | 467 KB → 115 KB | Service — data and platform engineering (section band) |
+| public/media/services/data-ai-strategy.webp | Pexels | Pexels Licence | [5841733](https://www.pexels.com/photo/5841733/) | 2026-08-09 | 925 KB → 355 KB | Service — data and AI strategy (section band) |
 | public/media/services/evaluation-assurance.webp | Pexels | Pexels Licence | [12602405](https://www.pexels.com/photo/12602405/) | 2026-08-09 | 399 KB → 53 KB | Service — evaluation & assurance (section band) |
 | public/media/services/index.webp | Pexels | Pexels Licence | [4508751](https://www.pexels.com/photo/4508751/) | 2026-08-09 | 1131 KB → 373 KB | Services index (section band) |
 | public/media/how-we-work/layers.webp | Pexels | Pexels Licence | [7409778](https://www.pexels.com/photo/7409778/) | 2026-08-09 | 339 KB → 76 KB | How we work — reference architecture (section band) |
@@ -41,6 +41,18 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/how-we-work/ninety-days.webp | Pexels | Pexels Licence | [19563057](https://www.pexels.com/photo/19563057/) | 2026-08-09 | 685 KB → 209 KB | How we work — first 90 days (section band) |
 | public/media/about/london.webp | Pexels | Pexels Licence | [10334728](https://www.pexels.com/photo/10334728/) | 2026-08-09 | 385 KB → 98 KB | About — before the FAQ (section band) |
 | public/media/contact/facade.webp | Pexels | Pexels Licence | [28733236](https://www.pexels.com/photo/28733236/) | 2026-08-09 | 548 KB → 146 KB | Contact — below the enquiry form (section band) |
+| public/media/case-studies/warehouse-replatform.webp | Pexels | Pexels Licence | [7612012](https://www.pexels.com/photo/7612012/) | 2026-08-10 | 916 KB → 366 KB | Case study — warehouse replatform (hero image); index cards |
+| public/media/case-studies/platform-trust.webp | Pexels | Pexels Licence | [3942321](https://www.pexels.com/photo/3942321/) | 2026-08-10 | 525 KB → 137 KB | Case study — platform trustworthy enough to publish from (hero image); index cards |
+| public/media/insights/dimensions.webp | Pexels | Pexels Licence | [10152059](https://www.pexels.com/photo/10152059/) | 2026-08-10 | 1377 KB → 479 KB | Insight — deciding slowly changing dimensions per attribute |
+| public/media/insights/contracts.webp | Pexels | Pexels Licence | [31075133](https://www.pexels.com/photo/31075133/) | 2026-08-10 | 435 KB → 144 KB | Insight — a contract that only fails in a dashboard |
+
+
+The strata image is the heaviest file in this set at 479 KB, against 387 KB for
+the next largest. Fine geological texture is what WebP compresses worst, and the
+subject is the texture, so dropping quality far enough to match the others
+visibly destroys the thing the picture is for. Next.js generates and serves
+resized variants from it, so this is repository weight rather than anything a
+visitor downloads.
 
 **Rejected at selection, and why**
 
@@ -55,6 +67,8 @@ passed by not looking closely:
 | [4458205](https://www.pexels.com/photo/4458205/) — architectural floor plan | Licence-clean and briefly shipped on AI strategy & roadmap, then replaced. A finished plan reads as the completed design, which is the opposite of what that page argues: constraints are found first and the work is sequenced around whatever survives. An interchange carries routes, branching and order instead. |
 | [29406928](https://www.pexels.com/photo/29406928/) and [38354098](https://www.pexels.com/photo/38354098/) — railway junctions | Right metaphor, wrong condition. One carried graffiti and a legible sign, the other was derelict and overgrown. Neither matched the crisp register of the rest of the set. |
 | [10586223](https://www.pexels.com/photo/10586223/) — glass building entrance | The facade carries the business name **KUPKA**. On a contact page it would read as our own office under someone else's name, which is a misrepresentation as much as a trademark problem. Replaced with an abstract facade carrying no signage. |
+| [12064](https://www.pexels.com/photo/12064/) — circular library reading room | Several people are visible at the desks. The licence covers the photograph, not an implied endorsement by the individuals in it, and this set has carried a no-people rule since the first round. |
+| [1370294](https://www.pexels.com/photo/1370294/) — indexed filing cabinets | Licence-clean and people-free, but near-identical in subject and palette to the archive drawers already used on the intelligence extraction page. Two banks of index drawers on one site reads as a mistake rather than a motif. |
 
 **Checks applied to every image**
 

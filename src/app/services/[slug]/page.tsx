@@ -165,7 +165,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <CtaBand
         eyebrow="Start here"
         heading={`Talk to us about ${service.shortTitle.toLowerCase()}.`}
-        body="Bring the corpus, the constraint and the question you want answered. Forty-five minutes is usually enough to tell whether this is viable, and we would rather say so early."
+        body="Bring the estate, the constraint and the question you want answered. Forty-five minutes is usually enough to tell whether this is viable, and we would rather say so early."
       />
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />

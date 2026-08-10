@@ -44,8 +44,8 @@ export default function HomePage() {
             <SectionHeading
               tone="dark"
               eyebrow="The mechanism"
-              title="Ten stages, two loops, and the parts that usually break."
-              body="Every stage can be evaluated in isolation. That matters when something degrades and you need to know whether retrieval got worse, the parser broke on a new template, or the model changed underneath you."
+              title="One spine, two branches, and the parts that usually break."
+              body="Both practices share the first five stages, which is why we sell them together. Every stage can be evaluated in isolation, and that matters when something degrades and you need to know whether a contract broke, retrieval got worse, or the model changed underneath you."
             />
           </Reveal>
           <Reveal delay={80} className="mt-14">
@@ -88,7 +88,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Engagements"
                 title="What the work looks like, end to end."
-                body="Four engagements written the way the work actually runs: the corpus, the constraint, the pipeline stage by stage, and what shipped."
+                body="Six engagements written the way the work actually runs: the estate, the constraint, the pipeline stage by stage, and what shipped."
               />
             </Reveal>
             <Reveal delay={80}>
@@ -113,7 +113,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Sectors"
                 title="Where we have depth."
-                body="Three sectors where the unstructured mass is large, the permission model is real, and the cost of a wrong answer is high enough that evaluation is not optional."
+                body="Three sectors where both estates are large, the permission model is real, and the cost of a wrong answer is high enough that evaluation is not optional."
               />
             </Reveal>
             <Reveal delay={80}>
@@ -134,8 +134,9 @@ export default function HomePage() {
       <Section size="md">
         <div className="container-bc flex flex-wrap items-center justify-between gap-8 border-y border-line-light py-10">
           <p className="max-w-[42rem] text-[length:var(--text-h4)]">
-            &ldquo;Chunking is a decision, not a default.&rdquo; Notes from the build, on the parts of
-            retrieval that decide whether a system survives its first quarter.
+            &ldquo;A contract that cannot stop a load is not a contract.&rdquo; &ldquo;Chunking is a
+            decision, not a default.&rdquo; Notes from the build, on the decisions in both practices
+            that decide whether a system survives its first quarter.
           </p>
           <Link
             href="/insights"

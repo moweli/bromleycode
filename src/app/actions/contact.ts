@@ -56,7 +56,7 @@ export async function submitContact(_previous: ContactState, data: FormData): Pr
     fieldErrors.organisation = `Please keep this under ${MAX.organisation} characters.`;
   if (values.role.length > MAX.role) fieldErrors.role = `Please keep this under ${MAX.role} characters.`;
 
-  if (!values.message) fieldErrors.message = "A sentence or two about the corpus is enough to start.";
+  if (!values.message) fieldErrors.message = "A sentence or two about the estate is enough to start.";
   else if (values.message.length < 20) fieldErrors.message = "A little more detail would help us route this well.";
   else if (values.message.length > MAX.message)
     fieldErrors.message = `Please keep this under ${MAX.message} characters.`;

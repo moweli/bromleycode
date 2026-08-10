@@ -49,7 +49,7 @@ export type CaseStudy = {
   outcomes: { label: string; detail: string; metric: string }[];
   quote: {
     text: string;
-    /** Role and sector only — never an invented named individual. */
+    /** Role and sector only, never an invented named individual. */
     attribution: string;
   };
   whatNext: string;
@@ -173,7 +173,7 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "Phase two extends parsing to as-built drawings, where the answer lives in the annotation layer rather than in prose, and pushes the same retrieval path into the field application used on site.",
-    services: ["intelligence-extraction", "data-pipeline-engineering"],
+    services: ["intelligence-extraction", "data-platform-engineering"],
     stack: ["Azure", "Postgres / pgvector", "Databricks", "Entra ID"],
     image: {
       src: "/media/case-studies/water-utility.webp",
@@ -187,7 +187,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Central government",
     sectorSlug: "central-government",
     scale: "UK central government agency, ~2,000 staff",
-    engagement: "Data and pipeline engineering, 20 weeks",
+    engagement: "Data and platform engineering, 20 weeks",
     duration: "20 weeks",
     eyebrow: "Central government",
     summary:
@@ -289,7 +289,7 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "The agency is extending the same pipeline to a second casework directorate, reusing the threading and lineage stages unchanged and replacing only the extraction schema.",
-    services: ["data-pipeline-engineering", "evaluation-assurance"],
+    services: ["data-platform-engineering", "evaluation-assurance"],
     stack: ["Azure", "Postgres / pgvector", "Airflow", "Self-hosted inference"],
     image: {
       src: "/media/case-studies/central-government.webp",
@@ -419,7 +419,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Professional services",
     sectorSlug: "professional-services",
     scale: "Mid-market UK professional services firm, ~600 staff",
-    engagement: "AI strategy and roadmap, 7 weeks",
+    engagement: "Data and AI strategy, 7 weeks",
     duration: "7 weeks",
     eyebrow: "Professional services",
     summary:
@@ -510,11 +510,243 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "The firm has begun the first delivery, precedent retrieval within a single practice where the permission model resolves cleanly, with the shared retrieval and evaluation layers built to serve the following three.",
-    services: ["ai-strategy-roadmap", "evaluation-assurance"],
+    services: ["data-ai-strategy", "evaluation-assurance"],
     stack: ["Azure", "Databricks", "Postgres / pgvector"],
     image: {
       src: "/media/case-studies/professional-services.webp",
       alt: "Empty modern meeting room with a long table and floor-to-ceiling windows",
+    },
+  },
+  {
+    slug: "warehouse-replatform-without-a-freeze",
+    title: "Replatforming a twelve-year-old warehouse without a reporting freeze",
+    metaTitle: "Warehouse replatform, financial services",
+    sector: "Financial services",
+    sectorSlug: "financial-services",
+    scale: "UK building society, ~3,400 staff",
+    engagement: "Data and platform engineering, 34 weeks",
+    duration: "34 weeks",
+    eyebrow: "Financial services",
+    summary:
+      "A migration run as two platforms in parallel for its whole duration, with a data contract on every source feed and cutover taken one reporting consumer at a time rather than one platform at a time.",
+    context: [
+      "A building society runs its regulatory returns, its product pricing models and its branch performance reporting from a single warehouse, built in 2013 and extended every year since by whoever needed the next table.",
+      "By the time we were asked, the platform underneath it was two major versions out of support and the nightly load was finishing after the business day had started. Replacing it was already agreed. Replacing it had also already been attempted twice.",
+    ],
+    problem: [
+      "The warehouse held about 1,400 tables. Tracing readers established that 61% of them had no consumer at all, a proportion nobody had believed before it was measured.",
+      "Transformation logic lived in stored procedures, the largest running to just over 3,000 lines and amended by eleven people across a decade. There was no test suite and no specification, so the code was the only surviving statement of what the numbers meant.",
+      "The binding constraint was regulatory. Returns go out on a fixed calendar, and a figure in a submitted return has to be reproducible from source records on request. A migration that produced different numbers without being able to explain why would have been a reportable failure rather than a project delay.",
+    ],
+    whyPreviousApproachesFailed: [
+      "The 2019 attempt moved the stored procedures to a new engine largely unchanged. Its plan required a four week window in which nothing in the old warehouse could change while the two were reconciled. The business granted eleven days, then withdrew them when a pricing change had to go out, and the reconciliation was never finished.",
+      "The 2022 attempt rebuilt from source against a new model, and was the better piece of engineering. It also assumed a freeze, deferred to cutover rather than asked for up front, so the assumption went untested until the work was two years old. It ran for those two years and moved no consumer onto the new platform, because that freeze was never going to be granted either.",
+    ],
+    pipeline: {
+      intro:
+        "The third attempt asked for no freeze at all. Both platforms ran together for the whole engagement, and the unit of cutover was one reporting consumer rather than the platform.",
+      stages: [
+        {
+          name: "Consumer census",
+          detail:
+            "An inventory of everything that reads the warehouse rather than everything the warehouse holds: 210 reports, extracts, models and downstream feeds, each with a named owner. Ordering the work by consumer rather than by table is what made a per consumer cutover possible at all.",
+        },
+        {
+          name: "Source contracts",
+          detail:
+            "A contract per source feed covering column types, nullability, allowed value sets, the meaning of each coded field and the freshness the consumers of that feed need. Contracts are enforced on landing, and a breach quarantines the batch rather than loading it and flagging it afterwards.",
+        },
+        {
+          name: "Dimensional model",
+          detail:
+            "Conformed dimensions for party, product, account, branch and calendar, with fact grain agreed with the consumer instead of inferred from the report it currently feeds. Two facts turned out to exist at three different grains in the old warehouse, and reconciling that was the single longest piece of discovery.",
+        },
+        {
+          name: "Transformation rebuild",
+          detail:
+            "Stored procedures reimplemented as version controlled, tested transformations. Behaviour was established from observed output rather than from reading the code, because the code had stopped being a reliable description of itself: the 3,000 line procedure was pinned down by 900 differential tests before a line of it was rewritten.",
+        },
+        {
+          name: "Parallel running",
+          detail:
+            "Both platforms loaded from the same sources every night for the full 34 weeks. A reconciliation job compares every measure for every consumer nightly and files a variance report, so the question of whether the new platform agrees with the old one is answered daily rather than at a cutover weekend.",
+        },
+        {
+          name: "Variance adjudication",
+          detail:
+            "Every variance is triaged into three buckets: the old platform is wrong, the new platform is wrong, or the two definitions genuinely differ. The old platform was wrong more often than anyone expected. Each resolution is written back as a test on the contract or the model, so the same variance cannot reappear silently.",
+        },
+        {
+          name: "Cutover per consumer",
+          detail:
+            "A consumer moves when it has reconciled at zero unexplained variance for 20 consecutive business days, at least one of which is a month end. The move itself is a configuration change and reverts inside an hour, which is what let owners agree to go first.",
+        },
+        {
+          name: "Decommission",
+          detail:
+            "A table is dropped from the old platform only when no consumer reads it and its lineage is reproducible on the new one. Decommissioning is the last step for each consumer rather than a phase at the end, so the estate shrinks continuously instead of all at once.",
+        },
+      ],
+    },
+    shipped: [
+      "A warehouse on the society's Azure tenancy with a conformed dimensional model and enforced contracts on all 31 source feeds.",
+      "A nightly reconciliation harness comparing every measure per consumer across both platforms, owned and run by the society's data team.",
+      "A variance ledger recording every difference found during parallel running and how it was adjudicated.",
+      "A cutover and rollback runbook for a single consumer, exercised twice by the client team before handover.",
+    ],
+    outcomes: [
+      {
+        label: "Consumers migrated with no reporting freeze",
+        detail:
+          "Counted against the 210 consumer census taken in week two. The 23 that did not move were retired instead, each having no owner willing to claim it once asked.",
+        metric: "187 of 210, 0 days frozen",
+      },
+      {
+        label: "Nightly load completion",
+        detail:
+          "Median completion time of the full nightly load over the final eight weeks of parallel running, against the twelve week median on the old platform immediately before the engagement.",
+        metric: "07:42 → 03:05",
+      },
+      {
+        label: "Unexplained variances at cutover",
+        detail:
+          "Every consumer moved only after 20 consecutive business days at zero unexplained variance on the nightly reconciliation. Of the variances adjudicated during parallel running, 41 were errors in the old platform rather than in the new one.",
+        metric: "0 at every cutover, 41 old platform errors found",
+      },
+      {
+        label: "Time to reproduce a submitted return figure",
+        detail:
+          "Median time to trace a figure in a submitted regulatory return back to its source records, timed on twelve returns before the engagement and twelve after, using the lineage the contracts and the model carry.",
+        metric: "2 to 3 days → 25 min",
+      },
+    ],
+    quote: {
+      text: "Both of the earlier attempts died on the same sentence, which was a request for reporting to stop for a month. Nobody here was ever going to sign that, and we should have said so in 2019. Moving one report at a time looked slower on paper, and it is the only version of this that finished.",
+      attribution: "Head of Regulatory Reporting, UK building society",
+    },
+    whatNext:
+      "The reconciliation harness stays in place for the two consumers still reading from both platforms, and the same contract stage is being applied to the pricing feeds, which sat outside this scope.",
+    services: ["data-platform-engineering", "evaluation-assurance"],
+    stack: ["Azure", "Snowflake", "dbt", "Airflow"],
+    image: {
+      src: "/media/case-studies/warehouse-replatform.webp",
+      alt: "Fine protective netting stretched over a building under renovation, its floors visible behind.",
+    },
+  },
+  {
+    slug: "platform-trustworthy-enough-to-publish-from",
+    title: "Making a data platform trustworthy enough to publish from",
+    metaTitle: "Data quality and lineage, central government",
+    sector: "Central government",
+    sectorSlug: "central-government",
+    scale: "UK government department, ~6,000 staff",
+    engagement: "Data and platform engineering, 22 weeks",
+    duration: "22 weeks",
+    eyebrow: "Central government",
+    summary:
+      "Contracts, column level lineage and freshness SLAs added to the platform behind an official statistics publication, after a release had to be corrected because a source system quietly changed what one column meant.",
+    context: [
+      "A government department publishes an official statistic on a fixed calendar, assembled from operational systems that other parts of the department own and change.",
+      "When a published figure turns out to be wrong, the correction is itself published, with a notice explaining what changed. That is the standard the platform has to meet, and it is a higher one than not falling over.",
+    ],
+    problem: [
+      "A quarterly release was corrected six weeks after publication. A status code in an upstream case system that had recorded a case as closed had been redefined to record it as closed or transferred, and the transferred volume was large enough to move the headline figure.",
+      "Nothing failed. The column was still a string of the same length, still inside the allowed values written down years earlier, so the load accepted it. The pipeline had no way to notice that a value had changed meaning while keeping its shape.",
+      "Finding the cause then took nineteen days of people reading SQL by hand. Lineage existed as documentation written during an earlier programme rather than as something the platform emitted, so it described a pipeline that had since moved on.",
+    ],
+    whyPreviousApproachesFailed: [
+      "A data quality dashboard was already running. It tracked row counts, completeness and null rates, all of which looked entirely normal throughout, because the defect changed what values meant without changing how many of them arrived.",
+      "A data catalogue had been populated by hand under the same earlier programme. Its entries were accurate on the day each was written and drifted from there: on a sample taken in week one, 41% of column descriptions no longer matched the column they described.",
+    ],
+    pipeline: {
+      intro:
+        "Quality checking moved from a dashboard beside the pipeline to a gate inside it. A check that cannot stop a load is a report, not a control.",
+      stages: [
+        {
+          name: "Source agreement",
+          detail:
+            "A written contract per feed, agreed with the team that owns the source system: fields, types, allowed values, the meaning of every coded value, and a named owner who tells us before any of it changes. Six of the eleven feeds had no identifiable owner when we started, and finding them was slower than writing the contracts.",
+        },
+        {
+          name: "Contract enforcement",
+          detail:
+            "Checks run against landed data before anything is loaded: schema, type, allowed value set and referential integrity. A breach quarantines the batch and raises an incident against the named owner, so a change upstream becomes a conversation rather than a silent coercion.",
+        },
+        {
+          name: "Distribution monitoring",
+          detail:
+            "The check that would have caught the original defect. The share of each coded value is compared against a trailing baseline, with a tolerance agreed per field with the statisticians who use it. Replayed against the archived batches, the redefined status field breaches on the first load after the change.",
+        },
+        {
+          name: "Lineage capture",
+          detail:
+            "Column level lineage emitted by the transformation layer rather than maintained by anyone. Every published figure resolves to the columns, transformations and source batches that produced it, and the resolution is a query rather than an investigation.",
+        },
+        {
+          name: "Freshness SLAs",
+          detail:
+            "Each feed carries a stated freshness and each publication states the freshness it requires. A feed that misses its SLA marks every figure downstream of it as stale before anyone starts assembling the release, which moves the discovery from the day of publication to the day of the miss.",
+        },
+        {
+          name: "Reconciliation to source",
+          detail:
+            "Counts and control totals are compared back to the operational system rather than to the previous run of the pipeline. Comparing a copy against an earlier copy of itself reconciles cleanly through exactly the class of upstream error that caused the correction.",
+        },
+        {
+          name: "Publication gate",
+          detail:
+            "A release cannot be produced until every contributing feed is inside its freshness SLA, every contract check has passed and every quarantined batch has been resolved by its owner. The gate is a build step and it fails the build, so the decision to publish anyway is explicit and recorded.",
+        },
+        {
+          name: "Incident drill",
+          detail:
+            "Once a quarter a feed is deliberately altered in a copy of the platform and the team is timed on identifying which upstream change moved which figure. It is the only measurement that shows whether the lineage works when someone actually needs it.",
+        },
+      ],
+    },
+    shipped: [
+      "Enforced contracts on all eleven source feeds, each with a named owner in the team that owns the source system and an agreed change notification path.",
+      "A publication gate in the release pipeline that fails the build on a contract breach, a missed freshness SLA or an unresolved quarantine.",
+      "A column level lineage store, queryable from any published figure back to the source batches behind it.",
+      "A quarterly incident drill with a timed target, owned and run by the department's data engineering team.",
+    ],
+    outcomes: [
+      {
+        label: "Time to identify the upstream cause of a moved figure",
+        detail:
+          "Median across the first four quarterly drills, each run against a deliberately altered feed in a copy of the platform. The baseline is the nineteen days the same question took by hand during the correction that prompted the engagement.",
+        metric: "19 days → 31 min",
+      },
+      {
+        label: "Loads blocked by a contract breach",
+        detail:
+          "Across the first two publication cycles after the gate went in. Four were allowed value breaches, two were distributional shifts in coded values and one was a type change. Two of the seven would have altered a published figure had they loaded.",
+        metric: "7 blocked, 2 figure-affecting",
+      },
+      {
+        label: "Published figures traceable back to source rows",
+        detail:
+          "All 94 figures in the two most recent publications, traced from the published cell to the source rows and the transformation version that produced them. The baseline is the same trace attempted by hand during the correction described here, which reached source for 11 of the 94 before the team ran out of time.",
+        metric: "11 of 94 → 94 of 94",
+      },
+      {
+        label: "Column descriptions matching the column",
+        detail:
+          "All 214 columns across the eleven feeds, checked against the data they actually carry. The baseline is the hand maintained catalogue sampled in week one; descriptions now come from the contracts and are verified on every load, so drift fails a check rather than accumulating.",
+        metric: "59% → 214 of 214",
+      },
+    ],
+    quote: {
+      text: "The correction was more expensive than the error. We had to publish a notice saying a figure we had released was wrong, and then spend three weeks unable to tell anyone why. What we needed was never a better dashboard. It was a load that stops.",
+      attribution: "Head of Statistical Production, UK government department",
+    },
+    whatNext:
+      "The same contract and lineage stages are being applied to two further publications the department produces, reusing the checks and the gate and replacing only the source agreements.",
+    services: ["data-platform-engineering", "evaluation-assurance"],
+    stack: ["AWS", "Postgres", "dbt / OpenLineage", "Airflow"],
+    image: {
+      src: "/media/case-studies/platform-trust.webp",
+      alt: "A bank of analogue gauges and levers across an industrial control desk, in black and white.",
     },
   },
 ];

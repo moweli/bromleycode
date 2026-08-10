@@ -9,7 +9,7 @@ import { industries } from "@/content/industries";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Water and utilities, central government and financial services, three sectors where the unstructured mass is large and the cost of a wrong answer is high.",
+    "Water and utilities, central government and financial services, three sectors where both estates are large and the cost of a wrong answer is high.",
   alternates: { canonical: "/industries" },
 };
 
@@ -20,7 +20,7 @@ export default function IndustriesPage() {
         tone="light"
         eyebrow="Industries"
         title="Three sectors, chosen deliberately."
-        standfirst="We work where the documentary mass is large, the permission model is real, and evaluation is a condition of deployment rather than a refinement. Depth in a few sectors beats a logo grid covering everything."
+        standfirst="We work where both estates are large, the permission model is real, and evaluation is a condition of deployment rather than a refinement. Depth in a few sectors beats a logo grid covering everything."
         width="medium"
       />
 
@@ -29,8 +29,8 @@ export default function IndustriesPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Where we work"
-              title="Large corpora, real permission models, expensive mistakes."
-              body="Each of these sectors keeps its most decision-relevant material outside the warehouse, and each has a reason why a wrong answer is not a minor inconvenience."
+              title="Large estates, real permission models, expensive mistakes."
+              body="Each of these sectors runs a warehouse and a document estate that answer different halves of the same question, and each has a reason why a wrong answer is not a minor inconvenience."
             />
           </Reveal>
           <ul className="mt-14 grid gap-6 md:grid-cols-3">
@@ -49,7 +49,7 @@ export default function IndustriesPage() {
             <SectionHeading
               eyebrow="Not on the list?"
               title="The pattern generalises further than the sector does."
-              body="Manufacturing, energy and legal all present the same shape: a large corpus nobody can query, a permission model that has to survive retrieval, and a decision that needs a citation. If that describes your estate, the sector matters less than those three facts."
+              body="Manufacturing, energy and legal all present the same shape: numbers nobody quite trusts, documents nobody can query, a permission model that has to survive retrieval, and a decision that needs a citation. If that describes your estate, the sector matters less than those facts."
             />
           </Reveal>
         </div>

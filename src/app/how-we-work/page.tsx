@@ -32,8 +32,8 @@ export default function HowWeWorkPage() {
             <SectionHeading
               tone="dark"
               eyebrow="The pipeline"
-              title="Ten stages and two loops."
-              body="The forward path turns a corpus into cited answers. The two loops decide whether it gets better: access control resolving into retrieval on every query, and evaluation feeding back into the decisions that set quality."
+              title="One spine, two branches, three loops."
+              body="The shared stages turn sources into modelled, tested data. From there the work forks, one branch to analytics and the semantic layer, one to retrieval and generation. Both rejoin at assurance, because both have to be checkable."
             />
           </Reveal>
           <Reveal delay={80} className="mt-14">
@@ -139,8 +139,8 @@ export default function HowWeWorkPage() {
 
       <CtaBand
         eyebrow="Start here"
-        heading="Bring us a corpus and a constraint."
-        body="The first conversation covers three things: what the corpus actually looks like, whether anyone can define a correct answer, and whether the permission model resolves per user. Any one of them can rule the work out, and we would rather find that in week one."
+        heading="Bring us an estate and a constraint."
+        body="The first conversation covers three things: what the estate actually looks like, whether anyone can define a correct answer or an agreed number, and whether the permission model resolves per user. Any one of them can rule the work out, and we would rather find that in week one."
       />
     </>
   );

@@ -14,6 +14,102 @@ export type Insight = {
 
 export const insights: Insight[] = [
   {
+    slug: "history-is-a-per-attribute-decision",
+    title: "Slowly changing dimensions are a per-attribute decision",
+    category: "Data modelling",
+    readingTime: "6 min",
+    published: "2026-08-05",
+    standfirst:
+      "Tracking history on everything is not caution. It is how a warehouse becomes something analysts route around.",
+    author: "Platform engineering",
+    body: [
+      {
+        paragraphs: [
+          "Ask how a dimension handles change and you will usually be given a policy rather than a decision. Either the warehouse tracks history on everything, or it tracks it on nothing, and both answers were settled long before anyone looked at the attributes.",
+          "The policy is the problem. History is a property of an attribute, not of a table, and a policy applied to a table is a decision made in the wrong unit.",
+        ],
+      },
+      {
+        heading: "What blanket history costs",
+        paragraphs: [
+          "Take a customer dimension with forty attributes, all versioned. An email address changes and the row splits. A marketing preference flips and it splits again. Within a year there are ten rows per customer, and every query that wants the current value has to know to filter for it.",
+          "Analysts learn the filter, and then one of them forgets it once. The resulting number is wrong in a way that looks entirely plausible, which is the expensive kind of wrong. More often they avoid the dimension and rebuild the join in a spreadsheet, at which point the model has failed at the only job it had.",
+        ],
+      },
+      {
+        heading: "The test to apply, attribute by attribute",
+        paragraphs: [
+          "The question is not whether an attribute changes. Almost all of them do. The question is whether anyone will ever ask something whose answer depends on what the value used to be.",
+          "That question has a different answer for a risk grade than for a display name, and answering it four times for forty attributes is an afternoon of work that a table-level policy spends years paying for.",
+        ],
+        list: [
+          "Grouped or filtered by, as at a past date: version it, this is what history is for",
+          "Current label only, contact details, display text, free-text notes: overwrite it",
+          "Changes on a known cycle, tariff, pricing band, risk grade: an effective-dated table of its own, rather than widening the dimension",
+          "Not queried by anyone in a year: ask whether it belongs in the dimension at all",
+        ],
+      },
+      {
+        heading: "Write the decision down beside the model",
+        paragraphs: [
+          "Per-attribute decisions are harder to remember than policies, which is the real reason policies win. Record the grain, the tracking mode and the reason in the model definition, in the same repository as the code that builds it.",
+          "Then the next engineer to touch the attribute can see that history was declined deliberately, and the argument is had once rather than every quarter. A decision nobody wrote down is indistinguishable from an accident six months later.",
+        ],
+      },
+      {
+        paragraphs: [
+          "Versioning everything looks like the careful choice, and it buys something real: you never have to think about an attribute again. The bill for not thinking arrives as a dimension nobody wants to query, and it arrives late enough that the connection is rarely made.",
+        ],
+      },
+    ],
+    related: ["a-contract-that-cannot-stop-a-load", "your-evaluation-set-is-too-big"],
+  },
+  {
+    slug: "a-contract-that-cannot-stop-a-load",
+    title: "A contract that cannot stop a load is not a contract",
+    category: "Data quality",
+    readingTime: "5 min",
+    published: "2026-07-28",
+    standfirst:
+      "A test that turns a tile amber and nothing else is documentation. A breach has to block a load or page an owner.",
+    author: "Platform engineering",
+    body: [
+      {
+        paragraphs: [
+          "Most data quality work ends at a dashboard. Tests run after the load, results are written to a table, a tile turns amber, and everybody agrees that someone should look at it. Nobody does, because looking at it is not anyone's job in particular.",
+          "A test with no consequence is documentation. It records an intention about the data and changes nothing about what reaches the warehouse, which means the wrong figure is served either way.",
+        ],
+      },
+      {
+        heading: "What the consequence actually buys",
+        paragraphs: [
+          "A contract is a claim about shape, range, freshness and referential integrity, declared beside the data and evaluated on every load. What makes it a contract rather than a report is the clause that fires on breach: the load stops, or a named person is paged.",
+          "That reads as severe until you price the alternative. A silent schema change propagates for weeks. Someone reconciles by hand in month three, and the cost is not the fix. It is every decision taken on the wrong figure in between, none of which can now be revisited.",
+        ],
+      },
+      {
+        heading: "Not every breach should stop a load",
+        paragraphs: [
+          "Blocking on everything is how a contract gets switched off, usually at two in the morning by whoever is on call. Grade the clauses instead, and be willing to defend the grading.",
+          "A null in a joining column blocks, because every downstream figure built on that load would be wrong. A freshness breach on a low-consequence feed pages the owner and lets the load through with the staleness recorded, because stale and labelled beats absent and unexplained.",
+        ],
+        list: [
+          "Block: uniqueness, referential integrity, nulls in join keys, type changes",
+          "Page: freshness, volume anomalies, distribution shifts that need a person to judge",
+          "Record: everything else, kept so the pattern is already visible when it becomes an incident",
+        ],
+      },
+      {
+        heading: "The owner is the hard part",
+        paragraphs: [
+          "The engineering is a day of work. Naming the person the breach wakes takes considerably longer, because it is the moment a producing team discovers that a downstream consumer exists and has expectations of them.",
+          "That conversation is the point rather than an obstacle to it. A contract is an agreement between two teams that happens to be enforced in code, and one with a single signatory is a dashboard with better tooling.",
+        ],
+      },
+    ],
+    related: ["history-is-a-per-attribute-decision", "abstention-is-a-feature"],
+  },
+  {
     slug: "chunking-is-a-decision-not-a-default",
     title: "Chunking is a decision, not a default",
     category: "Retrieval",

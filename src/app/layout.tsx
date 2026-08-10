@@ -65,16 +65,19 @@ const organisationJsonLd = {
     addressCountry: "GB",
   },
   knowsAbout: [
+    "Data engineering",
+    "Dimensional modelling",
+    "Data quality and contracts",
     "Retrieval-augmented generation",
     "Information retrieval",
-    "Data engineering",
-    "Model evaluation",
     "Unstructured data extraction",
+    "Model evaluation",
   ],
+  // Order matches the four services as they are numbered on /services.
   serviceType: [
+    "Data and platform engineering",
     "Intelligence extraction",
-    "Data and pipeline engineering",
-    "AI strategy and roadmap",
+    "Data and AI strategy",
     "Evaluation and assurance",
   ],
 };

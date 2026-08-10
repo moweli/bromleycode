@@ -3,6 +3,8 @@
  * Provenance for every file here is recorded in media-credits.md.
  */
 export const insightImages: Record<string, string> = {
+  "history-is-a-per-attribute-decision": "/media/insights/dimensions.webp",
+  "a-contract-that-cannot-stop-a-load": "/media/insights/contracts.webp",
   "chunking-is-a-decision-not-a-default": "/media/insights/chunking.webp",
   "what-permission-inheritance-actually-requires": "/media/insights/permissions.webp",
   "abstention-is-a-feature": "/media/insights/abstention.webp",

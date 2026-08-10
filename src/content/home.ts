@@ -19,9 +19,9 @@ import { services } from "./services";
  * C: "Retrieval that survives an audit."
  */
 export const hero = {
-  headline: "The pipeline between your documents and the decision.",
+  headline: "The pipeline between your data and the decision.",
   standfirst:
-    "Better retrieval. Better evidence. Better decisions. We build the GenAI pipelines that turn documents, tickets, contracts and transcripts into answers your teams can act on.",
+    "Better foundations. Better evidence. Better decisions. We build the data platforms that make your information usable, and the AI systems that turn it into answers your teams can act on.",
   primaryCta: { label: "Discover how we work", href: "/how-we-work" },
   secondaryCta: { label: "Talk to us", href: "/contact" },
   video: {
@@ -42,10 +42,10 @@ export const hero = {
 
 export const positioning = {
   eyebrow: "What we do",
-  heading: "Most of what your organisation knows was never modelled.",
+  heading: "Most organisations have both problems at once.",
   body: [
-    "It sits in surveys, contracts, tickets, transcripts and correspondence, written by people, for people, and invisible to every query your warehouse can run.",
-    "We build the engineered path from that mass to a decision. Documents are parsed, chunked on their own structure and enriched with typed metadata, then retrieved under your permission model, grounded in a citable passage, and measured against a labelled set your team owns.",
+    "A warehouse nobody quite trusts, and a document estate nobody can query. The two are usually owned by different teams, funded from different budgets, and failing for the same reason.",
+    "We build both paths, and they share their first five stages. Sources are surveyed, ingested, parsed, modelled and tested until the numbers can be relied on. From there the work forks, to a semantic layer your analysts can query, or to retrieval that grounds an answer in a citable passage. Both are measured against a set your team owns.",
   ],
 };
 
@@ -59,7 +59,7 @@ export const capabilities = services.map((s) => ({
 export const stats = {
   eyebrow: "By the numbers",
   heading: "Bromley Code at a glance.",
-  body: "Pipelines in production, documents made retrievable, and the answer-supported rate we hold ourselves to on every engagement.",
+  body: "Pipelines in production across both practices, the columns held under a data contract, and the answer-supported rate we hold ourselves to on every engagement.",
   items: [
     {
       label: "Pipelines in production.",
@@ -68,10 +68,10 @@ export const stats = {
       note: "Across water, government, financial and professional services.",
     },
     {
-      label: "Documents indexed.",
-      value: 12,
-      suffix: "m+",
-      note: "Parsed, chunked, enriched and retrievable under source permissions.",
+      label: "Columns under contract.",
+      value: 2400,
+      suffix: "+",
+      note: "Shape, range and freshness expectations checked on every load, breaches blocking it.",
     },
     {
       label: "Median answer-supported rate.",
@@ -108,5 +108,5 @@ export const differentiators = {
 export const ctaBand = {
   eyebrow: "Get in touch",
   heading: "Talk to us.",
-  body: "A first conversation runs about forty-five minutes and covers three things: what your corpus actually looks like, whether anyone can define a correct answer, and whether your permission model resolves per user. Any one of them can rule the work out, and we would rather tell you in week one.",
+  body: "A first conversation runs about forty-five minutes and covers three things: what your estate actually looks like, whether anyone can define a correct answer or an agreed number, and whether your permission model resolves per user. Any one of them can rule the work out, and we would rather tell you in week one.",
 };

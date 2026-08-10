@@ -8,9 +8,9 @@ export const site = {
   name: "Bromley Code",
   /** As registered at Companies House. Must match the register exactly. */
   legalName: "BromleyCode Ltd",
-  tagline: "Decision-grade intelligence from unstructured data.",
+  tagline: "Decision-grade data, and the systems that act on it.",
   description:
-    "Bromley Code builds production-grade GenAI pipelines that turn unstructured enterprise data into evidence leaders can act on.",
+    "Bromley Code builds the data platforms that make enterprise information usable, and the AI systems that turn it into evidence leaders can act on.",
   url: "https://bromleycode.com",
   email: "enquiries@bromleycode.com",
   hours: "Monday to Friday, 09:00 to 17:30 UK time",
@@ -78,9 +78,9 @@ export const footerNav: { heading: string; items: NavItem[] }[] = [
   {
     heading: "What we do",
     items: [
+      { label: "Data & platform engineering", href: "/services/data-platform-engineering" },
       { label: "Intelligence extraction", href: "/services/intelligence-extraction" },
-      { label: "Data & pipeline engineering", href: "/services/data-pipeline-engineering" },
-      { label: "AI strategy & roadmap", href: "/services/ai-strategy-roadmap" },
+      { label: "Data & AI strategy", href: "/services/data-ai-strategy" },
       { label: "Evaluation & assurance", href: "/services/evaluation-assurance" },
       { label: "How we work", href: "/how-we-work" },
     ],

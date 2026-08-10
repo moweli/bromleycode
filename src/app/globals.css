@@ -396,11 +396,13 @@
   stroke-dashoffset: 304;
 }
 
-/* Every box shares one 4.2s cycle and is offset by 420ms, so ten boxes fill the
-   cycle exactly: the tenth hands back to the first with no gap and no overlap.
-   Changing the count or the step means changing both, together. */
+/* Every box shares one cycle and is offset by 420ms per slot, so twelve slots
+   fill the cycle exactly: the last hands back to the first with no gap and no
+   overlap. The two branches share slots, so they light together rather than in
+   turn. Changing the slot count means changing this duration, together. The
+   diagram publishes the count it laid out as data-cycle-ms. */
 .pipeline[data-shown="true"] .pipeline-border {
-  animation: pipeline-border 4.2s linear infinite;
+  animation: pipeline-border 5.04s linear infinite;
 }
 
 .pipeline[data-shown="true"] .pipeline-dash {
