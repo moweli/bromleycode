@@ -6,7 +6,7 @@ time rather than assumed from the library's general terms — Unsplash+ and part
 of Mixkit and Videvo are paid or attribution-bound and sit alongside free
 content in the same search results.
 
-**Downloaded:** 9 August 2026. **Originals retained:** `reference/media-raw/`
+**Downloaded:** 9 August 2026, with two case-study images added 10 August 2026. **Originals retained:** `reference/media-raw/`
 (not served; kept so a re-encode never needs a re-download).
 
 ---
@@ -41,6 +41,8 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/how-we-work/ninety-days.webp | Pexels | Pexels Licence | [19563057](https://www.pexels.com/photo/19563057/) | 2026-08-09 | 685 KB → 209 KB | How we work — first 90 days (section band) |
 | public/media/about/london.webp | Pexels | Pexels Licence | [10334728](https://www.pexels.com/photo/10334728/) | 2026-08-09 | 385 KB → 98 KB | About — before the FAQ (section band) |
 | public/media/contact/facade.webp | Pexels | Pexels Licence | [28733236](https://www.pexels.com/photo/28733236/) | 2026-08-09 | 548 KB → 146 KB | Contact — below the enquiry form (section band) |
+| public/media/case-studies/warehouse-replatform.webp | Pexels | Pexels Licence | [7612012](https://www.pexels.com/photo/7612012/) | 2026-08-10 | 916 KB → 366 KB | Case study — warehouse replatform (hero image); index cards |
+| public/media/case-studies/platform-trust.webp | Pexels | Pexels Licence | [3942321](https://www.pexels.com/photo/3942321/) | 2026-08-10 | 525 KB → 137 KB | Case study — platform trustworthy enough to publish from (hero image); index cards |
 
 **Rejected at selection, and why**
 
@@ -55,6 +57,8 @@ passed by not looking closely:
 | [4458205](https://www.pexels.com/photo/4458205/) — architectural floor plan | Licence-clean and briefly shipped on AI strategy & roadmap, then replaced. A finished plan reads as the completed design, which is the opposite of what that page argues: constraints are found first and the work is sequenced around whatever survives. An interchange carries routes, branching and order instead. |
 | [29406928](https://www.pexels.com/photo/29406928/) and [38354098](https://www.pexels.com/photo/38354098/) — railway junctions | Right metaphor, wrong condition. One carried graffiti and a legible sign, the other was derelict and overgrown. Neither matched the crisp register of the rest of the set. |
 | [10586223](https://www.pexels.com/photo/10586223/) — glass building entrance | The facade carries the business name **KUPKA**. On a contact page it would read as our own office under someone else's name, which is a misrepresentation as much as a trademark problem. Replaced with an abstract facade carrying no signage. |
+| [12064](https://www.pexels.com/photo/12064/) — circular library reading room | Several people are visible at the desks. The licence covers the photograph, not an implied endorsement by the individuals in it, and this set has carried a no-people rule since the first round. |
+| [1370294](https://www.pexels.com/photo/1370294/) — indexed filing cabinets | Licence-clean and people-free, but near-identical in subject and palette to the archive drawers already used on the intelligence extraction page. Two banks of index drawers on one site reads as a mistake rather than a motif. |
 
 **Checks applied to every image**
 
