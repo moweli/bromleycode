@@ -173,7 +173,7 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "Phase two extends parsing to as-built drawings, where the answer lives in the annotation layer rather than in prose, and pushes the same retrieval path into the field application used on site.",
-    services: ["intelligence-extraction", "data-pipeline-engineering"],
+    services: ["intelligence-extraction", "data-platform-engineering"],
     stack: ["Azure", "Postgres / pgvector", "Databricks", "Entra ID"],
     image: {
       src: "/media/case-studies/water-utility.webp",
@@ -289,7 +289,7 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "The agency is extending the same pipeline to a second casework directorate, reusing the threading and lineage stages unchanged and replacing only the extraction schema.",
-    services: ["data-pipeline-engineering", "evaluation-assurance"],
+    services: ["data-platform-engineering", "evaluation-assurance"],
     stack: ["Azure", "Postgres / pgvector", "Airflow", "Self-hosted inference"],
     image: {
       src: "/media/case-studies/central-government.webp",
@@ -510,7 +510,7 @@ export const caseStudies: CaseStudy[] = [
     },
     whatNext:
       "The firm has begun the first delivery, precedent retrieval within a single practice where the permission model resolves cleanly, with the shared retrieval and evaluation layers built to serve the following three.",
-    services: ["ai-strategy-roadmap", "evaluation-assurance"],
+    services: ["data-ai-strategy", "evaluation-assurance"],
     stack: ["Azure", "Databricks", "Postgres / pgvector"],
     image: {
       src: "/media/case-studies/professional-services.webp",

@@ -27,7 +27,7 @@ export const pipelineStages: PipelineStage[] = [
       "A stratified sample of the real corpus: formats, scan quality, revision patterns, duplication, and the permission model each source enforces. Two or three document families usually account for most of the value, which changes what gets built first.",
     hardPart:
       "Skipping this is the most expensive decision available. Almost every stalled pilot we are asked to look at was designed against an assumed corpus rather than a sampled one.",
-    services: ["ai-strategy-roadmap"],
+    services: ["data-ai-strategy"],
   },
   {
     id: "ingest",
@@ -37,7 +37,7 @@ export const pipelineStages: PipelineStage[] = [
       "Connectors with change-data capture where the source supports it and content hashing where it does not. Reprocessing a document after a parser change must produce one record, not two.",
     hardPart:
       "Idempotency is easy to claim and hard to hold once three sources disagree about what a document's identity is.",
-    services: ["data-pipeline-engineering"],
+    services: ["data-platform-engineering"],
   },
   {
     id: "parse",
@@ -67,7 +67,7 @@ export const pipelineStages: PipelineStage[] = [
       "Entity resolution across sources, date and revision normalisation, document-type classification. A hybrid filter on type and date routinely beats a better embedding model, at a fraction of the cost.",
     hardPart:
       "Entity resolution across systems that each have their own idea of an identifier. This is ordinary data engineering and it is where most of the unglamorous effort goes.",
-    services: ["intelligence-extraction", "data-pipeline-engineering"],
+    services: ["intelligence-extraction", "data-platform-engineering"],
   },
   {
     id: "index",
@@ -77,7 +77,7 @@ export const pipelineStages: PipelineStage[] = [
       "Dense embeddings alongside a lexical index, with source ACLs stored per chunk. Rebuilds run blue-green so a re-embedding never takes retrieval offline.",
     hardPart:
       "Permissions belong in the index, not in a post-filter. A post-filter leaks the existence of documents a user cannot open.",
-    services: ["data-pipeline-engineering"],
+    services: ["data-platform-engineering"],
   },
   {
     id: "retrieve",

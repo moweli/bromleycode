@@ -78,9 +78,9 @@ export const footerNav: { heading: string; items: NavItem[] }[] = [
   {
     heading: "What we do",
     items: [
+      { label: "Data & platform engineering", href: "/services/data-platform-engineering" },
       { label: "Intelligence extraction", href: "/services/intelligence-extraction" },
-      { label: "Data & pipeline engineering", href: "/services/data-pipeline-engineering" },
-      { label: "AI strategy & roadmap", href: "/services/ai-strategy-roadmap" },
+      { label: "Data & AI strategy", href: "/services/data-ai-strategy" },
       { label: "Evaluation & assurance", href: "/services/evaluation-assurance" },
       { label: "How we work", href: "/how-we-work" },
     ],

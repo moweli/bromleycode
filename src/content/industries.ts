@@ -85,7 +85,7 @@ export const industries: Industry[] = [
       },
     ],
     relatedCaseStudies: ["asset-information-retrieval-water-utility"],
-    services: ["intelligence-extraction", "data-pipeline-engineering"],
+    services: ["intelligence-extraction", "data-platform-engineering"],
     image: {
       src: "/media/industries/water-utilities.webp",
       alt: "Concrete water treatment channels running towards a low horizon",
@@ -161,7 +161,7 @@ export const industries: Industry[] = [
       },
     ],
     relatedCaseStudies: ["regulatory-evidence-pipeline-central-government"],
-    services: ["data-pipeline-engineering", "evaluation-assurance"],
+    services: ["data-platform-engineering", "evaluation-assurance"],
     image: {
       src: "/media/industries/central-government.webp",
       alt: "Classical stone columns of a government building rising against an overcast sky",

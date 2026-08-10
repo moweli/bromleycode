@@ -236,7 +236,7 @@ export const services: Service[] = [
       },
     ],
     relatedCaseStudy: "asset-information-retrieval-water-utility",
-    relatedServices: ["data-pipeline-engineering", "evaluation-assurance"],
+    relatedServices: ["data-platform-engineering", "evaluation-assurance"],
   },
   {
     slug: "data-ai-strategy",
@@ -436,7 +436,7 @@ export const services: Service[] = [
       },
     ],
     relatedCaseStudy: "claims-evidence-assurance-financial-services",
-    relatedServices: ["intelligence-extraction", "data-pipeline-engineering"],
+    relatedServices: ["intelligence-extraction", "data-platform-engineering"],
   },
 ];
 
