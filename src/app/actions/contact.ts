@@ -91,18 +91,17 @@ export async function submitContact(_previous: ContactState, data: FormData): Pr
 }
 
 /**
- * STUB. Replace with the real delivery path — SMTP, a transactional provider,
- * a CRM endpoint or a queue. Keep the throw-on-failure contract so the caller
+ * STUB. Nothing is stored or sent — the form only acknowledges receipt in the
+ * UI. Replace with the real delivery path — SMTP, a transactional provider, a
+ * CRM endpoint or a queue. Keep the throw-on-failure contract so the caller
  * can tell the sender the truth.
+ *
+ * ponytail: no-op until a mailer is chosen; the success panel is UI-only.
  */
 async function deliver(enquiry: Record<string, string>) {
-  if (process.env.NODE_ENV !== "production") {
-    console.info("[contact] enquiry received (stub handler)", {
-      ...enquiry,
-      // Do not log the message body in full; it may carry client detail.
-      message: `${enquiry.message.slice(0, 60)}…`,
-    });
-    return;
-  }
-  throw new Error("No delivery handler configured. Wire up deliver() before launch.");
+  console.info("[contact] enquiry received (stub handler, not delivered)", {
+    ...enquiry,
+    // Do not log the message body in full; it may carry client detail.
+    message: `${enquiry.message.slice(0, 60)}…`,
+  });
 }

@@ -168,14 +168,9 @@ export function SiteHeader() {
               <li key={item.href} style={{ animationDelay: `${60 + index * 55}ms` }} className="[animation:reveal-up_400ms_both]">
                 <Link
                   href={item.href}
-                  className="block border-b border-line-light py-5 text-3xl font-semibold tracking-[-0.03em] transition-colors duration-150 hover:text-accent-ink"
+                  className="block border-b border-line-light py-5 text-4xl font-semibold tracking-[-0.03em] transition-colors duration-150 hover:text-accent-ink"
                 >
                   {item.label}
-                  {item.description ? (
-                    <span className="mt-1 block font-[family-name:var(--font-sans)] text-sm font-normal tracking-normal text-ink-muted">
-                      {item.description}
-                    </span>
-                  ) : null}
                 </Link>
               </li>
             ))}

@@ -52,7 +52,6 @@ export const site = {
 export type NavItem = {
   label: string;
   href: string;
-  description?: string;
 };
 
 /**
@@ -61,12 +60,12 @@ export type NavItem = {
  * navigation at something that does not exist (design-audit.md §8.1 D1).
  */
 export const primaryNav: NavItem[] = [
-  { label: "Services", href: "/services", description: "What we are engaged to build" },
-  { label: "How we work", href: "/how-we-work", description: "The pipeline, stage by stage" },
-  { label: "Industries", href: "/industries", description: "Where we have depth" },
-  { label: "Case studies", href: "/case-studies", description: "Engagements, end to end" },
-  { label: "Insights", href: "/insights", description: "Notes from the build" },
-  { label: "About", href: "/about", description: "Who you would be working with" },
+  { label: "Services", href: "/services" },
+  { label: "How we work", href: "/how-we-work" },
+  { label: "Industries", href: "/industries" },
+  { label: "Case studies", href: "/case-studies" },
+  { label: "Insights", href: "/insights" },
+  { label: "About", href: "/about" },
 ];
 
 export const primaryCta = {
