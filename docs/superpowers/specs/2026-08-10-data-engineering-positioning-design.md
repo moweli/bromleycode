@@ -264,10 +264,12 @@ studies illustrative in places while the terms no longer did:
 
 **Consequence, recorded plainly.** No statement anywhere on the site now
 indicates that the case studies and their figures are invented rather than
-delivered. The `CONTENT_STATUS` constant in `src/content/case-studies.ts` is
-retained and set to `"verified"`; flipping it back to `"illustrative"` restores
-every banner at once. That switch is now the only remaining mechanism, and it is
-off. The two new DE studies in §6 are written into that same condition.
+delivered. The two new DE studies in §6 are written into that same condition.
+
+`CONTENT_STATUS` in `src/content/case-studies.ts` stays at `"verified"` and is
+not to be changed. It is not a pending action or a recommendation, and this
+spec should not be read as proposing one. The `IllustrativeBanner` component
+remains in the tree and renders nothing.
 
 ## 11. How this is verified
 
