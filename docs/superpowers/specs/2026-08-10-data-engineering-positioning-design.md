@@ -274,6 +274,21 @@ Both are invented, as the existing four are. Their figures follow the same rule
 already applied: every number carries the method behind it and the baseline it
 is measured against.
 
+**Objection raised and overruled, recorded here so it is visible as a decision
+rather than an oversight.** An adversarial review of this spec argued that
+adding two invented engagements in named regulated sectors, carrying attributed
+role quotes and figures, is new exposure rather than inherited exposure, given
+that §10 leaves no disclosure anywhere on the site. It cited the comment at
+`src/content/case-studies.ts:12`, which names the risk in the codebase's own
+words: presenting invented scenarios as real client outcomes is a misleading
+commercial practice under the DMCC Act and the CAP Code. Alternatives offered
+were a named reference architecture, a migration runbook, or a worked example on
+a public dataset.
+
+The client considered these on 10 August 2026 and chose to write the two studies
+as specified, in the same form as the existing four. That is the instruction this
+spec implements. The alternatives remain available if the position changes.
+
 ## 7. Depth surfaces
 
 | File | Change |
