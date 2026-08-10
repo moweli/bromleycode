@@ -16,6 +16,12 @@ export type PipelineStage = {
   /** The decision on this stage that most often gets made badly. */
   hardPart: string;
   services: string[];
+  /**
+   * Where the stage sits in the forked diagram. The spine is shared by both
+   * practices, which is the structural argument for selling them together; the
+   * branches run in parallel and rejoin at the assurance stages.
+   */
+  branch: "spine" | "analytics" | "retrieval" | "join";
 };
 
 export const pipelineStages: PipelineStage[] = [
@@ -28,6 +34,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Skipping this is the most expensive decision available. Almost every stalled pilot we are asked to look at was designed against an assumed corpus rather than a sampled one.",
     services: ["data-ai-strategy"],
+    branch: "spine",
   },
   {
     id: "ingest",
@@ -38,16 +45,62 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Idempotency is easy to claim and hard to hold once three sources disagree about what a document's identity is.",
     services: ["data-platform-engineering"],
+    branch: "spine",
   },
   {
     id: "parse",
     name: "Parse",
-    short: "Recover layout, not just text",
+    short: "Recover structure, in documents and in tables",
     detail:
       "Native text where a layer exists, OCR where it does not, layout-aware parsing for anything tabular. Tables and appendices carry a disproportionate share of the answers and are what naive extraction destroys first.",
     hardPart:
       "Routing by document quality. Sending everything to the expensive parser is wasteful; sending everything to the cheap one silently loses the hardest third of the corpus.",
-    services: ["intelligence-extraction"],
+    services: ["intelligence-extraction", "data-platform-engineering"],
+    branch: "spine",
+  },
+  {
+    id: "model",
+    name: "Model",
+    short: "Decide what a customer is before counting them",
+    detail:
+      "Dimensional models where the questions are known, wide tables where they are not, and entity resolution across the systems that each hold part of the answer. Slowly changing dimensions are decided per attribute rather than as a blanket policy.",
+    hardPart:
+      "Tracking history on every attribute is the default that quietly makes a warehouse unqueryable. Deciding which attributes actually need it is unglamorous, and it is the difference between a model people use and one they route around.",
+    services: ["data-platform-engineering"],
+    branch: "spine",
+  },
+  {
+    id: "quality",
+    name: "Quality",
+    short: "Contracts that stop a load, not a dashboard",
+    detail:
+      "Shape, range, freshness and referential expectations declared beside the data and run on every load. A breach blocks the load or pages an owner, because a failing test nobody is accountable for is documentation rather than control.",
+    hardPart:
+      "The tempting fix when a source changes shape is to coerce it back to the old one. That keeps dashboards green while the numbers stop meaning what they meant, and it is usually found months later by someone reconciling by hand.",
+    services: ["data-platform-engineering", "evaluation-assurance"],
+    branch: "spine",
+  },
+  {
+    id: "semantic",
+    name: "Semantic",
+    short: "One definition of the metric, with an owner",
+    detail:
+      "Metric and dimension definitions in one place, versioned, consumed by every tool rather than reimplemented in each. The layer is the contract between the model and the people who ask it questions.",
+    hardPart:
+      "Every organisation believes it has one definition of revenue until the definitions are written down next to each other. Reconciling them is a political exercise before it is a technical one, and pretending otherwise is how the layer stalls.",
+    services: ["data-platform-engineering"],
+    branch: "analytics",
+  },
+  {
+    id: "publish",
+    name: "Publish",
+    short: "Marts and reports people can be held to",
+    detail:
+      "Consumer-facing datasets with a freshness SLA, a named owner and lineage back to source. A published figure carries the same obligation as a generated answer: you must be able to say where it came from and when it was last true.",
+    hardPart:
+      "Publishing is where scope grows without anyone deciding to grow it. Every new consumer adds a dataset that must be kept correct forever, so the entry test is whether someone will act on it, not whether someone asked for it.",
+    services: ["data-platform-engineering"],
+    branch: "analytics",
   },
   {
     id: "chunk",
@@ -58,6 +111,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Chunk boundaries are the most under-examined choice in most retrieval systems. Severing a finding from the identifier that gives it meaning costs more recall than any embedding-model upgrade will win back.",
     services: ["intelligence-extraction"],
+    branch: "retrieval",
   },
   {
     id: "enrich",
@@ -68,6 +122,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Entity resolution across systems that each have their own idea of an identifier. This is ordinary data engineering and it is where most of the unglamorous effort goes.",
     services: ["intelligence-extraction", "data-platform-engineering"],
+    branch: "retrieval",
   },
   {
     id: "index",
@@ -78,6 +133,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Permissions belong in the index, not in a post-filter. A post-filter leaks the existence of documents a user cannot open.",
     services: ["data-platform-engineering"],
+    branch: "retrieval",
   },
   {
     id: "retrieve",
@@ -88,6 +144,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Resolving access per user at query time, at latency. If your directory cannot answer group membership fast enough, this is where you find out.",
     services: ["intelligence-extraction"],
+    branch: "retrieval",
   },
   {
     id: "ground",
@@ -98,6 +155,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Abstention has to be designed for, and defended. It is the behaviour that earns trust with a technical buyer and the first thing a demo-driven roadmap removes.",
     services: ["intelligence-extraction", "evaluation-assurance"],
+    branch: "retrieval",
   },
   {
     id: "evaluate",
@@ -108,6 +166,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Aggregate scores hide the family that fails completely. Stratify or you will ship a system that works well on average and not at all for one team.",
     services: ["evaluation-assurance"],
+    branch: "join",
   },
   {
     id: "review",
@@ -118,6 +177,7 @@ export const pipelineStages: PipelineStage[] = [
     hardPart:
       "Review effort should fall over time. If it does not, the pipeline is not learning, and you want to know that in month two.",
     services: ["evaluation-assurance"],
+    branch: "join",
   },
 ];
 
