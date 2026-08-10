@@ -20,9 +20,9 @@ export const industries: Industry[] = [
     name: "Water and utilities",
     eyebrow: "Sector",
     standfirst:
-      "Asset knowledge accumulated over decades, held in drawings, surveys and permits that no asset register was ever going to contain.",
+      "Asset knowledge sits in two estates: the telemetry and work management systems, and the drawings, surveys and permits no register was going to hold.",
     summary:
-      "Regulated network operators carry thirty years of documentary history about physical assets, and the operational questions that matter are answered in it rather than in the warehouse.",
+      "Regulated network operators run meter, SCADA and job data alongside thirty years of documentary history, and most operational questions need an answer drawn from both.",
     corpora: [
       {
         name: "As-built drawings and schematics",
@@ -66,6 +66,16 @@ export const industries: Industry[] = [
         detail:
           "Evidence assembly for periodic review is a scramble across the same corpora, done by hand, under a deadline that does not move.",
       },
+      {
+        name: "Meter reads that arrive late, twice or never",
+        detail:
+          "A consumption figure built without a stated policy for missing intervals is one nobody can defend at a price review. The policy belongs in the pipeline, declared, not in the head of whoever built the report.",
+      },
+      {
+        name: "Job counts that never reconcile",
+        detail:
+          "The maintenance system, the asset register and the finance ledger each count work differently. Reconciling them by hand every month is a standing cost that a modelled join and one agreed definition remove.",
+      },
     ],
     constraints: [
       {
@@ -96,9 +106,9 @@ export const industries: Industry[] = [
     name: "Central government",
     eyebrow: "Sector",
     standfirst:
-      "Casework, correspondence and consultation responses, where the obligation is not to find documents but to assemble a defensible position.",
+      "Casework and correspondence above, case, grant and payment records below, where the obligation is not to find material but to assemble a defensible position.",
     summary:
-      "Departments and agencies hold decision-relevant material in correspondence and casework systems, under explainability and residency constraints that rule out most of the market.",
+      "Departments hold decision-relevant material in correspondence and in the transactional systems beneath it, under explainability and residency constraints that rule out most of the market.",
     corpora: [
       {
         name: "Casework correspondence",
@@ -142,6 +152,16 @@ export const industries: Industry[] = [
         detail:
           "A single message is often meaningless without the exchange around it, and the exchange frequently spans two systems.",
       },
+      {
+        name: "Counting a case two ways",
+        detail:
+          "Two systems disagree about when a case opened and when it closed. The published caseload depends on which definition survives into the mart, so the definition needs an owner rather than a convention.",
+      },
+      {
+        name: "Statistics restated after publication",
+        detail:
+          "A figure released last quarter has to be reproducible this quarter, from the same code against the same snapshot. Without versioned inputs, a routine correction becomes an incident with a press line attached.",
+      },
     ],
     constraints: [
       {
@@ -172,9 +192,9 @@ export const industries: Industry[] = [
     name: "Financial services",
     eyebrow: "Sector",
     standfirst:
-      "Claims files, policy wordings, suitability evidence and complaints, where a measured error rate is the condition of deployment rather than a refinement.",
+      "Claims files and policy wordings, transaction and exposure data beside them, where a measured error rate is the condition of deployment rather than a refinement.",
     summary:
-      "Regulated firms can build retrieval systems quickly and cannot deploy them without evidence. Assurance is the constraint, and it is the one most projects under-resource.",
+      "Regulated firms can build pipelines and retrieval systems quickly, and can deploy neither without evidence. Assurance is the constraint, and it is the one most projects under-resource.",
     corpora: [
       {
         name: "Claims correspondence and medical reports",
@@ -217,6 +237,16 @@ export const industries: Industry[] = [
         name: "Prompt injection through documents",
         detail:
           "Submitted PDFs are untrusted input. Instruction-like text inside a claim document is a live attack surface, not a theoretical one.",
+      },
+      {
+        name: "Reference data that drifts quietly",
+        detail:
+          "Instrument, counterparty and product hierarchies change without notice from the team that owns them. A load that accepts the new shape silently is how a wrong figure reaches a regulatory return.",
+      },
+      {
+        name: "Returns nobody can trace back",
+        detail:
+          "A number in a submitted return moves and nobody can say which upstream load moved it. Lineage from the return to the source record turns a fortnight of investigation into an afternoon.",
       },
     ],
     constraints: [

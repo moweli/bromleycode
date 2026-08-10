@@ -92,7 +92,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
               tone="dark"
               eyebrow="Challenges"
               title="What actually goes wrong."
-              body="Not the sector's problems in general, the specific failure modes that decide whether a retrieval system in this sector survives contact with production."
+              body="Not the sector's problems in general, the specific failure modes that decide whether a system in this sector survives contact with production."
             />
           </Reveal>
           <ul className="mt-14 grid gap-px border border-line-dark bg-line-dark md:grid-cols-2">

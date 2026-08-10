@@ -189,7 +189,7 @@ export const engagementShape = {
     {
       name: "Discovery, 2 to 3 weeks",
       detail:
-        "Corpus survey, permission modelling, evaluability screening. Ends with a written recommendation, including the recommendation not to proceed where that is the honest answer.",
+        "A survey of the real sources, structured and documentary alike, with permission modelling and an evaluability screen. Ends with a written recommendation, including the recommendation not to proceed where that is the honest answer.",
     },
     {
       name: "Build, 8 to 16 weeks",
@@ -199,7 +199,7 @@ export const engagementShape = {
     {
       name: "Assurance, in parallel",
       detail:
-        "The evaluation harness is built alongside the pipeline, not after it. Nothing goes to users without a measured baseline it can be compared against.",
+        "The harness is built alongside the pipeline, not after it, whether it measures answers or the numbers behind them. Nothing goes to users without a measured baseline it can be compared against.",
     },
     {
       name: "Handover and support",
@@ -212,13 +212,13 @@ export const engagementShape = {
 export const firstNinetyDays = {
   heading: "What the first 90 days looks like",
   intro:
-    "Concrete enough to hold us to. Dates shift with corpus size and access lead times; the sequence does not.",
+    "Concrete enough to hold us to. Dates shift with the size of the estate and with access lead times; the sequence does not.",
   phases: [
     {
       window: "Days 1 to 15",
       title: "Survey and access",
       items: [
-        "Stratified sample of the real corpus, by format, era and source system",
+        "Stratified sample of the real sources, by format, era and owning system",
         "Permission model mapped, including whether it resolves per user at query time",
         "Access, environments and security review under way, usually the long pole",
         "Evaluability check: what does correct look like, and who adjudicates it",
@@ -228,18 +228,18 @@ export const firstNinetyDays = {
       window: "Days 16 to 30",
       title: "Baseline and first slice",
       items: [
-        "A labelled question set of 200, 400 items, built with the people who ask the questions",
-        "Ingestion and parsing for the highest-value document family only",
-        "A measured retrieval baseline, deliberately unimpressive, and the number everything is compared against",
+        "A labelled set of 200 to 400 items, built with the people who ask the questions",
+        "Ingestion for the highest-value source only, one subject area or one document family",
+        "A measured baseline, deliberately unimpressive, and the number every later change is compared against",
       ],
     },
     {
       window: "Days 31 to 60",
       title: "Build against the number",
       items: [
-        "Chunking, enrichment and hybrid retrieval tuned against the labelled set",
+        "The branch the engagement needs, tuned against the labelled set: semantic layer and marts, or chunking, enrichment and retrieval",
         "Permission inheritance implemented and covered by a synthetic-user regression suite",
-        "Grounding and abstention behaviour agreed with the people who will rely on it",
+        "What the system refuses to do agreed with the people relying on it: a load that blocks, an answer that abstains",
         "Evaluation running in CI with thresholds that fail a build",
       ],
     },
@@ -249,7 +249,7 @@ export const firstNinetyDays = {
       items: [
         "Deployment into your environment, behind your identity provider, inside your boundary",
         "Review queue and feedback loop live, writing corrections back into the labelled set",
-        "Monitoring on retrieval quality, abstention rate and cost per answered question",
+        "Monitoring on freshness and quality per dataset, and on abstention rate and cost per answered question",
         "Runbooks, rollback executed once against real data, and your team making changes unaided",
       ],
     },

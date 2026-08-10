@@ -29,8 +29,8 @@ export default function IndustriesPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Where we work"
-              title="Large corpora, real permission models, expensive mistakes."
-              body="Each of these sectors keeps its most decision-relevant material outside the warehouse, and each has a reason why a wrong answer is not a minor inconvenience."
+              title="Large estates, real permission models, expensive mistakes."
+              body="Each of these sectors runs a warehouse and a document estate that answer different halves of the same question, and each has a reason why a wrong answer is not a minor inconvenience."
             />
           </Reveal>
           <ul className="mt-14 grid gap-6 md:grid-cols-3">

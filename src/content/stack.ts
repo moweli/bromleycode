@@ -1,20 +1,26 @@
 /**
- * Technology-stack band — replaces the reference site's client logo wall
+ * Technology-stack band, which replaces the reference site's client logo wall
  * (design-audit.md §8.1 D2). Same geometry, same trust function, and true on
  * day one, which is the claim the stack list has to support.
+ *
+ * The list is one list on purpose. Both practices run on the same platforms:
+ * the warehouse, the orchestrator and the object store carry an analytics load
+ * and a retrieval load without being told which is which, so grouping the items
+ * by practice would invent a separation the estate does not have. Where a tool
+ * genuinely serves one practice only, the role caption says so.
  *
  * Marks are rendered from Simple Icons (CC0-1.0). Trademarks remain the
  * property of their respective owners; their presence indicates a platform we
  * build on, not a partnership or endorsement. Microsoft Azure and AWS are named
- * in prose rather than shown as marks — their brand guidelines require assets
- * to be sourced and approved directly, which is a step we have not taken.
+ * in prose rather than shown as marks, because their brand guidelines require
+ * assets to be sourced and approved directly, which is a step we have not taken.
  */
 
 export type StackItem = {
   /** Simple Icons slug. */
   icon: string;
   name: string;
-  /** What we actually use it for — a technical buyer reads this, not the logo. */
+  /** What we actually use it for. A technical buyer reads this, not the logo. */
   role: string;
 };
 
@@ -23,7 +29,7 @@ export const stackItems: StackItem[] = [
   { icon: "snowflake", name: "Snowflake", role: "Warehouse and derived tables" },
   { icon: "postgresql", name: "PostgreSQL", role: "Relational store and pgvector index" },
   { icon: "apacheairflow", name: "Apache Airflow", role: "Pipeline orchestration" },
-  { icon: "apachespark", name: "Apache Spark", role: "Distributed parsing and embedding" },
+  { icon: "apachespark", name: "Apache Spark", role: "Distributed transformation and parsing" },
   { icon: "opensearch", name: "OpenSearch", role: "Lexical retrieval and hybrid ranking" },
   { icon: "qdrant", name: "Qdrant", role: "Vector index at scale" },
   { icon: "duckdb", name: "DuckDB", role: "Local analysis and evaluation runs" },
@@ -31,7 +37,7 @@ export const stackItems: StackItem[] = [
   { icon: "huggingface", name: "Hugging Face", role: "Model hosting and embeddings" },
   { icon: "mlflow", name: "MLflow", role: "Experiment and model tracking" },
   { icon: "opentelemetry", name: "OpenTelemetry", role: "Tracing across pipeline stages" },
-  { icon: "grafana", name: "Grafana", role: "Retrieval-quality dashboards" },
+  { icon: "grafana", name: "Grafana", role: "Pipeline and quality dashboards" },
   { icon: "kubernetes", name: "Kubernetes", role: "Service deployment" },
   { icon: "terraform", name: "Terraform", role: "Infrastructure as code" },
   { icon: "redis", name: "Redis", role: "Caching and queues" },

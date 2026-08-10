@@ -88,7 +88,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Engagements"
                 title="What the work looks like, end to end."
-                body="Four engagements written the way the work actually runs: the corpus, the constraint, the pipeline stage by stage, and what shipped."
+                body="Six engagements written the way the work actually runs: the estate, the constraint, the pipeline stage by stage, and what shipped."
               />
             </Reveal>
             <Reveal delay={80}>
@@ -113,7 +113,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Sectors"
                 title="Where we have depth."
-                body="Three sectors where the unstructured mass is large, the permission model is real, and the cost of a wrong answer is high enough that evaluation is not optional."
+                body="Three sectors where both estates are large, the permission model is real, and the cost of a wrong answer is high enough that evaluation is not optional."
               />
             </Reveal>
             <Reveal delay={80}>
