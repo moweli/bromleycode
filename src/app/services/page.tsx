@@ -57,7 +57,7 @@ export default function ServicesPage() {
               tone="dark"
               eyebrow="The pipeline"
               title="Where each service sits."
-              body="Services are entry points, not silos. Extraction and engineering usually run together; assurance runs alongside both from the first increment rather than after them."
+              body="Platform engineering builds the spine both branches run on. Extraction takes the retrieval branch, strategy decides which branch earns the next quarter, and assurance sits on the join because both branches have to be checkable."
             />
           </Reveal>
           <Reveal delay={80} className="mt-14">

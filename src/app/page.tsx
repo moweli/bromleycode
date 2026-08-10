@@ -44,8 +44,8 @@ export default function HomePage() {
             <SectionHeading
               tone="dark"
               eyebrow="The mechanism"
-              title="Ten stages, two loops, and the parts that usually break."
-              body="Every stage can be evaluated in isolation. That matters when something degrades and you need to know whether retrieval got worse, the parser broke on a new template, or the model changed underneath you."
+              title="One spine, two branches, and the parts that usually break."
+              body="Both practices share the first five stages, which is why we sell them together. Every stage can be evaluated in isolation, and that matters when something degrades and you need to know whether a contract broke, retrieval got worse, or the model changed underneath you."
             />
           </Reveal>
           <Reveal delay={80} className="mt-14">
