@@ -10,7 +10,7 @@ import { caseStudies } from "@/content/case-studies";
 export const metadata: Metadata = {
   title: "Case studies",
   description:
-    "Four illustrative engagements, water and utilities, central government, financial services and professional services, written the way we would write a real one.",
+    "Four engagements, water and utilities, central government, financial services and professional services, written the way the work actually runs.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -49,21 +49,6 @@ export default function CaseStudiesPage() {
               </Reveal>
             ))}
           </ul>
-        </div>
-      </Section>
-
-      <Section size="md" className="bg-paper-alt">
-        <div className="container-bc">
-          <Reveal>
-            <SectionHeading
-              eyebrow="On these being illustrative"
-              title="Why we would rather label them than dress them up."
-              body={[
-                "Bromley Code is new. We could have written these without the banner and most readers would not have checked which is exactly why the banner is driven by a single constant rather than by good intentions.",
-                "Presenting unattributed illustrative scenarios is ordinary marketing practice. Presenting the same content as real client outcomes is a misleading commercial practice under the DMCC Act and the CAP Code. The distance between those two things is one careless edit, and this is the control that prevents it.",
-              ]}
-            />
-          </Reveal>
         </div>
       </Section>
 

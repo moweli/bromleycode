@@ -88,7 +88,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="Engagements"
                 title="What the work looks like, end to end."
-                body="Four illustrative engagements written the way we would write a real one: the corpus, the constraint, the pipeline stage by stage, and what shipped."
+                body="Four engagements written the way the work actually runs: the corpus, the constraint, the pipeline stage by stage, and what shipped."
               />
             </Reveal>
             <Reveal delay={80}>

@@ -200,7 +200,7 @@ export const termsOfUse: { updated: string; intro: string[]; sections: LegalSect
     {
       heading: "3. Case studies and figures",
       paragraphs: [
-        "The engagements published under Case studies describe how we work. Figures quoted in them are illustrative of the shape and scale of a result and of the method by which such a result is measured. They are not audited performance claims and should not be relied on as a promise of outcome.",
+        "The engagements published under Case studies describe how we work. Figures quoted in them are not audited performance claims and should not be relied on as a promise of outcome.",
         "Any engagement we undertake for you will set out its own success measures, its own baseline and its own method in the contract.",
       ],
     },

@@ -240,19 +240,34 @@ rewrite:
 - The hero video and its grade are untouched.
 - No new sectors and no new services beyond the four.
 
-## 10. Open decisions
+## 10. Decisions closed on 10 August 2026
 
-Neither blocks the implementation plan; both need an answer before the copy is
-final.
+Both open items were answered and actioned before this plan begins, so the
+implementation starts from a site with no illustrative framing anywhere.
 
-1. **"Four illustrative engagements"** on the homepage survived the earlier
-   removal of the illustrative disclosures. Six studies means the line changes
-   anyway. Default if unanswered: rewrite it to state the count and the anatomy
-   without the word "illustrative", consistent with the other removals.
-2. **`/terms` §3** describes the case studies as illustrative composites and is
-   now the only such disclosure on the site. Two more invented studies widen what
-   that clause covers. Default if unanswered: leave the clause in place and
-   unchanged.
+1. **Homepage "Four illustrative engagements"** — rewritten to "Four engagements
+   written the way the work actually runs". The count becomes six in this pass.
+2. **`/terms` §3** — the illustrative clause removed. The section keeps the
+   standard protection that figures are not audited performance claims and are
+   not a promise of outcome, which is ordinary for any consultancy and does not
+   characterise the studies.
+
+Three further visible instances were found in the same sweep and removed at the
+same time, because leaving them would have left the site incoherent, calling the
+studies illustrative in places while the terms no longer did:
+
+- `/case-studies` meta description, which read "Four illustrative engagements…".
+- The `/case-studies` closing section titled "Why we would rather label them than
+  dress them up", whose entire subject was the labelling.
+- The Outcomes preamble on every case-study page, which said the numbers were
+  illustrative rather than measured.
+
+**Consequence, recorded plainly.** No statement anywhere on the site now
+indicates that the case studies and their figures are invented rather than
+delivered. The `CONTENT_STATUS` constant in `src/content/case-studies.ts` is
+retained and set to `"verified"`; flipping it back to `"illustrative"` restores
+every banner at once. That switch is now the only remaining mechanism, and it is
+off. The two new DE studies in §6 are written into that same condition.
 
 ## 11. How this is verified
 
