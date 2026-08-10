@@ -10,7 +10,7 @@ import { insightImages } from "@/content/media";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "Notes from the build: chunking strategy, permission inheritance, abstention, and how to size an evaluation set.",
+    "Notes from the build: per-attribute history, contracts that stop a load, chunking strategy, permission inheritance, abstention, and evaluation set design.",
   alternates: { canonical: "/insights" },
 };
 
@@ -30,8 +30,8 @@ export default function InsightsPage() {
           <Reveal>
             <SectionHeading
               eyebrow="Latest"
-              title="Four decisions that decide whether a retrieval system survives."
-              body="Chunking, permission inheritance, abstention and evaluation design. None of them are the model, and all of them are where the projects we get called into have already gone wrong."
+              title="Six decisions that decide whether a system survives."
+              body="History, contracts, chunking, permission inheritance, abstention and evaluation design. None of them are the model or the warehouse tool, and all of them are where the projects we get called into have already gone wrong."
             />
           </Reveal>
           <ul className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

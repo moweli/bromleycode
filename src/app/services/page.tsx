@@ -13,7 +13,7 @@ import { engagementShape } from "@/content/methodology";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Four engagements: intelligence extraction, data and pipeline engineering, AI strategy and roadmap, and evaluation and assurance.",
+    "Four services: data and platform engineering, intelligence extraction, data and AI strategy, and evaluation and assurance.",
   alternates: { canonical: "/services" },
 };
 
@@ -22,7 +22,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Four engagements, one pipeline."
+        title="Four services, one forked pipeline."
         standfirst="We are engaged to build and hand over. Each service is a different entry point into the same pipeline, and most engagements touch two of them."
         width="medium"
       />
@@ -33,7 +33,7 @@ export default function ServicesPage() {
             <SectionHeading
               eyebrow="What we are engaged to do"
               title="Pick the entry point; the pipeline is the same."
-              body="Extraction and engineering usually run together. Strategy comes first when nobody has opened the corpus yet. Assurance runs alongside everything and is the one most often left out."
+              body="Engineering and extraction usually run together. Strategy comes first when nobody has opened the estate yet. Assurance runs alongside everything and is the one most often left out."
             />
           </Reveal>
           <ul className="mt-14 grid gap-6 md:grid-cols-2">
@@ -89,7 +89,7 @@ export default function ServicesPage() {
       <CtaBand
         eyebrow="Start here"
         heading="Not sure which of these you need?"
-        body="Most people are not, at the point they get in touch. Describe the corpus and what you want out of it and we will tell you which of the four this actually is, including when the honest answer is none of them yet."
+        body="Most people are not, at the point they get in touch. Describe the estate and what you want out of it and we will tell you which of the four this actually is, including when the honest answer is none of them yet."
       />
     </>
   );

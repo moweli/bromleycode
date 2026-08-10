@@ -187,7 +187,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Central government",
     sectorSlug: "central-government",
     scale: "UK central government agency, ~2,000 staff",
-    engagement: "Data and pipeline engineering, 20 weeks",
+    engagement: "Data and platform engineering, 20 weeks",
     duration: "20 weeks",
     eyebrow: "Central government",
     summary:
@@ -419,7 +419,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Professional services",
     sectorSlug: "professional-services",
     scale: "Mid-market UK professional services firm, ~600 staff",
-    engagement: "AI strategy and roadmap, 7 weeks",
+    engagement: "Data and AI strategy, 7 weeks",
     duration: "7 weeks",
     eyebrow: "Professional services",
     summary:
@@ -524,7 +524,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Financial services",
     sectorSlug: "financial-services",
     scale: "UK building society, ~3,400 staff",
-    engagement: "Data platform engineering, 34 weeks",
+    engagement: "Data and platform engineering, 34 weeks",
     duration: "34 weeks",
     eyebrow: "Financial services",
     summary:
@@ -640,7 +640,7 @@ export const caseStudies: CaseStudy[] = [
     sector: "Central government",
     sectorSlug: "central-government",
     scale: "UK government department, ~6,000 staff",
-    engagement: "Data platform engineering, 22 weeks",
+    engagement: "Data and platform engineering, 22 weeks",
     duration: "22 weeks",
     eyebrow: "Central government",
     summary:
@@ -724,10 +724,10 @@ export const caseStudies: CaseStudy[] = [
         metric: "7 blocked, 2 figure-affecting",
       },
       {
-        label: "Corrections published after release",
+        label: "Published figures traceable back to source rows",
         detail:
-          "Corrections issued in the four publication cycles since go-live, against three in the eight cycles before it, one of which was the column redefinition described here.",
-        metric: "3 in 8 cycles → 0 in 4 cycles",
+          "All 94 figures in the two most recent publications, traced from the published cell to the source rows and the transformation version that produced them. The baseline is the same trace attempted by hand during the correction described here, which reached source for 11 of the 94 before the team ran out of time.",
+        metric: "11 of 94 → 94 of 94",
       },
       {
         label: "Column descriptions matching the column",

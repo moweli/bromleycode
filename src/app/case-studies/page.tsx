@@ -10,7 +10,7 @@ import { caseStudies } from "@/content/case-studies";
 export const metadata: Metadata = {
   title: "Case studies",
   description:
-    "Four engagements, water and utilities, central government, financial services and professional services, written the way the work actually runs.",
+    "Six engagements across water and utilities, central government, financial services and professional services, written the way the work actually runs.",
   alternates: { canonical: "/case-studies" },
 };
 
@@ -23,7 +23,7 @@ export default function CaseStudiesPage() {
         tone="light"
         eyebrow="Case studies"
         title="Engagements, end to end."
-        standfirst="The corpus, the constraint, the pipeline stage by stage, and what shipped. Written at the level of detail a Head of Data would need to decide whether we have done this before."
+        standfirst="The estate, the constraint, the pipeline stage by stage, and what shipped. Written at the level of detail a Head of Data would need to decide whether we have done this before."
         width="medium"
       />
 
@@ -33,9 +33,9 @@ export default function CaseStudiesPage() {
         <div className="container-bc">
           <Reveal>
             <SectionHeading
-              eyebrow="Four engagements"
+              eyebrow="Six engagements"
               title="Written to be checked, not skimmed."
-              body="Each one names the chunking strategy, the retrieval approach, the permission model and the evaluation method, because that is the level at which a technical buyer can tell whether a supplier has done this before."
+              body="Each one names the decisions the engagement actually turned on, the model or the chunking strategy, the contract or the permission model, and how the result was measured. That is the level at which a technical buyer can tell whether a supplier has done this before."
               className="mb-14"
             />
           </Reveal>
