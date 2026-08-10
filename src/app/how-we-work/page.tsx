@@ -139,8 +139,8 @@ export default function HowWeWorkPage() {
 
       <CtaBand
         eyebrow="Start here"
-        heading="Bring us a corpus and a constraint."
-        body="The first conversation covers three things: what the corpus actually looks like, whether anyone can define a correct answer, and whether the permission model resolves per user. Any one of them can rule the work out, and we would rather find that in week one."
+        heading="Bring us an estate and a constraint."
+        body="The first conversation covers three things: what the estate actually looks like, whether anyone can define a correct answer or an agreed number, and whether the permission model resolves per user. Any one of them can rule the work out, and we would rather find that in week one."
       />
     </>
   );

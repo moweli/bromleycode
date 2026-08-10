@@ -10,7 +10,7 @@ import { site } from "@/content/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Describe the corpus and the decision it should be supporting. One working day for a reply, from a person who has read it.",
+    "Describe the estate and the decision it should be supporting. One working day for a reply, from a person who has read it.",
   alternates: { canonical: "/contact" },
 };
 
@@ -18,8 +18,8 @@ const expectations = [
   {
     title: "What a first conversation covers",
     items: [
-      "What the corpus actually looks like, formats, volume, scan quality, revision hygiene",
-      "Whether anyone can define a correct answer, and who adjudicates it",
+      "What the estate actually looks like, the systems, the volumes, the formats and the scan quality",
+      "Whether anyone can define a correct answer or an agreed number, and who adjudicates it",
       "Whether the permission model can be resolved per user at query time",
       "What decision the output is meant to support, and how reversible it is",
     ],
@@ -39,7 +39,7 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Bring us the corpus you have given up on."
+        title="Bring us the estate you have given up on."
         standfirst="Forty-five minutes is usually enough to tell whether the work is viable. If it is not, we would rather say so now than in month four."
         width="medium"
       />

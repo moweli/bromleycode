@@ -9,7 +9,7 @@ import { industries } from "@/content/industries";
 export const metadata: Metadata = {
   title: "Industries",
   description:
-    "Water and utilities, central government and financial services, three sectors where the unstructured mass is large and the cost of a wrong answer is high.",
+    "Water and utilities, central government and financial services, three sectors where both estates are large and the cost of a wrong answer is high.",
   alternates: { canonical: "/industries" },
 };
 
@@ -20,7 +20,7 @@ export default function IndustriesPage() {
         tone="light"
         eyebrow="Industries"
         title="Three sectors, chosen deliberately."
-        standfirst="We work where the documentary mass is large, the permission model is real, and evaluation is a condition of deployment rather than a refinement. Depth in a few sectors beats a logo grid covering everything."
+        standfirst="We work where both estates are large, the permission model is real, and evaluation is a condition of deployment rather than a refinement. Depth in a few sectors beats a logo grid covering everything."
         width="medium"
       />
 
@@ -49,7 +49,7 @@ export default function IndustriesPage() {
             <SectionHeading
               eyebrow="Not on the list?"
               title="The pattern generalises further than the sector does."
-              body="Manufacturing, energy and legal all present the same shape: a large corpus nobody can query, a permission model that has to survive retrieval, and a decision that needs a citation. If that describes your estate, the sector matters less than those three facts."
+              body="Manufacturing, energy and legal all present the same shape: numbers nobody quite trusts, documents nobody can query, a permission model that has to survive retrieval, and a decision that needs a citation. If that describes your estate, the sector matters less than those facts."
             />
           </Reveal>
         </div>

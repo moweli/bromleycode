@@ -100,7 +100,7 @@ export const services: Service[] = [
       {
         name: "Capacity and cost model",
         detail:
-          "What the system costs today, what it costs at three times the corpus, and which knob moves that number most.",
+          "What the system costs today, what it costs at three times the volume, and which knob moves that number most.",
       },
     ],
     hardParts: [
@@ -125,7 +125,7 @@ export const services: Service[] = [
           "Your team, and we treat that as an engineering requirement rather than a handover meeting. The transformation layer, the tests and the deployment pipeline are the ones your engineers change during the engagement, not after it.",
       },
     ],
-    relatedCaseStudy: "regulatory-evidence-pipeline-central-government",
+    relatedCaseStudy: "warehouse-replatform-without-a-freeze",
     relatedServices: ["intelligence-extraction", "evaluation-assurance"],
   },
   {
@@ -435,7 +435,7 @@ export const services: Service[] = [
           "That is your decision, not ours, and it depends entirely on what the answer is used for and how reversible the consequence is. Our job is to make the number real, break it down by failure mode, and be explicit about the confidence interval, so the decision is made on evidence rather than on comfort.",
       },
     ],
-    relatedCaseStudy: "claims-evidence-assurance-financial-services",
+    relatedCaseStudy: "platform-trustworthy-enough-to-publish-from",
     relatedServices: ["intelligence-extraction", "data-platform-engineering"],
   },
 ];

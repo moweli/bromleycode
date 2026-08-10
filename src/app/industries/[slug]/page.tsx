@@ -160,7 +160,7 @@ export default async function IndustryPage({ params }: { params: Promise<{ slug:
       <CtaBand
         eyebrow="Start here"
         heading={`Talk to us about ${industry.name.toLowerCase()}.`}
-        body="Describe the corpus and the decision it should be supporting. We will tell you which parts are tractable now, which need remediation first, and which we would advise against."
+        body="Describe the estate and the decision it should be supporting. We will tell you which parts are tractable now, which need remediation first, and which we would advise against."
       />
     </>
   );

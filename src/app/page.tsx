@@ -134,8 +134,9 @@ export default function HomePage() {
       <Section size="md">
         <div className="container-bc flex flex-wrap items-center justify-between gap-8 border-y border-line-light py-10">
           <p className="max-w-[42rem] text-[length:var(--text-h4)]">
-            &ldquo;Chunking is a decision, not a default.&rdquo; Notes from the build, on the parts of
-            retrieval that decide whether a system survives its first quarter.
+            &ldquo;A contract that cannot stop a load is not a contract.&rdquo; &ldquo;Chunking is a
+            decision, not a default.&rdquo; Notes from the build, on the decisions in both practices
+            that decide whether a system survives its first quarter.
           </p>
           <Link
             href="/insights"

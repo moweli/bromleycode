@@ -28,11 +28,11 @@ export const pipelineStages: PipelineStage[] = [
   {
     id: "survey",
     name: "Survey",
-    short: "Open the corpus before designing anything",
+    short: "Open the estate before designing anything",
     detail:
-      "A stratified sample of the real corpus: formats, scan quality, revision patterns, duplication, and the permission model each source enforces. Two or three document families usually account for most of the value, which changes what gets built first.",
+      "A stratified sample of what is actually there. On the warehouse side that is table volumes, key integrity, duplication and the reconciliation gaps nobody has written down. On the document side it is formats, scan quality and revision patterns. Both sides carry a permission model each source enforces, and two or three subject areas or document families usually account for most of the value.",
     hardPart:
-      "Skipping this is the most expensive decision available. Almost every stalled pilot we are asked to look at was designed against an assumed corpus rather than a sampled one.",
+      "Skipping this is the most expensive decision available. Almost every stalled programme we are asked to look at was designed against an assumed estate rather than a sampled one.",
     services: ["data-ai-strategy"],
     branch: "spine",
   },
@@ -50,11 +50,11 @@ export const pipelineStages: PipelineStage[] = [
   {
     id: "parse",
     name: "Parse",
-    short: "Recover structure, in documents and in tables",
+    short: "Recover structure, in feeds and in documents",
     detail:
-      "Native text where a layer exists, OCR where it does not, layout-aware parsing for anything tabular. Tables and appendices carry a disproportionate share of the answers and are what naive extraction destroys first.",
+      "Extracts are decoded against a declared schema, with types, encodings and null conventions pinned rather than inferred fresh on every load. Documents get native text where a layer exists, OCR where it does not, and layout-aware parsing for anything tabular. Tables and appendices carry a disproportionate share of the answers and are what naive extraction destroys first.",
     hardPart:
-      "Routing by document quality. Sending everything to the expensive parser is wasteful; sending everything to the cheap one silently loses the hardest third of the corpus.",
+      "Routing by source quality. Sending everything to the expensive parser is wasteful; sending everything to the cheap one silently loses the hardest third of the estate.",
     services: ["intelligence-extraction", "data-platform-engineering"],
     branch: "spine",
   },
@@ -265,7 +265,7 @@ export const principles = [
   {
     name: "Measure before you improve",
     detail:
-      "No change to retrieval before there is a baseline to compare it against. Improvements that cannot be demonstrated are indistinguishable from preferences.",
+      "No change to a pipeline before there is a baseline to compare it against, whether the output is a published number or a grounded answer. Improvements that cannot be demonstrated are indistinguishable from preferences.",
   },
   {
     name: "Abstention is a feature",

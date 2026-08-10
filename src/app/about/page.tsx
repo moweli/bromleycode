@@ -12,7 +12,7 @@ import { aboutImage, bandImages } from "@/content/media";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "A data intelligence consultancy built around the parts of enterprise GenAI that usually go wrong: the corpus, the permission model, and the absence of a definition of correct.",
+    "A data consultancy with two peer practices, built around the parts that usually go wrong: the estate, the permission model, and the absence of a definition of correct.",
   alternates: { canonical: "/about" },
 };
 
