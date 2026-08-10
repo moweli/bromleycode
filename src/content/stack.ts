@@ -1,7 +1,7 @@
 /**
  * Technology-stack band — replaces the reference site's client logo wall
  * (design-audit.md §8.1 D2). Same geometry, same trust function, and true on
- * day one for a firm with no client list.
+ * day one, which is the claim the stack list has to support.
  *
  * Marks are rendered from Simple Icons (CC0-1.0). Trademarks remain the
  * property of their respective owners; their presence indicates a platform we

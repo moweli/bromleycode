@@ -22,7 +22,7 @@ export default function HowWeWorkPage() {
         tone="light"
         eyebrow="Method"
         title="The mechanism, in the open."
-        standfirst="We have no client logos to argue on our behalf, so the argument has to be the method. This is the whole of it, the stages, the loops, the engagement shape and the first 90 days."
+        standfirst="We would rather be judged on the mechanism than on adjectives. This is the whole of it, the stages, the loops, the engagement shape and the first 90 days."
         width="medium"
       />
 

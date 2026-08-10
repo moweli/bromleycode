@@ -1,9 +1,10 @@
 /**
  * The pipeline, the engagement shape, and the first 90 days.
  *
- * This is the compensating trust apparatus for a firm with no client logos to
- * show (design-audit.md §8.1 D2, §8.2 D8). The reference site sells outcomes
- * and never shows mechanism, because its logo wall does the arguing.
+ * This is the trust apparatus the whole site rests on: the argument is the
+ * mechanism, shown in full (design-audit.md §8.1 D2, §8.2 D8). The reference
+ * site sells outcomes and never shows mechanism, because its logo wall does the
+ * arguing for it.
  */
 
 export type PipelineStage = {

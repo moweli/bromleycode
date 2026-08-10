@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* Mechanism, the compensating trust apparatus for having no client list */}
+      {/* Mechanism, the trust apparatus the positioning rests on */}
       <Section tone="dark" size="lg" wash className="grain overflow-hidden">
         <div className="container-bc relative">
           <Reveal>
