@@ -12,16 +12,31 @@ The site sells one thing: production GenAI and retrieval pipelines over
 unstructured data. It should sell two, because data engineering is work the firm
 takes on and is currently invisible to anyone reading the site.
 
-Measured across `src/content/*.ts` string literals, not impressions:
+**Counting method**, stated so §11's re-measure has a reproducible baseline:
+string literals only in `src/content/*.ts`, case-insensitive, prefix-stemmed
+(`pipeline\w*`, `chunk\w*`). Comments and identifiers excluded.
+
+`model` and its inflections are **excluded from every family** and counted
+separately. It is genuinely ambiguous, an ML model or a data model, and it
+occurs 62 times. An earlier version of this spec folded it into the GenAI family
+and reported a 1.38 : 1 ratio. That was wrong, and wrong in the direction that
+flattered the argument.
 
 | Term family | Occurrences |
 |---|---|
-| GenAI (LLM, RAG, prompt, embedding, chunking, grounding, model) | 139 |
-| Retrieval (corpus, unstructured, document, citation) | 185 |
-| Data engineering (pipeline, warehouse, ingest, orchestration, schema, lineage) | 101 |
-| Platform names (Databricks, Snowflake, Airflow, Spark, Terraform) | 33 |
+| GenAI (LLM, RAG, prompt, embedding, chunking, grounding, abstention) | 113 |
+| Retrieval (corpus, unstructured, document, citation) | 227 |
+| Data engineering (pipeline, warehouse, ingest, orchestration, schema, lineage) | 114 |
+| Platform names (Databricks, Snowflake, Airflow, Spark, Terraform, Kubernetes) | 37 |
+| *`model*`, unassigned* | *62* |
 
-The 1.38 : 1 ratio understates the problem, because it is concentrated in the
+**AI side 340, DE side 151, a ratio of 2.25 : 1.** That aggregate is the
+comparison the argument actually rests on. Per-family figures shift with
+stemming choices, which is why the method is stated above rather than assumed;
+two independent counts of this codebase agreed on the aggregate to within 0.01
+while differing on individual families.
+
+The ratio still understates the problem, because it is concentrated in the
 load-bearing strings rather than spread evenly:
 
 | Surface | Current text | Why it excludes DE |
@@ -110,8 +125,23 @@ shared spine of the mechanism.
 
 Two slugs change, and the blast radius is measured, not assumed: **17 references
 to those two strings across `src/`**, in service records, case-study `services`
-arrays, `relatedServices` arrays, industry records and nav content. All 17 move
-in the same commit or the related-links blocks and nav 404.
+arrays, `relatedServices` arrays, `methodology.ts` pipeline-stage `services`
+arrays (4 of the 17), industry records and nav content.
+
+**Two of the 17 are not links, they are image paths**, and moving them the same
+way as the rest silently breaks both service hero images:
+
+```
+services.ts:151  src: "/media/services/data-pipeline-engineering.webp"
+services.ts:251  src: "/media/services/ai-strategy-roadmap.webp"
+```
+
+Nothing catches this. `tsc` passes, `next build` passes, and §11's link crawl
+only follows anchors, so a 404 image ships green. Either rename both files under
+`public/media/services/` and update their rows in `media-credits.md` in the same
+commit, or leave those two strings alone deliberately. Pick one in the plan and
+say which. The remaining 15 move together or the related-links blocks and nav
+404.
 
 `next.config.ts` currently defines `rewrites()` and no `redirects()`. A
 `redirects()` function must be added, permanent, for the two old paths:
@@ -166,12 +196,53 @@ SOURCES → INGEST → MODEL → QUALITY
   of symmetry that reads as decoration.
 - Assurance as the join is the structural argument for service 04.
 
-**Animation.** The existing left-to-right border relay in
-`src/components/blocks/pipeline-diagram.tsx` carries over: spine in sequence,
-then both branches in parallel from the fork, then the join. Existing constants
-(`PERIMETER`, `LIT`, `RELAY_STEP = 420ms`) stay; only the delay schedule changes,
-from `index * RELAY_STEP` to a per-node delay that accounts for the fork.
-`prefers-reduced-motion` handling is unchanged.
+**Animation, and the constant that is not in the component.** The relay's cycle
+length lives in CSS, not in the TSX. `src/app/globals.css:403` sets
+`animation: pipeline-border 4.2s linear infinite`, and the comment above it at
+:399 says so explicitly: ten boxes at 420ms fill the 4.2s cycle exactly, so
+changing the count means changing both together. **This work changes the count.**
+
+- `src/app/globals.css` is therefore a file that changes, and must be listed as
+  one. Setting only the TSX delays produces a relay that visibly drifts out of
+  step with its own cycle.
+- `PERIMETER = 304` and `LIT` genuinely do stay: node dimensions are unchanged.
+- `RELAY_STEP = 420ms` stays. The new cycle is **slots × 420ms**, where a slot is
+  a relay position, not a node. The two branches run *in parallel* and therefore
+  share slots rather than summing: spine (4 slots) + the longer branch + join.
+  The implementation plan fixes the exact slot count; this spec fixes the rule.
+- `prefers-reduced-motion` handling is unchanged.
+
+**The two feedback loops must be placed, not assumed.** The current diagram draws
+three loop paths (`pipeline-diagram.tsx:192, 216, 240`) and the figcaption at
+:255 reads "Solid: the forward path. Dashed: the two loops that decide whether it
+improves." The ASCII above shows none of them, which is an omission in the
+sketch, not a decision to remove them.
+
+- The Evaluate→Chunk loop runs from a node this design promotes into the shared
+  ASSURANCE join. Under a fork, a loop leaving the shared join and re-entering
+  only the retrieval branch is the honest topology: evaluation of generated
+  answers feeds retrieval decisions, not the semantic layer.
+- The analytics branch gets its own loop from ASSURANCE back to MODEL, because
+  failed data contracts change the model. Without it, assurance-as-the-join is
+  decorative on the left branch.
+- `pipeline-diagram.tsx:255`'s figcaption changes with the loop count and is a
+  required edit, not an optional one.
+
+**The diagram renders on three routes, and each carries a hardcoded heading that
+this change makes false.** `PipelineDiagram` is imported at `src/app/page.tsx:52`,
+`src/app/how-we-work/page.tsx:40` and `src/app/services/page.tsx:64`. None of
+these headings live in `src/content/`, so no content edit in §3 or §7 reaches
+them:
+
+| File:line | Current | Becomes |
+|---|---|---|
+| `page.tsx:47` | Ten stages, two loops, and the parts that usually break. | **One spine, two branches, and the parts that usually break.** |
+| `how-we-work/page.tsx:35` | Ten stages and two loops. | **One spine, two branches, two loops.** |
+| `services/page.tsx:59` | Where each service sits. | Unchanged, but its body at :60 ("Extraction and engineering usually run together…") states the pre-renumbering order and contradicts assurance-as-the-join. Rewrite to match §4. |
+
+The bodies beneath the first two headings also cite ten stages and must move with
+them. §11's checks will not catch this: they grep for "GenAI" and "unstructured",
+not for stage counts.
 
 **Responsive.** The fork must collapse to a single column below `md`. A
 two-branch diagram at 390px is illegible, so the mobile rendering stacks
@@ -212,7 +283,10 @@ is measured against.
 | `src/content/about.ts` | "What we are, plainly" widened to two practices. |
 | `src/content/stack.ts` | Already DE-heavy, and a flat `stackItems` list with no grouping, so nothing to reorder. Only the file's framing comment and any per-item captions that describe a tool by its retrieval role need changing. |
 | `src/content/methodology.ts` | Engagement shape and first 90 days made practice-neutral, since both currently assume a corpus. |
-| `src/app/page.tsx` | Industries section body, case-studies section body, insight teaser. |
+| `src/app/page.tsx` | Industries section body, case-studies section body, insight teaser, **and the mechanism heading and body at :47-48 per §5**. |
+| `src/app/services/page.tsx` | The "Where each service sits" body at :60, which states the pre-renumbering service order. |
+| `src/app/how-we-work/page.tsx` | The mechanism heading and body at :35-36 per §5. |
+| `src/app/globals.css` | The `pipeline-border` cycle duration at :403, per §5. |
 
 The homepage sector body currently reads "Three sectors where the unstructured
 mass is large". It becomes a statement about both estates.
@@ -235,7 +309,11 @@ rewrite:
 ## 9. Out of scope
 
 - No design token, layout, component or navigation-structure changes beyond the
-  pipeline diagram and the two service slugs.
+  pipeline diagram and the two service slugs. The diagram's CSS block in
+  `globals.css` is part of the diagram and is in scope.
+- `public/` is otherwise untouched, **except** for the two service images named
+  in §4 if the rename option is taken there. That carve-out is explicit because
+  its absence is what would let a broken image path ship unnoticed.
 - No changes to legal pages except where a service name is quoted.
 - The hero video and its grade are untouched.
 - No new sectors and no new services beyond the four.
@@ -278,8 +356,15 @@ remains in the tree and renders nothing.
   their redirects, checked by crawling the built site rather than by grep.
 - No route contains "GenAI" or "unstructured" as the only framing of what the
   firm does.
-- The GenAI-to-DE term ratio measured again after the rewrite, reported rather
-  than targeted. The point is balance in the load-bearing strings, not a number.
+- The AI-to-DE term ratio measured again after the rewrite using §1's stated
+  method, reported rather than targeted. The point is balance in the
+  load-bearing strings, not a number.
+- Both service hero images load. A `next build` and a link crawl both pass with
+  a broken `<Image src>`, so this is checked by requesting the two files.
+- The relay animation completes one full cycle without drift, checked by
+  screenshotting the diagram at intervals across the cycle rather than by
+  reading the CSS.
+- No route claims "ten stages" once the diagram forks.
 - All routes checked at 1280px and 390px: no horizontal overflow, the forked
   diagram legible at both.
 - Contrast unchanged from current AA compliance on every touched surface.
