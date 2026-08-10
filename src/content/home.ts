@@ -19,9 +19,9 @@ import { services } from "./services";
  * C: "Retrieval that survives an audit."
  */
 export const hero = {
-  headline: "The pipeline between your documents and the decision.",
+  headline: "The pipeline between your data and the decision.",
   standfirst:
-    "Better retrieval. Better evidence. Better decisions. We build the GenAI pipelines that turn documents, tickets, contracts and transcripts into answers your teams can act on.",
+    "Better foundations. Better evidence. Better decisions. We build the data platforms that make your information usable, and the AI systems that turn it into answers your teams can act on.",
   primaryCta: { label: "Discover how we work", href: "/how-we-work" },
   secondaryCta: { label: "Talk to us", href: "/contact" },
   video: {
@@ -42,10 +42,10 @@ export const hero = {
 
 export const positioning = {
   eyebrow: "What we do",
-  heading: "Most of what your organisation knows was never modelled.",
+  heading: "Most organisations have both problems at once.",
   body: [
-    "It sits in surveys, contracts, tickets, transcripts and correspondence, written by people, for people, and invisible to every query your warehouse can run.",
-    "We build the engineered path from that mass to a decision. Documents are parsed, chunked on their own structure and enriched with typed metadata, then retrieved under your permission model, grounded in a citable passage, and measured against a labelled set your team owns.",
+    "A warehouse nobody quite trusts, and a document estate nobody can query. The two are usually owned by different teams, funded from different budgets, and failing for the same reason.",
+    "We build both paths, and they share their first four stages. Sources are ingested, modelled and tested until the numbers can be relied on. From there the work forks, to a semantic layer your analysts can query, or to retrieval that grounds an answer in a citable passage. Both are measured against a set your team owns.",
   ],
 };
 
