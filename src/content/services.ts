@@ -29,10 +29,110 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "data-platform-engineering",
+    title: "Data and platform engineering",
+    shortTitle: "Data & platform engineering",
+    eyebrow: "Service 01",
+    summary:
+      "Warehouse and lakehouse build, migration, ingestion, modelling, and the contracts that keep the numbers trustworthy enough to act on.",
+    standfirst:
+      "Most AI programmes stall on data nobody fixed. So do most analytics programmes. We build the platform both of them depend on, and we build it to be handed over.",
+    image: {
+      src: "/media/services/data-platform-engineering.webp",
+      alt: "Painted steel pipes turning through right angles across a plant wall.",
+    },
+    problem: {
+      heading: "The problem this solves",
+      body: [
+        "The warehouse was built for a set of questions somebody had five years ago. Since then three source systems changed shape, two teams built their own extracts because the central one was too slow, and the number in the board pack no longer matches the number in the operational report. Nobody can say which is right without an afternoon of manual reconciliation.",
+        "The usual response is a migration, and migrations usually ask for a freeze. The business will not grant one, so the work runs at half attention alongside the platform it is meant to replace, and the two drift.",
+        "Underneath that sits a quieter problem. Almost nothing in the estate declares what it expects. A source changes a column type, the load coerces it, and dashboards stay green while the figures stop meaning what they meant. That is usually found months later by someone reconciling by hand.",
+      ],
+    },
+    approach: {
+      heading: "How we build it",
+      intro:
+        "Every stage below can be evaluated on its own, which is what makes a platform handoverable. If you cannot tell whether a number moved because the source changed, the model changed, or the load silently coerced something, you do not have a platform, you have a habit.",
+      steps: [
+        {
+          name: "Estate survey",
+          detail:
+            "A sampled inventory before any build: row counts against what the business believes, update patterns, the joins that actually get used, and which of the three systems holding a customer record is treated as correct when they disagree.",
+        },
+        {
+          name: "Ingestion and orchestration",
+          detail:
+            "Change-data capture where the source supports it, content hashing where it does not. Backfill and incremental run through the same code path, because two paths drift and only one of them is ever tested.",
+        },
+        {
+          name: "Modelling",
+          detail:
+            "Dimensional models where the questions are known, wide tables where they are not. Slowly changing dimensions are decided per attribute rather than as a policy, because tracking history on everything is how a warehouse becomes unqueryable.",
+        },
+        {
+          name: "Contracts and quality",
+          detail:
+            "Shape, range, freshness and referential expectations declared as tests that run on every load. A contract that only fails in a dashboard nobody opens is not a contract, so a breach either blocks the load or pages an owner.",
+        },
+        {
+          name: "Semantic layer",
+          detail:
+            "Metric definitions live in one place with an owner, consumed by every tool rather than reimplemented in each. The alternative is the same number computed four ways in four tools, which is the state most teams are in when they ask us about AI.",
+        },
+      ],
+    },
+    deliverables: [
+      {
+        name: "Pipelines as code",
+        detail:
+          "Version-controlled, reviewed, deployed through your existing CI. No notebooks in production and no manually configured jobs.",
+      },
+      {
+        name: "Observability",
+        detail:
+          "Per-stage metrics, lineage, and quality alerts wired into the tooling your team already watches.",
+      },
+      {
+        name: "A tested recovery path",
+        detail:
+          "Backfill and rollback procedures that have been executed at least once against real data before handover, not documented and hoped for.",
+      },
+      {
+        name: "Capacity and cost model",
+        detail:
+          "What the system costs today, what it costs at three times the corpus, and which knob moves that number most.",
+      },
+    ],
+    hardParts: [
+      {
+        question: "How do you migrate without a freeze?",
+        answer:
+          "Parallel running with reconciliation. The new platform is built alongside the old, both are loaded, and the outputs are compared row by row on an agreed set of measures until every difference is explained rather than merely small. Cutover happens per consumer, not per platform, so a failure affects one report rather than all of them.",
+      },
+      {
+        question: "What happens when a source system changes underneath you?",
+        answer:
+          "Schema changes are detected on ingest and fail the load rather than propagating. That sounds obvious and is rare, because the tempting alternative, coercing the new shape into the old one, keeps every dashboard green while the numbers quietly stop meaning what they meant.",
+      },
+      {
+        question: "How do you decide what to model first?",
+        answer:
+          "By what a decision depends on, not by what is easiest to load. The survey usually shows two or three subject areas carrying most of the questions. Those get modelled properly, and the rest lands raw and waits for a reason to exist.",
+      },
+      {
+        question: "Who owns it after you leave?",
+        answer:
+          "Your team, and we treat that as an engineering requirement rather than a handover meeting. The transformation layer, the tests and the deployment pipeline are the ones your engineers change during the engagement, not after it.",
+      },
+    ],
+    relatedCaseStudy: "regulatory-evidence-pipeline-central-government",
+    relatedServices: ["intelligence-extraction", "evaluation-assurance"],
+  },
+  {
     slug: "intelligence-extraction",
     title: "Intelligence extraction",
     shortTitle: "Intelligence extraction",
-    eyebrow: "Service 01",
+    eyebrow: "Service 02",
     summary:
       "Retrieval, extraction and enrichment over the documents, tickets, contracts and transcripts that never reached the warehouse.",
     standfirst:
@@ -139,116 +239,16 @@ export const services: Service[] = [
     relatedServices: ["data-pipeline-engineering", "evaluation-assurance"],
   },
   {
-    slug: "data-pipeline-engineering",
-    title: "Data and pipeline engineering",
-    shortTitle: "Data & pipeline engineering",
-    eyebrow: "Service 02",
-    summary:
-      "The unglamorous infrastructure underneath: ingestion, orchestration, storage, indexing and the operational discipline that keeps them running.",
-    standfirst:
-      "A retrieval system is a data pipeline with a language model at the end of it. Most of the failure modes are pipeline failure modes, and they are the ones a demo never shows.",
-    image: {
-      src: "/media/services/data-pipeline-engineering.webp",
-      alt: "Painted steel pipes turning through right angles across a plant wall.",
-    },
-    problem: {
-      heading: "The problem this solves",
-      body: [
-        "Pilots run on a snapshot. Production runs on a corpus that changes every day, from source systems that go down, rename fields, re-permission folders and occasionally re-scan ten thousand documents at a different resolution.",
-        "The questions that decide whether a system survives its first quarter are operational: what happens when a source is unavailable for six hours, how a re-embedding is rolled out without an index outage, what the recovery path is when a bad parse ships, and how anyone finds out that recall quietly dropped four points.",
-        "These are ordinary data engineering problems. They are also where a team assembled around model expertise rather than pipeline expertise usually discovers its gap.",
-      ],
-    },
-    approach: {
-      heading: "How we build it",
-      intro:
-        "We build on the platforms you already run, because the fastest way to make a system unsupportable is to introduce a stack your team has no on-call experience with.",
-      steps: [
-        {
-          name: "Ingestion",
-          detail:
-            "Incremental, idempotent connectors with change-data capture where the source supports it and content hashing where it does not. Reprocessing a document must be safe to do twice.",
-        },
-        {
-          name: "Orchestration",
-          detail:
-            "Declared task graphs with retries, backfills and per-stage observability. When a stage fails at 03:00, the question 'what do I re-run and from where' should have an obvious answer.",
-        },
-        {
-          name: "Storage and indexing",
-          detail:
-            "Lakehouse or warehouse for the derived tables, a vector index for embeddings, and a lexical index alongside it. Index rebuilds run blue-green so a re-embedding never takes retrieval offline.",
-        },
-        {
-          name: "Lineage",
-          detail:
-            "Every derived record traces back to a source document, a revision and a pipeline version. Without lineage you cannot answer 'why did this answer change', which is the question you will be asked first.",
-        },
-        {
-          name: "Cost control",
-          detail:
-            "Embedding and inference costs modelled per document and per query before the build, then metered in production. Cost per answered question is a metric we report, because it is the one that determines whether the system survives a budget cycle.",
-        },
-        {
-          name: "Operational readiness",
-          detail:
-            "Runbooks, alert thresholds tied to retrieval quality rather than only to uptime, and a documented rollback path for every stage. Handed to the team who will carry the pager.",
-        },
-      ],
-    },
-    deliverables: [
-      {
-        name: "Pipelines as code",
-        detail:
-          "Version-controlled, reviewed, deployed through your existing CI. No notebooks in production and no manually configured jobs.",
-      },
-      {
-        name: "Observability",
-        detail:
-          "Per-stage metrics, lineage, and quality alerts wired into the tooling your team already watches.",
-      },
-      {
-        name: "A tested recovery path",
-        detail:
-          "Backfill and rollback procedures that have been executed at least once against real data before handover, not documented and hoped for.",
-      },
-      {
-        name: "Capacity and cost model",
-        detail:
-          "What the system costs today, what it costs at three times the corpus, and which knob moves that number most.",
-      },
-    ],
-    hardParts: [
-      {
-        question: "Do we need a vector database?",
-        answer:
-          "Often not. Below roughly ten million chunks, pgvector on the Postgres you already operate is usually the right answer: one fewer system to run, back up and secure, and hybrid search alongside your relational filters comes free. We recommend a dedicated vector store when scale, latency budget or a specific index type actually requires it, and we will show you the numbers behind the recommendation.",
-      },
-      {
-        question: "How do you handle re-embedding when a model changes?",
-        answer:
-          "Blue-green index builds. The new index is built alongside the live one, evaluated against the same labelled question set, compared, and promoted only if it wins. Rollback is a pointer change. Model upgrades then become a routine operation rather than an event.",
-      },
-      {
-        question: "What about data residency and network boundaries?",
-        answer:
-          "Everything runs inside your tenancy by default, with model inference via a private endpoint or a self-hosted model where policy requires it. We assume from the start that some corpora can never leave the boundary, because for most of our engagements some of them cannot.",
-      },
-    ],
-    relatedCaseStudy: "regulatory-evidence-pipeline-central-government",
-    relatedServices: ["intelligence-extraction", "evaluation-assurance"],
-  },
-  {
-    slug: "ai-strategy-roadmap",
-    title: "AI strategy and roadmap",
-    shortTitle: "AI strategy & roadmap",
+    slug: "data-ai-strategy",
+    title: "Data and AI strategy",
+    shortTitle: "Data & AI strategy",
     eyebrow: "Service 03",
     summary:
       "A sequenced plan grounded in what your data can actually support, with the disqualifying constraints found before the budget is committed.",
     standfirst:
       "Most AI roadmaps fail on a data constraint that was discoverable in week one. We go looking for those constraints first, then sequence the work around what survives.",
     image: {
-      src: "/media/services/ai-strategy-roadmap.webp",
+      src: "/media/services/data-ai-strategy.webp",
       alt: "A multi-level road interchange from the air in black and white, routes crossing and branching at several heights.",
     },
     problem: {
@@ -336,9 +336,9 @@ export const services: Service[] = [
     shortTitle: "Evaluation & assurance",
     eyebrow: "Service 04",
     summary:
-      "Measurement that survives scrutiny: labelled sets, regression suites, hallucination and permission testing, and the evidence trail an auditor will ask for.",
+      "Evaluation harnesses, adversarial testing and data contracts, so both the answers and the numbers underneath them can be checked.",
     standfirst:
-      "If you cannot say how often the system is wrong, you cannot deploy it anywhere consequential. This is the service that makes that number exist.",
+      "Evaluating a model and contracting a dataset are the same discipline pointed at different objects. Both answer one question: can this be relied on, and how would you know.",
     image: {
       src: "/media/services/evaluation-assurance.webp",
       alt: "A repeating grid of windows across a building facade, a few panes picked out in black against the rest.",
@@ -349,6 +349,7 @@ export const services: Service[] = [
         "Most GenAI systems in production are evaluated by the people who built them, on examples they chose, at a point in time. That is not evidence. It is a demonstration with a sample size.",
         "The consequences arrive later: nobody notices when a model update moves behaviour, a prompt change silently degrades a subset of queries, or a new document family enters the corpus that the retrieval configuration handles badly. Without a regression suite, all three are invisible until a user complains.",
         "For regulated buyers there is a second problem. The system will eventually need to be explained to someone with the authority to stop it: an internal auditor, a regulator, a court. That conversation goes very differently when there is a measured error rate and a documented method.",
+        "The same holds one layer down, and is more often missed. A published figure carries the same obligation as a generated answer: you have to be able to say where it came from and when it was last true.",
       ],
     },
     approach: {
@@ -385,6 +386,16 @@ export const services: Service[] = [
           name: "Production monitoring",
           detail:
             "Sampled live scoring, drift detection on retrieval quality, and a feedback control wired into the interface so real corrections flow back into the labelled set.",
+        },
+        {
+          name: "Data contracts",
+          detail:
+            "Expectations about shape, range, freshness and referential integrity, declared next to the data they describe and run on every load. The point is that a breach stops something rather than being recorded somewhere.",
+        },
+        {
+          name: "Lineage and freshness",
+          detail:
+            "Column-level lineage from source to consumed artefact, and a freshness SLA per dataset with an owner attached. When a figure looks wrong, the question is which upstream change caused it, and that needs an answer in minutes rather than an afternoon.",
         },
       ],
     },
