@@ -43,8 +43,16 @@ attribution is not required but provenance is, and a licence can change.
 | public/media/contact/facade.webp | Pexels | Pexels Licence | [28733236](https://www.pexels.com/photo/28733236/) | 2026-08-09 | 548 KB → 146 KB | Contact — below the enquiry form (section band) |
 | public/media/case-studies/warehouse-replatform.webp | Pexels | Pexels Licence | [7612012](https://www.pexels.com/photo/7612012/) | 2026-08-10 | 916 KB → 366 KB | Case study — warehouse replatform (hero image); index cards |
 | public/media/case-studies/platform-trust.webp | Pexels | Pexels Licence | [3942321](https://www.pexels.com/photo/3942321/) | 2026-08-10 | 525 KB → 137 KB | Case study — platform trustworthy enough to publish from (hero image); index cards |
-| public/media/insights/dimensions.webp | Pexels | Pexels Licence | [10152059](https://www.pexels.com/photo/10152059/) | 2026-08-10 | 1377 KB → 330 KB | Insight — deciding slowly changing dimensions per attribute |
+| public/media/insights/dimensions.webp | Pexels | Pexels Licence | [10152059](https://www.pexels.com/photo/10152059/) | 2026-08-10 | 1377 KB → 479 KB | Insight — deciding slowly changing dimensions per attribute |
 | public/media/insights/contracts.webp | Pexels | Pexels Licence | [31075133](https://www.pexels.com/photo/31075133/) | 2026-08-10 | 435 KB → 144 KB | Insight — a contract that only fails in a dashboard |
+
+
+The strata image is the heaviest file in this set at 479 KB, against 387 KB for
+the next largest. Fine geological texture is what WebP compresses worst, and the
+subject is the texture, so dropping quality far enough to match the others
+visibly destroys the thing the picture is for. Next.js generates and serves
+resized variants from it, so this is repository weight rather than anything a
+visitor downloads.
 
 **Rejected at selection, and why**
 
