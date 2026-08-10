@@ -17,6 +17,10 @@ const check = (ok, label) => {
   console.log(`${ok ? "PASS" : "FAIL"}  ${label}`);
 };
 
+// Every route the site generates, index and detail. Detail routes carry most of
+// the prose, so leaving them out let the harness report ALL PASSED over the
+// pages that changed least. The lists mirror each generateStaticParams set and
+// have to be extended by hand when a study, insight or sector is added.
 const ROUTES = [
   "/",
   "/services",
@@ -26,8 +30,23 @@ const ROUTES = [
   "/services/evaluation-assurance",
   "/how-we-work",
   "/industries",
+  "/industries/water-utilities",
+  "/industries/central-government",
+  "/industries/financial-services",
   "/case-studies",
+  "/case-studies/asset-information-retrieval-water-utility",
+  "/case-studies/regulatory-evidence-pipeline-central-government",
+  "/case-studies/claims-evidence-assurance-financial-services",
+  "/case-studies/ai-roadmap-professional-services",
+  "/case-studies/warehouse-replatform-without-a-freeze",
+  "/case-studies/platform-trustworthy-enough-to-publish-from",
   "/insights",
+  "/insights/history-is-a-per-attribute-decision",
+  "/insights/a-contract-that-cannot-stop-a-load",
+  "/insights/chunking-is-a-decision-not-a-default",
+  "/insights/what-permission-inheritance-actually-requires",
+  "/insights/abstention-is-a-feature",
+  "/insights/your-evaluation-set-is-too-big",
   "/about",
   "/contact",
 ];
