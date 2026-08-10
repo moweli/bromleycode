@@ -39,12 +39,29 @@ const visibleText = (html) =>
     .replace(/<[^>]+>/g, " ")
     .replace(/\s+/g, " ");
 
-/** <img> tags inside <main>, as {src, alt}. */
+/**
+ * Attribute values in HTML are entity-encoded. next/image emits its optimizer
+ * URL with `&amp;` between parameters, which is correct HTML; a browser decodes
+ * it and the raw regex match does not. Refetching the undecoded string sends a
+ * malformed query and the optimizer answers 400, so without this every
+ * next/image on the site reads as broken.
+ */
+const decodeEntities = (s) =>
+  s
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)));
+
+/** <img> tags inside <main>, as {src, hasAlt}. */
 function mainImages(html) {
   const main = html.match(/<main[\s\S]*?<\/main>/i)?.[0] ?? html;
   return [...main.matchAll(/<img\b[^>]*>/gi)].map((m) => ({
-    src: m[0].match(/\ssrc="([^"]*)"/i)?.[1] ?? "",
-    alt: m[0].match(/\salt="([^"]*)"/i)?.[1] ?? "",
+    src: decodeEntities(m[0].match(/\ssrc="([^"]*)"/i)?.[1] ?? ""),
+    // Presence, not contents. `alt=""` is the correct marking for a decorative
+    // image, and this site uses it deliberately on card thumbnails whose
+    // heading already carries the meaning. A missing alt attribute is the
+    // defect; an empty one is a decision.
+    hasAlt: /\salt="/i.test(m[0]),
   }));
 }
 
@@ -68,8 +85,8 @@ for (const route of ROUTES) {
 
   check(broken.length === 0, `${route} images all load${broken.length ? ` (broken: ${broken.join(", ")})` : ""}`);
   check(
-    images.every((i) => i.alt !== ""),
-    `${route} every image has alt text`,
+    images.every((i) => i.hasAlt),
+    `${route} every image has an alt attribute`,
   );
   check(!/ten stages/i.test(text), `${route} does not claim "ten stages"`);
   check(!/illustrative/i.test(text), `${route} carries no illustrative framing`);
