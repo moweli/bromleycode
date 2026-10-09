@@ -10,6 +10,8 @@
 // trade worth making.
 //
 // Usage: npx next start -p 3111 &  then  node scripts/verify.mjs
+import { inflateSync } from "node:zlib";
+
 const BASE = process.argv[2] || "http://localhost:3111";
 const failures = [];
 const check = (ok, label) => {
@@ -152,6 +154,52 @@ const [legacyIco, brandIco] = await Promise.all(
   }),
 );
 check(Boolean(legacyIco && brandIco?.equals(legacyIco)), "/favicon.ico serves the brand kit ICO");
+
+/**
+ * Alpha of a PNG's top-left pixel, or 255 when the PNG has no 8-bit RGBA
+ * channel. Row 0's first pixel is stored raw under every PNG filter type, so
+ * inflating the image data is enough; nothing needs unfiltering.
+ */
+function pngCornerAlpha(png) {
+  if (png.toString("ascii", 1, 4) !== "PNG") return 255;
+  const idat = [];
+  for (let at = 8; at < png.length; ) {
+    const length = png.readUInt32BE(at);
+    if (png.toString("ascii", at + 4, at + 8) === "IDAT") idat.push(png.subarray(at + 8, at + 8 + length));
+    at += 12 + length;
+  }
+  const rgba8 = png[24] === 8 && png[25] === 6;
+  return rgba8 ? inflateSync(Buffer.concat(idat))[4] : 255;
+}
+
+/** Each image frame inside an ICO, as stored (PNG for this kit). */
+const icoFrames = (ico) =>
+  Array.from({ length: ico.readUInt16LE(4) }, (_, i) => {
+    const entry = 6 + i * 16;
+    return ico.subarray(ico.readUInt32LE(entry + 12), ico.readUInt32LE(entry + 12) + ico.readUInt32LE(entry + 8));
+  });
+
+// The tab icon sits on whatever colour the browser's tab strip is, so it ships
+// with no background of its own. The Apple touch icon keeps one: iOS fills
+// transparency with black.
+for (const href of ["/assets/brand/favicon/favicon-32x32.png", "/assets/brand/favicon/favicon-16x16.png"]) {
+  const r = await fetch(BASE + href);
+  check(r.ok && pngCornerAlpha(Buffer.from(await r.arrayBuffer())) === 0, `${href} has a transparent background`);
+}
+check(
+  Boolean(brandIco) && icoFrames(brandIco).every((frame) => pngCornerAlpha(frame) === 0),
+  "favicon.ico frames all have a transparent background",
+);
+
+// The old magenta must be gone from the stylesheet, including the rgba()
+// washes and glows that sit outside the colour tokens.
+const cssHrefs = [...head.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*href="([^"]+)"/gi)].map((m) => m[1]);
+const css = (await Promise.all(cssHrefs.map(async (h) => (await fetch(BASE + h)).text()))).join("\n");
+check(cssHrefs.length > 0, "home links a stylesheet");
+check(
+  !/#(e0245a|e7295d|c9143f|b3123f)\b|224,\s*36,\s*90|231,\s*41,\s*93/i.test(css),
+  "stylesheet carries no magenta",
+);
 
 // The header home link is named once, by its label; the logo inside it is
 // alt="" so a screen reader does not announce the name twice.
