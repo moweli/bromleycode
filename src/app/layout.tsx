@@ -44,6 +44,16 @@ export const metadata: Metadata = {
     title: `${site.name} | ${site.tagline.replace(/\.$/, "")}`,
     description: site.description,
   },
+  // Brand-kit files in public/assets/brand, linked here rather than copied into
+  // app/ as file-convention icons, so the kit lives in one place.
+  icons: {
+    icon: [
+      { url: "/assets/brand/favicon/favicon.ico", sizes: "16x16 32x32 48x48" },
+      { url: "/assets/brand/favicon/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/assets/brand/favicon/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: { url: "/assets/brand/favicon/apple-touch-icon.png", sizes: "180x180" },
+  },
   robots: { index: true, follow: true },
   alternates: { canonical: "/" },
 };

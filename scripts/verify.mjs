@@ -120,6 +120,54 @@ for (const [from, to] of [
   check(new URL(res.url).pathname === to, `${from} redirects to ${to}`);
 }
 
+// Brand kit. The tab and home-screen icons are what a browser actually caches,
+// so check the tags the served page emits and the files behind them, not just
+// that the files exist on disk.
+const home = await (await fetch(BASE + "/")).text();
+const head = home.match(/<head[\s\S]*?<\/head>/i)?.[0] ?? "";
+const iconHrefs = [...head.matchAll(/<link\b[^>]*rel="(?:icon|apple-touch-icon)"[^>]*>/gi)].map((m) =>
+  decodeEntities(m[0].match(/\shref="([^"]*)"/i)?.[1] ?? ""),
+);
+for (const href of [
+  "/assets/brand/favicon/favicon.ico",
+  "/assets/brand/favicon/favicon-32x32.png",
+  "/assets/brand/favicon/favicon-16x16.png",
+  "/assets/brand/favicon/apple-touch-icon.png",
+]) {
+  check(iconHrefs.includes(href), `head links ${href}`);
+  const r = await fetch(BASE + href);
+  check(r.ok && /^image\//.test(r.headers.get("content-type") ?? ""), `${href} serves an image`);
+}
+// The old generated icons would compete with the brand kit for the tab.
+check(
+  iconHrefs.every((h) => h.startsWith("/assets/brand/")),
+  `head links no icon outside the brand kit (${iconHrefs.join(", ")})`,
+);
+
+// Crawlers request /favicon.ico by convention; it must be the brand kit's ICO.
+const [legacyIco, brandIco] = await Promise.all(
+  ["/favicon.ico", "/assets/brand/favicon/favicon.ico"].map(async (p) => {
+    const r = await fetch(BASE + p);
+    return r.ok ? Buffer.from(await r.arrayBuffer()) : null;
+  }),
+);
+check(Boolean(legacyIco && brandIco?.equals(legacyIco)), "/favicon.ico serves the brand kit ICO");
+
+// The header home link is named once, by its label; the logo inside it is
+// alt="" so a screen reader does not announce the name twice.
+const homeLink = home.match(/<a\b[^>]*aria-label="Bromley Code home"[^>]*>([\s\S]*?)<\/a>/i)?.[1] ?? "";
+const headerLogo = homeLink.match(/<img\b[^>]*>/i)?.[0] ?? "";
+check(/bromleycode-logo/.test(headerLogo) && /\salt=""/.test(headerLogo), "header home link holds the logo, alt=\"\"");
+check(homeLink !== "" && visibleText(homeLink).trim() === "","header home link carries no duplicate text wordmark");
+const footer = home.match(/<footer[\s\S]*?<\/footer>/i)?.[0] ?? "";
+check(/<img\b[^>]*alt="Bromley Code"[^>]*bromleycode-logo|<img\b[^>]*bromleycode-logo[^>]*alt="Bromley Code"/i.test(footer), "footer shows the logo, alt=\"Bromley Code\"");
+for (const tag of [headerLogo, footer.match(/<img\b[^>]*bromleycode-logo[^>]*>/i)?.[0] ?? ""]) {
+  const src = decodeEntities(tag.match(/\ssrc="([^"]*)"/i)?.[1] ?? "");
+  if (!src) continue;
+  const r = await fetch(src.startsWith("http") ? src : BASE + src);
+  check(r.ok, `logo ${src} loads`);
+}
+
 // Layout needs a real browser. Optional on purpose: present in a dev
 // environment that has Playwright, skipped with a notice everywhere else.
 let chromium = null;

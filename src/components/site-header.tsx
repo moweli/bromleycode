@@ -73,10 +73,10 @@ export function SiteHeader() {
       <div className="container-bc relative flex h-20 items-center justify-between gap-6 lg:h-24">
         <Link
           href="/"
-          aria-label={`${site.name}, home`}
+          aria-label={`${site.name} home`}
           className="shrink-0 transition-opacity duration-150 hover:opacity-70"
         >
-          <Wordmark className={onDark ? "text-paper" : "text-ink"} />
+          <Wordmark onDark={onDark} alt="" />
         </Link>
 
         <nav aria-label="Primary" className="hidden lg:block">
@@ -148,7 +148,7 @@ export function SiteHeader() {
         className="m-0 h-full max-h-none w-full max-w-none bg-paper p-0 text-ink backdrop:bg-ink-950/60"
       >
         <div className="container-bc flex h-20 items-center justify-between lg:h-24">
-          <Wordmark className="text-ink" />
+          <Wordmark />
           <button
             type="button"
             onClick={() => setOpen(false)}
