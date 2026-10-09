@@ -9,7 +9,7 @@ export function SiteFooter() {
       <div className="container-bc section">
         <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1.2fr]">
           <div>
-            <Wordmark className="text-paper" />
+            <Wordmark onDark />
             <p className="mt-5 max-w-xs text-body-sm text-mist">{site.tagline}</p>
           </div>
 

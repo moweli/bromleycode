@@ -1,19 +1,30 @@
+import Image from "next/image";
+
 /**
- * Wordmark: a mark plus a logotype set in the display face, rather than an SVG
- * with outlined text — it stays crisp at any size and needs no separate asset.
- * The mark reads as a document ruled into chunks, resolving to a single point.
+ * The brand-kit logo (public/assets/brand). The wordmark is part of the
+ * artwork, so it is never re-set as text. On a dark surface the same image is
+ * knocked out to white, as the kit specifies, rather than shipping a second file.
+ *
+ * `alt` defaults to the brand name for a standalone logo. Inside a link that is
+ * already named, pass alt="" so a screen reader does not announce it twice.
  */
-export function Wordmark({ className = "" }: { className?: string }) {
+export function Wordmark({ onDark = false, alt = "Bromley Code" }: { onDark?: boolean; alt?: string }) {
   return (
-    <span className={`inline-flex items-center gap-3 ${className}`}>
-      <svg width="30" height="30" viewBox="0 0 22 22" fill="none" aria-hidden="true" className="shrink-0">
-        <rect x="0.75" y="0.75" width="20.5" height="20.5" rx="2" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M5 6.5h9M5 11h12M5 15.5h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" />
-        <circle cx="16.5" cy="15.5" r="2" fill="var(--color-accent)" />
-      </svg>
-      <span className="text-[1.5rem] font-bold tracking-[-0.045em]">
-        Bromley Code
-      </span>
-    </span>
+    <Image
+      src="/assets/brand/logo/bromleycode-logo.webp"
+      alt={alt}
+      // Intrinsic size, so the box is reserved at the true ratio before load.
+      width={1854}
+      height={422}
+      sizes="(min-width: 1024px) 192px, 168px"
+      // Above the fold in the header; the footer and menu reuse the same file.
+      loading="eager"
+      className={[
+        // 192px matches the old text wordmark's footprint, so the desktop nav
+        // keeps the room it had.
+        "h-auto w-[168px] transition-[filter] duration-300 lg:w-[192px]",
+        onDark ? "brightness-0 invert" : "",
+      ].join(" ")}
+    />
   );
 }
