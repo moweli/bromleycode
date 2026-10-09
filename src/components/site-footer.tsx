@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Wordmark } from "@/components/wordmark";
 import { AccreditationBand } from "@/components/blocks/accreditation-band";
@@ -81,6 +82,16 @@ export function SiteFooter() {
               </li>
             ))}
           </ul>
+          <a
+            href="https://vectisflow.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Built by Vectisflow (opens in a new tab)"
+            className="inline-flex items-center gap-2 py-1 opacity-70 transition-opacity duration-150 hover:opacity-100"
+          >
+            <span aria-hidden="true">Built by</span>
+            <Image src="/brand/vectisflow-logo.png" alt="Vectisflow" width={436} height={110} className="h-auto w-[100px]" />
+          </a>
         </div>
       </div>
     </footer>
